@@ -1,0 +1,32 @@
+\begin{thenomenclature} 
+
+ \nomgroup{A}
+
+  \item [{ABM}]\begingroup Agent Based Modelling\nomeqref {0}
+		\nompageref{3}
+  \item [{Agent}]\begingroup An autonomous intelligent unit able to cooperate with others and interact with the environment\nomeqref {0}
+		\nompageref{3}
+  \item [{CMAC}]\begingroup Cerebellar Model Articulator Controller\nomeqref {3.112}
+		\nompageref{113}
+  \item [{CPU}]\begingroup Central Processing Unit\nomeqref {5.11}
+		\nompageref{181}
+  \item [{GPU}]\begingroup Graphical Processing Unit\nomeqref {5.11}
+		\nompageref{181}
+  \item [{ICO}]\begingroup Input Correlation Only learning\nomeqref {0}
+		\nompageref{3}
+  \item [{ISO}]\begingroup Isotropic Sequence Order learning\nomeqref {0}
+		\nompageref{3}
+  \item [{MAS}]\begingroup Multi Agent System\nomeqref {2.0}
+		\nompageref{43}
+  \item [{MLP}]\begingroup Multi Layer Perceptron Network\nomeqref {3.112}
+		\nompageref{113}
+  \item [{PID}]\begingroup Proportional Integration Derivative control\nomeqref {2.0}
+		\nompageref{46}
+  \item [{RBF}]\begingroup Radial Basis Functions\nomeqref {3.112}
+		\nompageref{113}
+  \item [{RNN}]\begingroup Recurrent Neural Networks\nomeqref {3.40}
+		\nompageref{79}
+  \item [{SWARM}]\begingroup Collective behaviour of animals\nomeqref {2.0}
+		\nompageref{43}
+
+\end{thenomenclature}

@@ -1,0 +1,631 @@
+\section{Introduction to the theory of Societies}
+\label{Chapter1:SocialSystemTheory}
+This section contains an introduction to the theories about the generation of
+human like societies and existing models in literature which replicate
+artificial societies.
+
+\section{A brief history of sociology}
+Sociology is the study of society and aims to understand how social order is
+possible.
+In the last 350 years, sociologists have provided different explanations to the
+generation of social order:
+\begin{itemize}
+ \item \citet{Thomas1651:Leviathan} attributed the generation to
+a powerful state, the Leviathan
+ \item \citet{Smith1776:WealthNations} attributed the generation
+to an ``invisible hand''
+ \item \citet{Durkheim1893} introduced the concept of norms
+ \item \citet{Parsons1937:StructureSocialAim} extended the
+Durkheim proposal by saying that norms are legitimated by values located in a
+cultural system of a society
+ \item \citet{Axelrod1984} suggested that the generation is
+possible by rational choice of action with consideration for a long common future
+(shadow)
+\end{itemize}
+A cardinal point in the theory of social order generation was introduced by
+Parson as the \textit{the problem of double contingency}:
+\begin{quote}
+There are two crucial reference points for analysing interactions:
+(1) That each actor is both acting agent and object of orientation both to
+himself and to the others; and (2) that, as an acting agent orients to himself and
+to others, in all primary modes of aspect. The actor is knower and object
+of cognition, utiliser of instrumental means and himself a means, emotionally
+attached to others and an object of attachment, evaluator and object of
+evaluation, interpreter of symbols and himself a symbol. 
+(International Encyclopedia of the Social Sciences,1968: 436)
+\end{quote}
+
+Following \citet{Talcott1968:SocioTheory,Luhmann95}
+identified \textit{the problem of double contingency} as the main problem of
+producing social order whilst expanding the idea with a new radical biological
+principle called autopoiesis.
+
+\subsection{Autopoiesis: from biology to social systems}
+Luhmann based his social system theory on the concept of ``autopoiesis``,
+originally formulated in biology by the two biologists \citet{Maturana1980}.
+The biological concept of autopoiesis (from the Greek autos=self, poiein= to produce)
+states that a living system recursively reproduces its elements through its own elements.
+A living cell, for example, reproduces its own elements, like proteins or
+and a plant grows its own leaves and roots.
+The autopoietic system has 3 important properties and is described in Figure \ref{Fig:Autopoiesis:System}):
+\begin{enumerate}
+ \item operative closure: no operations can enter nor leave the system within its boundary
+ \item interactional openness: the system has contact with its environment by means of disturbances
+ \item structural coupling: environmental events can trigger internal processes but the internal
+processes triggered are determined by the structures of the system
+\end{enumerate}
+The operative closure is symbolised by the partial feedback of the output to the 
+input of the cell.
+In essence autopoietic systems are at the same time open and closed systems;
+open because they are influenced by their environment,
+but also closed because environment does not directly
+influence the structure and elementary processes of the systems.
+
+The first and second property are also the basis of cognition:
+\begin{quote}
+Living systems are cognitive systems, and living as process is a process of cognition.
+(Maturana and Varela 1980:13)
+\end{quote}
+The operations of an autopoietic system are defined as its cognitions: cognition is
+a self-referential, autopoietic process.
+This assumption is known as Radical Constructivism:
+all ideas are constructs of the cognitive system and are a by-product of reality.
+The most important contribution to the development of constructivism to neuro biological
+ systems was pioneered by \citet{VanFoerster2003:Cybernetics}.
+Every organism lives in a closed loop with its own environment and works only with neural activity.
+The Figure \ref{Fig:Autopoiesis:Radical} shows how the cognitive system produces neural activity and
+perceives neural activity: the environment is only a construction and therefore is not real.
+This self-reference property also exists at other layers, for instance in a call 
+proteins create other proteins but the environment is coded as the protein production 
+to maintain a membrane (made again by proteins).
+This assumption is also important in the work of this thesis because artificial
+agents, as well as human beings, construct their own reality. For instance a common behaviour
+between animals is the natural reflex reaction to pain: when the skin is touching a
+hot surface, the nervous system produces the idea of pain or heat.
+The molecular property of the flame, triggered an action potential in the pain
+receptor of the skin that then sent a reaction command in the motor cortex.
+The physical event did not enter the cognitive system but only generated
+a disturbance from the plateau state of the nervous system.
+
+\begin{figure}[htbp]
+\begin{center}
+\includegraphics[width=0.8 \textwidth]{autopoiesis/neuralfeedback}
+\end{center}
+\small{
+\caption[Radical constructivism example]{Radical constructivism example:
+a burning flame is a physical system,
+regulated by an oxygen reaction, when a finger touches it, a coupling is established
+between the neural system and the flame.
+The pain receptor produces neural activity, the brain generates a motor reaction, which then
+ evokes an absence of sensory pain indicating that the reaction was good. 
+The sensor produces again a different neural activity to encode the absence of pain.
+\label{Fig:Autopoiesis:Radical}}}
+\end{figure}
+
+Later, in Section \ref{Section:ICOlearning} there is a clear explanation of the
+implication of such an assumption.
+
+The third property is the concept of self-organisation: the autopoietic system replicates
+its elements by following a structure which is self-determined.
+Thus we can  state that autopoiesis refers to the reproduction of the elements
+and self-organisation refers to the determination of structures \citep{Luhmann2000}.
+
+\begin{figure}[htbp]
+\begin{center}
+\includegraphics[width=0.8 \textwidth]{autopoiesis/maturanabiology}
+\end{center}
+\small{
+\caption[Biological definition of autopoiesis]{The original definition given by Maturana and Varela:
+An autopoietic machine is a machine organized (defined as a unity) as a network
+of processes of production (transformation and destruction) of components which:
+(a) through their interactions and transformations continuously regenerate and
+realize the network of processes (relations) that produced them; and (b) constitute
+ it (the machine) as a concrete unity in space in which they (the components)
+exist by specifying the topological domain of its realization as such a network.
+$[\dots]$ the space defined by an autopoietic system is self-contained and cannot be
+described by using dimensions that define another space. When we refer to our
+interactions with a concrete autopoietic system, however, we project this system
+ on the space of our manipulations and make a description of this projection.
+From \citet{Maturana1980} reproduced with permission of the publisher.
+\label{Fig:Autopoiesis:System}}}
+\end{figure}
+
+Luhmann generalises the principle of autopoiesis to be a general form of system building
+thus declaring that a system is autopoietic when it reproduces its own elements.
+Figure \ref{Fig:Autopoiesis:General} describes the new hierarchy of autopoietic systems:
+\begin{enumerate}
+ \item level 1 contains the general definition
+ \item level 2 contains living systems, psychic systems, neural systems and social systems
+ \item level 3 contains societies, organisations and interactions
+\end{enumerate}
+Each system is described by the unit self-reproducible elements, in particular neural systems 
+reproduces their own neural activity, living systems their own proteins and societies
+ their own communications. 
+In this thesis we are going to focus on the study of Societies \citep{Luhmann95}
+which reproduce
+themselves on the basis of communication and on the study of Neural Systems.
+Moreover, Luhmann has also investigated the formation of organisations \citep{Luhmann2000} 
+and social interactions \citep{Luhmann1993}.
+
+\begin{figure}[htbp]
+\begin{center}
+\includegraphics[width=0.8 \textwidth]{autopoiesis/general}
+\end{center}
+\small{
+\caption[General definition of autopoiesis]{Autopoiesis becomes a general
+concept applied at different layers of
+system formation. This thesis is focusing on studying the Social Systems.
+\label{Fig:Autopoiesis:General}}}
+\end{figure}
+
+The next sections contains a descriptions of the neural systems that constitutes
+the core of our artificial agents or robots.
+
+
+\subsection{Neural systems}
+\label{Introduction:NeuralSystem}
+The fundamental component of almost every living organism is its nervous system which
+ is necessary for the the most vital activities like digestion, reproduction to the 
+most complex ones like locomotion and cognition.
+The most important assumption was made by \citet{VonFoerster85}, one of the founders of radical constructivism,
+ who argued that the nervous systems is operationally closed: neural activity generates 
+other neural activity and thus the environment is only a ''simulacra``.
+The most basic type of a neural system is the reactive system, in control theory 
+known also as a feedback system, which only reacts after a sensory event has occurred.
+A feedback system can also be called a closed loop or self-referential system,
+but I am going to use the most popular notation of closed loop system from now on.
+
+\begin{figure}[htbp]
+\begin{center}
+\includegraphics[width=0.6 \textwidth]{neural/closedloop-1}
+\end{center}
+\small{
+\caption[Closed loop reactive system]{
+A simple closed loop system. 
+Top: The transfer function $H_0$ transforms sensor signals
+$X_0$ into motor signals $V$. The transfer function $P_0$ transforms the motor signals $V$
+back into sensor signals $X_0$.
+Bottom: the system can be simplified by dividing everything by $P_0$
+\label{Fig:Neural:ControlReactive}}}
+\end{figure}
+
+The block diagram in Figure \ref{Fig:Neural:ControlReactive} represents a minimal system with feedback.
+Each block contains the LaPlace transform of the time domain function transfer:
+\begin{itemize}
+ \item $H_0(s)$ is the transfer function of the agent
+ \item $P_0(s)$ is the transfer function of the environment
+\end{itemize}
+The transfer functions operates on neural signals which are the basic elements
+ of the neurological system.
+Because the systems is in closed loop form the following equations are valid:
+\begin{eqnarray*}
+  V(s)= H_0(s) \cdot X_0(s)\\
+  X_0(s)=P_0(s) \cdot V(s) 
+\end{eqnarray*}
+Such a closed loop system can be stable or unstable and \citep{VonFoerster85} assumes,
+like in traditional control theory, that it must operate in the stable state by 
+using a negative feedback.
+Stability is necessary in a linear system if the organism wants to reach a desired
+ state after a finite time.
+The main issue with this closed loop model is that the organism cannot distinguish
+ itself from the environment because by dividing both the transfer functions by $P_0$,
+the new transfer function $G(s)=H_0/P_0$ (see Figure \ref{Fig:Neural:ControlReactive}, bottom) 
+does not distinguish any more from organism and environment due to the unity gain feedback. 
+To avoid this issue, a disturbance $D$ must be defined as in Figure \ref{Fig:Neural:ReactiveDisturbance}.
+The disturbance is anything which prevents the organism to keep its stable desired state 
+and was also formulated by \citep{Ashby1956:IntroCybernetics} in its law of requisite variety which is going to
+ be discussed in Section \ref{Chapter6:Information Flow}.
+
+\begin{figure}[htbp]
+\begin{center}
+\includegraphics[width=0.8 \textwidth]{neural/closedloop-2}
+\end{center}
+\small{
+\caption[Closed loop reactive system with disturbance]{
+The closed loop system now contains a disturbance from the environment.
+An example is the classical natural reaction to a burning sensation:
+ the hand retracts when the pain receptor is activated by the contact
+with the flame.
+\label{Fig:Neural:ReactiveDisturbance}}}
+\end{figure}
+
+The disturbance this time cannot be eliminated by dividing the transfer functions by $P_0$.
+A simple reactive system then can only react after a change it the desired state, 
+a simple example is the motor reaction of our hand to a painful event like touching a 
+flame. 
+Another important point made by the radical constructivism theory is  that only actions which 
+feed back to the organism's sensors can be observed by the organism. 
+In the mentioned example then even a more complex motor reaction will only generate 
+two possible state at the sensory input, one of pain and one of non pain.
+Any other action which simply disappears in the environment cannot be
+observed by the organism. Thus, there is no other chance for the organism as to
+analyse its inputs as this is the only aspect that the organism is able to observe.
+Even its own actions are only observable through its inputs.
+
+A more advanced organism is one which has an anticipatory input signal $X_1$ as
+ shown in Figure \ref{Fig:Neural:ProactiveDisturbance}:
+when the agent is born only the inner loop $H_0,P_0$ is active but by using the 
+association between $X_0$ and $X_1$ the agent can in the future avoid the 
+painful signal by only using the anticipatory information $X_1$.
+The reﬂex signal $X_0$ represents the initial behavioural
+goal \citep{Verschure98summary} where $X_0=0$, while the predictive signal $X_1$
+is provided naturally by the environment or the organism's sensor setup.
+
+\begin{figure}[htbp]
+\begin{center}
+\includegraphics[width=0.8 \textwidth]{neural/closedloop-3}
+\end{center}
+\small{
+\caption[Closed loop proactive system with disturbance]{
+The inner feedback loop is established by the transfer functions $H_0$
+and $P_0$. 
+The outer feedback loop is established by the transfer functions $H_1$, $P_{01}$ 
+and $P_1$. $D$ is the disturbance and $T$ delays the disturbance. 
+The outer feedback loop observes the inner feedback loop and adjusts
+so that the inner reﬂex loop is no longer needed.
+\label{Fig:Neural:ProactiveDisturbance}}}
+\end{figure}
+
+The desired state, for example $X_0=0$ cannot be maintained all the time
+as disturbances $D$ arrive at the loop occasionally. These disturbances enter
+the inner loop delayed by time $T$. The undelayed disturbances enter the organism
+via the sensor input $X_1$ which anticipates the input $X_0$ The signal at $X_1$
+can now be used to observe the primary feedback loop ($X_0$,$P_0$) and determine 
+what is the effect of on the primary feedback loop. This observation can be used to adjust
+$H_1$ in a way that the inner feedback loop does not feel the disturbance any more.
+This approach was succesfully implemented by \citet{PorrNecoISO2003} where a 
+robot was using a camera system to learn the avoidance of obstacles.
+The camera provided the visual anticipatory information required to predict the 
+triggering of the touch avoidance sensor.
+The robot used a learning statregy called $ISO$ which uses the correlation between
+ vision and touch signals to learn the anticipatory reaction.
+A more advanced form of $ISO$ called $ICO$ is used in this thesis as the main controller
+ both for the software agent and the embodied robot.
+
+The most interesting implication of this model when using multiple agents is the 
+double contingency whereby each agent is disturbing the other as shown in Figure 
+\ref{Fig:Neural:MutualDisturbance}.
+Each agent is nested in multiple closed loops, because it receives the outputs of 
+all the other agents in the environment via the disturbance summation with the 
+environment itself.
+Double contigency happens when all agents are learning continuously with, for example
+ICO \citep{Porr2006ICO} or ISO \citep{PorrNecoISO2003} learning , from each other.
+This learning loop was defined by Luhmann as the problem of double contigency:
+an open ended interaction process where each agent try to predict the other.
+A good metaphor is the game of chess where each player try to anticipate its opponent 
+moves in the future: in a way the chess game is a sort of communicative process between
+the two players which eventually comes to an end when the desired state (check mate) 
+is achieved.
+This dynamic process constitutes for Luhmann the necessary base for social generation.
+It is possible that learning will never stabilise due to such multiple nested
+ closed loops.
+
+\begin{figure}[htbp]
+\begin{center}
+\includegraphics[width=0.8 \textwidth]{neural/closedloop-4}
+\end{center}
+\small{
+\caption[Double contigency]{
+Each organism output is summed to the motor feedback loop with the 
+disturbance from the environment.
+\label{Fig:Neural:MutualDisturbance}}}
+\end{figure} 
+
+Due to the complexity of such multiple interaction is not feasible to verify the 
+property of stability and that is the reason why simulations were used in this 
+thesis as the main tool.
+In the social foraging task implemented in this thesis, learning stability was 
+always achieved but it cannot be granted for every possible social task and 
+must be verified case by case.
+The ICO controller \citep{Porr2006ICO} was chosen to be the main block of each agent
+ in my social model because they require simple computation, can be combined in parallel or series and
+can be implemented in the analog domain or digital domain and have very good mathematical properties.
+Another potential approach that was investigated prematurely was the use of 
+model checking to predict the behaviour and properties of such a multi agent system and 
+is discussed in the discussion section.
+The next section contains a brief introduction to Braitenberg vehicles which 
+are going to be used as the behavioural component of my artificial agents.
+
+\subsection{Breitenberg vehicles}
+\label{Intro:Braitenberg}
+A good controller is useless if it cannot be embodied in a physical robot.
+The ICO and ISO controller were successfully implemented on a moving robot by
+ adopting the approach developed by \citet{Braitenberg1986} who devised a simple
+ yet effective method to implement avoidance and attraction behaviours on 
+simple robots.
+The most basic architecture is composed by a couple of sensory inputs, a couple of motors
+and a matrix of connectivity which defines the behaviour of the robot.
+The test case scenario is a vehicle moving on a planar surface which contains a light source
+ be projected from above.
+The vehicle has 2 light sensor which are able to measure the scalar gradient of 
+the light source on the surface.
+The motors are directly connected to the sensors via positive or negative proportional 
+controllers.
+Figure \ref{Fig:Braitenberg:Example1} shows that an avoidance behaviour can be implemented
+ by using positive feedback connections:
+
+\begin{itemize}
+ \item a vehicle with symmetric connections from sensors to motors, dislikes the source 
+of light by constantly avoiding it.
+ \item a vehicle with crossed connections from sensors to motors, dislikes the source of light
+but constantly turns toward it at maximum speed, as if it wanted to destroy it.
+\end{itemize}
+
+\begin{figure}[htbp]
+\begin{center}
+\includegraphics[width=0.8 \textwidth]{vehicles/Braitenberg-1}
+\end{center}
+\small{
+\caption[Braitenberg vehicles positive feedback]{
+An example of a coward and aggressive vehicle with only positive feedback connections.
+\label{Fig:Braitenberg:Example1}}}
+\end{figure}
+
+Figure \ref{Fig:Braitenberg:Example2} shows that an attraction behaviour can be implemented
+ by using negative feedback connections:
+\begin{itemize}
+ \item a vehicle with symmetric connections from sensors to motors, likes the source 
+of light by carefully approaching it and reaching ideally zero velocity in proximity.
+ \item a vehicle with crossed connections from sensors to motors, likes the source of light
+but constantly search for other alternatives 
+\end{itemize}
+
+\begin{figure}[htbp]
+\begin{center}
+\includegraphics[width=0.8 \textwidth]{vehicles/Braitenberg-2}
+\end{center}
+\small{
+\caption[Braitenberg vehicles negative feedback]{
+An example of a lover and explorer vehicle with only negative feedback connections.
+\label{Fig:Braitenberg:Example2}}}
+\end{figure}
+
+The behaviour of such vehicles can be enriched by including more sensors and so
+ mixing positive and negative connections or by using non monotonic relationships
+ between sensors and motors.
+The agents that I used in the software simulations and robot implementations, 
+are based on the Braitenberg framework but enriched with the power of ICO learning 
+\subsection{Communication}
+For Luhmann, the most important feature of a social system is that communication
+is the basic form of the autopoietic reproduction of social systems.
+Social systems consist of communicative processes (see Figure
+\ref{Fig:Autopoiesis:Communication}), not human beings.
+
+\begin{figure}[htbp]
+\begin{center}
+\includegraphics[width=0.8 \textwidth]{autopoiesis/elements}
+\end{center}
+\small{
+\caption[Communication is the basis for society]{Living systems are based
+on cellular mechanisms of reproduction and
+their elements are proteins and molecules. Social systems are based on communication
+processes which reproduces themselves. Psychic systems are based on self-reproducing
+thoughts. Each system is structurally coupled with each other.
+The structural coupling between psychic systems and communications is established
+through Language. Language allows the ''synchronization`` between the two systems
+but communication is also possible without it.
+\label{Fig:Autopoiesis:Communication}}}
+\end{figure}
+
+Human beings are individuals in a society only when they communicate and
+thus the limit of society is defined by the limit of communication.
+Communication has been defined by Luhmann as a unity of 3 selective
+and independent processes:
+\begin{itemize}
+ \item utterance: how do we utter it?
+ \item understanding: how do we separate utterance from information?
+ \item information: what was the utterance about?
+\end{itemize}
+Communication is an \textbf{emergent property} of the interaction between two psychic systems
+as the three selections do not belong to each individual independently.
+Each step is considered by Luhmann as a selection process from a set of possibilities,
+in accordance with the definition of information of Shannon and Weaver \citep{Shannon1948}.
+To explain the communication process Figure \ref{Fig:Autopoiesis:CommExample}
+contains an example of a communication session between Ego and Alter.
+The psychic system embodied in Ego has the intention or desired state of being alone
+ because he/she is tired.
+The first step for Ego is to select the appropriate utterance which in this case 
+is the English sentence ''go away``.
+At this point Alter receives the utterance and needs to understand it by extracting the 
+information from it.
+Alter then can decide to leave or to continue the conversation. Assuming that in the first
+case, he leaves Ego alone and emits an utterance like ''Oky``, Ego will understand that 
+its initial utterance ''go away`` was successful.
+On the contrary if Alter persist and does not leave Ego alone, Ego will try
+ indefinitely to produce other utterances until Alter leaves.
+ 
+In Figure \ref{Fig:Autopoiesis:CommExample} Ego can also accept or reject the
+meaning of the communication which implies a dynamic selection mechanism for
+the continuation or interruption of the communication process.
+
+\begin{figure}[htbp]
+\begin{center}
+\includegraphics[width=0.8 \textwidth]{autopoiesis/dialogexample}
+\end{center}
+\small{
+\caption[Communication between alter and ego]{
+Ego is a psychic system with a current goal or desired state.
+When Ego is in contact with Alter in a contingent situation. he selects the utterance 
+''go away`` to be communicated to Alter. Alter then needs to extract the 
+meaning from such an utterance and infers that Ego wants to be alone. 
+Then Alter can decide to continue in the conversation or quit it by just leaving
+ Ego alone.
+The acceptance or rejection of the understanding is an option in the communication.
+\label{Fig:Autopoiesis:CommExample}}}
+\end{figure}
+
+The Luhmann interpretation of communication is therefore far more advanced
+than the simple channel communication theory where the purpose is to transfer
+meaning with minimal errors.
+In this sense there is similarity with the work of \citep{Berger1975:URT} 
+who developed an axiomatic theory to explain people's attempts to “make sense” of interpersonal
+situations by reducing uncertainty through seeking information.
+Additionally the concept of reducing uncertainty
+during the understanding process being a motivation to continue a communication 
+is not mentioned in the original work.
+There is also another interesting implication of using Luhmann's communication 
+which fits recent theories of the mind.
+The use of expectations is tightly linked with the idea of estimating each other's
+state of mind as described with greater detail in Section \ref{TheoryOfMind} and \ref{Conclusion:Language}.
+So in summary, communications can reproduce themselves but what communications
+are produced is related to the concept of expectation.
+In the next section I am going to introduce the most relevant simulation model 
+which captures the social ordered generation by using such a model of communication 
+based on expectations.
+
+\section{Social order generation by double contingency}
+\label{Introduction:SocialOrderModel}
+The starting point for implementing a simulation which uses Luhmann's communication approach, 
+was developed by \citet{SocialOrderScalability} which implemented the situation of
+double contingency as the origin of social order.
+The results produced by this approach were very promising
+
+
+\subsection{Methods}
+He started from a dyadic social interaction and then expanded it to a multi agent interaction.
+Social order appears in the dyadic social interaction and also in the multi agent situation,
+but only in certain conditions that we are going to explain.
+
+The double contingency problem exists when a dyad composed of 2 entities (ego and alter) meet each other:
+each actor has a double role of knower and object of cognition.
+
+Parsons solved the problem of contingency by asserting that a common shared symbol system
+is a pre-condition for the formation of a social order.
+Therefore the dyad must share a culture derived from a history of previous relationships.
+
+Luhmann solves the problem of double contingency by using a self-organisation process which
+develops in time based on mutual expectations.
+The only hypothesis he made was that alter and ego (the actors in the dyad) have a
+necessity of predicting ``expectation-certainty'', which means Alter and Ego want to know what
+is going on in this interaction.
+Every entity expects that the other entity has expectations about its next activity.
+
+The desire -or goal- of every agent during the interaction is to reduce the entropy -uncertainty- of the
+Alter's actions given Ego's actions.
+
+To give a simple example, when I say ``Hello'' to a friend, I expect to receive a ``Hello`` followed by
+a form of embrace, typically a handshake possibly followed by a conversation. My friend will expect the same.
+This is useful as we don't have to try out all our vocabulary every time to get somebody's attention!
+Figure \ref{Fig:Dittrich:Model} explains the model with a simple example where
+Ego says ''Good morning`` and alter replies with ''Good morning``, then Ego
+asks ''How are you?'' but Alter ask a question about time.
+This somehow puzzles Ego -delusion- because he wasn't expecting a question after
+his question.
+\begin{figure}[htbp]
+\begin{center}
+\includegraphics[width=0.8 \textwidth]{autopoiesis/expectations}
+\end{center}
+\small{
+\caption[Expectations and communication structures]{
+Upper block: an example of mutual expectation in a conversation.
+Lower block: the simulation model with the Expectation-Expectation memory
+and the Expectation-Certainty model.
+\label{Fig:Dittrich:Model}}}
+\end{figure}
+
+So the model proposed by Dittrich begins with a simple dyad of 2 actors:
+\begin{itemize}
+ \item Ego initializes the interaction by choosing a message from a set of N possible ones
+ \item Alter receives the message and replies with another one from the set of N
+ \item the conversation continues from Ego and so on
+\end{itemize}
+The activity of an actor is to decide which message has to be sent given a received message.
+This kind of action is a reduced model of Luhmann's communication because there 
+is no distinction between information, transmission and understanding.
+Ego chooses the message and sends it (information $+$ transmission) and
+replies to the message without understanding it.
+Also, agents do not show a motivated behaviour towards others, according
+to goals and a shared symbolic system, as proposed in the Parson's model.
+
+Each agent is motivated by 2 functions:
+\begin{itemize}
+ \item Expectation-Expectation \textbf{EE}: an agent wants to meet the
+expectations of the other agent. It does so by keeping a memory of what actions
+were chosen in response to other agents.
+ \item Expectation-Certainty \textbf{EC}:  the reaction of the other agent
+following its own activity should be as predictable as possible.
+ \item Activity Value: a linear combination of $(1 - \alpha)EE + \alpha EC$.
+ \item Activity Probability: a parameterised version of the activity
+value $\gamma$ that can go from deterministic $\gamma \rightarrow \infty$
+to probabilistic $\gamma \rightarrow 0$ .
+\end{itemize}
+
+Each agent chooses the activity which maximises the activity probability according
+ to the parameter $\gamma$.
+The parameter $\alpha$ accounts in a way the ''selfishness`` of the agent because
+when $\alpha=1$ the agent will choose the action that will produce the most likely
+reaction from Alter whereas when $\alpha=0$ the agent will choose the action
+that Alter will expect more.
+
+The problem is then to measure Social Order and see if the dyadic condition is
+able to produce high values of social order. There are 2 different points
+of view: a system view and an individual view.
+
+At the individual level we can re-use the EC function to compute how certain
+an agent is when it selects a message.
+The average certainty $O_AV$ has a high value when certainty is high and thus
+indicates high social order.
+
+At the system level we can measure:
+\begin{itemize}
+ \item the average number of different activities $N_D$ selected during the
+time interval: the lower the number the higher the order. An observer will
+deduce that high social order is achieved if agents always select the same
+activities out of a vast selection set.
+ \item predictability of an activity $O_p$ or social integration: it measures
+how predictable an activity of a randomly drawn agent Ego is, given the
+activity presented on the sign by another randomly drawn agent Alter.
+\end{itemize}
+
+We can interpret the $O_p$ value as an index of the pattern formation in
+the behaviour of action selection. The actors formed a closed system of
+interaction because they are required to develop mutually predictive trust,
+this closure indicates a first order separation degree between a system and its environment.
+
+\subsection{Results}
+For the dyadic case social order as measured either by $N_D$ and $O_AV$ emerges
+for any parameter setting in $\alpha,\gamma, N$ with stable activity patterns
+following robust to small disturbances.
+Measuring social integration for the dyadic case is trivial because there are
+only 2 agents who interacted with each other and thus it will be $O_p=1$.
+
+The big challenge is then to scale up the dyadic case to the multi agent case.
+If we have a population of few $M$ agents and we choose a random selection strategy
+to pair interactions,
+social order is high in terms of $O_P$ because is possible to predict each agent's 
+reaction with a high degree of accuracy.
+However at the individual level $O_AV$ is low because each agent is using the
+ same memory to predict interactions with different agents.
+As a consequence increasing $M$ decreases the $O_P$ system order.
+
+Dittritch discovered that there are 2 changes required to produce high social
+order with an increasing number of agents:
+\begin{itemize}
+ \item agents must calculate Expectation-Expectation from observation of the interaction of other agents
+ \item agents must use only Expectation-Expectation for activity selection ($\alpha=0$)
+\end{itemize}
+
+At the individual level agents are cognitive entities able to perceive, memorise,
+generalise and to make predictions.
+For society to emerge they must be able to observe the interactions between others.
+
+\subsection{Discussion}
+The results of such a model were quite promising but there are also some weaknesses:
+\begin{itemize}
+ \item the system operates exclusively on a symbolic communicative system
+ \item the system does not distinguish between actions which manipulate the environment 
+and communications 
+ \item the system is discrete and cannot operate in the analog domain
+\end{itemize}
+
+The mentioned issues were the main drives for the model described in this thesis because 
+if such a social system needs to be implemented in the real world, the agents 
+or robots needs to have a separate layer, one for the actions in the environment and one
+ for the communicative events which are essentially symbolics.
+Another desired property is the use of analogic based controllers which can 
+then be implemented in very fast reactive electronic controllers or also 
+digitized and implemented on a micro controller.
+In the next section, I am going to describe the framework used to achieve such targets.
+
+
+

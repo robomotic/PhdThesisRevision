@@ -1,0 +1,182 @@
+\select@language {english}
+\contentsline {chapter}{\numberline {1}Introduction}{21}
+\contentsline {section}{\numberline {1.1}A theory of social systems}{21}
+\contentsline {section}{\numberline {1.2}Modelling approach ABM}{22}
+\contentsline {section}{\numberline {1.3}Objectives and Motivation of the thesis}{22}
+\contentsline {section}{\numberline {1.4}Outline of thesis}{23}
+\contentsline {chapter}{\numberline {2}Background literature}{27}
+\contentsline {section}{\numberline {2.1}Introduction to the theory of Societies}{27}
+\contentsline {section}{\numberline {2.2}A brief history of sociology}{27}
+\contentsline {subsection}{\numberline {2.2.1}Autopoiesis: from biology to social systems}{28}
+\contentsline {subsection}{\numberline {2.2.2}Neural systems}{31}
+\contentsline {subsection}{\numberline {2.2.3}Breitenberg vehicles}{35}
+\contentsline {subsection}{\numberline {2.2.4}Communication}{36}
+\contentsline {section}{\numberline {2.3}Social order generation by double contingency}{40}
+\contentsline {subsection}{\numberline {2.3.1}Methods}{40}
+\contentsline {subsection}{\numberline {2.3.2}Results}{42}
+\contentsline {subsection}{\numberline {2.3.3}Discussion}{43}
+\contentsline {section}{\numberline {2.4}Agent Based Modelling}{43}
+\contentsline {subsection}{\numberline {2.4.1}SWARM and ABM}{43}
+\contentsline {subsection}{\numberline {2.4.2}Single agent VS multi agent learning}{45}
+\contentsline {section}{\numberline {2.5}Information theory for closed loop controllers}{46}
+\contentsline {subsection}{\numberline {2.5.1}Introduction: closed loop controllers}{46}
+\contentsline {subsection}{\numberline {2.5.2}Regulation and entropy}{50}
+\contentsline {subsection}{\numberline {2.5.3}Open loop regulation}{52}
+\contentsline {subsection}{\numberline {2.5.4}Closed loop regulation}{53}
+\contentsline {subsection}{\numberline {2.5.5}The law of requisite variety}{53}
+\contentsline {subsection}{\numberline {2.5.6}First law of requisite variety}{54}
+\contentsline {paragraph}{Corollary 1:}{55}
+\contentsline {subsection}{\numberline {2.5.7}Second law of requisite variety}{55}
+\contentsline {subsection}{\numberline {2.5.8}A perfect regulation example}{55}
+\contentsline {chapter}{\numberline {3}Research work}{57}
+\contentsline {section}{\numberline {3.1}Introduction: Social Modelling of Artificial Agents}{57}
+\contentsline {subsection}{\numberline {3.1.1}Methods: A Model of the World}{58}
+\contentsline {subsection}{\numberline {3.1.2}Methods: ICO learning module}{58}
+\contentsline {subsection}{\numberline {3.1.3}Methods: agent controller}{61}
+\contentsline {subsection}{\numberline {3.1.4}Methods: avoidance behaviour}{61}
+\contentsline {subsection}{\numberline {3.1.5}Methods: Agents and satedness communication}{62}
+\contentsline {paragraph}{Aggressive agents}{64}
+\contentsline {subsection}{\numberline {3.1.6}Methods: Food attraction}{64}
+\contentsline {paragraph}{Constant food production}{64}
+\contentsline {paragraph}{Limited food production}{64}
+\contentsline {subsection}{\numberline {3.1.7}Controller summary}{66}
+\contentsline {subsection}{\numberline {3.1.8}Broadcasting signal mechanism}{66}
+\contentsline {subsubsection}{Honest food proximal signalling}{67}
+\contentsline {subsubsection}{Dishonest food proximal signalling}{67}
+\contentsline {subsection}{\numberline {3.1.9}Results: analysis of formation in different cases}{68}
+\contentsline {subsubsection}{Sub-system formation and adaptive communication}{68}
+\contentsline {subsubsection}{Foraging performance and signalling strategies}{71}
+\contentsline {subsubsection}{Adaptive vs non communicative foraging performance}{73}
+\contentsline {subsubsection}{Honest behaviour and unlimited resources}{74}
+\contentsline {subsubsection}{Honest behaviour and limited resources}{75}
+\contentsline {subsubsection}{Stability analysis for changes in population}{77}
+\contentsline {subsection}{\numberline {3.1.10}Discussion: sub system formation in the social model}{78}
+\contentsline {section}{\numberline {3.2}An input based information measure for adaptive controllers}{79}
+\contentsline {subsection}{\numberline {3.2.1}Introduction to the maxcorr input measure}{80}
+\contentsline {subsection}{\numberline {3.2.2}Methods: controller assumptions}{80}
+\contentsline {subsection}{\numberline {3.2.3}Methods: complex model configuration}{81}
+\contentsline {subsection}{\numberline {3.2.4}Methods: cross correlation and ICO learning}{83}
+\contentsline {subsection}{\numberline {3.2.5}Methods: a simplified model}{84}
+\contentsline {subsection}{\numberline {3.2.6}Methods: anticipatory information}{85}
+\contentsline {subsection}{\numberline {3.2.7}Results: complex model results}{87}
+\contentsline {paragraph}{Experiment with 2 agents and 2 obstacles}{89}
+\contentsline {paragraph}{Experiment with 4 agents and 2 obstacles}{89}
+\contentsline {paragraph}{Adding one agent}{93}
+\contentsline {subsection}{\numberline {3.2.8}Results: simple case results}{93}
+\contentsline {subsection}{\numberline {3.2.9}Results: simplified social model results}{94}
+\contentsline {subsection}{\numberline {3.2.10}Results: differentiation and information measure}{96}
+\contentsline {subsection}{\numberline {3.2.11}Discussion}{99}
+\contentsline {section}{\numberline {3.3}Information flow for adaptive controllers}{100}
+\contentsline {subsection}{\numberline {3.3.1}Introduction: Ashby's theory}{100}
+\contentsline {subsection}{\numberline {3.3.2}Methods: Ashby's law of requisite variety}{101}
+\contentsline {paragraph}{Definition and properties}{102}
+\contentsline {subsection}{\numberline {3.3.3}Methods: the law of adaptive requisite variety}{103}
+\contentsline {subsection}{\numberline {3.3.4}Methods: information flow for adaptive predictive controllers}{105}
+\contentsline {subsection}{\numberline {3.3.5}Methods: information flow applied to MISO controller}{105}
+\contentsline {subsection}{\numberline {3.3.6}Results}{107}
+\contentsline {subsection}{\numberline {3.3.7}Discussion}{108}
+\contentsline {section}{\numberline {3.4}Introduction: information flow in Q-learning}{111}
+\contentsline {subsection}{\numberline {3.4.1}Methods: reinforcement learning }{111}
+\contentsline {subsection}{\numberline {3.4.2}Methods: Q-Learning algorithm}{113}
+\contentsline {subsection}{\numberline {3.4.3}Methods: Q-Learning connectionist}{114}
+\contentsline {subsection}{\numberline {3.4.4}Methods: the robot and the task}{114}
+\contentsline {subsection}{\numberline {3.4.5}Results: avoidance case}{115}
+\contentsline {subsection}{\numberline {3.4.6}Discussion}{118}
+\contentsline {section}{\numberline {3.5}The Predictive Performance measure}{119}
+\contentsline {subsection}{\numberline {3.5.1}Introduction to closed loop measures}{119}
+\contentsline {subsection}{\numberline {3.5.2}Methods: experimental setup}{121}
+\contentsline {subsection}{\numberline {3.5.3}Methods: learning algorithm}{123}
+\contentsline {subsection}{\numberline {3.5.4}Methods: symbols and conventions}{124}
+\contentsline {subsubsection}{Symbols and conventions}{124}
+\contentsline {subsubsection}{Input reflex entropy}{125}
+\contentsline {subsubsection}{Retinal predictive entropy}{125}
+\contentsline {subsubsection}{Mutual information}{126}
+\contentsline {subsection}{\numberline {3.5.5}Methods: Predictive Performance measure}{127}
+\contentsline {subsection}{\numberline {3.5.6}Results: behavioural experiments}{129}
+\contentsline {subsubsection}{Task}{129}
+\contentsline {subsubsection}{Behavioural performance}{129}
+\contentsline {subsubsection}{A simple non-learning robot}{130}
+\contentsline {subsubsection}{A learning robot}{133}
+\contentsline {paragraph}{Predictive Performance after learning}{133}
+\contentsline {paragraph}{Predictive Performance during learning}{137}
+\contentsline {subsection}{\numberline {3.5.7}Results: application of PP to social systems}{139}
+\contentsline {subsection}{\numberline {3.5.8}Discussion}{141}
+\contentsline {chapter}{\numberline {4}Conclusion}{147}
+\contentsline {section}{\numberline {4.1}Summary of results}{147}
+\contentsline {subsection}{\numberline {4.1.1}Discussion}{148}
+\contentsline {subsection}{\numberline {4.1.2}Modelling choices}{149}
+\contentsline {subsection}{\numberline {4.1.3}A theory of language}{150}
+\contentsline {subsection}{\numberline {4.1.4}Language model and control}{153}
+\contentsline {subsection}{\numberline {4.1.5}What is going on in an animal's head?}{155}
+\contentsline {subsection}{\numberline {4.1.6}Do signals convey information about the external world?}{155}
+\contentsline {subsection}{\numberline {4.1.7}Do signallers intend to alter the behaviour of receivers?}{155}
+\contentsline {section}{\numberline {4.2}Future work}{157}
+\contentsline {subsection}{\numberline {4.2.1}Model based checking for property verification}{157}
+\contentsline {subsection}{\numberline {4.2.2}Economic models of learning agents}{158}
+\contentsline {subsection}{\numberline {4.2.3}Homogeneity in societies}{158}
+\contentsline {subsection}{\numberline {4.2.4}Symmetry breaking in collective decision-making}{159}
+\contentsline {section}{\numberline {4.3}Information theory and control}{160}
+\contentsline {subsection}{\numberline {4.3.1}On the perils of predictive learning}{160}
+\contentsline {subsection}{\numberline {4.3.2}Prediction or evolution}{161}
+\contentsline {subsection}{\numberline {4.3.3}Prediction and learning}{162}
+\contentsline {subsection}{\numberline {4.3.4}How much information is required for prediction?}{164}
+\contentsline {subsection}{\numberline {4.3.5}Predictive information and model complexity}{164}
+\contentsline {subsection}{\numberline {4.3.6}Prediction and compression are related}{165}
+\contentsline {subsection}{\numberline {4.3.7}Entropy reduction measure in learning agents}{166}
+\contentsline {section}{\numberline {4.4}Industrial applications}{171}
+\contentsline {chapter}{\numberline {5}Appendix}{173}
+\contentsline {section}{\numberline {5.1}ICO learning parameters}{173}
+\contentsline {subsection}{\numberline {5.1.1}ICO learning}{173}
+\contentsline {section}{\numberline {5.2}Simulation details}{174}
+\contentsline {subsection}{\numberline {5.2.1}Obstacle avoidance}{177}
+\contentsline {subsection}{\numberline {5.2.2}Food attraction parameters}{177}
+\contentsline {subsection}{\numberline {5.2.3}Agent with food attraction parameters}{178}
+\contentsline {subsection}{\numberline {5.2.4}Hysteresys effect}{178}
+\contentsline {subsection}{\numberline {5.2.5}Physical engine and kinematic model}{178}
+\contentsline {subsection}{\numberline {5.2.6}Simplified social simulator}{180}
+\contentsline {subsection}{\numberline {5.2.7}Screenshots}{180}
+\contentsline {subsection}{\numberline {5.2.8}Simulation details for information flow}{180}
+\contentsline {subsection}{\numberline {5.2.9}Simulation details for Q-learning robot}{180}
+\contentsline {section}{\numberline {5.3}EMPASS: a parallel ABM simulator}{181}
+\contentsline {subsection}{\numberline {5.3.1}Traditional computing paradigm}{181}
+\contentsline {subsection}{\numberline {5.3.2}Parallel computing paradigm}{181}
+\contentsline {subsection}{\numberline {5.3.3}Flynn's Classical Taxonomy}{182}
+\contentsline {subsection}{\numberline {5.3.4}Open MP}{186}
+\contentsline {subsection}{\numberline {5.3.5}ABM simulation engine with OpenMp}{188}
+\contentsline {subsection}{\numberline {5.3.6}Pruning the parallel simulator}{192}
+\contentsline {subsection}{\numberline {5.3.7}Discussion}{192}
+\contentsline {section}{\numberline {5.4}Information theory appendix}{193}
+\contentsline {subsection}{\numberline {5.4.1}Variety}{193}
+\contentsline {subsection}{\numberline {5.4.2}Entropy}{194}
+\contentsline {subsection}{\numberline {5.4.3}Mutual information}{194}
+\contentsline {subsection}{\numberline {5.4.4}Motor output entropy}{195}
+\contentsline {subsection}{\numberline {5.4.5}Retinal predictive entropy}{195}
+\contentsline {subsection}{\numberline {5.4.6}The law of requisite variety for predictive learning}{195}
+\contentsline {section}{\numberline {5.5}Input correlation method}{196}
+\contentsline {subsection}{\numberline {5.5.1}Cross correlation corrections}{196}
+\contentsline {subsection}{\numberline {5.5.2}Coherence function}{197}
+\contentsline {subsection}{\numberline {5.5.3}Energy and power of digital signal}{197}
+\contentsline {subsection}{\numberline {5.5.4}Alternative measures for analog signals}{197}
+\contentsline {subsection}{\numberline {5.5.5}Alternative measures for discrete time series}{198}
+\contentsline {section}{\numberline {5.6}Implementation of a swarm system}{198}
+\contentsline {subsection}{\numberline {5.6.1}The playground}{198}
+\contentsline {subsection}{\numberline {5.6.2}Hardware platform and software development}{199}
+\contentsline {subsection}{\numberline {5.6.3}Lego NXT mindstorm}{200}
+\contentsline {subsection}{\numberline {5.6.4}Toppers}{201}
+\contentsline {subsection}{\numberline {5.6.5}OSEK}{201}
+\contentsline {subsection}{\numberline {5.6.6}OIL}{205}
+\contentsline {subsection}{\numberline {5.6.7}LegoRobot}{209}
+\contentsline {subsubsection}{Task functions}{210}
+\contentsline {subsubsection}{How to guarantee real time operations?}{210}
+\contentsline {subsubsection}{Communication and identification}{212}
+\contentsline {subsection}{\numberline {5.6.8}Pololu}{215}
+\contentsline {subsection}{\numberline {5.6.9}Code and demos}{216}
+\contentsline {section}{\numberline {5.7}Language terminology}{216}
+\contentsline {section}{\numberline {5.8}Bayesian inference}{216}
+\contentsline {subsection}{\numberline {5.8.1}Gamma prediction function}{216}
+\contentsline {subsection}{\numberline {5.8.2}Erlang prediction function}{217}
+\contentsline {subsection}{\numberline {5.8.3}Gaussian prediction function}{217}
+\contentsline {section}{\numberline {5.9}Simmetry breaking in social tasks}{217}
+\contentsline {subsubsection}{Introduction}{219}
+\contentsline {subsubsection}{Virtual auction model}{221}
+\contentsline {subsubsection}{Discussion}{221}

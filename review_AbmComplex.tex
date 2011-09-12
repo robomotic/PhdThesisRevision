@@ -1,0 +1,116 @@
+\section{Agent Based Modelling}
+\label{Chapter3:ABMcomplex}
+This Section contains a summary of current modelling strategies for the simulation
+of software agents which interact with each other like animal groups or human societies.
+
+\subsection{SWARM and ABM}
+The simulations of artificial agents in this Thesis were done by using an ABM approach.
+In literature there is, unfortunately, a conflict in notations as well as several debates
+in the differences between MAS\nomenclature{MAS}{Multi Agent System}, ABM (agent based models) and
+SWARM\nomenclature{SWARM}{Collective behaviour of animals} intelligence.
+The expression SWARM intelligence \citep{SwarmIntelligence} was introduced by
+Gerardo Beni and Jing Wang in 1989, in the context of cellular robotic systems.
+SWARM refers to a form of collective behaviour exhibited by groups of
+ homogeneous animals: flocking is the swarm behaviour of birds,
+herding is the swarm behaviour in quadrupeds, schooling is the swarm behaviour
+in fish.
+The definition given by the leader in this field Dr.Marco Dorigo follows:
+\begin{quote}
+Swarm intelligence is the discipline that deals with natural and artificial systems
+composed of many individuals that coordinate using decentralized control and self-organization.
+In particular, the discipline focuses on the collective behaviours that result from
+the local interactions of the individuals with each other and with their environment.
+Examples of systems studied by swarm intelligence are: colonies of ants and termites,
+schools of fish, flocks of birds and herds of land animals. Some human artefacts also
+fall into the domain of swarm intelligence, notably some multi-robot systems,
+and also certain computer programs that are written to tackle optimization and
+data analysis problems \citep{Dorigo:2007}.
+\end{quote}
+Swarm intelligence has been used to model the clustering behaviour of
+ants, the nest building behaviour of wasps and termites,
+flocking and schooling in birds and fish.
+Particle swarm optimisation \citep{James1995:PSO,JamesShi2001:PSOgeneral}
+is a population based stochastic optimisation technique for the solution of
+continuous optimisation problems and therefore is used more in the realm of
+functional mathematics.
+
+
+The simulations used in this Thesis cannot be considered as Swarm simulations because
+the agents are active learners and share some features with human like societies
+rather than animal societies like ants.
+Therefore the author will use the term ABM for referring to the actual implementation.
+Nevertheless, there are some human behaviours like panic behaviour that can be
+described as herding behaviour and thus can be still classified as Swarm behaviour
+\citep{Bonomi2009:PedestrianDynamic,Georgoudas2006:PedestrianEvacuation,Kirchner2002:CASim,
+Varas2007:CAevacuation,Zong2010:MultiObjAnt}.
+The choice of the ABM term for my simulations in this Thesis was made for clarity
+and to classify the work in this fast growing sector.
+
+Research in ABM involves the investigation of autonomous, rational and flexible
+behaviour for entities such as software programs or robots, and their interaction and
+coordination in several areas including: robotics \citep{Kitano1997},
+information retrieval and management \citep{IntroMultiAgent1,IntroMultiAgent2}
+ and simulation \citep{GilbertConte1995:AIsocieties}. When designing agent systems, it is
+impossible to anticipate all the potential situations an agent may encounter and to optimally
+specify an agent behaviour in advance. Agents therefore have to learn from,
+and adapt to, their environment, especially in a multi-agent setting.
+This is especially true for multi-agent systems where in many cases global behaviour
+emerges rather than being pre-defined.
+
+ABM can be seen as the natural extension of the Ising model \citep{Ernst1925:Model} or
+Cellular Automata-like models \citep{Wolfram1994:CellAutomata} which have been very successful
+in the past decades at describing various physical phenomena like Ferromagnetic materials.
+
+One important characteristic of ABMs, which distinguishes them from Cellular Automata,
+is the potential asynchrony of the interactions among, and between, agents and
+their environments. In ABM agents typically do not simultaneously perform actions at
+constant time-steps, as in CAs or boolean networks. Rather, their actions follow
+discrete-event cues or a sequential schedule of interactions. The discrete-event
+setup allows for the cohabitation of agents with different environmental experiences.
+Also ABMs are not necessarily grid-based like the Conway's game of life \citep{Gardner1970:GameLife} 
+and can also simulate analogic agent controllers.
+In particular, the richness of detail one can take into account in ABM makes
+this methodology very appealing for the simulation of biological, social and
+economic systems; where the behaviour and the heterogeneity of the interacting
+components are not safely reducible to some reduced models or differential equations.
+
+In essence the two reasons for the choice of ABM in this thesis are:
+\begin{itemize}
+ \item simulation in real time of parallel analog or discrete processes
+ \item flexibility in the implementation of hardware based robots
+\end{itemize}
+To make a concrete case in Appendix \ref{Appendix:RobotSystem}, the software agent 
+was implemented on a robotic kit called Lego and on a small robot called Pololu 3PI 
+and in Appendix \ref{Appendix:simulation} there are some code examples taken from
+ the Enki simulator which is able to describe the mechanical and electronical properties
+ of a real Alice or Keplera robot including for example the motor noise and the jerkiness 
+of the stepper motor.
+
+
+
+\subsection{Single agent VS multi agent learning}
+There are two main approaches to ABM systems and learning:
+\begin{itemize}
+ \item ``single agent learning``: existing machine learning algorithms are applied
+directly to single agents in a MAS setting. Consequently, multi-agent learning is only
+seen as an emergent property.
+\item ''multi agent learning``: agents need to cooperate and communicate in order
+to learn effectively.
+\end{itemize}
+
+Single agent learning \citep{StoneVeloso98:RoboCup,Porr2006ICO,PorrNecoISO2003} 
+focuses on how one agent improves
+its individual skills, regardless of the domain in which it is situated.
+As discussed before, thanks to the closed loop property of such controllers the 
+organism can still learn from the others by means of their motor actions which 
+feedback into each others' inputs: each agent perceives the others as part of the environment feedback loop.
+Previous research studies have shown how is possible to create  coordinated group behaviour 
+with pure single-agent learning \citep{Sugawara98learningto}.
+This is also the case, as we are going to see, for the model that is used in my research which
+contains also a communication layer through which agents learn to cooperate in a foraging task.
+Thus in my model each agent learns with a predictive controller \citep{Porr2006ICO}.
+We investigate the influence of communication in the Section \ref{Chapter4:Social adaptation} 
+where the property of double contingency is used succesfully to reproduce social order
+ in artificial societies.
+
+

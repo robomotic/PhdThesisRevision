@@ -1,0 +1,76 @@
+
+\section{Input correlation method}
+\subsection{Cross correlation corrections}
+\label{Appendix:crosscorr}
+Cross correlation measure cannot be applied directly to variable time windows,
+thus correction terms based on the number of samples $N$ must be included.
+Corrected cross correlation measures are: biased, unbiased, normalised.
+Biased estimate of the cross correlation function is:
+\begin{equation}
+ R_{xy,biased}(m)=\frac{1}{N} R_{xy}(m)
+\end{equation}
+Unbiased estimate of the cross-correlation function is:
+\begin{equation}
+ R_{xy,unbiased}(m)=\frac{1}{N-|m|} R_{xy}(m)
+\end{equation}
+Normalised cross correlation is:
+\begin{equation}
+c_{xy}(m)=\frac{1}{N-m} \sum_{1}^{N-m} \frac{x_{i}-\bar{x}}{\sigma_{x}} \frac{y_{i}-\bar{y}}{\sigma_{y}}
+\end{equation}
+where $\bar(x)$ and $\sigma_{x}$ denotes mean and variance of $x$, and $m$ is a time lag.
+\subsection{Coherence function}
+In Laplace domain cross correlation is defined as:
+\begin{equation}
+ C_{xy}(\omega)=(Fx)(\omega)(Fy)*(\omega)
+\end{equation}
+where $(Fx)$ is the Fourier  transform of x, $\omega$ are the discrete
+frequencies ($-N/2<\omega<N/2$) and $*$ means complex conjugation.
+The cross spectrum $C_{xy}(w)$ is a complex number whose normalised amplitude:
+\begin{equation}
+ L_{xy}(\omega)=\frac{|<C_{xy(w)}>|}{\sqrt{<C_{xx}(w)>}\sqrt{<C_{yy}(w)>}}
+\end{equation}
+is called the coherence function and gives a measure of the linear synchronization
+ between x and y as a function of the frequency $\omega$. This measure
+is very useful when synchronisation is limited to some particular frequency
+band, as it's usually the case of EEG signals (see \citep{EEGxcorr} for a review]).
+\subsection{Energy and power of digital signal}
+\label{app:energy}
+For the digital signal $c_{d}(m,k)$, where $d$ is the synapse direction ($d=\{left,right\}$), $m$
+is the value of the cross correlation in the time window of index $k=0,1,..$ with $N_{s}$ samples:
+\begin{itemize}
+\item Energy: $E(c_{d}(k))=\sum_{m=1}^{N_{s}} (c_{d}(m,k))^2$
+\item Power: $P(c_{d}(k))=\frac{\sum_{m=1}^{N_{s}} (c_{d}(m,k))^2}{N_{s}}$
+\end{itemize}
+
+
+\subsection{Alternative measures for analog signals}
+One can apply for instance synchronisation measures for EEG signals
+(for a review \citep{PhysRevE.65.041903}) even if we are not interested to
+detect the (driver-response) relationships between signals. Indeed we already know
+that $x_{1}$ precedes $x_{0}$ in the avoidance case because this relation is a
+physical causal property of the environment. However these measures should
+equally work, with an extra computational cost:
+\begin{enumerate}
+\item linear measures:
+\begin{enumerate}
+\item normalized cross-correlation
+\item coherence function
+\end{enumerate}
+\item non-linear measures:
+\begin{enumerate}
+\item S,H,N
+\item Mutual information and transfer entropy
+\item Hilbert phase analysis
+\item Wavelet phase analysis
+\end{enumerate}
+\end{enumerate}
+
+According to these EEG studies it has been shown that cross correlation is less
+ sensible than non-linear measures because EEG signals are produced by
+non-linear systems, so actual simulations are investigating if this property
+ is true so too in our multi agent system.
+
+\subsection{Alternative measures for discrete time series}
+If we are dealing with discrete signals like spike trains, temporal information
+can be computed by:ISI distance, Rosendal distance,Euclidean distance,
+cross-correlograms, joint peristimulus PSH.

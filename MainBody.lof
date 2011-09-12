@@ -1,0 +1,145 @@
+\select@language {english}
+\addvspace {10\p@ }
+\contentsline {figure}{\numberline {1.1}{\ignorespaces Thesis research aim system}}{23}
+\contentsline {figure}{\numberline {1.2}{\ignorespaces Thesis research aim individual}}{24}
+\addvspace {10\p@ }
+\contentsline {figure}{\numberline {2.1}{\ignorespaces Radical constructivism example}}{29}
+\contentsline {figure}{\numberline {2.2}{\ignorespaces Biological definition of autopoiesis}}{30}
+\contentsline {figure}{\numberline {2.3}{\ignorespaces General definition of autopoiesis}}{31}
+\contentsline {figure}{\numberline {2.4}{\ignorespaces Closed loop reactive system}}{32}
+\contentsline {figure}{\numberline {2.5}{\ignorespaces Closed loop reactive system with disturbance}}{33}
+\contentsline {figure}{\numberline {2.6}{\ignorespaces Closed loop proactive system with disturbance}}{34}
+\contentsline {figure}{\numberline {2.7}{\ignorespaces Double contigency}}{35}
+\contentsline {figure}{\numberline {2.8}{\ignorespaces Braitenberg vehicles positive feedback}}{36}
+\contentsline {figure}{\numberline {2.9}{\ignorespaces Braitenberg vehicles negative feedback}}{37}
+\contentsline {figure}{\numberline {2.10}{\ignorespaces Communication is the basis for society}}{38}
+\contentsline {figure}{\numberline {2.11}{\ignorespaces Communication between alter and ego}}{39}
+\contentsline {figure}{\numberline {2.12}{\ignorespaces Expectations and communication structures}}{41}
+\contentsline {figure}{\numberline {2.13}{\ignorespaces Classical PID controller}}{46}
+\contentsline {figure}{\numberline {2.14}{\ignorespaces Gibson cybernetic approach}}{47}
+\contentsline {figure}{\numberline {2.15}{\ignorespaces Information asymmetry in the organism}}{48}
+\contentsline {figure}{\numberline {2.16}{\ignorespaces Bayes formulation in traditional control}}{49}
+\contentsline {figure}{\numberline {2.17}{\ignorespaces Bayes formulation in predictive control}}{49}
+\contentsline {figure}{\numberline {2.18}{\ignorespaces Empowerment from Polani}}{50}
+\contentsline {figure}{\numberline {2.19}{\ignorespaces Foveation task}}{51}
+\contentsline {figure}{\numberline {2.20}{\ignorespaces Ay information measure}}{51}
+\contentsline {figure}{\numberline {2.21}{\ignorespaces Ashby requisite variety}}{52}
+\contentsline {figure}{\numberline {2.22}{\ignorespaces Ashby law in predictive controllers}}{54}
+\addvspace {10\p@ }
+\contentsline {figure}{\numberline {3.1}{\ignorespaces Social computational model}}{59}
+\contentsline {figure}{\numberline {3.2}{\ignorespaces Agent learns with the ICO learning}}{60}
+\contentsline {figure}{\numberline {3.3}{\ignorespaces Avoidance learning behaviour}}{62}
+\contentsline {figure}{\numberline {3.4}{\ignorespaces Energy state or hunger of the artificial agent}}{63}
+\contentsline {figure}{\numberline {3.5}{\ignorespaces Attractive behaviour for other agents}}{65}
+\contentsline {figure}{\numberline {3.6}{\ignorespaces Attraction learning behaviour for food}}{66}
+\contentsline {figure}{\numberline {3.7}{\ignorespaces Full schematic of the controller}}{67}
+\contentsline {figure}{\numberline {3.8}{\ignorespaces Sub system formation in different conditions}}{70}
+\contentsline {subfigure}{\numberline {(a)}{\ignorespaces {No food signal, ratio $N=20,M=4$}}}{70}
+\contentsline {subfigure}{\numberline {(b)}{\ignorespaces {No food signal, ratio $N=20,M=16$}}}{70}
+\contentsline {subfigure}{\numberline {(c)}{\ignorespaces {Honest food signal, ratio $N=20,M=4$}}}{70}
+\contentsline {subfigure}{\numberline {(d)}{\ignorespaces {Honest food signal, ratio $N=20,M=16$}}}{70}
+\contentsline {subfigure}{\numberline {(e)}{\ignorespaces {Dishonest food signal, ratio $N=20,M=4$, 18 cheaters}}}{70}
+\contentsline {subfigure}{\numberline {(f)}{\ignorespaces {Dishonest food signal, ratio $N=20,M=16$, 18 cheaters}}}{70}
+\contentsline {figure}{\numberline {3.9}{\ignorespaces Foraging performance comparison}}{73}
+\contentsline {figure}{\numberline {3.10}{\ignorespaces Self organisation with honest behaviour and unlimited resources}}{75}
+\contentsline {subfigure}{\numberline {(a)}{\ignorespaces {Case considering scarce resources: in non adaptive-communication only seekers are present (top line is constant to 20 agents), in adaptive communication sub-system formation is achieved and parasites become more than seekers after 80 seconds}}}{75}
+\contentsline {subfigure}{\numberline {(b)}{\ignorespaces {Case considering scarce resources: in non adaptive-communication only seekers are present (top line is constant to 20 agents), in adaptive communication sub-system formation is achieved and parasites are in equilibrium with seekers after 200 seconds}}}{75}
+\contentsline {figure}{\numberline {3.11}{\ignorespaces Self organisation with honest behaviour and limited resources}}{76}
+\contentsline {subfigure}{\numberline {(a)}{\ignorespaces {Case considering scarce resources: in non adaptive-communication only seekers are present (top line is constant to 20 agents), in adaptive communication sub-system formation is achieved and parasites become more than seekers after 200 seconds}}}{76}
+\contentsline {subfigure}{\numberline {(b)}{\ignorespaces {Case considering scarce resources: in non adaptive-communication only seekers are present (top line is constant to 20 agents), in adaptive communication sub-system formation is achieved and parasites are in equilibrium with seekers after 200 seconds}}}{76}
+\contentsline {figure}{\numberline {3.12}{\ignorespaces Self organisation sensitivity to agent parameters}}{77}
+\contentsline {figure}{\numberline {3.13}{\ignorespaces Avoidance ICO behaviour}}{82}
+\contentsline {figure}{\numberline {3.14}{\ignorespaces Simplified control model}}{86}
+\contentsline {figure}{\numberline {3.15}{\ignorespaces Temporal signal development during learning}}{86}
+\contentsline {figure}{\numberline {3.16}{\ignorespaces Max correlation for non learning agents}}{88}
+\contentsline {figure}{\numberline {3.17}{\ignorespaces Max correlation for two learning agents}}{90}
+\contentsline {subfigure}{\numberline {(a)}{\ignorespaces {Cross correlation maximum $M(c_{d}(k))$ for left (straight) and right (dashed) synapses. Measures from agent 0.}}}{90}
+\contentsline {subfigure}{\numberline {(b)}{\ignorespaces {Energy $E(xcorr_{d}(k))$ for left (straight) and right (dashed) synapses. Measures from agent 0.}}}{90}
+\contentsline {subfigure}{\numberline {(c)}{\ignorespaces {Cross correlation maximum $M(c_{d}(k))$ for left (straight) and right (dashed) synapses. Measures from agent 1.}}}{90}
+\contentsline {subfigure}{\numberline {(d)}{\ignorespaces {Energy $E(xcorr_{d}(k))$ for left (straight) and right (dashed) synapses. Measures from the agent 1.}}}{90}
+\contentsline {figure}{\numberline {3.18}{\ignorespaces Max correlation for 4 learning agents A}}{91}
+\contentsline {subfigure}{\numberline {(a)}{\ignorespaces {Cross correlation maximum $M(c_{d}(k))$ when $N=4$ agents and $M=2$ obstacles for left (straight) and right (dashed) synapses. Measures from agent 0.}}}{91}
+\contentsline {subfigure}{\numberline {(b)}{\ignorespaces {Energy $E(xcorr_{d}(k))$ when $N=4$ agents and $M=2$ obstacles for left (straight) and right (dashed) synapses. Measures from the agent 0.}}}{91}
+\contentsline {subfigure}{\numberline {(c)}{\ignorespaces {Cross correlation maximum $M(c_{d}(k))$ for left (straight) and right (dashed) synapses. Measures from agent 1.}}}{91}
+\contentsline {subfigure}{\numberline {(d)}{\ignorespaces {Energy $E(xcorr_{d}(k))$ for left (straight) and right (dashed) synapses. Measures from the agent 1. Learning starts after the first window.}}}{91}
+\contentsline {figure}{\numberline {3.19}{\ignorespaces Max correlation for 4 learning agents B}}{92}
+\contentsline {subfigure}{\numberline {(a)}{\ignorespaces {Cross correlation maximum $M(c_{d}(k))$ for left (straight) and right (dashed) synapses. Measures from agent 2.}}}{92}
+\contentsline {subfigure}{\numberline {(b)}{\ignorespaces {Energy $E(xcorr_{d}(k))$ left (straight) and right (dashed) synapses. Measures from the agent 2. }}}{92}
+\contentsline {subfigure}{\numberline {(c)}{\ignorespaces {Cross correlation maximum $M(c_{d}(k))$ for left (straight) and right (dashed) synapses. Measures from agent 3.}}}{92}
+\contentsline {subfigure}{\numberline {(d)}{\ignorespaces {Energy $E(xcorr_{d}(k))$ for left (straight) and right (dashed) synapses. Measures from the agent 3.}}}{92}
+\contentsline {figure}{\numberline {3.20}{\ignorespaces Max correlation variation analysis}}{94}
+\contentsline {figure}{\numberline {3.21}{\ignorespaces Max correlation application to a simplified case}}{95}
+\contentsline {figure}{\numberline {3.22}{\ignorespaces Max correlation and learning in the simplified case}}{97}
+\contentsline {figure}{\numberline {3.23}{\ignorespaces Max corr computed on the social system}}{98}
+\contentsline {figure}{\numberline {3.24}{\ignorespaces Law of requisite variety for learning and non learning agents}}{103}
+\contentsline {figure}{\numberline {3.25}{\ignorespaces MISO controller with triple behaviour}}{106}
+\contentsline {figure}{\numberline {3.26}{\ignorespaces Information flow before and after learning}}{109}
+\contentsline {figure}{\numberline {3.27}{\ignorespaces Information flow and capacity}}{110}
+\contentsline {figure}{\numberline {3.28}{\ignorespaces Q learning robot}}{115}
+\contentsline {figure}{\numberline {3.29}{\ignorespaces Q learning environment}}{116}
+\contentsline {figure}{\numberline {3.30}{\ignorespaces Information flow in the adaptive controller}}{120}
+\contentsline {figure}{\numberline {3.31}{\ignorespaces Retinal robot setup}}{122}
+\contentsline {figure}{\numberline {3.32}{\ignorespaces Track shape of increasing curvature}}{129}
+\contentsline {figure}{\numberline {3.33}{\ignorespaces Simple retinal robot}}{130}
+\contentsline {figure}{\numberline {3.34}{\ignorespaces Performance for the shallow track}}{135}
+\contentsline {figure}{\numberline {3.35}{\ignorespaces Performance for the intermediate track}}{136}
+\contentsline {figure}{\numberline {3.36}{\ignorespaces Performance for the step track}}{138}
+\contentsline {figure}{\numberline {3.37}{\ignorespaces Reflex only robot on the maze track}}{139}
+\contentsline {figure}{\numberline {3.38}{\ignorespaces Full learning robot on the maze track}}{140}
+\contentsline {figure}{\numberline {3.39}{\ignorespaces Predictive Measure computed for the social system}}{142}
+\contentsline {subfigure}{\numberline {(a)}{\ignorespaces {When there are 10 agents and 5 food sources, 5 seekers and 5 parasites are generated}}}{142}
+\contentsline {subfigure}{\numberline {(b)}{\ignorespaces {When there are 10 agents and 2 food sources, 2 seekers and 8 parasites are generated}}}{142}
+\contentsline {subfigure}{\numberline {(c)}{\ignorespaces {When there are 10 agents and 8 food sources, 8 seekers and 2 parasites are generated}}}{142}
+\addvspace {10\p@ }
+\contentsline {figure}{\numberline {4.1}{\ignorespaces Ritualization model}}{150}
+\contentsline {figure}{\numberline {4.2}{\ignorespaces Luc Steels language model}}{153}
+\contentsline {figure}{\numberline {4.3}{\ignorespaces More advanced language model}}{154}
+\addvspace {10\p@ }
+\contentsline {figure}{\numberline {5.1}{\ignorespaces Agent learns with the ICO learning}}{173}
+\contentsline {figure}{\numberline {5.2}{\ignorespaces Bode diagrams for different Q values}}{175}
+\contentsline {subfigure}{\numberline {(a)}{\ignorespaces {Bode diagram of $h$ filter when $Q>\infty $}}}{175}
+\contentsline {subfigure}{\numberline {(b)}{\ignorespaces {Bode diagram of $h$ filter when $Q \rightarrow 0$}}}{175}
+\contentsline {figure}{\numberline {5.3}{\ignorespaces Software simulation in Enki A}}{181}
+\contentsline {figure}{\numberline {5.4}{\ignorespaces Software simulation in Enki B}}{182}
+\contentsline {figure}{\numberline {5.5}{\ignorespaces Von Neumann architecture}}{183}
+\contentsline {figure}{\numberline {5.6}{\ignorespaces Serial Problem computation}}{183}
+\contentsline {figure}{\numberline {5.7}{\ignorespaces Serial Problem computation}}{184}
+\contentsline {figure}{\numberline {5.8}{\ignorespaces SISD architecture}}{184}
+\contentsline {subfigure}{\numberline {(a)}{\ignorespaces {SISD diagram}}}{184}
+\contentsline {subfigure}{\numberline {(b)}{\ignorespaces {SISD program}}}{184}
+\contentsline {figure}{\numberline {5.9}{\ignorespaces SIMD architecture}}{185}
+\contentsline {subfigure}{\numberline {(a)}{\ignorespaces {SISD diagram}}}{185}
+\contentsline {subfigure}{\numberline {(b)}{\ignorespaces {SISD program}}}{185}
+\contentsline {figure}{\numberline {5.10}{\ignorespaces MISD architecture}}{185}
+\contentsline {subfigure}{\numberline {(a)}{\ignorespaces {SISD diagram}}}{185}
+\contentsline {subfigure}{\numberline {(b)}{\ignorespaces {SISD program}}}{185}
+\contentsline {figure}{\numberline {5.11}{\ignorespaces SISD architecture}}{186}
+\contentsline {subfigure}{\numberline {(a)}{\ignorespaces {SISD diagram}}}{186}
+\contentsline {subfigure}{\numberline {(b)}{\ignorespaces {SISD program}}}{186}
+\contentsline {figure}{\numberline {5.12}{\ignorespaces The Thread model}}{187}
+\contentsline {figure}{\numberline {5.13}{\ignorespaces OpenMP language}}{187}
+\contentsline {figure}{\numberline {5.14}{\ignorespaces The message passing model}}{189}
+\contentsline {figure}{\numberline {5.15}{\ignorespaces Empass simulator}}{190}
+\contentsline {figure}{\numberline {5.16}{\ignorespaces OpenMP fork loop}}{191}
+\contentsline {figure}{\numberline {5.17}{\ignorespaces Pruning parallel simulations}}{193}
+\contentsline {figure}{\numberline {5.18}{\ignorespaces Playground setup}}{199}
+\contentsline {figure}{\numberline {5.19}{\ignorespaces Lego NXT robot implementation}}{200}
+\contentsline {figure}{\numberline {5.20}{\ignorespaces ATMEL AVR architecture}}{202}
+\contentsline {subfigure}{\numberline {(a)}{\ignorespaces {LegoRobot bottom view: left and right light sensors}}}{203}
+\contentsline {subfigure}{\numberline {(b)}{\ignorespaces {LegoRobot up view: left and right contact senros and LCD display}}}{203}
+\contentsline {figure}{\numberline {5.21}{\ignorespaces Software interfaces inside ECU}}{204}
+\contentsline {figure}{\numberline {5.22}{\ignorespaces Processing levels of the OSEK operating system}}{204}
+\contentsline {figure}{\numberline {5.23}{\ignorespaces Example of development process for applications}}{205}
+\contentsline {figure}{\numberline {5.24}{\ignorespaces Bluetooth log diagram}}{211}
+\contentsline {figure}{\numberline {5.25}{\ignorespaces Real time task allocation}}{211}
+\contentsline {figure}{\numberline {5.26}{\ignorespaces Controller task allocation}}{213}
+\contentsline {figure}{\numberline {5.27}{\ignorespaces The bluetooth data logging structure.}}{214}
+\contentsline {figure}{\numberline {5.28}{\ignorespaces Pololu robot up and bottom view}}{223}
+\contentsline {subfigure}{\numberline {(a)}{\ignorespaces {Pololu robot bottom view: left and right light sensors}}}{223}
+\contentsline {subfigure}{\numberline {(b)}{\ignorespaces {Pololu robot up view: left and right contact senros and LCD display}}}{223}
+\contentsline {figure}{\numberline {5.29}{\ignorespaces Integration values for the Gamma function}}{223}
+\contentsline {figure}{\numberline {5.30}{\ignorespaces Gaussian posterior distribution}}{224}
+\contentsline {figure}{\numberline {5.31}{\ignorespaces Gaussian prediction function}}{224}
+\contentsline {figure}{\numberline {5.32}{\ignorespaces Expected result of simmetry}}{225}
+\contentsline {figure}{\numberline {5.33}{\ignorespaces Multi Agent Gaussian}}{225}
+\contentsline {figure}{\numberline {5.34}{\ignorespaces Multi Agent Erlang}}{226}

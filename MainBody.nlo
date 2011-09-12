@@ -1,0 +1,13 @@
+\nomenclatureentry{aAgent@[{Agent}]\begingroup An autonomous intelligent unit able to cooperate with others and interact with the environment\nomeqref {0}|nompageref}{3}
+\nomenclatureentry{aABM@[{ABM}]\begingroup Agent Based Modelling\nomeqref {0}|nompageref}{3}
+\nomenclatureentry{aICO@[{ICO}]\begingroup Input Correlation Only learning\nomeqref {0}|nompageref}{3}
+\nomenclatureentry{aISO@[{ISO}]\begingroup Isotropic Sequence Order learning\nomeqref {0}|nompageref}{3}
+\nomenclatureentry{aMAS@[{MAS}]\begingroup Multi Agent System\nomeqref {2.0}|nompageref}{43}
+\nomenclatureentry{aSWARM@[{SWARM}]\begingroup Collective behaviour of animals\nomeqref {2.0}|nompageref}{43}
+\nomenclatureentry{aPID@[{PID}]\begingroup Proportional Integration Derivative control\nomeqref {2.0}|nompageref}{46}
+\nomenclatureentry{aRNN@[{RNN}]\begingroup Recurrent Neural Networks\nomeqref {3.40}|nompageref}{79}
+\nomenclatureentry{aCMAC@[{CMAC}]\begingroup Cerebellar Model Articulator Controller\nomeqref {3.112}|nompageref}{113}
+\nomenclatureentry{aRBF@[{RBF}]\begingroup Radial Basis Functions\nomeqref {3.112}|nompageref}{113}
+\nomenclatureentry{aMLP@[{MLP}]\begingroup Multi Layer Perceptron Network\nomeqref {3.112}|nompageref}{113}
+\nomenclatureentry{aCPU@[{CPU}]\begingroup Central Processing Unit\nomeqref {5.11}|nompageref}{181}
+\nomenclatureentry{aGPU@[{GPU}]\begingroup Graphical Processing Unit\nomeqref {5.11}|nompageref}{181}

@@ -1,0 +1,143 @@
+
+\section{Information theory appendix}
+\subsection{Variety}
+Variety was defined by Ashby as the number of different elements in a set.
+A set composed by its alphabet has maximum variety of: $A={\alpha_1,...,\alpha_n}$
+then the variety is n: $V_A=n$
+Variety can also be expressed as the number of bits required to describe the set,
+thus $VL_A=\log_2 V_A$.
+Example: $V_A=2^{4}$ then $VL_A=4$, meaning that an alphabet of 4 different
+symbols can be encoded as a string of 4 binary digits. So the logarithm in
+base 2 of variety is equivalent to the entropy measure which is the average
+length of the shortest description of the corresponding random variable
+\citep{Shannon76}: the expected length $L(C)$ of a source code $C(x)$ for
+a random variable $X$ with probability mass function $p(x)$ is given by:
+\begin{equation}
+ L(C)=\sum_{x\in X}p(x)l(x)
+\end{equation}
+where $l$ is the length of the codeword associated with x.
+Then an optical code $L^*$ is bounded by:
+\begin{equation}
+ H_A(X)\leq L^* < H_A(X)+1
+\end{equation}
+where A is the afore mentioned alphabet. A binary alphabet is
+composed by 2 symbols: $A={0,1}$.\\
+If the set of disturbances D is $D=\{ d_1,d_2,d_3,d_4 \}$, then $V_D=4,VL_D=2$.\\
+If the set of disturbances D is $D=\{ d_1,d_2,d_3,d_3 \}$, then $V_D=3,VL_D=1.58$.\\
+
+\subsection{Entropy}
+Entropy estimates the average uncertainty (or information) of a variable \citep{Shannon76}
+The most common form to compute the discrete entropy of a stochastic variable X is calculated according to:
+\begin{equation}
+ H(X)=-\sum_{i=1}^{N} p(x_{i})\cdot log_2 p(x_i) \geq 0
+\end{equation}
+where the probability $p(x_i)$ of X being in state $x_i$ (there are in total N states)
+is estimated from the time series with one of the methods described in the following section.
+When the logarithm of base 2 is used, as in this case, the units are bits.
+The entropy is maxima, for a uniform distribution which means
+$p(x_{i})=1/N$ for $\forall i$, then $H(X)=log_2 N$
+
+\subsection{Mutual information}
+Mutual information measures the deviation from statistical dependence of two
+variables and is sensitive to \textbf{any} relationship between 2 variables,
+not only linear dependencies.
+The mutual information of two discrete variables, X and Y, can be expressed as:
+\begin{equation}
+MI(X,Y)=-\sum_{i=0}^{N_{X}} \sum_{j=0}{N_{Y}} p(x_{i},y_{i}) log_2 \frac {p(x_{i}p(x_{j}))}{p(x_{i},y_{j})}
+\end{equation}
+The mutual information can also be expressed as:
+\begin{equation}
+MI(X,Y)=H(X)+H(Y)-H(X,Y)
+\end{equation}
+thus the mutual information is high if both X and Y have high entropy (high variance),
+and hare highly correlated (high covariance); it is zero if X and Y are statistically independent,
+and thus $p(x_i,y_j)=p(x_i)p(y_j)$.
+Similar to the difference between observed and true entropy, as a result of the
+finite size of the data sets, a difference exists between observed mutual information
+and true mutual information (Roulston,1999).
+The correction formula is:
+\begin{equation}
+MI_{true}\approx MI_{observed} - \frac{P_{X}P_{Y}-P_{X}-P_{Y}+1}{2 N} \pm \sigma_{I}
+\end{equation}
+where $P_{X}$ and $P_{Y}$ are the number of states in which X and Y are discretised,
+N is the size of the time series (supposed equally long), and $\sigma_{I}$ is the
+``logarithm in base two'' corrected standard deviation of the estimate
+(see \citep{Roulston1999:Estimation} Eq.42).
+A good heuristic is to choose $N>3 P_{X} P_{Y}$.
+Mutual information is an index of statistical dependence and does not indicate causal
+relationships or directional information transfer.
+A candidate measure for the temporal dependence is then:
+\begin{equation}
+MI(\tau)=MI(X_{t},Y_{t-\tau})=H(X_{t})+H(Y_{t-\tau}-H(X_{t},Y_{t-\tau})) \geqslant 0
+\end{equation}
+where $\tau$ denotes the delay. It is common practice to compute the mutual
+information for different taus $\tau_{i}$ and then find the $\frac{argmax}{\tau_i} MI(\tau_i)$.
+Whereas the mutual information is symmetrical $MI(X,Y)=MI(Y,X)$ the temporal
+information is not $MI(X_{t},Y_{t-\tau}) \neq MI(Y_{t},X_{t-\tau})$.
+
+\subsection{Motor output entropy}
+The entropy $H(Z)$ is the uncertainty of the motor output or the average description
+ necessary to encode the motor output.
+In our case the controller produces a continuous output angle in the
+ range $z=[0,360]$ degrees (see Section \ref{Chapter8:Predictive Performance}).
+
+To compute the $H(Z)$ we have to discretise the angle z by choosing a bin width
+ of $\Delta Z=1$ degree for example.
+So the alphabet of $Z=\{1,2,...,360\}$ contains 360 symbols and in term of entropies:
+\begin{itemize}
+ \item If $H(Z)=2$ bits, it means that the robot is able to steer with 4 different angles with 1 degree resolution.
+ \item If $H(Z)=8.5$ bits, it means the robot is using the full range of available steering angles.
+The robot could be generating a variety of different patterns such as circular motions, snake trajectories or a mix of the 2.
+ \item If $H(Z)=0$ bits, it means that the robot is heading always in the same direction.
+\end{itemize}
+The output entropy does not tell us anything about the effort of the controller, 
+even a simple controller in a complex environment will produce a high $H(Z)$.
+\subsection{Retinal predictive entropy}
+The predictor is composed of a left and right retina arranged as a grid of
+$N_{rf}xN_{rf}$ inputs, but to simplify the computation of the entropy
+we are going to use the retinal difference $x_{1,i,j}$ which is the difference
+between the left and right retinal input at position $(i,j)$.
+Therefore  $H(X_{1,i,j})$ is the uncertainty of the predictor input at
+position $(i,j)$, whereas $H(X_{1,i,j})$ is the average entropy of the
+retinal differential input
+\begin{equation}
+H(X_{1})=\frac{1}{N_{rf}^2}\cdot \sum_{i,j=1}^{N_{rf}} H(X_{1,i,j})
+\end{equation}
+
+\subsection{The law of requisite variety for predictive learning}
+To apply the law of requite variety for a predictive controller we need to add
+another source of information $D'$ before the disturbance D. The regulator will
+have an additional source of information $D'$ rather than having only the disturbance D.
+Thus the additional information that $D'$ provides about the disturbance D is the mutual
+information between D and $D'$, $I(D,D')$.
+\begin{equation}
+H(E)\geq H(D)-I(D,D')+H(R|D)-H(R)
+\end{equation}
+If $D'$ is not predictive of D, this means that  $D'$ and D are independent thus
+$I(D,D')=0$ because the joint distribution $p(D,D')=p(D)*p(D')$. 
+If Y is predictive of D, then $I(D,D')>0$ thus allowing a reduction in the required entropy for the
+desired states of the regulator.
+The equation is consistent because :
+\begin{eqnarray}
+H(D|D')=H(D)-I(D,D')\\
+H(E)\geq H(D|D')+H(R|D)-H(R)
+\end{eqnarray}
+Thus, for instance if the organism has 4 possible actions $H(R)=2$ and a variety
+ of 8 disturbances $H(D)=3$, if there is no predictive information the minimum variety
+ we can reach for the state variable is $H(E)=3-2=1$, and $E$ must have at least a
+variety of 2. However if a predictive signal is available so that it provides more
+information about the disturbance $I(D|D')=1$, the minimum variety that we can
+achieve with the state variable is $H_{min}(E)=3-1-2=0$, that means we can achieve
+ a perfect regulation to 1 state!
+The term $I(D,D')$ can also be considered as the predictive capacity of the agent or
+ how much the agent has compressed the environment model.
+Supposing that agents have a limited memory then the mutual information cannot be used
+ totally because compression is not perfect. The parameter $0<\alpha<1$ indicates the
+compressive capacity of the agent.
+Thus the minimum entropy for the desired states is increased:
+\begin{equation}
+H(E)\geq H(D)-\alpha I(D,D')+H(R|D)-H(R) > H(D)- I(D,D')+H(R|D)-H(R)
+\end{equation}
+For example in our previous example if $\alpha=0.5$ then the minimum
+ entropy becomes $H_{min}(E)=3-0.5-2=0.5$ bits.
+

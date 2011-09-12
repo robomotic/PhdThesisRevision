@@ -1,0 +1,222 @@
+\documentclass{book}
+\usepackage{color}
+\usepackage{soul}
+\usepackage[round,authoryear]{natbib}
+\usepackage{amsmath}
+\usepackage[english]{babel}
+\usepackage{amssymb}
+\usepackage[dvips]{graphicx}
+\usepackage{subfigure}
+\graphicspath{{figures/}}
+\usepackage{listings}
+%import the nomenclature package
+\usepackage{nomencl}
+
+% the default picture extension is eps of course!
+\DeclareGraphicsExtensions{.eps}
+
+%define the blue color for highlighting comments
+%only useful for the reviewer
+\definecolor{blue}{rgb}{.90,.95,1}
+\sethlcolor{blue}
+
+
+%include the url package useful for references
+\usepackage{url}
+%define the argmax command
+\newcommand{\argmax}{\operatornamewithlimits{argmax}}
+%define the degree command
+\newcommand{\degree}{^{\circ}}
+
+\title{Artificial societies and information theory: modelling of sub system formation based on Luhmann's autopoietic theory}
+\author{Paolo Di Prodi}
+
+%\setcounter{secnumdepth}{-1}
+\setcounter{tocdepth}{2}
+\begin{document}
+
+%build the nomenclature
+\makenomenclature
+%build the title
+\maketitle
+
+
+\begin{minipage}[center]{0.8\textwidth}
+\begin{center}
+Submitted in fulfillment of the requirements for
+the degree of Doctor of Philosophy (Ph.D.)
+\end{center}
+\end{minipage}
+
+\begin{figure}[h]
+\begin{center}
+\includegraphics[width=0.6\textwidth]{UnivLogo.eps} 
+\end{center}
+\end{figure} 
+
+
+\begin{minipage}[center]{0.8\textwidth}
+\begin{center}
+Electronics and Electrical Engineering
+School of Engineering\\
+College of Science and Engineering\\
+University of Glasgow\\
+\end{center}
+\end{minipage}
+
+\vfill
+\begin{minipage}[center]{0.8\textwidth}
+\begin{center}
+Copyright \copyright Paolo Di Prodi
+\end{center}
+\end{minipage}
+
+\newpage
+
+
+
+\section*{Abstract}
+\begin{minipage}[center]{1.0\textwidth}
+This thesis develops a theoretical framework necessary to reproduce the 
+complexity of human like societies.
+
+This novel theoretical framework integrates the autopoietic hypothesis of human
+societies, formulated originally by the German sociologist Luhmann, with concepts
+of Shannon's information theory applied to adaptive learning agents\nomenclature{Agent}{An autonomous intelligent unit
+able to cooperate with others and interact with the environment}.
+
+Simulation were done by using Multi-Agent-Based Modelling (ABM\nomenclature{ABM}{Agent Based Modelling}), 
+a relatively new computational modelling paradigm involving 
+the modelling of phenomena as dynamical systems of interacting agents. 
+The thesis in particular, investigates the functions and properties necessary to 
+reproduce the paradigm of society by using the mentioned ABM approach.
+
+Luhmann has proposed that in society subsystems are formed to reduce
+uncertainty. 
+Subsystems can then be composed by agents with a reduced behavioural complexity.
+For example in society there are people who produce goods and other who
+distribute them. 
+
+The thesis shows that sub-systems emerge when the
+agents are able to learn and have the ability to communicate.
+Both the behaviour and communication is learned by the agent and not imposed.
+The simulated task is to collect food, keep it and eat it until
+sated. Every agent communicates its energy state to the neighbouring agents.
+This results in two subsystems whereas agents in the first collect food and in
+the latter steal food from others. The ratio between the number of agents that
+belongs to the first system and to the second system, depends on the number of
+food resources.
+Simulations are in accordance with Luhmann, who 
+suggested that adaptive agents self-organise by reducing the amount of sensory 
+information or, equivalently, reducing the complexity of the
+perceived environment from the agent's perspective. 
+Shannon's information is used to assess the performance of the simulated learning
+agents.
+A practical measure, based on the concept of Shannon's information flow, 
+is developed and applied to adaptive controllers which use Hebbian learning, input
+correlation learning (ICO\nomenclature{ICO}{Input Correlation Only
+learning}/ISO\nomenclature{ISO}{Isotropic Sequence Order learning}) and
+temporal difference learning.
+The behavioural complexity 
+is measured with a novel information measure, called Predictive Performance, which 
+is able to measure at a subjective level how good an agent is performing a task.
+This is then used to quantify the social division of tasks in a social group of 
+honest, cooperative food foraging, communicating agents.
+\end{minipage}
+
+\newpage
+\begin{minipage}[center]{0.8\textwidth}
+I declare that this thesis is a record of the original work carried out solely
+by myself in the School of Engineering at the 
+University of Glasgow, during the period October 2007 to March 2011.
+The copyright of this thesis therefore belongs to the author under the terms
+of the United Kingdom Copyrights acts. Due acknowledgement must always be made
+of the use of material contained in, or derived from, this thesis.
+The thesis has not been presented elsewhere in consideration for a higher
+degree.\\
+\linebreak[4]
+Paolo Di Prodi\\
+\linebreak[2]
+\today
+\end{minipage}
+
+\newpage
+\begin{minipage}[center]{1.0\textwidth}
+\begin{large}
+\begin{center}
+To my family: Carlo Di Prodi, Francesca Viozzi 
+\linebreak[1]
+and Marco Di Prodi.
+\linebreak[4]
+To my love Pi-Yi Wei.
+\linebreak[4]
+``I will one day hear the silence from the noise''\end{center}
+\end{large}
+
+\end{minipage}
+
+\newpage
+%print the table of contents
+\tableofcontents
+%print the list of tables
+\listoftables
+%print the list of figures
+\listoffigures
+%prin the nomenclature 
+\printnomenclature[1cm]
+%new page here and go for the thanks
+\newpage
+\section*{Acknowledgements}
+\input{acknowledge}
+
+\newpage
+
+\section*{Publications}
+\input{publications}
+
+\chapter{Introduction}
+\label{Chapter:Intro}
+\input{Introduction}
+
+\chapter{Background literature}
+\label{Chapter:Review}
+\input{review_Sociology}
+
+\input{review_AbmComplex}
+
+\input{review_InfoTheory}
+
+
+\chapter{Research work}
+\label{Chapter:Work}
+\input{work_SocialAdaptation}
+
+\input{work_InputCorrelationMeasure}
+
+\input{work_InfoFlowClosedLoop}
+
+\input{work_QLearning}
+
+\input{work_PredictivePerformance}
+
+\chapter{Conclusion}
+\label{Conclusion}
+\input{Conclusion}
+
+\chapter{Appendix}
+\label{Appendix}
+\input{appendix_learning}
+\input{appendix_simulation}
+\input{appendix_parallelsimulation}
+\input{appendix_info}
+\input{appendix_input_measure}
+\input{appendix_hardware}
+\input{appendix_language}
+\input{appendix_bayes}
+\input{appendix_symmetrybreaking}
+\input{appendix_economymodel}
+
+\bibliographystyle{apa}
+\bibliography{hebb,isgroup,infotheory,robot,embodiment,selbstorg,closedloop,economy,socialmodelling,swarm,bayesmodel,various,prediction,stdp,ours}
+
+\end{document}

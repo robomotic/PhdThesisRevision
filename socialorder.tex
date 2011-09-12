@@ -1,0 +1,97 @@
+\documentclass[a4paper,10pt]{article}
+\usepackage[utf8x]{inputenc}
+
+%opening
+\title{}
+\author{Paolo}
+
+\begin{document}
+
+\maketitle
+
+\begin{abstract}
+
+\end{abstract}
+
+\section{Social order generation by double contingency}
+Dittrich [reference] modelled and simulated the situation of double contingency as the origin of social
+order.
+He starts from an dyadic social interaction and then expands it to a multi agent interaction.
+Social order appears in the dyadic social interaction and also in the multi agent but in only certain conditions
+that we are going to explain.
+
+The double contingency problem esists when a dyad composed of 2 entities (actors) meet each other:
+each actor has a double nature of knower and object of cognition.
+
+Parsons solved the problem of contingency by imposing that a common shared symbol system
+is a pre-condition for the formation of a social order.
+Therefore the dyad must share a culture derived from an history of previous relationships.
+
+Lumann solves the problem of double contingency by using a self-organization processs which
+develops in time based on mutual expectations.
+The only assumptions he made was that alter and ego (the actors in the dyad) have a necessity of ``expectation-certainty'', that means Alter and Ego want to know what is going on in this interaction.
+Every entity expects that the other entity has expectations about its next activity.
+
+The desire -if we can call it- of every agent during the interaction is to reduce the entropy -uncertainty- of the
+Alter's actions given Ego's actions.
+
+To make a simple example when we say ``Hello'' to a friend we expect to have an ``Hello`` followed by 
+a handshake and a possible conversation. The friend will expect the same.
+This is useful as we don't have to try out all our vocabulary every time to get somebody's attention.
+
+So the model proposed by Dittrich begins with a simple dyad of 2 actors:
+\begin{itemize}
+ \item Ego initializes the interaction by choosing a message from a set of N possible onse
+ \item Alter receives the message and reply with another one from the set of N
+ \item the conversation continues from Ego and so on
+\end{itemize}
+The activity of an actor is to decide which message has to be sent given a received message. 
+This kind of action is a reduced model of Luhmann's communication because there is no distinction between
+information, trasmission and understanding.
+Ego chooses the message and sends it (information+ transmission) and reply to a message without understanding it.
+Also agents do not show meaningful motived behaviour towards otehrs according to goals and a shared symbolic systems as proposed in the Parson's model.
+
+Each agent is motivated by 2 functions:
+\begin{itemize}
+ \item Expectation-Expectation EE: an agent wants to meet the expectations of the other agent. It does so by keeping a memory of what actions were chosen in response to other agents.
+ \item Expectation-Certainty EC:  the reaction of the other agent following its own activity should be as predictable as possible.
+ \item Activity Value: a linear combination of $(1 - \alpha)EE$ + $\alpha EC$.
+ \item Activity Probability: a parametrized version of the activity value $\gamma$ that can go from deterministic $\gamma \rightarrow \infty$ to probabilistic $\gamma \rightarrow 0$ .
+\end{itemize}
+Each agent chooses the activity which maximizes the activity probability according to the parameter $\gamma$.
+The parameter $\alpha$ accounts in a way the ''selfishness`` of the agent because when $\alpha=1$ the agent will choose the action that will produce the most likely reaction from Alter whereas when $\alpha=0$ the agent will choose the action that Alter will expect more.
+
+The problem is then to measure Social Order and see if the dyadic condition is able to produce high values of social order. There are 2 different point of views: a system view and an individual view.
+
+At the individual level we can re-use the EC function to compute how certain an agent is when it selects a message. 
+The average certainty $O_AV$ has a high value when certainty is high and thus indicates high social order.
+
+At the system level we can measure:
+\begin{itemize}
+ \item the average number of different activities $N_D$ selected during the time interval: the lower the number the higher the order. An observer will deduce that high social order is achieved if agents always select the same activities out of a vast selection set.
+ \item predictability of an activity $O_p$ or social integration: it measures how predictable an activity of a randomly drawn agent Ego is, given the activity presented on the sign by another randomly drawn agent Alter.
+\end{itemize}
+
+We can interpret the $O_p$ value as an index of the pattern formation in the behaviour of action selection. The actors formed a closed system of interaction because they are mutually predictive, this closure indicates a first order separation degree between a system and its environment.
+
+For the dyadic case social order as measured either by $N_D$ and $O_AV$ emerges for any parameter setting in $\alpha,\gamma, N$ with stable activity patterns followed robust to small disturbances.
+Measuring social integration for the dyadic case is trivial because there are only 2 agents which interacted with each other and thus it will be $O_p=1$.
+
+The big challenge is then to scale up the dyadic case to the multi agent case.
+If we have a population of few $M$ agents and we choose a random selection strategy to pair interactions, 
+social order is high in terms of $O_P$ because is possible to predict very well each agent's reaction.
+However at the individual level $O_AV$ is low because each agent is using the same memory to predict interactions with different agents. As a consequence increasing $M$ decreases the $O_P$ system order.
+
+Dittritch discovered that there are 2 changes required to produce high social order with increasing number of agents:
+\begin{itemize}
+ \item agents must calculate Expectation-Expectation from observation of the interaction of other agents
+ \item agents must use only Expectation-Expectation for activity selection ($\alpha=0$)
+\end{itemize}
+
+At the individual level agents are cognitive entities able to perceive, memorize, generalize and to make predictions.
+For society to emerge they must be able to observe the interactions between others. 
+
+\section{Trust and social order}
+
+\section{Expected oriented modelling}
+\end{document}

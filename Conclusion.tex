@@ -1,0 +1,846 @@
+\section{Summary of results}
+This thesis has developed a computational model for the implementation
+of artificial societies based on the theoretic foundation of Luhmann.
+The societies are based on software agents which learn simple avoidance
+and attraction behaviours by means of a biologically inspired Hebbian rule.
+The intra agent communication is based on a minimalist implementation
+of Luhmann's communication model and is simple enough to generate the self-organising
+behaviour of social sub-division.
+The social division was assessed initially by looking at the synaptic weight development
+of each agent individually.
+This approach implies that the agents are considered as white or grey boxes, which
+means that the approach is not feasible if I consider a general agent whose
+internal status is not accessible (black box).
+Therefore I have then firstly developed two input measures called \textbf{maxcorr} and \textbf{AI},
+secondly input/output measures \textbf{MI} to reflect the complexity reduction
+in their agent's behaviour and a single called \textbf{Predictive Performance} to gauge the learning 
+performance of the agent.
+The measure has proven successful in measuring not only the behavioural reduction in
+a social setting but also the learning performance of the agent.
+This measure is general enough to be applied also to other learning controllers,
+for instance a Q-learning avoiding robot.
+The strength of this approach compared to previous work is that it is
+an information based measure that can be applied to real agents
+as well as simulated agents.
+Previous models in literature are based on discretised models or strategic games.
+In the following section \ref{Conclusion:Discussion}, I am going to described the
+modelling choices used in the thesis.
+After the discussion there is a series of 
+In section \ref{Conclusion:FutureWork} there is a description of possible extensions 
+of the social system model, a potential application and a better analysis based on
+model checking.
+In section \ref{Conclusion:Thoughts}, I introduce some interesting topics as well as philosophical
+questions about the relationship between information theory, the theory of mind,
+psychology, language and neuroscience.
+In section \ref{Conclusion:Industrial} there is a small overview of the existing
+commercial systems relying on social robotic systems.
+
+\subsection{Discussion}
+\label{Conclusion:Discussion}
+The most relevant work that was done in the past about the implementation
+of Luhmann's principle in a computational model is the one of \citet{SocialOrderScalability}.
+The model is implemented as a language game where agents are learning
+during mutual interactions.
+The social model that was developed in this thesis, although it does not include
+ a complete communication protocol described by Luhmann and used by Dittrich,
+it is capable of generating sub-systems.
+It also has mainly 2 advantages:
+\begin{itemize}
+ \item it is a real time simulator where the agents interact and learn continuously
+ from each other rather then being limited to a simulated game.
+ \item it can be implemented on a real robotic system as described in the Appendix 
+\end{itemize}
+
+The other advantage, compared to \citet{SocialOrderScalability}, is that
+the agents integrate action and communication in a very transparent manner
+thus facilitating a future expansion of the system.
+The communication used in the model is mono directional and one to many:
+this has an operative advantage in terms of fast response times if the
+system has to adapt to environmental changes.
+
+As a comparative analysis, previous works in information measures was performed by Polani,
+ Lungarella and Ay that used information theoretic cost functions to optimise the agent's behaviour:
+\begin{itemize}
+\item \citet{organizationInfo} evolves controllers to maximise the information transfer
+of the sensory-motor loop (empowerment) and discovers that to use memory efficiently they perform 
+compression as in Figure \ref{fig:conclusion:polani}.
+\item \citet{LungarellaInformation} uses mutual information to generate information structures by motor feedback as in Figure \ref{fig:conclusion:lungarella}.
+\item \citet{AyClosedLoop} maximises the excess entropy (the mutual information between past and present) 
+ of the agent's input thereby changing the controller's parameter to achieve a 
+ working regime (exploratory and sensitive to the environment) for the robot as in Figure \ref{fig:conclusion:ay}.
+\end{itemize}
+
+There is a substantial difference between the afore mentioned approaches and the
+one used in this thesis:
+the predictive performance discussed in Section \ref{Chapter8:Predictive Performance}
+calculates the learning ability of a general adaptive controller
+ based on the information flow.
+This is different from the other study by \citet{organizationInfo,LungarellaInformationStructure,AyClosedLoop} 
+which use the information flow as a reward signal for the agent to learn.
+Nevertheless there are compatible results that shows how the
+two approaches are complementary.
+For example the experiment made by \citet{LungarellaInformationStructure}
+where he computed entropy measures on a saliency-driven attention
+task, where a camera foveates red blocks. The entropy for the
+foveation case is less than the random case:
+this means that a closed loop system induces statistical regularities
+in the information flow.
+My results coming from the social system application yields
+a similar concept: agents regularise their inputs
+by selecting information which affects their motor behaviour.
+There is a mutual relation between perception, information and action:
+agents select the information which in turns change their
+behaviour and their predictability.
+Indeed in Fig.\ref{social:learning1}(D) the system is unstable
+when every agent is using all the information and thus producing
+non predictive behaviour. But when agents start to select the
+relevant information, they simplify their behaviour and intrinsically reinforce
+the stability of the system since agents mutually benefit from the increased predictability.
+Therefore the Predictive Performance is also used to measure the degree of behavioural
+selection of each agent during the social division as also described in Section \ref{Chapter8:PPsocial}.
+
+Another interesting experimental work in the field of performance measure was produced 
+by \citet{Kulvicius2009:analysisdifferential} where the measure was the argument of the maximum 
+cross correlation between the antenna's events $\bar{\tau}$ in a fixed time window.
+Kulvicius shows that for more complex environments $\vec{\tau}$ has a larger
+deviation compared to the case of more simple environments.
+
+The predictive performance can also be applied to reinforcement learning \citep{TD}
+as demonstrated in Section \ref{Chapter7:Q learning application} where
+the information flow was computed for a simple robot avoiding obstacles.
+Although the author did not have time to compute the predictive performance, 
+only the information flow, there are no evident limits that will stop
+the computation of the predictive performance.
+
+The predictive performance was finally applied to the social system scenario
+as demonstrated in Section \ref{Chapter8:PPsocial} to show how agents
+select either behaviour in terms of information flow.
+This analysis show how the agents are selecting the information path and 
+how is related to their weights' development.
+It also shows that performance cannot be based on the analysis of the weights
+but can only be reliably assessed via the predictive performance.
+
+The following section describes what modelling choices were done during the
+research and how they were justified.
+
+\subsection{Modelling choices}
+In the theory of social communication \citet{Luhmann95} and previous cybernetic
+ experts asserted that an artificial agent or organism does not have mutual expectations
+ from other entities except than other agents. An example which explains this condition is
+ the difference interaction between a person and an object or a person with another person.
+We have a direct expectation for an object because we know that it only adheres to the
+ laws of gravity and we know that throwing it will make a parabolic trajectory in the air.
+We have a mutual expectation between ``ego'' me and ``alter'' you, because we both try
+ to predict what we are thinking. In a way that is more similar to a chess game where each
+ player tries to predict the next move of the other in order to maximize his chance of victory.
+In the deterministic memory based model developed by \citet{SocialOrderScalability}, social
+ order arose from the social interaction of agents.
+Therefore my choice in the model was to separate the prediction of the world/environment from the
+ prediction of other agent's actions.
+The identification of alter and ego was not included in the model and is left for future work,
+however most advanced organisms like mammals and primates are able to recognize their
+interlocutor and so maintain different expectations according to their previous interactions.
+The language used to communicate the food information is similar to a sign language which is based
+on the action layer, the most simple example could be the everyday traffic flow of cars.
+The left light arrow indicates that the car in front of us is going to turn left and vice-versa.
+This kind of sign language is used in the animal world and has been extensively studied by 
+\citet{AnimalSignals}.
+A good example is the evolution of the ritualisation of the mating and fighting behaviour
+as briefly described in Figure \ref{fig:conclusion:ritualizationmodel}.
+
+\begin{figure}[htbp]
+\begin{center}
+\includegraphics[scale=0.3]{figures/conclusion/Ritualization-3.eps}
+\end{center}
+\vspace*{4pt}
+\caption[Ritualization model]{This diagram shows how Ethologist explain
+the evolution of animal signalling or language 
+\label{fig:conclusion:ritualizationmodel}}
+\end{figure}
+
+A more advanced communication language uses a symbolic language which is based
+on top of the action or sign language:
+primates developed a more advanced mean of communication using sound and developing
+ specialized areas of the brain like the ``Brocha area'' in humans and equivalent
+structures in the singing birds \citep{FoxP2Gene:Nature:2001,FOXP2Identification:2005}.
+
+A sign or ritualised language is constrained by the environment and cannot develop further, 
+this is why a better model would require the use of a symbolic language which I am
+going to describe in the next section.
+
+\input{conclusion_linguistic}
+
+\section{Future work}
+\label{Conclusion:FutureWork}
+An important improvement for the model will be to use the symbolic language
+module as described in section \ref{Conclusion:Language} with the double contingency
+feature described in section \ref{Introduction:SocialOrderModel}.
+With this approach one can have the power of a grounded language model and the
+potential for social interaction to build an accurate model of Luhmann's society.
+The $ICO/ISO$ learning controller could still be used to implement the action layer,
+but other approaches will be required to implement the symbolic communication layer.
+There are also some other extensions and considerations that can be included in future
+models and are described in the following sections.
+
+
+\subsection{Model based checking for property verification}
+\label{Conclusion:ModelCheck}
+
+The research on agent-based learning systems
+currently relies on simulation results to infer the correctness of system properties.
+These inferences are derived from averaging set of simulation results. 
+However an alternative approached based on model checking can be used
+to verify the properties of a learning system without the need of a simulation.
+In a preliminary study with a fellow PhD student Ryan Kirwan from the computer
+science department I have proved that it is indeed possible, with the correct
+ abstraction model, to apply model checking to a dynamic learning agent and 
+ prove some properties for a multi agent non learning system and a single
+ learning agent.
+The application of model checking to autonomous learning agents is novel
+  and thus not straightforward.
+  
+\subsection{Economic models of learning agents}
+
+Bayesian inference is a fundamental process behind human perception,
+memory and cognitive judgement. While Bayesian inference has been investigated
+ at the individual level, there are few studies regarding the implications of
+ using Bayesian decision making in a multi agent social scenario.
+\citet{Verschure98epistemol} argues that bayesian inference is an equivalent formulation to 
+adaptive predictive control beacuse it is essentially a computational approach 
+equivalent to the dynamical approach of neural based systems.
+Thus it is possible to use Bayesian inference in a decision making task which requires
+a selection between several actions i.e. an action policy.
+An interesting economic social experiment can be setup where the goal of the
+ artificial agent is to win a virtual English auction.
+Every agent has a Bayesian predictive policy and/or an expectation about the
+ others to decide the next move.
+Therefore the simulated model takes into account the mix of subjective and
+ social knowledge.
+The social knowledge is based on the mutual expectation, a fundamental property
+ of social systems. Luhmann hypothesised that high degree of behavioural dynamics
+ can be achieved by using expectations as valuable knowledge for reducing
+contingency about each others' behaviour and goals.
+Therefore the author expects that a social based approach will generate
+a realistic dynamic behaviour even in auction based games.
+In the following sections the author describes a ABM system based on
+ auction bidding that considers social expectations.
+
+\subsection{Homogeneity in societies}
+Luhmann did not pose any constraints on the homogeneity of social systems,
+because his social model is essentially ``actor-free``.
+This choice theoretical choice is quite good because it allows great flexibility
+to build heterogeneous societies.
+The only requirement is the need of a psychic system coupled to the communication
+system.
+For Luhmann a psychic system is a system able to generate thoughts, although there 
+is a philosophical debate whether or not machines are able to 
+think, dream or create, a psychic system can be implemented as a goal oriented behaviour
+and a language module as proposed by Luc Steel.
+It is useful therefore to distinguish between:
+\begin{itemize}
+ \item homogeneous societies: composed of identical entities, either artificial agents or humans
+ \item inhomogeneous societies: composed of mixed entities like artificial agents and humans
+\end{itemize}
+There was a period of excitement in research after science fiction writers envisioned
+ the integration of artificial intelligence entities in human societies.
+Note that the very first "robots" in fiction, the neologism "robots" from Karel
+Capek's R.U.R. \citep{Karel1920:RUR}, were actually Artificial Humans
+ and not the clanking metal humanoids we now associate with that term.
+A better and earlier term is Android from the greek andro- "human" + eides "form,
+shape" meaning an "automaton resembling a human being". The term was first
+mentioned by St. Albertus Magnus in 1270 and was popularized by the French writer
+ Villiers in his 1886 novel L'Ève future.
+There were and there still are efforts in producing androids which can be accepted
+ by humans, avoiding the famous ``Uncanny Valley'' introduced by
+Masahiro Mori as ``Bukimi no Tani Gensho''.
+The latest androids are able to mimic the human aspect thanks to recent
+advantages in material structures (artificial hairs, silicon skin)
+The current problem is then to provide the androids with the intelligence to
+interact socially and safely with humans.
+Many researchers attempted the direct approach of designing social robots by
+looking at the single human-robot interaction with an engineering top-down approach.
+The design of social robots contains a variety of disciplines including:
+mechatronic, science of materials, psychology, neuroscience, haptic interfaces,
+voice recognition, speech synthesis, power systems etc.
+It is certainly an interesting field, but it is mainly driven by technologist
+and behavioural scientists,and thus is proceeding at a slow pace considering 
+also the cost involved with building androids.
+
+\subsection{Symmetry breaking in collective decision-making}
+
+The self-organising property of social systems can be formulated
+in terms of decision making because effectively one can imagine
+that the agents has to make a collective choice about their division.
+Collective decision making in social systems is often driven
+by self-organising principles such as the choice of nest sites and food sources
+by ant colonies and the aggregation of bees
+\citep{Franks2003:StrategiesAnts,Dussutour2009:NoiseDecisionAnts,Meyer2008:noise-induced,
+ Kornienko2009:ReembodimentOfHoneybee}.
+Similar dynamics are present in bacteria colonies \citep{Reading2006:quorumbacteria} and even economic
+markets \citep{Gerard2000:HitsFlopsDynamic}.
+
+In my computational model the agent (individual) needs to decide whether to
+obtain some food itself or steal the food from the others.
+Because each agent has no initial preference or bias,
+the agent needs to make a decision at the individual level
+based on his memory (synaptic weight) and actual
+sensory inputs (antennas).
+Symmetry breaking means that the society will reach a majority
+or unanimous decision.
+In my case that implies that there will be a non equal distribution
+of seekers and parasites.
+It may not be obvious why the social system must always operate under symmetry breaking
+even when there are 2 equally good sources.
+This in fact happens in nature where for example many species
+will converge on a single food source rather then equally distributing
+between the 2 equally good food sources  \citep{Camazine2001:SelfOrgBiological}.
+
+Symmetry breaking in self-organised decision making usually
+arises from the interaction between positive and negative feedback loops.
+The positive feedback in my model is the progressive weight increase
+of the synapse which orientates the agent toward one behaviour,
+for example food seeking.
+The negative feedback in my model is the collision resulting from
+a crowded group of agents going for the food.
+The balance between these 2 systems has been shown to be a stable
+and flexible enough decision system \citep{Dussutour2009:NoiseDecisionAnts,Meyer2008:noise-induced}.
+
+The most common analysis of this coupled system is via differential equations,
+but as stated before, the model is very complex to be described, especially
+because the agents are active learner and thus their properties change
+during time.
+
+The alternative is to use a reduced statistical model which captures
+only the relevant property of the symmetry breaking.
+An early study in this field was done by \citep{Hamann2010:modelsimmetry} which described
+the symmetry breaking in the honeybee behaviour and an emergent
+density classification task with a simple stochastic differential equation.
+
+\section{Information theory and control}
+\label{Conclusion:Thoughts}
+
+\subsection{On the perils of predictive learning}
+Predictive learning is not the best solution for every situation. Why?
+Because predictive learning is based on our subjective knowledge about the
+world statistic in where we live. To give a clear explanation about when predictive
+ learning fails we can think in probabilistic terms. Suppose we have a black box
+that generates a stream of data, this can be the stock market, an auction on ebay
+ or a football match. We don't know anything about the model behind the generation.
+It could be in the worst case a markov process that generates events with maximum
+ entropy. Nevertheless in the short run we only observe a causal relation between
+ event A and event B, predictive learning that in the general formulation finds
+the causal relationships between two events, A and B, and will infer that event B follows
+ event A with probability 1! Predictive learning doesn't know the statistics behind
+ the process generator because of its limited sampling capacities. If it was able
+ to have an infinite sampling time (say the organism is immortal) it would experience
+ all the possible pairings, and due to the ergodicity property of a markov process,
+ it would infer that event A can be followed by event B with the same probability
+ of being followed by event C.
+This sampling problem can cause what we define in daily life as “hallucinations”:
+a (conscious) perception in the absence of a stimulus.
+In the absence of a stimulus, our predictive ability is reduced to zero and so everything
+can be plausible and ``real''.
+An extension of predictive learning models has been introduced by Schmidhuber \citep{Schuber2010:Novelty}:
+\begin{quotation}
+What's interesting? Many interesting things are unexpected, but not all unexpected
+things are interesting or surprising. According to Schmidhuber's formal theory of
+surprise \& novelty \& interestingness \& attention, curious agents are interested
+in learnable but yet unknown regularities, and get bored by both predictable and
+ inherently unpredictable things. His active reinforcement learners translate
+mismatches between expectations and reality into curiosity rewards, or intrinsic
+rewards for curious, creative or exploring agents which like to observe or create
+truly surprising aspects of the world, in order to learn something new.
+\end{quotation} \footnote{$http://www.idsia.ch/~juergen/interest.html$}
+Schmidhuber rejects the original notion of the Boltzmann/Shannon surprise formulation from the 
+early 1990s by posing two significant examples of uninteresting, unsurprising, boring data.
+A vision-based agent that always stays in the dark will experience an extremely
+ compressible, soon totally predictable and unsurprising history of unchanging
+ visual inputs. In front of a screen full of white noise conveying a lot of
+ information, "novelty" and "surprise", in the traditional sense of Boltzmann
+ (1800s) and Shannon (1948), however, it will experience highly unpredictable
+ and fundamentally incompressible data.
+In both cases the data gets boring quickly as it does not allow for learning
+ new things or for further compression progress.
+Neither the arbitrary nor the fully predictable is truly novel or surprising/interesting - 
+only data with still unknown but learnable statistical or
+algorithmic regularities are. This is a very good argument and it would be
+interesting to integrate the notion of maximisation of learning speed in
+future social models.
+For a more mathematical formalisation between entropy, learning and prediction, the Appendix
+in Sections \ref{Appendix:PredictionAndLearning},\ref{Appendix:InfoForPrediction}.
+
+\subsection{Prediction or evolution}
+There are only two options to design artificial agents: either the designer 
+can evolve reactive systems or adapt predictive systems to the environment.
+Evolution has luckily selected organisms which infer the causal structure of
+ their environment to make predictions of their future actions or equivalently of
+ the future stimuli.
+ Most researchers  will argue that I'm talking about different
+ things, but a careful study of closed loop system can show that if the organism is
+ able to predict what the next stimulus will be if he chooses an action, then he
+ is also able to predict what the stimulus will be if he chooses not do anything.
+Imagine a cat observing a little mouse running in front of it, the cat will estimate
+ the trajectory taken by the mouse at a given time and will decide if is worth trying to pounce 
+ on it or if the mouse is too fast and so waiting for a closer trajectory wastes less energy. 
+ This is a well known probabilistic dilemma: when the organism needs to be reactive and when the organism 
+ needs to learn?
+ The Shannon information measure is a convex function, when expressed as $\sum_p p\cdot log_2(p)$ but 
+ not if only expressed as $\sum_p log_2(p)$ which is infinite at $p=0$.
+ So the best choice which maximizes the information is 
+ at $p=0.5$ which gives a fifty fifty selection chance!
+ This poses another question: if an organism wants to have
+ a maximally predictive state of the environment, why do anything since a
+ stationary state produces less possible entropy! If this assumption was correct
+we would live in a stationary environment where organisms do very little as required
+ by their survivor instinct. Well in the animal
+world there are uncommon animals which live in very boring environments like
+in the darkness of a deep ocean where their world is a flat surface with rare events
+ happening without any clues. It turns out that the best organism is the one that is
+very fast to react to changes, prediction has little sense in this game.
+A star fish is the best choice, there is no need for huge brains with lot
+of computational power because it will be mainly wasted. Coming back
+ to our land we can see how higher complex organism have developed different
+senses and very complicated brains to cope not with a complex environment but
+with a causal environment. The common mistake is to think that a complex environment
+ requires a complex organism. This is not true! Even a fairly simple organism
+can generate a complex behaviour when placed in a complex environment.
+Ashby proved that even when the inputs are connected to the outputs
+with a simple proportional rule, the the variety will be transferred
+from input to output unchanged. A superficial observer will say that this organism has 
+a rather complicated behaviour! Moreover
+ if we feedback the motor action into the input according to a function $f$,
+coupling will generate an even more complex behaviour.  As already shown
+by \citet{Kulvicius2009:analysisdifferential}, output entropy
+was computed as the ration between the reflex output and the 
+predictor output, allowing the author to separate the 2 contributions during learning.
+This approach of separating the different output types was necessary to
+avoid the afore mentioned problem of the variety transmission from inputs to outputs.
+The ICO/ISO learning, in terms of information theory, is an internal
+memory which integrates sensory information and to some extent compress the
+sensory information by discovering the causal relation between the predictor and the reflex.
+In this way then the total output entropy will not vary significantly and thus
+cannot be used as a parameter of learning as well as complexity.
+
+
+
+\subsection{Prediction and learning}
+\label{Appendix:PredictionAndLearning}
+The definition of predictive information: a quantity that measures how much our
+observations of the past can tell us about the future. The predictive information
+ describes the world we are experiencing and has a direct link to its complexity.
+We as organisms collect sensory information in order to choose our actions
+(including our verbal communication) but we are only interested in the data
+ that tells us something about the state of the world at the time of our actions:
+ non predictive information is useless to us. Surprisingly most of the information
+ we collect over a long period of time is non predictive, so that isolating the
+predictive information must extract from the sensory stream those features that
+ are relevant for behaviour.
+Definition of learning: finding a generalised model that explains or describes
+ a set of observations. Why generalised?
+Because we don't want to have an overfitted approximation of the data \citep{Vapnik1998:StatisticalLearningTheory}
+ states that an animal can gain selective advantage not from its performance on the
+ training data but only from its performance at generalisation.
+Learning a model is also equivalent to encoding the data produced by it \citep{Rissanen1989:Complexity},
+thus predicting and compressing are dual problems.
+Complexity is an intuitive property ascribed to physical systems like turbulent flows,
+ferromagnets materials etc...
+Complexity is not random. Kolmogorov complexity states that a true random string
+ cannot be compressed and hence requires a long description \citep{Kolmogorov1965:InfoDefinition}, yet
+ the physical process that generates this string may have a very simple description.
+Intuitively and from now on we refer to the complexity of the underlying process
+ and not to the description length of the string generated from the process.
+\citet{Bialek2001:Complexity} proved that predictive information $I_{pred}(T)$ provides
+ a measure of complexity of the model underlying a time series. For small observation times:
+\begin{equation}
+I_{pred}(T,T')=H(T)+H(T')-H(T+T')\label{Ipredgeneral}
+\end{equation}
+ but in the limit of large observation times:
+\begin{equation}
+I_{pred}(T)=\lim_{T'\to\infty} I_{pred}(T,T')=H_{1}(T).
+\end{equation}
+$H(T)$ is the entropy computed on the signal $x(t)$ for $-T<t<0$ denoted in short
+ hand by $x_{past}$, $H(T')$ is the entropy of the signal $x(t)$ that will be observed
+ in the future $0<t<T'$ denoted in short hand by $x_{future}$. If the future and the
+ past are statistically independent $P(x_{future}|x_{past})=P(x_{future})$
+and viceversa $P(x_{past}|x_{future})=P(x_{past})$, then we cannot make any prediction:
+the random guess is the best choice to predict the future. All predictions are
+ probabilistic and so if the past tells us something about the future (and viceversa)
+ we can use the conditional distribution of the future events on the past data:
+$P(x_{future}|x_{past})$. Where the density $P(x_future|x_past)$ has smaller
+entropy compared to the prior distribution $P(x_{past})$ means that there was
+ a reduction in entropy and that the particular future event is more likely to happen.
+The average of this predictive information is defined as:
+\begin{eqnarray}
+I_{pred}(T,T')=\sum_{past,future} P(future,past)\cdot \frac{P_{future,past}}{P(future) P(past)}\\
+P(future,past)=P(future|past)\cdot P(past)
+\end{eqnarray}
+and can be rewritten as:
+\begin{eqnarray}
+ I_{pred}(T,T')=<log_2 [\frac{P(future|past)}{P(future)}]>\\
+=-<log_2 P(future)> -<log_2 P(past)> -<[-log_2 P(future,past)]>\label{Ipredextense}
+\end{eqnarray}
+where $<...>$ denotes the average over the joint distribution of the past and the future.
+Because the elements of the equation are all entropies we can rename the variables as:
+\begin{itemize}
+\item $-<log_2 P(future)>=H(T')$
+\item $-<log_2 P(past)>=H(T)$
+\item $-<log_2 P(future,past)>=H(T,T')$
+\end{itemize}
+thus using the new variables in \ref{Ipredextense} gives us the equation in \ref{Ipredgeneral}.
+What the mutual information tell us?
+$I_{pred}(T,T')$ is either the information that a data segment of duration $T$
+provides about the future length $T'$ or the information that a data segment of
+duration $T'$ provides about the immediate past of duration $T$.
+Now the entropy of a time series is proportional to its duration asymptotically,
+so that $\lim_{T\to\infty} H(T)/T=H_0$ thus entropy is an extensive quantity and
+ predictability only depends on $H_1$ because:
+\begin{equation}
+I_{pred}(T,T')=H_0\cdot T + H_1(T) +H_0\cdot T' + H_1(T') -H_0\cdot (T+T')-H_1(T+T')
+\end{equation}
+and so $I_{pred}(T,T')=H_1(T)+H_1(T')$. Giving that:
+\begin{eqnarray}
+ H(T)=H_0 T + H_1(T)\\
+\lim_{T\to\infty} H(T)/T=H_0\\
+H_1(T)\geqslant 0\\
+\lim_{T\to\infty} H_1(T)/T=0\\
+\end{eqnarray}
+and extending the future forwards toward infinity $T' \rightarrow \infty$ or the
+ past towards minus infinity $T' \leftarrow -\infty$ the predictive information becomes:
+\begin{eqnarray}
+I_{pred}(T)=H_1(T), T' \rightarrow \infty\\
+I_{pred}(T)=H_1(T), T \leftarrow -\infty\\
+\end{eqnarray}
+This equality states that there is symmetry between prediction and postdiction
+ $I_{pred}(T,T')=I_{pred}(T',T)$ but also that the predictive information at
+time $t=T$ gives us the same amount of information about the history of our
+observation as well as the same amount for the future ones that will start from
+ the present time.
+\subsection{How much information is required for prediction?}
+\label{Appendix:InfoForPrediction}
+As we observe a time series for a long time $T$, we accumulate data which is measured
+ by the entropy $H(T)$, and for $T$ that goes to infinity $H(T)\simeq H_0 T$.
+Because the predictive information cannot grow linearly with time, only a small
+ fraction of it is relevant for prediction:
+\begin{equation}
+\lim_{T\to\infty}\frac{PredictiveInformation}{TotalInformation}=\frac{I_{pred}(T)}{H(T)} \rightarrow 0
+\end{equation}
+although we collect data in proportion to our time $T$, a smaller and smaller fraction
+ of this information is useful in the problem of prediction. Nevertheless this
+property is true if the model that generates the time series has not changed its
+ parameters, but what happens if the organism or somebody else ``a deus ex''
+changes one of the parameters? The organism will experience a discontinuity
+in the predictive information that indicates a novelty or better a surprise.
+ 
+\subsection{Predictive information and model complexity}
+In the regime of infinite observation time $T\rightarrow \infty$, $I_{pred}(T)$ can:
+\begin{itemize}
+ \item remain finite as $H_1=h_1$
+ \item grow logarithmically $H_1=h_1 + k \cdot log(T)$
+ \item grow as a fraction power law $H_1=h_1 + h_2 \cdot T^{\alpha}$
+\end{itemize}
+The first possibility \textbf{$\lim_{T\to\infty}=h_1$}, means that no matter how
+ long we observe, we gain only a finite amount of information
+The second possibility \textbf{$\lim_{T\to\infty}= k\cdot lnT$}, means that future
+ observations depend on far distant past ones: the model that generates the time
+ series has a number of finite parameters. The coefficient of the divergence $k$
+counts the number of parameters of the model.
+The third possibility \textbf{$\lim_{T\to\infty} \propto T^{\alpha}$}, means that
+the underlying model has infinite parameters.
+Estimation of the sub-linear component can be achieved using non-linear regression
+ methods or using evolutionary fitting.
+
+\subsection{Prediction and compression are related}
+Suppose now that one of our agents is deprived of his output with the environment
+ so that it can only observe a set of data: $x_{1},x_{2},...,x_{N}$. When we can
+ say that the agent has learned? When the agent is able to predict the next
+observation $x_{N+1}$ in case of 1 step prediction. The more an agent knows
+the more accurate the prediction is about $x_{N+1}$ and the fewer bits are
+required to describe the difference or error from the previous observations.
+The average length of code required to describe the point $x_{N+1}$ given
+the previous history:
+\begin{equation}
+ l(N)=-<log_2(P(x_{N+1}|x_1,x_2,...,x_N))>_{P(x_1,...,x_N,x_{N+1})} bits
+\end{equation}
+is the averaged conditional probability over the joint distribution of all the
+ N+1 points. Remembering that the average code that describes a random sequence
+ of $N$ samples is the entropy $H(N)$ of that sequence, we can write:
+\begin{equation}
+ l(N)=H(N+1)-H(N)\approx \frac{\partial H(N)}{\partial N}
+\end{equation}
+We learn more when we use a smaller description for the time series.
+We can define a learning curve that measures the cost of encoding the next sample.
+The ideal encoding's length can be known if the agent observes the stream of
+ data for a infinite time:
+$l_{ideal}=\lim_{T\rightarrow \infty} l(N)$,
+thus the learning curve is the difference between the actual code length and the ideal length:
+\begin{equation}
+\varLambda \equiv l(N)-l_{ideal}=\frac{\partial I_{pred}(N)}{\partial N}
+\end{equation}
+The learning curve is the derivative of the predictive information and quantifies the
+information learned so fare, if zero means that the optimal description code of the time series
+is reached.
+
+
+\subsection{Entropy reduction measure in learning agents}
+\label{Conclusion:PredictiveBayes}
+Predictive learning can be reduced to a probabilistic model and reformulated
+in terms of Bayesian learning.
+A simple model can be formulated using random discrete variables $Y,X$ and $W$.
+$Y$ is a binary random variable that represents the distal signal ($Y={0,1}$) and
+$X$ is a binary random variable that represents the reflex signal ($X={0,1}$)
+where $Y=1$ means that the distal signal was active and $Y=0$ was not active.
+In an open loop case when the agent cannot feedback his actions to the environment,
+I can suppose that the reflex has the same probability of being present and
+absent $P(X=0)=0.5$ and the same condition applies to the distal signal $P(Y=0)=0.5$.\\
+Using a non symmetric distribution like $P(X=0)=0.58$ implies the presence of a
+bias for the reflex to appear and indicates that the agent will do much work to compensate for that.
+
+When the organism is regulating in a closed loop, a perfect regulator achieves
+an entropy reduction of the reflex as mentioned previously:
+\begin{equation}
+P(X=0)=1 \rightarrow H(X)=0
+\end{equation}
+An imperfect regulator will be identified on the contrary by:
+\begin{equation}
+0 < P(X=0) < 1 \rightarrow H(X) > 0
+\end{equation}
+A similar measure of the effectiveness  of regulation could be the expectation of the variable $X$:
+\begin{equation}
+E(X)=\sum_{i=0}^{1} x_{i} \cdot p(x_i)
+\end{equation}
+Perfect regulation implies that $E(X)=0$, whereas imperfect regulation implies $E(X)\neq 0$ because 
+the expectation $E(X)$ can be positive but also negative.
+
+To be more clear, I can consider a better discretisation of the input space: $X=\{ -1,0,1\}$ 
+mapping in this case a negative error, a zero error, and a positive error. 
+If before learning $X$ has a uniform distribution like:
+\begin{equation}
+p(X_{before})=\{1/3,1/3,1/3 \}
+\end{equation}
+\begin{eqnarray}
+E(X_{before})&=&-1\cdot \frac{1}{3}+0 \cdot \frac{1}{3}+1 \cdot \frac{1}{3}=0 \\
+H(X_{before})&=&-3\cdot \frac{1}{3}log_2(1/3)=log_2(3)=1.5850 \; bits
+\end{eqnarray}
+But after learning or an equivalent successful perfect regulation where $p(X)=\{0,1,0\}$
+\begin{eqnarray}
+E(X_{after})&=&-0+1\cdot 1+0= 1 \\
+H(X_{after})&=&log_2(1)=0 \; bits
+\end{eqnarray}
+Why is this so? Because entropy is a concave function of the distribution function p, 
+whereas estimation is not able to distinguish between the two different steps of estimation.
+In my predictive performance, I have used the entropy to estimate the predictive
+performance because of the properties of entropy like non-negativity, concavity and
+chain rules for mutual information.
+However one does not have to exclude the expectation as a potential candidate for other
+useful purposes.
+
+Intuitively if X and Y are causally dependent the predictive controller can achieve optimal 
+prediction, whereas if if X and Y are only statistically dependent it will achieve sub-optimal prediction.\\
+When the agent experiences the world using his innate reflexes, it can observe that $P(X|Y)$ 
+the probability of observing the reflex X is dependent on the probability of observing Y, 
+in order words X and Y are not conditionally independent (if they were independent $P(X|Y)=P(X)*P(Y)$).\\
+If the agent does not use the distal signal $w_1=0$, it will observe that $P(X=1|Y=1)=k1$ and 
+that the $P(X=0|Y=0)=k2$ is possibly high. Learning is achieved when the agent selects the best 
+action so that $P(X=1|Y=1)<k1$, an important fact of predictive learning is although it is 
+desirable that $P(X=0|Y=0)>k2$ it is not possible to do that because of the impossibility of 
+the correlator to evaluate the pairing of a missing distal event with a missing reflex event.\\
+
+This problem of the correlation of missing events is a weakness in many learning algorithms,
+ but there have been some new models, like the one developed by Ian Glascher who is testing 
+a dual model based on the Wagner-Rescorla equation, which consider the positive rewarded 
+outcome complementary to the negative rewarded outcome. In other words the model also considers
+ what did not happen after the agent made a particular choice.
+Predictive learning based on correlation therefore wants to choose actions so that the 
+distribution of the events is:
+\begin{itemize}
+ \item before learning $P_{before}(X=1|Y=1)=0.6$,$P(X=0|Y=1)=0.4$
+ \item after learning $P_{after}(X=0|Y=1)=0.8$, $P(X=1|Y=1)=0.2$
+\end{itemize}
+So the change in the distribution of $P_{k}(X=0|Y=1)$ is an index of the agent predictive power.
+However I need also to consider how well the agent has learnt to avoid the reflex or equivalently to regulate itself.
+I need to find an information measure which combines:
+\begin{itemize}
+ \item the predictive power of the agent
+ \item the regulatory power of the agent
+\end{itemize}
+Since I want to use entropy for its attractive properties of concavity and non-negativity,
+I can revisit the concept of conditioned entropy and mutual information and see if they suit our purposes.
+Conditioned entropy:
+\begin{eqnarray}
+H(X|Y)&=&-\sum_x \sum_y p(x,y) log (p(x|y))\\
+H(Y|X)&=&-\sum_x \sum_y p(x,y) log (p(y|x))\\
+H(X|Y)&=& H(X,Y)-H(Y)\\
+H(Y|X)&=& H(X,Y)-H(X)\\
+\end{eqnarray}
+Where the joint entropy $H(X,Y)$ is formulated as:
+\begin{equation}
+H(X,Y)=-\sum_x \sum_y p(x,y) log (p(x,y))\\
+\end{equation}
+and the mutual information as:
+\begin{eqnarray}
+I(X,X)&=&0\\
+I(X,Y)&=&I(X,Y)\\
+I(X,Y)&=&H(X)-H(X|Y)\\
+I(X,Y)&=&H(X)+H(Y)-H(X,Y)\\
+I(X,Y)&&\geqslant 0
+\end{eqnarray}
+In the next section I am going to evaluate which measure captures the learning performance of 
+the agent considering typical probability distributions before and after learning.
+The joint density can be represented as a matrix of 2 by 2 elements because in this case the 
+variables X,Y are binary.
+The table is constructed from the experimental data and must fulfil the properties
+of probability distributions:
+\begin{itemize}
+ \item the integral of the joint distribution: $\sum_X \sum_Y p(x,y)=1$
+ \item the integral of marginal distribution X: $\sum_X p(x)=1$
+ \item the integral of marginal distribution Y: $\sum_X p(y)=1$
+\end{itemize}
+The Table \ref{table:beforelearning} shows a typical density distribution before learning,
+considering the assumption of a uniform distribution for the reflex X and distal events Y,
+and that the agent has not yet learned to avoid the undesired state $x=1$ using the
+distal event $y=1$, thus $p(y=1,x=1)=0.4$. \\
+
+\begin{table}[htbp]
+\caption{
+Entropy values before learning}
+\label{table:beforelearning}
+\begin{center}
+\begin{tabular}{@{}c|ccc@{}}
+\hline
+  XY	   & $p(y=0)$ & $p(y=1)$ & $p(X)$\\
+\hline
+  $p(x=0)$ & $0.4$   & $0.1$   & 0.5\\
+  $p(x=1)$ & $0.1$   & $0.4$   & 0.5\\
+\hline
+  $p(Y)$   & $0.5$   & $0.5$    & 1.0\\
+\hline
+\end{tabular}
+\end{center}
+\end{table}
+
+From the table \ref{table:beforelearning}, I can compute the entropies in bits:
+\begin{itemize}
+ \item $H(X)=1 \; bit$
+ \item $H(Y)=1 \; bit$
+ \item $H(X,Y)=1.7219 \; bits$
+ \item $H(X|Y)=1.7219-1=0.7219 \; bits$
+ \item $I(X,Y)=1+1-1.7219=0.27810 \; bits$
+\end{itemize}
+The Table \ref{table:afterlearning} shows the density distribution after
+learning was achieved: the agent swaps the rows in the column of $y=1$:
+
+\begin{table}[htbp]
+\caption{
+Entropy values before learning}
+\label{table:afterlearning}
+\begin{center}
+\begin{tabular}{@{}c|ccc@{}}
+\hline
+  XY	   & $p(y=0)$ & $p(y=1)$ & $p(X)$\\
+\hline
+  $p(x=0)$ & $0.4$    & $0.4$    & 0.8\\
+  $p(x=1)$ & $0.1$    & $0.1$    & 0.2\\
+\hline
+  $p(Y)$   & $0.5$    & $0.5$    & 1.0\\
+\hline
+\end{tabular}
+\end{center}
+\end{table}
+
+From the table \ref{table:afterlearning}, I can compute the entropy measures:
+\begin{itemize}
+ \item $H(X)=0.72193$
+ \item $H(Y)=1$
+ \item $H(X,Y)=1.7219$
+ \item $H(X|Y)=1.7219-1=0.7219$
+ \item $I(X,Y)=1+0.72193-1.7219=0.00003$
+\end{itemize}
+The mutual information after learning has been reduced to a very small number because 
+$H(X,Y)$ is invariant to row or column permutations of the conditioned probability, 
+but it is not the case for the marginal distributions $H(X)$ and $H(Y)$ that are 
+changed because in this case $p(X=0)=0.8$ and $p(X=1)=0.2$. This means that the 
+agent has learned to avoid the undesired state $X=1$.
+An agent with perfect learning has a probability distribution as in Table \ref{table:perfect}:
+\begin{table}[htbp]
+\caption{
+Entropy values before learning}
+\label{table:perfect}
+\begin{center}
+\begin{tabular}{|c| c| c| c|}
+\hline
+  XY	   & $p(y=0)$ & $p(y=1)$ & $p(X)$\\
+\hline
+  $p(x=0)$ & $0.5$    & $0.5$    & 1.0\\
+  $p(x=1)$ & $0.0$    & $0.0$    & 0.0\\
+\hline
+  $p(Y)$   & $0.5$    & $0.5$    & 1.0\\
+\hline
+\end{tabular}
+\end{center}
+\end{table}
+
+When perfect learning is achieved the agent is always keeping the desired state 
+$p(X=0)=1.0\rightarrow H(X)=0$, no matter what the distal event was $p(x=0,y=0)=p(x=0,y=1)=0.5$, 
+hence $H(X,Y)=1$ and $H(Y)=0.5$.
+However the entropy measure does not distinguish how to equivocate between an agent that
+ learned ``a good thing'' from the one who learned ``a bad thing''.
+For example in Table\ref{table:equivocation}, where the agent has swapped $p(x=0|y=0)$ 
+with $p(x=1|y=0)$, it produces exactly the same values for the mutual information and 
+the other measures but means that the agent has learnt to produce an action that, 
+when the distal is present, evokes a reflex.\\
+
+\begin{table}[htbp]
+\caption{Equivocation table}
+\label{table:equivocation}
+\begin{center}
+\begin{tabular}{|c| c| c| c|}
+\hline
+  XY	   & $p(y=0)$ & $p(y=1)$ & $p(X)$\\
+\hline
+  $p(x=0)$ & $0.1$    & $0.1$    & 0.2\\
+  $p(x=1)$ & $0.4$    & $0.4$    & 0.8\\
+\hline
+  $p(Y)$   & $0.5$    & $0.5$    & 1.0\\
+\hline
+\end{tabular}
+\end{center}
+\end{table}
+
+Therefore when considering learning, I need to have a look at the action policy: 
+how the agent chooses an action to achieve the desired state. In our simulation the 
+agent is properly wired so that it will compensate for the distal event but an 
+improperly wired agent or an agent with a wrong action policy may reach non desired
+ states while learning.
+Therefore for a more general approach, I need to consider either the action 
+policy or restrict the probability.
+Intuitively, the combined system contains $H(X,Y)$ bits of information: we need H(X,Y) 
+bits of information to reconstruct its exact state. If we learn the value of Y, 
+we have gained $H(Y)$ bits of information, and the system has $H(X|Y)$ bits of 
+uncertainty remaining. $H(X|Y) = 0$ if and only if the value of X is completely 
+determined by the value of Y.
+The Bayes theorem can be used to calculate the conditioned probabilities $p(y|x)$ 
+from $p(x|y)$. This is more easy than computing $p(x|y)$ in our simulation because 
+of the causal  temporal relation between $y$ and $x$ (y follows x).
+\begin{eqnarray}
+P(Y=0|X)=\frac{P(X|Y=0)\cdot P(Y=0)}{P(X|Y=0)+P(X|Y=1)}\\
+P(Y=1|X)=\frac{P(X|Y=1)\cdot P(Y=1)}{P(X|Y=0)+P(X|Y=1)}\\
+\end{eqnarray}
+However this is not necessary if the estimation is made offline.
+
+\section{Industrial applications}
+\label{Conclusion:Industrial}
+There are two industrial applications of social systems in the market right now.
+One is the Kiva System \footnote{\url{http://www.kivasystems.com/}}, an automatic warehouse solution and the other is the Eporo system developed by Nissan.
+The Kiva System is a group of robots which are placed in a warehouse and
+can optimize the order fulfilment.
+The Kiva robots are able to communicate with each other and with a sort
+of control tower which assigns priorities to each robot.
+The system is a very clear implementation of the advantages of using a
+social approach to a traditional warehouse task.
+The Eporo \footnote{\url{http://www.nissan-global.com/EN/NEWS/2009/_STORY/091001-01-e.html}} system is essentially a swarm behaviour implemented
+in concept cars.
+The main goal is to use the school fish behaviour to avoid accidents
+in high density traffic. In this application there is no central controller
+and thus it is more distributed but the communication is more on the action level.
+The author is confident that in the future there will be more and more
+social robotics implementation in the industry.

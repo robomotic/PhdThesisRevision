@@ -1,0 +1,881 @@
+\begin{thebibliography}{}
+
+\bibitem[\protect\astroncite{Arimoto}{1972}]{Blahut1}
+Arimoto, S. (1972).
+\newblock An algorithm for computing the capacity of arbitrary memoryless
+  channels.
+\newblock {\em IEEE Transactions on Information Theory}, 18(1):14--20.
+
+\bibitem[\protect\astroncite{Ashby}{1956}]{Ashby1956:IntroCybernetics}
+Ashby, W.~R. (1956).
+\newblock {\em An introduction to Cybernetics}.
+\newblock Chapmann and Hall Ltd.
+
+\bibitem[\protect\astroncite{Axelrod}{1984}]{Axelrod1984}
+Axelrod, R. (1984).
+\newblock The evolution of cooperation.
+
+\bibitem[\protect\astroncite{Ay et~al.}{2008a}]{AyClosedLoop}
+Ay, N., Bertschinger, N., Der, R., G{\"u}ttler, F., and Olbrich, E. (2008a).
+\newblock Predictive information and explorative behavior of autonomous robots.
+\newblock {\em The European Physical Journal B}, 63(3):329--339.
+
+\bibitem[\protect\astroncite{Ay et~al.}{2008b}]{Ay2008:PredInformation}
+Ay, N., Bertschinger, N., Der, R., G{\"u}ttler, F., and Olbrich, E. (2008b).
+\newblock Predictive information and explorative behavior of autonomous robots.
+\newblock {\em The European Physical Journal B - Condensed Matter and Complex
+  Systems}, 63:329--339.
+\newblock 10.1140/epjb/e2008-00175-0.
+
+\bibitem[\protect\astroncite{Barto et~al.}{1983}]{BartoSutton1983:Qtable}
+Barto, A.~G., Sutton, R.~S., and Anderson, C.~W. (1983).
+\newblock Neuronlike adaptive elements that can solve difficult learning
+  control problems.
+\newblock {\em IEEE Transactions on Systems, Man, and Cybernetics}.
+
+\bibitem[\protect\astroncite{Beni}{1989}]{SwarmIntelligence}
+Beni, G. W.~J. (1989).
+\newblock Swarm intelligence in cellular robotic systems.
+\newblock {\em Proceed. NATO Advanced Workshop on Robots and Biological
+  Systems}.
+
+\bibitem[\protect\astroncite{Berger and Calabrese}{1975}]{Berger1975:URT}
+Berger, C. and Calabrese, R. (1975).
+\newblock Some explorations in initial interaction and beyond: Toward a
+  developmental theory of interpersonal communication.
+\newblock {\em Human Communication Research}, 1:99--112.
+
+\bibitem[\protect\astroncite{Bertsekas and Tsitsiklis}{1996}]{TDrealtime}
+Bertsekas, D.~P. and Tsitsiklis, J. (1996).
+\newblock {\em Neuro-Dynamic Programming}.
+\newblock Athena Scientific.
+
+\bibitem[\protect\astroncite{Bialek et~al.}{2001}]{Bialek2001:Complexity}
+Bialek, W., Nemenman, I., and Tishby, N. (2001).
+\newblock Predictability, complexity, and learning.
+\newblock {\em Neural Computation}, 13(11):2409--2463.
+
+\bibitem[\protect\astroncite{Blahut}{1972}]{Blahut2}
+Blahut, R. (1972).
+\newblock Computation of channel capacity and rate distorsion functions.
+\newblock {\em IEEE Trans. on Inform. Theory}, 18(4):460--473.
+
+\bibitem[\protect\astroncite{Blais et~al.}{1998}]{Blais98receptivefield}
+Blais, B.~S., Intrator, N., Shouval, H., and Cooper, L.~N. (1998).
+\newblock Receptive field formation in natural scene environments: Comparison
+  of single cell learning rules.
+\newblock {\em Neural Computation}, 10:1797--1813.
+
+\bibitem[\protect\astroncite{Bonomi
+  et~al.}{2009}]{Bonomi2009:PedestrianDynamic}
+Bonomi, A., Manzoni, S., Pisano, A., and Vizzari, G. (2009).
+\newblock Experimenting situated cellular agents in indoor scenario: Pedestrian
+  dynamics during lecture hall evacuation.
+\newblock In {\em Web Intelligence/IAT Workshops}, pages 591--594. IEEE.
+
+\bibitem[\protect\astroncite{Booth}{1967}]{FSMbook}
+Booth, T.~L. (1967).
+\newblock {\em Sequential Machines and Automata Theory}.
+\newblock 1 edition.
+
+\bibitem[\protect\astroncite{Braitenberg}{1984a}]{Braitenberg84}
+Braitenberg, V. (1984a).
+\newblock {\em Vehicles: Experiments in Synthetic Psychology}.
+\newblock Bradford, Colorado.
+
+\bibitem[\protect\astroncite{Braitenberg}{1984b}]{Braitenberg}
+Braitenberg, V. (1984b).
+\newblock Vehicles: Experiments in synthetic psychology.
+\newblock {\em MIT Press}.
+
+\bibitem[\protect\astroncite{Braitenberg}{1986}]{Braitenberg1986}
+Braitenberg, V. (1986).
+\newblock {\em Vehicles: Experiments in Synthetic Psychology}.
+\newblock {The MIT Press}.
+
+\bibitem[\protect\astroncite{Brembs}{1996}]{Brembs1996:CheatingPrisonerDilemma}
+Brembs, B. (1996).
+\newblock Chaos, cheating and cooperation: potential solutions to the
+  prisoner's dilemma.
+\newblock {\em Oikos}, 76(1):14--24.
+
+\bibitem[\protect\astroncite{Buccino et~al.}{2004}]{Buccino200:MirrorNeurons}
+Buccino, G., Vogt, S., Ritzl, A., Fink, G.~R., Zilles, K., Freund, H.-J., and
+  Rizzolatti, G. (2004).
+\newblock Neural circuits underlying imitation learning of hand actions: An
+  event-related fmri study.
+\newblock {\em Neuron}, 42(2):323--334.
+
+\bibitem[\protect\astroncite{Byrne and Whiten}{1988}]{Byrne1988}
+Byrne, R.~W. and Whiten, A. (1988).
+\newblock Machiavellian intelligence: Social expertise and the evolution of
+  intellect in monkeys, apes, and humans.
+\newblock pages 1--9.
+\newblock Clarendon Press, Oxford, chap 1.
+
+\bibitem[\protect\astroncite{Camazine
+  et~al.}{2001}]{Camazine2001:SelfOrgBiological}
+Camazine, S., Franks, N.~R., Sneyd, J., Bonabeau, E., Deneubourg, J.-L., and
+  Theraula, G. (2001).
+\newblock {\em Self-Organization in Biological Systems}.
+\newblock Princeton University Press, Princeton, NJ, USA.
+
+\bibitem[\protect\astroncite{da~Silva}{}]{EEGxcorr}
+da~Silva, L.~F.
+\newblock {\em Electroencephalography: Basic Principles, Clinical Applications
+  and Related Fields}, page 1097.
+
+\bibitem[\protect\astroncite{Dennett}{1987}]{Dennett1987:Intentional}
+Dennett, D.~C. (1987).
+\newblock {\em The Intentional Stance}.
+\newblock MIT Press.
+
+\bibitem[\protect\astroncite{Der et~al.}{2008}]{Der2008:PredictiveInfo}
+Der, R., G{\"u}ttler, F., and Ay, N. (2008).
+\newblock Predictive information and emergent cooperativity in a chain of
+  mobile robots.
+\newblock In Bullock, S., Noble, J., Watson, R., and Bedau, M.~A., editors,
+  {\em Artificial Life XI: Proceedings of the Eleventh International Conference
+  on the Simulation and Synthesis of Living Systems}, pages 166--172. MIT
+  Press, Cambridge, MA.
+
+\bibitem[\protect\astroncite{Dittrich et~al.}{2003}]{SocialOrderScalability}
+Dittrich, P., Kron, T., and Banzhaf, W. (2003).
+\newblock On the scalability of social order - modeling the problem of double
+  and multi contingency following luhmann.
+\newblock {\em Journal of Artificial Societies and Social Simulation}, 6.
+
+\bibitem[\protect\astroncite{Dorigo and Birattari}{2007}]{Dorigo:2007}
+Dorigo, M. and Birattari, M. (2007).
+\newblock Swarm intelligence.
+\newblock {\em Scholarpedia}, 2(9):1462.
+
+\bibitem[\protect\astroncite{Durkheim}{1893}]{Durkheim1893}
+Durkheim, {\'E}. (1893).
+\newblock {\em The Division of Labor in Society}.
+
+\bibitem[\protect\astroncite{Ernst}{1925}]{Ernst1925:Model}
+Ernst, I. (1925).
+\newblock Beitrag zur theorie des ferromagnetismus.
+\newblock {\em Physik 31:253--258}.
+
+\bibitem[\protect\astroncite{Foerster}{1960}]{vonFoerster60}
+Foerster, H. (1960).
+\newblock On self-organizing systems and their environments.
+\newblock In Yovits, M. and Cameron, S., editors, {\em Self-Organizing
+  Systems}, pages 31--50. Pergamon Press, London.
+
+\bibitem[\protect\astroncite{Foerster}{1985}]{VonFoerster85}
+Foerster, H. (1985).
+\newblock {\em Sicht und Einsicht: Versuche zu einer operativen
+  Erkenntnistheorie}.
+\newblock Vieweg, Braunschweig.
+
+\bibitem[\protect\astroncite{Foerster}{2003}]{VanFoerster2003:Cybernetics}
+Foerster, H.~V. (2003).
+\newblock {\em Understanding understanding: essays on cybernetics and
+  cognition}.
+\newblock Springer-Verlag.
+
+\bibitem[\protect\astroncite{Franks et~al.}{}]{Franks2003:StrategiesAnts}
+Franks, N.~R., Mallon, E.~B., Bray, H.~E., Hamilton, M.~J., and Mischler, T.~C.
+\newblock Strategies for choosing between alternatives with different
+  attributes: exemplified by house-hunting ants.
+
+\bibitem[\protect\astroncite{Gardner}{1970}]{Gardner1970:GameLife}
+Gardner, M. (1970).
+\newblock Mathematical games: The fantastic combinations of john conway's new
+  solitaire game 'life'.
+\newblock {\em Scientific American}, 223(4):190--123.
+
+\bibitem[\protect\astroncite{Georgoudas
+  et~al.}{2006}]{Georgoudas2006:PedestrianEvacuation}
+Georgoudas, I.~G., Sirakoulis, G.~C., and Andreadis, I. (2006).
+\newblock A simulation tool for modelling pedestrian dynamics during evacuation
+  of large areas.
+\newblock In Maglogiannis, I., Karpouzis, K., and Bramer, M., editors, {\em
+  AIAI}, volume 204 of {\em IFIP}, pages 618--626. Springer.
+
+\bibitem[\protect\astroncite{Gibson}{1955}]{Gibson1955:learning}
+Gibson, J. (1955).
+\newblock Perceptual learning: differentiation or enrichment?
+\newblock {\em Psyc. Rev.}, 62:32--41.
+
+\bibitem[\protect\astroncite{Gilbert and
+  Conte}{1995}]{GilbertConte1995:AIsocieties}
+Gilbert, N. and Conte, R. (1995).
+\newblock Artificial societies: The computer simulation of social life.
+
+\bibitem[\protect\astroncite{Guttman et~al.}{1999}]{IntroMultiAgent2}
+Guttman, R.~H., Moukas, A.~G., and Maes, P. (1999).
+\newblock Agents as mediators in electronic commerce.
+\newblock {\em In Intelligent Information Agents}, pages 131--152.
+
+\bibitem[\protect\astroncite{Hamann et~al.}{2010a}]{Hamann2010:modelsimmetry}
+Hamann, H., Meyer, B., Schmickl, T., and Crailsheim, K. (2010a).
+\newblock A model of symmetry breaking in collective decision-making.
+\newblock In {\em Proceedings of the 11th international conference on
+  Simulation of adaptive behavior: from animals to animats}, SAB'10, pages
+  639--648, Berlin, Heidelberg. Springer-Verlag.
+
+\bibitem[\protect\astroncite{Hamann
+  et~al.}{2010b}]{Hamann2010:AnalysisSimmetry}
+Hamann, H., Schmickl, T., and Crailsheim, K. (2010b).
+\newblock Analysis of emergent symmetry breaking in collective decision making.
+\newblock {\em Neural Computing and Applications}, 19.
+
+\bibitem[\protect\astroncite{{Hiroaki Kitano}}{1997}]{Kitano1997}
+{Hiroaki Kitano}, S.~H. (1997).
+\newblock The virtual biology laboratories: A new approach of computational
+  biology.
+\newblock {\em Proceedings of the Fourth European Conference on Artificial
+  Life}, pages 274--283.
+
+\bibitem[\protect\astroncite{Huelse}{2002}]{Paseman2002}
+Huelse, P. (2002).
+\newblock Dynamical neural schmitt trigger for robot control.
+\newblock {\em In Dorronsoro,J.R.}, ICAN 2002(2):83--90.
+
+\bibitem[\protect\astroncite{H{\"u}lse}{2004}]{Hulse2004}
+H{\"u}lse, W.~P. (2004).
+\newblock Structure and function of evolved neuro-controllers for autonomous
+  robots.
+\newblock {\em Connections Science}, 16(4):249--266.
+
+\bibitem[\protect\astroncite{{Humberto R. Maturana}}{1980}]{Maturana1980}
+{Humberto R. Maturana}, F. J.~V. (1980).
+\newblock {\em Autopoiesis and Cognition: The Realization of the Living.},
+  volume~42.
+
+\bibitem[\protect\astroncite{Hurri and
+  Hyvärinen}{2003}]{Hurri03:SimpleCellReceptive}
+Hurri, J. and Hyvärinen, A. (2003).
+\newblock Simple-cell-like receptive fields maximize temporal coherence in
+  natural video.
+
+\bibitem[\protect\astroncite{Kennedy and Eberhart}{1995}]{James1995:PSO}
+Kennedy, J.~N. and Eberhart, R.~C. (1995).
+\newblock Particle swarm optimization.
+
+\bibitem[\protect\astroncite{Kennedy and Shi}{2001}]{JamesShi2001:PSOgeneral}
+Kennedy, J.~N. and Shi, Y. (2001).
+\newblock Particle swarm optimization: developments, applications and
+  resources.
+\newblock {\em Proceedings of the 2001 Congress on In Evolutionary
+  Computation}, 1:81--86.
+
+\bibitem[\protect\astroncite{Kernbach
+  et~al.}{2009}]{Kornienko2009:ReembodimentOfHoneybee}
+Kernbach, S., Thenius, R., Kornienko, O., and Schmickl, T. (2009).
+\newblock Re-embodiment of honeybee aggregation behavior in an artificial
+  micro-robotic swarm.
+\newblock {\em Adaptive Behavior}, 17:237--259.
+
+\bibitem[\protect\astroncite{Kirchner and
+  Schadschneider}{2002}]{Kirchner2002:CASim}
+Kirchner, A. and Schadschneider, A. (2002).
+\newblock Cellular automaton simulations of pedestrian dynamics and evacuation
+  processes.
+
+\bibitem[\protect\astroncite{Klyubin et~al.}{2004}]{Klyubin2004:Organization}
+Klyubin, A.~S., Polani, D., and Nehaniv, C.~L. (2004).
+\newblock Organization of the information flow in the perception-action loop of
+  evolved agents.
+\newblock In {\em 2004 NASA/DoD Conference on Evolvable Hardware. IEEE Computer
+  Society}, pages 177--180.
+
+\bibitem[\protect\astroncite{Klyubin et~al.}{2005}]{Klyubin2005:Empowerment}
+Klyubin, A.~S., Polani, D., and Nehaniv, C.~L. (2005).
+\newblock Empowerment: A universal agent-centric measure of control.
+\newblock In {\em IEEE Congress on Evolutionary Computation (CEC 2005)}, pages
+  128--135.
+
+\bibitem[\protect\astroncite{Klyubin et~al.}{2007}]{Klyubin2007:Representation}
+Klyubin, A.~S., Polani, D., and Nehaniv, C.~L. (2007).
+\newblock Representations of space and time in the maximization of information
+  flow in the perception-action loop.
+\newblock {\em Neural Comput}, 19:2387--2432.
+
+\bibitem[\protect\astroncite{Klyubin et~al.}{2008}]{Klyubin2008:KeepOptions}
+Klyubin, A.~S., Polani, D., and Nehaniv, C.~L. (2008).
+\newblock Keep your options open: an information-based driving principle for
+  sensorimotor systems.
+\newblock {\em PLoS ONE}, 3.
+
+\bibitem[\protect\astroncite{Kolmogorov}{1965}]{Kolmogorov1965:InfoDefinition}
+Kolmogorov, A. (1965).
+\newblock Three approaches to the quantitative definition of information.
+\newblock {\em Problems of Information and Transmission}, 1(1):1--7.
+
+\bibitem[\protect\astroncite{Kolodziejski and
+  Kulvicius}{2009}]{Kulvicius2009:analysisdifferential}
+Kolodziejski, C. and Kulvicius, T. (2009).
+\newblock On the analysis of differential hebbian learning in closed-loop
+  behavioral systems.
+\newblock {\em Frontiers in Computational Neuroscience. Conference Abstract:
+  Bernstein Conference on Computational Neuroscience}.
+
+\bibitem[\protect\astroncite{Kulvicius
+  et~al.}{2010}]{Kulvicius2010:RFinformation}
+Kulvicius, T., Kolodziejski, C., Tamosiunaite, M., Porr, B., and
+  W{\"o}rg{\"o}tter, F. (2010).
+\newblock Behavioral analysis of differential hebbian learning in closed-loop
+  systems.
+\newblock {\em Biol. Cybern.}, 103:255--271.
+
+\bibitem[\protect\astroncite{Kulvicius et~al.}{2007}]{Kulvicius2007:RFrobot}
+Kulvicius, T., Porr, B., and W{\"o}rg{\"o}tter, F. (2007).
+\newblock Development of receptive fields in a closed-loop behavioural system.
+\newblock {\em Neurocomputing}, 70(10-12):2046--2049.
+\newblock Computational Neuroscience: Trends in Research 2007, Computational
+  Neuroscience 2006.
+
+\bibitem[\protect\astroncite{Körding et~al.}{2004}]{Kording04:HowAreCell}
+Körding, K.~P., König, P., P, K., Kayser, C., Kayser, C., Einhäuser, W., and
+  Einhäuser, W. (2004).
+\newblock How are complex cell properties adapted to the statistics of natural
+  stimuli?
+\newblock {\em Journal of Neurophysiology}, 91:2004.
+
+\bibitem[\protect\astroncite{Lai1 et~al.}{2001}]{FoxP2Gene:Nature:2001}
+Lai1, C. S.~L., Fisher, S.~E., and Hurst, J.~A. (2001).
+\newblock A forkhead-domain gene is mutated in a severe speech and language
+  disorder.
+\newblock {\em Nature}, 6855:519--23.
+
+\bibitem[\protect\astroncite{Lin and Mitchell}{1992}]{Lin92:memoryapproaches}
+Lin, L.-J. and Mitchell, T.~M. (1992).
+\newblock Memory approaches to reinforcement learning in non-markovian domains.
+\newblock Technical report.
+
+\bibitem[\protect\astroncite{Liu and Layland}{1973}]{Liu73schedulingalgorithms}
+Liu, C.~L. and Layland, J.~W. (1973).
+\newblock Scheduling algorithms for multiprogramming in a hard-real-time
+  environment.
+\newblock {\em J. ACM}, 20:46--61.
+
+\bibitem[\protect\astroncite{Luhmann}{1984}]{Luhmann94}
+Luhmann, N. (1984).
+\newblock {\em Soziale Systeme}.
+\newblock Suhrkamp, Frankfurt am Main.
+
+\bibitem[\protect\astroncite{Luhmann}{1993}]{Luhmann1993}
+Luhmann, N. (1993).
+\newblock Soziologische aufkl{\"a}rung 3: Soziales system, gesellschaft,
+  organisation.
+\newblock {\em Opladen: Westdeutscher Verlag}.
+
+\bibitem[\protect\astroncite{Luhmann}{1995}]{Luhmann95}
+Luhmann, N. (1995).
+\newblock {\em Social Systems}.
+\newblock Stanford University Press, Stanford, California.
+
+\bibitem[\protect\astroncite{Luhmann}{2000}]{Luhmann2000}
+Luhmann, N. (2000).
+\newblock Organisation und entscheidung.
+\newblock {\em Opladen: Westdeutscher Verlag}.
+
+\bibitem[\protect\astroncite{Lungarella
+  et~al.}{2005a}]{Lungarella2005:MethodsInfo}
+Lungarella, M., Pegors, T., Bulwinkle, D., and Sporns, O. (2005a).
+\newblock Methods for quantifying the informational structure of sensory and
+  motor data.
+\newblock {\em Neuroinformatics}, 3:243--262.
+
+\bibitem[\protect\astroncite{Lungarella
+  et~al.}{2005b}]{LungarellaInformationStructure}
+Lungarella, M., Pegors, T., Bulwinkle, D., and Sporns, O. (2005b).
+\newblock Methods for quantifying the informational structure of sensory and
+  motor data.
+\newblock {\em Neuroinformatics}, 3:243--262.
+\newblock 10.1385/NI:3:3:243.
+
+\bibitem[\protect\astroncite{Lungarella and
+  Sporns}{2006}]{LungarellaSporns2006:MappingFlow}
+Lungarella, M. and Sporns, O. (2006).
+\newblock Mapping information flow in sensorimotor networks.
+\newblock {\em PLoS Comput. Biol.}, 2:e144.
+
+\bibitem[\protect\astroncite{M et~al.}{2009}]{Dussutour2009:NoiseDecisionAnts}
+M, B., SC, N., B., M., and A, D. (2009).
+\newblock Noise improves collective decision-making by ants in dynamic
+  environments.
+\newblock {\em Proc Biol Sci.}, 22.
+
+\bibitem[\protect\astroncite{MacDermot et~al.}{2005}]{FOXP2Identification:2005}
+MacDermot, K., Bonora, E., and Sykes, N. (2005).
+\newblock Identification of {FOXP2} truncation as a novel cause of
+  developmental speech and language deficits.
+\newblock {\em Am. J. Hum. Genet}, 6:1074--80.
+
+\bibitem[\protect\astroncite{Magnenat}{2007}]{Floreano-MAS}
+Magnenat, D. F. S. M.~S. (2007).
+\newblock Evolutionary conditions for the emergence of communication in robots.
+\newblock {\em Current biology}, 17(17):514--519.
+
+\bibitem[\protect\astroncite{Marrocco and Nolfi}{2006}]{OriginsComm}
+Marrocco, D. and Nolfi, S. (2006).
+\newblock Origins of communication in evolving robots.
+\newblock {\em From Animals to Animats}, (9):789--803.
+
+\bibitem[\protect\astroncite{Martinetz et~al.}{}]{shannonSemantic}
+Martinetz, T., Kim, J., and Polani, D.
+\newblock An information-theoretic approach for the quantification of
+  relevance.
+
+\bibitem[\protect\astroncite{McFarland}{1993}]{McFarland93}
+McFarland, D.~J. (1993).
+\newblock {\em Intelligent behavior in animals and robots}.
+\newblock MIT Press, Cambridge, MA.
+
+\bibitem[\protect\astroncite{McKinstry
+  et~al.}{2006}]{McKinstry06:CerebellarModel}
+McKinstry, J.~L., Edelman, G.~M., and Krichmar, J.~L. (2006).
+\newblock A cerebellar model for predictive motor control tested in a
+  brain-based device.
+\newblock {\em Proc Natl Acad Sci U S A}, 103(9):3387--3392.
+
+\bibitem[\protect\astroncite{Meyer et~al.}{2008}]{Meyer2008:noise-induced}
+Meyer, B., Beekman, M., and Dussutour, A. (2008).
+\newblock Noise-induced adaptive decision-making in ant-foraging.
+\newblock In {\em SAB'08}, pages 415--425.
+
+\bibitem[\protect\astroncite{Moller}{1988}]{Moller1998:FalseAlarmCalls}
+Moller, A. (1988).
+\newblock False alarm calls as a means of resource usurpation in the great tit
+  parus-major.
+\newblock {\em ETHOLOGY}, 79(1):25--30.
+
+\bibitem[\protect\astroncite{Nolfi}{2005}]{NolfiInteraction}
+Nolfi, S. (2004/2005).
+\newblock Behaviour as a complex adaptive system: On the role of
+  self-organization in the development of individual and collective behaviour.
+\newblock {\em Complexus}, 2:195--203.
+
+\bibitem[\protect\astroncite{Olshausen and Field}{1996}]{Olshausen96}
+Olshausen, B.~A. and Field, D.~J. (1996).
+\newblock Emergence of simple-cell receptive field properties by learning a
+  sparse code for natural images.
+\newblock {\em Nature}, 381(6583):607--609.
+
+\bibitem[\protect\astroncite{Paolo et~al.}{2008}]{DiProdiMultiAgent}
+Paolo, D.~P., Porr, B., and W{\"o}rg{\"o}tter, F. (2008).
+\newblock Adaptive communication promotes sub-system formation in a multi agent
+  system with limited resources.
+\newblock {\em LAB-RS '08: Proceedings of the 2008 ECSIS Symposium on Learning
+  and Adaptive Behaviors for Robotic Systems}, pages 89--96.
+
+\bibitem[\protect\astroncite{Parsons}{1937}]{Parsons1937:StructureSocialAim}
+Parsons, T. (1937).
+\newblock The structure of social action.
+
+\bibitem[\protect\astroncite{Parsons}{1951}]{Parsons51}
+Parsons, T. (1951).
+\newblock {\em The Social System}.
+\newblock Routledge \& Kegan Paul Ltd, London and Henley.
+
+\bibitem[\protect\astroncite{Parsons}{1977}]{Parsons77}
+Parsons, T. (1977).
+\newblock {\em Social systems and the evolution of action theory}.
+\newblock The Free Press, New York.
+
+\bibitem[\protect\astroncite{Pasemann}{2006}]{EmergenceCommMas}
+Pasemann, S. W.~F. (2006).
+\newblock The emergence of communication by evolving dynamical systems.
+\newblock {\em From Animals to Animats}, (9):777--788.
+
+\bibitem[\protect\astroncite{Pegors et~al.}{2005}]{quantifyInfo}
+Pegors, T., Bulwinkle, D., and Lungarella, M. (2005).
+\newblock Methods for quantifying the information structure of sensory and
+  motor data.
+\newblock {\em Neuroinformatics}, 3:343--262.
+
+\bibitem[\protect\astroncite{Pfeifer et~al.}{2008}]{LungarellaInformation}
+Pfeifer, R., Lungarella, M., Sporns, O., and Kuniyoshi, Y. (2008).
+\newblock On the information theoretic implications of embodiment - principles
+  and methods.
+\newblock {\em Proc. of the 50th Anniversary Summit of Artificial
+  Intelligence}, pages 76--86.
+
+\bibitem[\protect\astroncite{Polani}{2010}]{infoFlow}
+Polani, D. (2010).
+\newblock Information flows in causal networks.
+\newblock {\em Social Science Research Network Working Paper Series}.
+
+\bibitem[\protect\astroncite{Polani et~al.}{2004}]{organizationInfo}
+Polani, D., Klyubin, A.~S., and Nehaniv, C.~L. (2004).
+\newblock Organization of the information flow in the perception-action loop of
+  evolved agents.
+\newblock pages 177--180.
+
+\bibitem[\protect\astroncite{Polani et~al.}{2005}]{polaniEmpowerment}
+Polani, D., Nehaniv, C.~L., and Klyubin, A.~S. (2005).
+\newblock Empowerment: A universal agent-centric measure of control.
+\newblock {\em Proceedings of the IEEE Congress on Evolutionary Computation},
+  1:128--135.
+
+\bibitem[\protect\astroncite{Polani et~al.}{2008}]{optionsOpen}
+Polani, D., Nehaniv, C.~L., and Klyubin, A.~S. (2008).
+\newblock Keep your options open: An information-based driving principle for
+  the sensorimotor systems.
+\newblock {\em PLoSOne}, 3.
+
+\bibitem[\protect\astroncite{Porr et~al.}{2006}]{Porr2006cf}
+Porr, B., Egerton, A., and {W\"{o}rg\"{o}tter}, F. (2006).
+\newblock Towards closed loop information: Predictive information.
+\newblock {\em Constructivist Foundations}, 1(2):83--90.
+
+\bibitem[\protect\astroncite{Porr and W\"org\"otter}{2003}]{PorrNecoISO2003}
+Porr, B. and W\"org\"otter, F. (2003).
+\newblock Isotropic sequence order learning.
+\newblock {\em Neural Comp.}, 15:831--864.
+
+\bibitem[\protect\astroncite{Porr and W{\"o}rg{\"o}tter}{2003a}]{Porr03a}
+Porr, B. and W{\"o}rg{\"o}tter, F. (2003a).
+\newblock Isotropic sequence order learning.
+\newblock {\em Neural Comp.}, 15:831--864.
+
+\bibitem[\protect\astroncite{Porr and W{\"o}rg{\"o}tter}{2003b}]{Porr2003b}
+Porr, B. and W{\"o}rg{\"o}tter, F. (2003b).
+\newblock Isotropic sequence order learning.
+\newblock {\em Neural Comput}, 15:831--864.
+
+\bibitem[\protect\astroncite{Porr and W\"org\"otter}{2003}]{Porr2003rsoc}
+Porr, B. and W\"org\"otter, F. (2003).
+\newblock Isotropic sequence order learning in a closed loop behavioural
+  system.
+\newblock {\em Roy. Soc. Phil. Trans. Math., Phys. \& Eng. Sciences},
+  361(1811):2225--2244.
+
+\bibitem[\protect\astroncite{Porr and
+  W{\"o}rg{\"o}tter}{2005}]{RadicalConstruct}
+Porr, B. and W{\"o}rg{\"o}tter, F. (2005).
+\newblock Inside embodiment what means embodiment to radical constructivists?
+\newblock {\em Kybernetes}, pages 105--117.
+
+\bibitem[\protect\astroncite{Porr and W\"org\"otter}{2005}]{Porr2005kyb}
+Porr, B. and W\"org\"otter, F. (2005).
+\newblock What means embodiment for radical constructivists?
+\newblock {\em Kybernetes}, pages 105--117.
+
+\bibitem[\protect\astroncite{Porr and {W\"{o}rg\"{o}tter}}{2006}]{Porr2006ICO}
+Porr, B. and {W\"{o}rg\"{o}tter}, F. (2006).
+\newblock Strongly improved stability and faster convergence of temporal
+  sequence learning by utilising input correlations only.
+\newblock {\em Neural Computation}, 18(6):1380--1412.
+
+\bibitem[\protect\astroncite{Porr and W{\"o}rg{\"o}tter}{2006}]{Porr06}
+Porr, B. and W{\"o}rg{\"o}tter, F. (2006).
+\newblock Strongly improved stability and faster convergence of temporal
+  sequence learning by utilising input correlations only.
+\newblock {\em Neural Comp.}, 18(6):1380--1412.
+
+\bibitem[\protect\astroncite{Prokopenko
+  et~al.}{2006}]{Prokopenko2006:EvolveCoordination}
+Prokopenko, M., Gerasimov, V., and Tanev, I. (2006).
+\newblock Evolving spatiotemporal coordination in a modular robotic system.
+\newblock In {\em SAB 2006}, pages 558--569.
+
+\bibitem[\protect\astroncite{Quiroga et~al.}{2002}]{PhysRevE.65.041903}
+Quiroga, R.~Q., Kraskov, A., Kreuz, T., and Grassberger, P. (2002).
+\newblock Performance of different synchronization measures in real data: A
+  case study on electroencephalographic signals.
+\newblock {\em Phys. Rev. E}, 65(4):041903.
+
+\bibitem[\protect\astroncite{Reading and
+  Sperandio}{2006}]{Reading2006:quorumbacteria}
+Reading, N.~C. and Sperandio, V. (2006).
+\newblock Quorum sensing: the many languages of bacteria.
+\newblock {\em FEMS Microbiology Letters}, 254(1):1--11.
+
+\bibitem[\protect\astroncite{Rissanen}{1989}]{Rissanen1989:Complexity}
+Rissanen, J. (1989).
+\newblock {\em Stochastic Complexity in Statistical Inquiry}.
+\newblock New Jersey: World Scientific Publishing Company.
+
+\bibitem[\protect\astroncite{Roulston}{1999}]{Roulston1999:Estimation}
+Roulston, M.~S. (1999).
+\newblock Estimating the errors on measured entropy and mutual information.
+\newblock {\em Physica D}, 125:285--294.
+
+\bibitem[\protect\astroncite{Rouslton}{1999}]{Rouslton}
+Rouslton, M. (1999).
+\newblock Estimating the errors on measured entropy and mutual information.
+\newblock {\em Physica D}, pages 285--294.
+
+\bibitem[\protect\astroncite{Schmidhuber}{2010}]{Schuber2010:Novelty}
+Schmidhuber, J. (2010).
+\newblock Formal theory of creativity, fun, and intrinsic motivation.
+\newblock {\em IEEE Transactions on Autonomous Mental Development,},
+  2(3):230--247.
+
+\bibitem[\protect\astroncite{Schreiber}{2000}]{transferEntropy}
+Schreiber, T. (2000).
+\newblock Measuring information transfer.
+\newblock {\em Phys Rev Lett}, 85:461--464.
+
+\bibitem[\protect\astroncite{Schwieren and
+  Weichselbaumer}{2010}]{Schwieren2010:CompetitionCheating}
+Schwieren, C. and Weichselbaumer, D. (2010).
+\newblock Does competition enhance performance or cheating? a laboratory
+  experiment.
+\newblock {\em Journal of Economic Psychology}, 31(3):241 -- 253.
+
+\bibitem[\protect\astroncite{Seyfarth and
+  Cheney}{2000}]{Seyfarth2000:AwarenessMonkey}
+Seyfarth, R.~M. and Cheney, D.~L. (2000).
+\newblock Social awareness in monkeys.
+\newblock {\em American Zoologist}, 40(6):902--909.
+
+\bibitem[\protect\astroncite{Shannon}{1948}]{Shannon1948}
+Shannon, C.~E. (1948).
+\newblock A mathematical theory of communication.
+\newblock {\em The Bell System Technical Journal}, 27:379--423.
+
+\bibitem[\protect\astroncite{Shannon and Weaver}{1949}]{Shannon76}
+Shannon, C.~E. and Weaver, W. (1949).
+\newblock {\em The mathematical theory of communication}.
+\newblock University of Illinois Press, Urbana.
+
+\bibitem[\protect\astroncite{Shor}{}]{AuctionTypes}
+Shor, M.
+\newblock Dictionary of game theory terms.
+\newblock \url{http://www.gametheory.net/}.
+
+\bibitem[\protect\astroncite{Smith}{1776}]{Smith1776:WealthNations}
+Smith, A. (1776).
+\newblock {\em The Wealth of Nations}.
+
+\bibitem[\protect\astroncite{Smith and Harper}{2003}]{AnimalSignals}
+Smith, J.~M. and Harper, D. (2003).
+\newblock {\em Animal Signals}.
+\newblock Oxfold University Press.
+
+\bibitem[\protect\astroncite{Stamm}{2006}]{Stamm2006}
+Stamm, K. (2006).
+\newblock Individual learning and the dynamics in predator-prey populations.
+\newblock {\em G\"ottingen informatic journal}, (ZFI-NM-2007-08):243--259.
+
+\bibitem[\protect\astroncite{Steels}{1998}]{Steels:1998:OriginsOntologies}
+Steels, L. (1998).
+\newblock The origins of ontologies and communication conventions in
+  multi-agent systems.
+\newblock {\em Autonomous Agents and Multi-Agent Systems}, 2(1):169--194.
+
+\bibitem[\protect\astroncite{Steels}{1999}]{Steels:1999:TalkingHeads}
+Steels, L. (1999).
+\newblock {\em The Talking Heads Experiment}.
+\newblock Laboratorium, Antwerpen, Belgium.
+\newblock Limited Pre-edition.
+
+\bibitem[\protect\astroncite{Stone and Veloso}{1998}]{StoneVeloso98:RoboCup}
+Stone, P. and Veloso, M. (1998).
+\newblock A layered approach to learning client behaviors in the robocup soccer
+  server.
+\newblock {\em Applied Artificial Intelligence}, 12.
+
+\bibitem[\protect\astroncite{Stuart}{1984}]{PID}
+Stuart, B. (1984).
+\newblock Nicholas minorsky and the automatic steering of ships.
+\newblock {\em Control Systems Magazine, IEEE}, 4(4).
+
+\bibitem[\protect\astroncite{Sugawara and Lesser}{1998}]{Sugawara98learningto}
+Sugawara, T. and Lesser, V. (1998).
+\newblock Learning to improve coordinated actions in cooperative distributed
+  problem-solving environments.
+
+\bibitem[\protect\astroncite{Sutton and Barto}{1998}]{TD}
+Sutton, R.~S. and Barto, A.~G. (1998).
+\newblock {\em Reinforcement Learning: An Introduction}.
+
+\bibitem[\protect\astroncite{Talcott}{1968}]{Talcott1968:SocioTheory}
+Talcott, P. (1968).
+\newblock Sociological theory and modern society.
+
+\bibitem[\protect\astroncite{Tan}{1997}]{tan97multiagent}
+Tan, M. (1997).
+\newblock {\em Multi-Agent Reinforcement Learning: Independent vs.\ Cooperative
+  Learning}.
+\newblock Morgan Kaufmann, San Francisco, CA, USA.
+
+\bibitem[\protect\astroncite{Thomas}{1651}]{Thomas1651:Leviathan}
+Thomas, H. (1651).
+\newblock {\em Leviathan, or, The matter, forme, and power of a common-wealth
+  ecclesiasticall and civill.}
+
+\bibitem[\protect\astroncite{Thomas~L.Griffiths}{2006}]{OptimalPredEveryDay}
+Thomas~L.Griffiths, J. B.~T. (2006).
+\newblock Optimal predictions in everyday cognition.
+\newblock {\em Psychological Science}, 17(9):767--727.
+
+\bibitem[\protect\astroncite{Tishby et~al.}{1999}]{Tishby1999:InfoBottle}
+Tishby, N., Pereira, F.~C., and Bialek, W. (1999).
+\newblock The information bottleneck method.
+\newblock In {\em Proc. of the 37-th Annual Allerton Conference on
+  Communication, Control and Computing}, pages 368--377.
+
+\bibitem[\protect\astroncite{Tishby et~al.}{2000}]{Tishby2000:InfoBottle}
+Tishby, N., Pereira, F.~C., and Bialek, W. (2000).
+\newblock The information bottleneck method.
+
+\bibitem[\protect\astroncite{Tomas et~al.}{2010}]{Kulvicius2010:infomeasure}
+Tomas, K., Christoph, K., Minija, T., Bernd, P., and Florentin, W. (2010).
+\newblock Behavioral analysis of differential hebbian learning in closed-loop
+  systems.
+\newblock {\em Biological Cybernetics}, 103:255--271.
+\newblock 10.1007/s00422-010-0396-4.
+
+\bibitem[\protect\astroncite{Touchette and
+  Lloyd}{2000a}]{TouchetteLloyd2004:InfoApproachControl}
+Touchette, H. and Lloyd, S. (2000a).
+\newblock Information-theoretic approach to the study of control systems.
+\newblock {\em Physica A}, 331:140--172.
+
+\bibitem[\protect\astroncite{Touchette and Lloyd}{2000b}]{PhysRevLett.84.1156}
+Touchette, H. and Lloyd, S. (2000b).
+\newblock Information-theoretic limits of control.
+\newblock {\em Phys. Rev. Lett.}, 84(6):1156--1159.
+
+\bibitem[\protect\astroncite{Touchette and Lloyd}{2004}]{Touchette2004}
+Touchette, H. and Lloyd, S. (2004).
+\newblock Information-theoretic approach to the study of control systems.
+\newblock {\em Physica A}, 331:140--172.
+
+\bibitem[\protect\astroncite{Vapnik}{1998}]{Vapnik1998:StatisticalLearningTheo%
+ry}
+Vapnik, V.~N. (1998).
+\newblock {\em Statistical Learning Theory}.
+\newblock Wiley-Interscience.
+
+\bibitem[\protect\astroncite{Varas}{2007}]{Varas2007:CAevacuation}
+Varas, A. (2007).
+\newblock Cellular automaton model for evacuation process with obstacles.
+
+\bibitem[\protect\astroncite{\v{C}apek and Novack}{1920}]{Karel1920:RUR}
+\v{C}apek, K. and Novack, C. (1920).
+\newblock {\em R.U.R. (Rossum's universal robots)}.
+
+\bibitem[\protect\astroncite{Verschure and Coolen}{1991}]{Verschure91}
+Verschure, P. and Coolen, A. (1991).
+\newblock Adaptive fields: Distributed representations of classically
+  conditioned associations.
+\newblock {\em Network}, 2:189--206.
+
+\bibitem[\protect\astroncite{Verschure and Voegtlin}{1998}]{Verschure98summary}
+Verschure, P. and Voegtlin, T. (1998).
+\newblock A bottom-up approach towards the acquisition, retention, and
+  expression of sequential representations: Distributed adaptive control
+  \mbox{III}.
+\newblock {\em Neural Networks}, 11:1531--1549.
+
+\bibitem[\protect\astroncite{Verschure}{1998}]{Verschure98epistemol}
+Verschure, P.~F. (1998).
+\newblock Synthetic epistemology: The aquisition, retention, and expression of
+  knowledge in natural and synthetic systems.
+\newblock In {\em Proceedings of the 1998 IEEE World Congress on Computational
+  Intelligence}, pages 147--153, Anchorage. IEEE.
+
+\bibitem[\protect\astroncite{Verschure et~al.}{2003}]{Verschure2003}
+Verschure, P. F. M.~J., Voegtlin, T., and Douglas, R.~J. (2003).
+\newblock Environmentally mediated synergy between perception and behaviour in
+  mobile robots.
+\newblock {\em Nature}, 425:620--624.
+
+\bibitem[\protect\astroncite{Volterra}{1931}]{LotkeVolterra1931:PredatorPrey}
+Volterra, V. (1931).
+\newblock Variations and fluctuations of the number of individuals in animal
+  species living together in animal ecology.
+\newblock {\em Animal Ecology}.
+
+\bibitem[\protect\astroncite{von Glasersfeld}{1995}]{Glasersfeld1995}
+von Glasersfeld, E. (1995).
+\newblock {\em Radical Constructivism. A way of knowing and learning}.
+\newblock Falmer Press, London.
+
+\bibitem[\protect\astroncite{Wang et~al.}{}]{feed-forward}
+Wang, G., Zhang, J., and Bi, D.
+\newblock Novel learning feed-forward controller for accurate robot trajectory
+  tracking.
+\newblock 3611/2005:266--269.
+
+\bibitem[\protect\astroncite{Watkins and Dayan}{1992}]{watkins92a}
+Watkins, C. J. C.~H. and Dayan, P. (1992).
+\newblock Q-learning.
+\newblock {\em Machine Learning}, 8(3-4):279--292.
+
+\bibitem[\protect\astroncite{Weber and
+  Obermayer}{1999}]{Weber99orientationselective}
+Weber, C. and Obermayer, K. (1999).
+\newblock Orientation selective cells emerge in a sparsely coding boltzmann
+  machine.
+\newblock In {\em Proceedings ICANN}, pages 286--291.
+
+\bibitem[\protect\astroncite{Weisbuch and
+  Stauffer}{2000}]{Gerard2000:HitsFlopsDynamic}
+Weisbuch, G. and Stauffer, D. (2000).
+\newblock Hits and flops dynamics.
+\newblock Working Papers 00-07-036, Santa Fe Institute.
+
+\bibitem[\protect\astroncite{Werner and Buse}{1989}]{HumanBody}
+Werner, J. and Buse, M. (1989).
+\newblock Closed loop control of human body temperature: results from a
+  one-dimensional model.
+\newblock {\em Biol Cybern.}, 61(6):467--75.
+
+\bibitem[\protect\astroncite{Wiener}{1961}]{Wiener61}
+Wiener, N. (1961).
+\newblock {\em Cybernetics --- or control and communication in the animal and
+  the machine}.
+\newblock The M.I.T. Press, Cambridge, Massachusetts, 2 edition.
+
+\bibitem[\protect\astroncite{Wimmer and
+  Perner}{1983}]{WimmerPerner1983:ChildMind}
+Wimmer, H. and Perner, J. (1983).
+\newblock Beliefs about beliefs: Representation and constraining function of
+  wrong beliefs in young children's understanding of deception.
+\newblock {\em Cognition}, 13:103--128.
+
+\bibitem[\protect\astroncite{W.Macy and
+  Willer}{2002}]{WMacyWiller2002:SocialABM}
+W.Macy, M. and Willer, R. (2002).
+\newblock From factors to actors: Computational sociology and agent-based
+  modeling.
+\newblock {\em Annual Review of Sociology}, 28:143--166.
+
+\bibitem[\protect\astroncite{Wolfram}{1994}]{Wolfram1994:CellAutomata}
+Wolfram, S. (1994).
+\newblock {\em Cellular Automata and Complexity: Collected Papers}.
+\newblock Stephen Wolfram, LLC.
+
+\bibitem[\protect\astroncite{Wooldrige.}{2002}]{IntroMultiAgent1}
+Wooldrige., M. (2002).
+\newblock An introduction to multiagent systems.
+\newblock {\em Proceed. NATO Advanced Workshop on Robots and Biological
+  Systems}, pages 243--266.
+
+\bibitem[\protect\astroncite{Wyss et~al.}{2006}]{Wyss06:ModelVentralVisual}
+Wyss, R., König, P., and Verschure, P. F. M.~J. (2006).
+\newblock A model of the ventral visual system based on temporal stability and
+  local memory.
+\newblock {\em PLoS Biol}, 4(5):e120.
+
+\bibitem[\protect\astroncite{Xiaoming}{2000}]{Qlearning-MAS}
+Xiaoming, O. H. Z. W. Z. W.~X. (2000).
+\newblock A novel multi-agent q-learning algorithm in cooperative
+  multi-agentsystem.
+\newblock {\em Intelligent Control and Automation. Proceedings of the 3rd World
+  Congress}, 1:272 -- 276.
+
+\bibitem[\protect\astroncite{Zahavi}{1975}]{Zahavi1975:MateSelection}
+Zahavi, A. (1975).
+\newblock Mate selection - a selection for a handicap.
+\newblock {\em Journal of Theoretical Biology}, 53:205--214.
+
+\bibitem[\protect\astroncite{Zong et~al.}{2010}]{Zong2010:MultiObjAnt}
+Zong, X., Xiong, S., Fang, Z., and Li, Q. (2010).
+\newblock Multi-objective optimization for massive pedestrian evacuation using
+  ant colony algorithm.
+\newblock In Tan, Y., Shi, Y., and Tan, K.~C., editors, {\em ICSI (1)}, volume
+  6145 of {\em Lecture Notes in Computer Science}, pages 636--642. Springer.
+
+\end{thebibliography}

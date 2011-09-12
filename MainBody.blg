@@ -1,0 +1,88 @@
+This is BibTeX, Version 0.99c (TeX Live 2009/Debian)
+The top-level auxiliary file: MainBody.aux
+The style file: apa.bst
+Database file #1: hebb.bib
+Database file #2: isgroup.bib
+Database file #3: infotheory.bib
+Database file #4: robot.bib
+Database file #5: embodiment.bib
+Database file #6: selbstorg.bib
+Database file #7: closedloop.bib
+Database file #8: economy.bib
+Database file #9: socialmodelling.bib
+Database file #10: swarm.bib
+Database file #11: bayesmodel.bib
+Database file #12: various.bib
+Database file #13: prediction.bib
+Database file #14: stdp.bib
+Database file #15: ours.bib
+Warning--empty journal in Axelrod1984
+Warning--empty publisher in FSMbook
+Warning--empty journal in Byrne1988
+Warning--empty year in EEGxcorr
+Warning--empty title in EEGxcorr
+Warning--empty publisher in Durkheim1893
+Warning--empty year in Franks2003:StrategiesAnts
+Warning--empty journal in Franks2003:StrategiesAnts
+Warning--empty journal in GilbertConte1995:AIsocieties
+Warning--empty publisher in Maturana1980
+Warning--empty journal in James1995:PSO
+Warning--empty institution in Lin92:memoryapproaches
+Warning--there's a number but no volume in OriginsComm
+Warning--empty year in shannonSemantic
+Warning--empty journal in shannonSemantic
+Warning--empty journal in Parsons1937:StructureSocialAim
+Warning--there's a number but no volume in EmergenceCommMas
+Warning--empty booktitle in organizationInfo
+Warning--empty year in AuctionTypes
+Warning--empty publisher in Smith1776:WealthNations
+Warning--there's a number but no volume in Stamm2006
+Warning--empty journal in Sugawara98learningto
+Warning--empty publisher in TD
+Warning--empty journal in Talcott1968:SocioTheory
+Warning--empty publisher in Thomas1651:Leviathan
+Warning--empty publisher in Karel1920:RUR
+Warning--empty year in feed-forward
+Warning--empty journal in feed-forward
+You've used 153 entries,
+            1940 wiz_defined-function locations,
+            1430 strings with 29058 characters,
+and the built_in function-call counts, 58536 in all, are:
+= -- 5764
+> -- 2045
+< -- 134
++ -- 712
+- -- 654
+* -- 4944
+:= -- 10019
+add.period$ -- 453
+call.type$ -- 153
+change.case$ -- 1059
+chr.to.int$ -- 147
+cite$ -- 181
+duplicate$ -- 2356
+empty$ -- 4200
+format.name$ -- 893
+if$ -- 11476
+int.to.chr$ -- 7
+int.to.str$ -- 0
+missing$ -- 175
+newline$ -- 755
+num.names$ -- 467
+pop$ -- 973
+preamble$ -- 1
+purify$ -- 1086
+quote$ -- 0
+skip$ -- 1838
+stack$ -- 0
+substring$ -- 4196
+swap$ -- 500
+text.length$ -- 28
+text.prefix$ -- 0
+top$ -- 0
+type$ -- 860
+warning$ -- 28
+while$ -- 499
+width$ -- 0
+write$ -- 1933
+(There were 28 warnings)
