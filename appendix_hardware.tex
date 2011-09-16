@@ -1,5 +1,5 @@
-\section{Implementation of a swarm system}
-\label{Appendix:RobotSystem}
+\section{Implementation of a swarm system \label{Appendix:RobotSystem}}
+
 There are several reasons to realise a swarm system:
 \begin{enumerate}
  \item proof of concept
@@ -155,9 +155,8 @@ enables a controlled real-time execution of several processes which appear to ru
 The OSEK operating system provides a defined set of interfaces for the user. These interfaces
 are used by entities which are competing for the CPU. There are two types of entities:
 \begin{enumerate}
-\item Interrupt service routines managed by the operating system
-·
-\item Tasks (basic tasks and extended tasks)
+\item Interrupt service routines managed by the operating system.
+\item Tasks (basic tasks and extended tasks).
 \end{enumerate}
 
 The hardware resources of a control unit can be managed by operating system services. These
@@ -390,11 +389,9 @@ CPU ATMEL_AT91SAM7S256
 \end{lstlisting}
 \end{small}
 
-\subsection{LegoRobot}
-\label{LegoNxt}
+\subsection{LegoRobot \label{LegoNxt}}
+
 Here is a summary list of hardware specifications for the NXT brick:\\
-
-
 \begin{itemize}
  \item Main processor: Atmel 32-bit ARM processor, AT91SAM7S256, 256 KB FLASH, 64 KB RAM.
  \item Bluetooth: CSR BlueCoreTM 4 v2.0 +EDR System
@@ -524,8 +521,8 @@ In this simple setup every robot is communicating its ID energy level to others.
 The robot also communicates his energy level by producing a sound so that a human observer can have feedback about what's going on.
 The lego speaker can play a tone, given its frequency, duration and volume. Frequency is audible from about 31 to 2100 Hertz and different frequencies are associated to different robots. The duration is in hundreds of a seconds (centiseconds, not milliseconds) and is truncated at 256, so the maximum duration of a tone is 2.56 seconds. The volume of the tone is proportional to the robot's energy which is normalised from 0 to 100 (internally is a float from 0.0 to 1.0).
 
-\subsection{Pololu}
-\label{Pololu}
+\subsection{Pololu \label{Pololu}}
+
 The Pololu 3pi \ref{Pololu}  robot is a complete, high-performance mobile platform featuring two micro metal gearmotors, five reflectance sensors, an $8x2$ character LCD, a buzzer, and three user pushbuttons, all connected to a C-programmable ATmega168 microcontroller. Capable of speeds exceeding 3 feet per second $(100 cm/second)$, 3pi is a great first robot for ambitious beginners and a perfect second robot for those looking to move up from non-programmable or slower beginner robots.
 \textbf{Dimensions:}
 Size: 	$9.5 cm/3.7"$ diameter,

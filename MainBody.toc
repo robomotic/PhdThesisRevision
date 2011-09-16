@@ -84,7 +84,7 @@
 \contentsline {subsection}{\numberline {3.4.6}Discussion}{118}
 \contentsline {section}{\numberline {3.5}The Predictive Performance measure}{119}
 \contentsline {subsection}{\numberline {3.5.1}Introduction to closed loop measures}{119}
-\contentsline {subsection}{\numberline {3.5.2}Methods: experimental setup}{121}
+\contentsline {subsection}{\numberline {3.5.2}Methods: experimental setup }{121}
 \contentsline {subsection}{\numberline {3.5.3}Methods: learning algorithm}{123}
 \contentsline {subsection}{\numberline {3.5.4}Methods: symbols and conventions}{124}
 \contentsline {subsubsection}{Symbols and conventions}{124}
@@ -99,31 +99,31 @@
 \contentsline {subsubsection}{A learning robot}{133}
 \contentsline {paragraph}{Predictive Performance after learning}{133}
 \contentsline {paragraph}{Predictive Performance during learning}{137}
-\contentsline {subsection}{\numberline {3.5.7}Results: application of PP to social systems}{139}
+\contentsline {subsection}{\numberline {3.5.7}Results: application of PP to social systems }{139}
 \contentsline {subsection}{\numberline {3.5.8}Discussion}{141}
 \contentsline {chapter}{\numberline {4}Conclusion }{147}
 \contentsline {section}{\numberline {4.1}Summary of results}{147}
-\contentsline {subsection}{\numberline {4.1.1}Discussion}{148}
+\contentsline {subsection}{\numberline {4.1.1}Discussion }{148}
 \contentsline {subsection}{\numberline {4.1.2}Modelling choices}{149}
 \contentsline {subsection}{\numberline {4.1.3}A theory of language}{150}
 \contentsline {subsection}{\numberline {4.1.4}Language model and control}{153}
 \contentsline {subsection}{\numberline {4.1.5}What is going on in an animal's head?}{155}
 \contentsline {subsection}{\numberline {4.1.6}Do signals convey information about the external world?}{155}
 \contentsline {subsection}{\numberline {4.1.7}Do signallers intend to alter the behaviour of receivers?}{155}
-\contentsline {section}{\numberline {4.2}Future work}{157}
-\contentsline {subsection}{\numberline {4.2.1}Model based checking for property verification}{157}
+\contentsline {section}{\numberline {4.2}Future work }{157}
+\contentsline {subsection}{\numberline {4.2.1}Model based checking for property verification }{157}
 \contentsline {subsection}{\numberline {4.2.2}Economic models of learning agents}{158}
 \contentsline {subsection}{\numberline {4.2.3}Homogeneity in societies}{158}
 \contentsline {subsection}{\numberline {4.2.4}Symmetry breaking in collective decision-making}{159}
-\contentsline {section}{\numberline {4.3}Information theory and control}{160}
+\contentsline {section}{\numberline {4.3}Information theory and control }{160}
 \contentsline {subsection}{\numberline {4.3.1}On the perils of predictive learning}{160}
 \contentsline {subsection}{\numberline {4.3.2}Prediction or evolution}{161}
 \contentsline {subsection}{\numberline {4.3.3}Prediction and learning}{162}
 \contentsline {subsection}{\numberline {4.3.4}How much information is required for prediction?}{164}
 \contentsline {subsection}{\numberline {4.3.5}Predictive information and model complexity}{164}
 \contentsline {subsection}{\numberline {4.3.6}Prediction and compression are related}{165}
-\contentsline {subsection}{\numberline {4.3.7}Entropy reduction measure in learning agents}{166}
-\contentsline {section}{\numberline {4.4}Industrial applications}{171}
+\contentsline {subsection}{\numberline {4.3.7}Entropy reduction measure in learning agents }{166}
+\contentsline {section}{\numberline {4.4}Industrial applications }{171}
 \contentsline {chapter}{\numberline {5}Appendix}{173}
 \contentsline {section}{\numberline {5.1}ICO learning parameters}{173}
 \contentsline {subsection}{\numberline {5.1.1}ICO learning}{173}

@@ -15,10 +15,10 @@
 \contentsline {table}{\numberline {3.11}{\ignorespaces Reflex input values for the 3 tracks}}{134}
 \contentsline {table}{\numberline {3.12}{\ignorespaces Mutual information values for maze track}}{139}
 \addvspace {10\p@ }
-\contentsline {table}{\numberline {4.1}{\ignorespaces Entropy values before learning}}{169}
-\contentsline {table}{\numberline {4.2}{\ignorespaces Entropy values before learning}}{169}
-\contentsline {table}{\numberline {4.3}{\ignorespaces Entropy values before learning}}{170}
-\contentsline {table}{\numberline {4.4}{\ignorespaces Equivocation table}}{170}
+\contentsline {table}{\numberline {4.1}{\ignorespaces Entropy values before learning. }}{169}
+\contentsline {table}{\numberline {4.2}{\ignorespaces Entropy values before learning. }}{169}
+\contentsline {table}{\numberline {4.3}{\ignorespaces Entropy values before learning.}}{170}
+\contentsline {table}{\numberline {4.4}{\ignorespaces Equivocation table. }}{170}
 \addvspace {10\p@ }
 \contentsline {table}{\numberline {5.1}{\ignorespaces Posix vs OpenMP standard}}{188}
 \contentsline {table}{\numberline {5.2}{\ignorespaces Parallel Simulator performance}}{192}

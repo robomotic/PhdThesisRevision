@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.1415926-1.40.10 (TeX Live 2009/Debian) (format=latex 2011.4.7)  16 SEP 2011 17:44
+This is pdfTeX, Version 3.1415926-1.40.10 (TeX Live 2009/Debian) (format=latex 2011.4.7)  16 SEP 2011 19:24
 entering extended mode
  %&-line parsing enabled.
 **MainBody.tex
@@ -853,21 +853,21 @@ File: figures/ppmeasure/8.eps Graphic file (type eps)
 File: figures/ppmeasure/9.eps Graphic file (type eps)
 
 <figures/ppmeasure/9.eps> [138] [139] [140]
-Overfull \hbox (16.85472pt too wide) in paragraph at lines 1037--1040
+Overfull \hbox (16.85472pt too wide) in paragraph at lines 1038--1041
 \OT1/cmr/m/n/10 agents num-bered 7 and 3 have an equal per-for-mance as agents 
 9,2 $\OML/cmm/m/it/10 PP[]\OT1/cmr/m/n/10 (\OML/cmm/m/it/10 Af\OT1/cmr/m/n/10 )
  \OMS/cmsy/m/n/10 '
  []
 
 
-Overfull \hbox (4.81995pt too wide) in paragraph at lines 1040--1044
+Overfull \hbox (4.81995pt too wide) in paragraph at lines 1041--1045
 \OT1/cmr/m/n/10 agents num-bered 6 and 5 have a dif-fer-ent per-for-mance $\OML
 /cmm/m/it/10 PP[]\OT1/cmr/m/n/10 (\OML/cmm/m/it/10 Af\OT1/cmr/m/n/10 ) \OML/cmm
 /m/it/10 > PP[]\OT1/cmr/m/n/10 (\OML/cmm/m/it/10 Af\OT1/cmr/m/n/10 )$
  []
 
 
-Overfull \hbox (9.20883pt too wide) in paragraph at lines 1044--1047
+Overfull \hbox (9.20883pt too wide) in paragraph at lines 1045--1048
 \OT1/cmr/m/n/10 agents num-bered 5 and 9 have an equal per-for-mance $\OML/cmm/
 m/it/10 PP[]\OT1/cmr/m/n/10 (\OML/cmm/m/it/10 Af\OT1/cmr/m/n/10 ) \OMS/cmsy/m/n
 /10 ' \OML/cmm/m/it/10 PP[]\OT1/cmr/m/n/10 (\OML/cmm/m/it/10 Fo\OT1/cmr/m/n/10 
@@ -876,19 +876,19 @@ m/it/10 PP[]\OT1/cmr/m/n/10 (\OML/cmm/m/it/10 Af\OT1/cmr/m/n/10 ) \OMS/cmsy/m/n
 
 File: figures/ppmeasure/social/row1.eps Graphic file (type eps)
 <figures/ppmeasure/social/row1.eps>
-Overfull \hbox (6.66666pt too wide) in paragraph at lines 1069--1069
+Overfull \hbox (6.66666pt too wide) in paragraph at lines 1070--1070
  [] 
  []
 
 File: figures/ppmeasure/social/row2.eps Graphic file (type eps)
 <figures/ppmeasure/social/row2.eps>
-Overfull \hbox (6.66666pt too wide) in paragraph at lines 1073--1073
+Overfull \hbox (6.66666pt too wide) in paragraph at lines 1074--1074
  [][] 
  []
 
 File: figures/ppmeasure/social/row3.eps Graphic file (type eps)
 <figures/ppmeasure/social/row3.eps>
-Overfull \hbox (6.66666pt too wide) in paragraph at lines 1077--1078
+Overfull \hbox (6.66666pt too wide) in paragraph at lines 1078--1079
  [][] 
  []
 
@@ -965,7 +965,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 698--702
  []
 
 [168]
-Underfull \hbox (badness 10000) in paragraph at lines 782--791
+Underfull \hbox (badness 10000) in paragraph at lines 779--788
 
  []
 
@@ -1315,4 +1315,4 @@ Here is how much of TeX's memory you used:
  28 hyphenation exceptions out of 8191
  34i,17n,58p,1090b,1570s stack positions out of 5000i,500n,10000p,200000b,50000s
 
-Output written on MainBody.dvi (236 pages, 817596 bytes).
+Output written on MainBody.dvi (236 pages, 817564 bytes).

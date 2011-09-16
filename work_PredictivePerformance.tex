@@ -154,8 +154,8 @@ learning robot, then to a full learning robot and finally the discussion.
 
 
 
-\subsection{Methods: experimental setup}
-\label{Chapter8:RobotStructure}
+\subsection{Methods: experimental setup \label{Chapter8:RobotStructure}}
+
 The agent's task is to follow a black track of constant width but
 variable curvature in a 2 dimensional white arena.  The agent is
 provided with a controller with a reflex steering behaviour which in
@@ -468,8 +468,8 @@ Table \ref{table:PPmeausure:Values} contains the four values that are relevant
 to the agent's performance:
 
 \begin{table}[htbp]
-\caption[Information values for the \textbf{PP} computation]{Information measures used for the computation of Predictive Performance}
-\label{table:PPmeausure:Values}
+\caption[Information values for the \textbf{PP} computation]
+{Information measures used for the computation of Predictive Performance. \label{table:PPmeausure:Values}}
 \begin{center}
   \begin{tabular}{| l | l | l | l |}
     \hline
@@ -852,8 +852,8 @@ with an average value of $TOTAL_{RF}=1.4$ is developed.
 The average track deviation is $\psi=3.8572$ and the predictive performance has a
 maximum of 0.91.
 In terms of weights the robot is using a diagonal and straight group of pixels.
-Comparing the weights (Figure \ref{PPmeasure:middle}C) and the
-Predictive Performance (Figure \ref{PPmeasure:middle}D),
+Comparing the weights (Figure \ref{PPmeasure:middle}(C)) and the
+Predictive Performance (Figure \ref{PPmeasure:middle}(D)),
 it is evident that while the weights are high along the diagonal line, pixels further up
 are not strongly utilised as pixels closer to the robot.
 This is due to the already very steep angles which can no
@@ -902,11 +902,12 @@ pixel contributes to the closed loop performance as shown by the simulations.
 	{\bf A)} Retinal field developed during learning in the step track configuration as in Figure \ref{PPmeasure:Maps}(A).
 		      The learning experiences required to have stable learning were 18.
 	{\bf B)} Retinal flow before learning $\mu=0$ stays at about 0.1 bits. 
-	{\bf C)} Trajectories produced by the robot during learning. The controller stabilizes its average retinal weight at about $TOTAL_{RF}=1.44$ after 2600 time steps. The average deviation of the track is $\psi \simeq 6.5$  
+	{\bf C)} Trajectories produced by the robot during learning. The controller stabilizes its average retinal weight at about $TOTAL_{RF}=1.44$ after 2600 time steps. The average deviation of the track is $\psi \simeq 6.5$.  
 	{\bf D)} Predictive Performance for every pixel. The robot is using a wider area but with lower values. \label{PPmeasure:step}}
 \end{figure}
 
-\paragraph{Predictive Performance during learning} So far I have calculated the
+\paragraph{Predictive Performance during learning} 
+So far I have calculated the
 Predictive Performance at the end of learning. However, while the robot traverses
 along the line it will learn along the worst experience and then only continue to
 adjust its weights when it encounters a more challenging turn. 
@@ -1000,8 +1001,8 @@ anything new.
 	}
 \end{figure}
 
-\subsection{Results: application of PP to social systems}
-\label{Chapter8:PPsocial}
+\subsection{Results: application of PP to social systems \label{Chapter8:PPsocial}}
+
 The predictive performance can be applied then to the social system
 setting described in Section \ref{Chapter6:Information Flow} where
 I already computed the required values.

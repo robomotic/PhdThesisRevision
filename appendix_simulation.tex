@@ -1,7 +1,6 @@
 
+\section{Simulation details \label{Appendix:simulation}}
 
-\section{Simulation details}
-\label{Appendix:simulation}
 World size is directly proportional to the agent and food area. The agent
 size is $[W_{r},H_{r}]=2.50 U \cdot 2U$ with an area $A_{agent}=5 U^{2}$, where U is the unit of measure used in the simulations.
 Food sources are regular polygons composed by $e_{food}=32$ edges with an apothem of $ap_{food}=3 U$ corresponding to an area of
@@ -126,8 +125,7 @@ and right input must be 0.
  \item Filter parameters: $F_{proximal}=0.6$,$F_{distal}=0.6$,\\$Q_{reflex}=\sqrt(2)$,$Q_{proximal}=\sqrt(2)$
 \end{itemize}
 
-\subsection{Hysteresys effect}
-\label{Appendix:HysteresysValue}
+\subsection{Hysteresys effect \label{Appendix:HysteresysValue}}
 If an agent is in proximity of an acute angle (it could be an angle of the
 scenario or a particular spatial agent configuration) without the hysteresys
 it will starve turning left and right, within the hysteresys the responses will
@@ -225,8 +223,8 @@ void Alice::step(double dt)
 For collision detection and collision interaction, detailed information
 is provided in the source code.
 
-\subsection{Simplified social simulator}
-\label{Appendix:simplesocialsim}
+\subsection{Simplified social simulator \label{Appendix:simplesocialsim}}
+
 There are $N=2,4$ and $M=2$ food sources.
 The agent's area $A_{agent}=5 U^{2}$, where U is the unit of measure used in the simulations.
 Food source's area $A_{food}=28.36 U^2$.
@@ -265,8 +263,8 @@ and agents are not attracted. \label{fig:screen2}}
 \end{centering}
 \end{figure}
 
-\subsection{Simulation details for information flow}
-\label{Appendix:InfoFlowSimDetails}
+\subsection{Simulation details for information flow \label{Appendix:InfoFlowSimDetails}}
+
 The world is a toroidal square of 300x300 units ($Um$), the agent has a diameter of 10 $Um$,
 the reflex antennas have a range of 40 $Um$, the predictor antennas have a range of 60 $Um$,
 every food disk has a diameter of 20 $Um$, the agent consumes food after $30$ time steps.
@@ -276,8 +274,8 @@ and normalised in the range [-1,1]
 both for the predictor $U_1$ and the reflex $U_0$ signal, the output signal $Z$
 is discretised in 8 directions.
 
-\subsection{Simulation details for Q-learning robot}
-\label{Appendix:QLearnSimDetails}
+\subsection{Simulation details for Q-learning robot \label{Appendix:QLearnSimDetails}}
+
 The world is a square of 200x200 units ($Um$). The world can be wrapped
 in toroidal coordinates or not.
 If the world is toroidal that means there are no walls and thus no collisions,
