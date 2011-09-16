@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.1415926-1.40.10 (TeX Live 2009/Debian) (format=latex 2011.4.7)  12 SEP 2011 10:23
+This is pdfTeX, Version 3.1415926-1.40.10 (TeX Live 2009/Debian) (format=latex 2011.4.7)  16 SEP 2011 17:44
 entering extended mode
  %&-line parsing enabled.
 **MainBody.tex
@@ -398,7 +398,7 @@ File: figures/autopoiesis/expectations.eps Graphic file (type eps)
 <figures/autopoiesis/expectations.eps> [40] [41] [42]) (./review_AbmComplex.tex
 [43] [44]) (./review_InfoTheory.tex
 Overfull \hbox (6.49632pt too wide) in paragraph at lines 2--2
-[]\OT1/cmr/bx/n/14.4 Information the-ory for closed loop con-trollers 
+[]\OT1/cmr/bx/n/14.4 Information the-ory for closed loop con-trollers
  []
 
 [45]
@@ -427,8 +427,10 @@ File: figures/ashby/figure-1.eps Graphic file (type eps)
  <figures/ashby/figure-1.eps> [52]
 File: figures/ashby/figure-3.eps Graphic file (type eps)
  <figures/ashby/figure-3.eps>
-[53]
-Underfull \vbox (badness 1881) has occurred while \output is active []
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+ [53]
+Underfull \vbox (badness 7631) has occurred while \output is active []
 
  [54]
 [55]) [56]
@@ -447,12 +449,22 @@ File: figures/socialadapt/ico.eps Graphic file (type eps)
 Underfull \vbox (badness 4995) has occurred while \output is active []
 
  [58]
+Overfull \hbox (1.43027pt too wide) has occurred while \output is active
+\OT1/cmr/m/sl/10 3.1.  INTRODUCTION: SOCIAL MODELLING OF ARTIFICIAL AGENTS  \OT
+1/cmr/m/n/10 59
+ []
+
 [59] [60]
 File: figures/socialadapt/avoidance.eps Graphic file (type eps)
- <figures/socialadapt/avoidance.eps> [61]
-File: figures/socialadapt/hungersatshift.eps Graphic file (type eps)
+ <figures/socialadapt/avoidance.eps>
+Overfull \hbox (1.43027pt too wide) has occurred while \output is active
+\OT1/cmr/m/sl/10 3.1.  INTRODUCTION: SOCIAL MODELLING OF ARTIFICIAL AGENTS  \OT
+1/cmr/m/n/10 61
+ []
 
-<figures/socialadapt/hungersatshift.eps> [62]
+[61]
+File: figures/socialadapt/hungersatshift.eps Graphic file (type eps)
+ <figures/socialadapt/hungersatshift.eps> [62]
 Overfull \hbox (3.00412pt too wide) in paragraph at lines 291--295
 \OT1/cmr/m/n/10 Agent $\OML/cmm/m/it/10 a[]\OT1/cmr/m/n/10 (\OML/cmm/m/it/10 t\
 OT1/cmr/m/n/10 )$ senses $\OML/cmm/m/it/10 G[]$ \OT1/cmr/m/n/10 (see Fig.3.1[] 
@@ -460,18 +472,37 @@ OT1/cmr/m/n/10 )$ senses $\OML/cmm/m/it/10 G[]$ \OT1/cmr/m/n/10 (see Fig.3.1[]
 cmm/m/it/10 t\OT1/cmr/m/n/10 )$
  []
 
+
+Overfull \hbox (1.43027pt too wide) has occurred while \output is active
+\OT1/cmr/m/sl/10 3.1.  INTRODUCTION: SOCIAL MODELLING OF ARTIFICIAL AGENTS  \OT
+1/cmr/m/n/10 63
+ []
+
 [63]
 File: figures/socialadapt/attractionAgent.eps Graphic file (type eps)
- <figures/socialadapt/attractionAgent.eps>
+ <figures/socialadapt/attractionAgent.eps> [64]
 File: figures/socialadapt/attractionFood.eps Graphic file (type eps)
 
-<figures/socialadapt/attractionFood.eps> [64] [65]
+<figures/socialadapt/attractionFood.eps>
+Underfull \vbox (badness 2359) has occurred while \output is active []
+
+
+Overfull \hbox (1.43027pt too wide) has occurred while \output is active
+\OT1/cmr/m/sl/10 3.1.  INTRODUCTION: SOCIAL MODELLING OF ARTIFICIAL AGENTS  \OT
+1/cmr/m/n/10 65
+ []
+
+[65] [66]
 File: figures/socialadapt/ControllerSummary.eps Graphic file (type eps)
+ <figures/socialadapt/ControllerSummary.eps>
+Overfull \hbox (1.43027pt too wide) has occurred while \output is active
+\OT1/cmr/m/sl/10 3.1.  INTRODUCTION: SOCIAL MODELLING OF ARTIFICIAL AGENTS  \OT
+1/cmr/m/n/10 67
+ []
 
-<figures/socialadapt/ControllerSummary.eps> [66] [67] [68]
+[67] [68]
 File: figures/socialadapt/nosignal/comm20TO4.eps Graphic file (type eps)
-
-<figures/socialadapt/nosignal/comm20TO4.eps>
+ <figures/socialadapt/nosignal/comm20TO4.eps>
 File: figures/socialadapt/nosignal/comm20TO18.eps Graphic file (type eps)
 
 <figures/socialadapt/nosignal/comm20TO18.eps>
@@ -486,54 +517,84 @@ File: figures/socialadapt/deceptive/comm20TO4.eps Graphic file (type eps)
 <figures/socialadapt/deceptive/comm20TO4.eps>
 File: figures/socialadapt/deceptive/comm20TO18.eps Graphic file (type eps)
 
-<figures/socialadapt/deceptive/comm20TO18.eps> [69] [70] [71] [72]
+<figures/socialadapt/deceptive/comm20TO18.eps>
+Overfull \hbox (1.43027pt too wide) has occurred while \output is active
+\OT1/cmr/m/sl/10 3.1.  INTRODUCTION: SOCIAL MODELLING OF ARTIFICIAL AGENTS  \OT
+1/cmr/m/n/10 69
+ []
+
+[69] [70]
+Overfull \hbox (1.43027pt too wide) has occurred while \output is active
+\OT1/cmr/m/sl/10 3.1.  INTRODUCTION: SOCIAL MODELLING OF ARTIFICIAL AGENTS  \OT
+1/cmr/m/n/10 71
+ []
+
+[71] [72]
 File: figures/socialadapt/foraging1.eps Graphic file (type eps)
+ <figures/socialadapt/foraging1.eps>
+Overfull \hbox (1.43027pt too wide) has occurred while \output is active
+\OT1/cmr/m/sl/10 3.1.  INTRODUCTION: SOCIAL MODELLING OF ARTIFICIAL AGENTS  \OT
+1/cmr/m/n/10 73
+ []
 
-<figures/socialadapt/foraging1.eps>
-Underfull \vbox (badness 1622) has occurred while \output is active []
-
- [73]
+[73] [74]
 File: figures/socialadapt/20to4.eps Graphic file (type eps)
-
-<figures/socialadapt/20to4.eps>
+ <figures/socialadapt/20to4.eps>
 File: figures/socialadapt/20to18.eps Graphic file (type eps)
- <figures/socialadapt/20to18.eps> [74] [75]
-File: figures/socialadapt/limited/20to4.eps Graphic file (type eps)
+ <figures/socialadapt/20to18.eps>
+Overfull \hbox (1.43027pt too wide) has occurred while \output is active
+\OT1/cmr/m/sl/10 3.1.  INTRODUCTION: SOCIAL MODELLING OF ARTIFICIAL AGENTS  \OT
+1/cmr/m/n/10 75
+ []
 
-<figures/socialadapt/limited/20to4.eps>
+[75]
+File: figures/socialadapt/limited/20to4.eps Graphic file (type eps)
+ <figures/socialadapt/limited/20to4.eps>
 File: figures/socialadapt/limited/20to18.eps Graphic file (type eps)
 
 <figures/socialadapt/limited/20to18.eps> [76]
 File: figures/socialadapt/limited/agent4more.eps Graphic file (type eps)
 
-<figures/socialadapt/limited/agent4more.eps> [77]
-Overfull \hbox (8.24036pt too wide) in paragraph at lines 918--918
+<figures/socialadapt/limited/agent4more.eps>
+Overfull \hbox (8.24036pt too wide) in paragraph at lines 915--915
 []\OT1/cmr/bx/n/12 Discussion: sub sys-tem for-ma-tion in the so-cial model 
  []
 
-[78]) (./work_InputCorrelationMeasure.tex
+
+Overfull \hbox (1.43027pt too wide) has occurred while \output is active
+\OT1/cmr/m/sl/10 3.1.  INTRODUCTION: SOCIAL MODELLING OF ARTIFICIAL AGENTS  \OT
+1/cmr/m/n/10 77
+ []
+
+[77] [78]) (./work_InputCorrelationMeasure.tex
 Overfull \hbox (11.61296pt too wide) in paragraph at lines 1--1
 []\OT1/cmr/bx/n/14.4 An in-put based in-for-ma-tion mea-sure for adap-
  []
 
 
-Overfull \hbox (62.26154pt too wide) has occurred while \output is active
-\OT1/cmr/m/sl/10 3.2.  AN INPUT BASED INFORMATION MEASURE FOR ADAPTIVE CONTROLL
-ERS \OT1/cmr/m/n/10 79
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+
+Overfull \hbox (1.43027pt too wide) has occurred while \output is active
+\OT1/cmr/m/sl/10 3.1.  INTRODUCTION: SOCIAL MODELLING OF ARTIFICIAL AGENTS  \OT
+1/cmr/m/n/10 79
  []
 
-[79] [80]
+[79]
+Underfull \vbox (badness 3769) has occurred while \output is active []
+
+ [80]
+Overfull \hbox (64.48265pt too wide) has occurred while \output is active
+\OT1/cmr/m/sl/10 3.2.  AN INPUT BASED INFORMATION MEASURE FOR ADAPTIVE CONTROLL
+ERS  \OT1/cmr/m/n/10 81
+ []
+
+[81]
 File: figures/infomeasure/avoidance.eps Graphic file (type eps)
- <figures/infomeasure/avoidance.eps>
-Overfull \hbox (62.26154pt too wide) has occurred while \output is active
+ <figures/infomeasure/avoidance.eps> [82]
+Overfull \hbox (64.48265pt too wide) has occurred while \output is active
 \OT1/cmr/m/sl/10 3.2.  AN INPUT BASED INFORMATION MEASURE FOR ADAPTIVE CONTROLL
-ERS \OT1/cmr/m/n/10 81
- []
-
-[81] [82]
-Overfull \hbox (62.26154pt too wide) has occurred while \output is active
-\OT1/cmr/m/sl/10 3.2.  AN INPUT BASED INFORMATION MEASURE FOR ADAPTIVE CONTROLL
-ERS \OT1/cmr/m/n/10 83
+ERS  \OT1/cmr/m/n/10 83
  []
 
 [83] [84]
@@ -542,24 +603,21 @@ File: figures/infomeasure/simple/simplemodel.eps Graphic file (type eps)
 File: figures/infomeasure/simple/temporalsignal.eps Graphic file (type eps)
 
 <figures/infomeasure/simple/temporalsignal.eps>
-Overfull \hbox (62.26154pt too wide) has occurred while \output is active
+Overfull \hbox (64.48265pt too wide) has occurred while \output is active
 \OT1/cmr/m/sl/10 3.2.  AN INPUT BASED INFORMATION MEASURE FOR ADAPTIVE CONTROLL
-ERS \OT1/cmr/m/n/10 85
+ERS  \OT1/cmr/m/n/10 85
  []
 
 [85] [86]
-Overfull \hbox (62.26154pt too wide) has occurred while \output is active
+Overfull \hbox (64.48265pt too wide) has occurred while \output is active
 \OT1/cmr/m/sl/10 3.2.  AN INPUT BASED INFORMATION MEASURE FOR ADAPTIVE CONTROLL
-ERS \OT1/cmr/m/n/10 87
+ERS  \OT1/cmr/m/n/10 87
  []
 
 [87]
 File: figures/infomeasure/maxcorr_nolearn.eps Graphic file (type eps)
  <figures/infomeasure/maxcorr_nolearn.eps>
-Underfull \vbox (badness 10000) has occurred while \output is active []
-
- [88]
-Overfull \hbox (5.07741pt too wide) in paragraph at lines 392--394
+Overfull \hbox (5.07741pt too wide) in paragraph at lines 391--393
 []\OT1/cmr/m/n/10 Fig.3.17[](b) con-tains the $\OML/cmm/m/it/10 E\OT1/cmr/m/n/1
 0 (\OML/cmm/m/it/10 xcorr[]\OT1/cmr/m/n/10 (\OML/cmm/m/it/10 k\OT1/cmr/m/n/10 )
 \OML/cmm/m/it/10 ; E\OT1/cmr/m/n/10 (\OML/cmm/m/it/10 xcorr[]\OT1/cmr/m/n/10 (\
@@ -567,35 +625,45 @@ OML/cmm/m/it/10 k\OT1/cmr/m/n/10 ))$ in the up-per panel
  []
 
 
-Overfull \hbox (5.07741pt too wide) in paragraph at lines 394--396
+Overfull \hbox (5.07741pt too wide) in paragraph at lines 393--395
 []\OT1/cmr/m/n/10 Fig.3.17[](d) con-tains the $\OML/cmm/m/it/10 E\OT1/cmr/m/n/1
 0 (\OML/cmm/m/it/10 xcorr[]\OT1/cmr/m/n/10 (\OML/cmm/m/it/10 k\OT1/cmr/m/n/10 )
 \OML/cmm/m/it/10 ; E\OT1/cmr/m/n/10 (\OML/cmm/m/it/10 xcorr[]\OT1/cmr/m/n/10 (\
 OML/cmm/m/it/10 k\OT1/cmr/m/n/10 ))$ in the up-per panel
  []
 
+[88]
+Underfull \vbox (badness 2229) has occurred while \output is active []
+
+
+Overfull \hbox (64.48265pt too wide) has occurred while \output is active
+\OT1/cmr/m/sl/10 3.2.  AN INPUT BASED INFORMATION MEASURE FOR ADAPTIVE CONTROLL
+ERS  \OT1/cmr/m/n/10 89
+ []
+
+[89]
 File: figures/infomeasure/N2/maxcorr_N=0_w=600.eps Graphic file (type eps)
-<figures/infomeasure/N2/maxcorr_N=0_w=600.eps>
-Underfull \hbox (badness 2119) in paragraph at lines 424--424
+ <figures/infomeasure/N2/maxcorr_N=0_w=600.eps>
+Underfull \hbox (badness 2119) in paragraph at lines 423--423
 \OT1/cmr/m/n/8 for left (straight) and right (dashed)
  []
 
 File: figures/infomeasure/N2/power_xcorr_N=0_w=600.eps Graphic file (type eps)
 <figures/infomeasure/N2/power_xcorr_N=0_w=600.eps>
-Underfull \hbox (badness 10000) in paragraph at lines 427--427
+Underfull \hbox (badness 10000) in paragraph at lines 426--426
 []\OT1/cmr/m/n/8 (b) En-ergy $\OML/cmm/m/it/8 E\OT1/cmr/m/n/8 (\OML/cmm/m/it/8 
 xcorr[]\OT1/cmr/m/n/8 (\OML/cmm/m/it/8 k\OT1/cmr/m/n/8 ))$ for left
  []
 
 File: figures/infomeasure/N2/maxcorr_N=1_w=600.eps Graphic file (type eps)
 <figures/infomeasure/N2/maxcorr_N=1_w=600.eps>
-Underfull \hbox (badness 2119) in paragraph at lines 429--429
+Underfull \hbox (badness 2119) in paragraph at lines 428--428
 \OT1/cmr/m/n/8 for left (straight) and right (dashed)
  []
 
 File: figures/infomeasure/N2/power_xcorr_N=1_w=600.eps Graphic file (type eps)
 <figures/infomeasure/N2/power_xcorr_N=1_w=600.eps>
-Underfull \hbox (badness 10000) in paragraph at lines 432--432
+Underfull \hbox (badness 10000) in paragraph at lines 431--431
 []\OT1/cmr/m/n/8 (d) En-ergy $\OML/cmm/m/it/8 E\OT1/cmr/m/n/8 (\OML/cmm/m/it/8 
 xcorr[]\OT1/cmr/m/n/8 (\OML/cmm/m/it/8 k\OT1/cmr/m/n/8 ))$ for left
  []
@@ -608,20 +676,20 @@ File: figures/infomeasure/N4/power_xcorr_N=0_w=600.eps Graphic file (type eps)
 File: figures/infomeasure/N4/maxcorr_N=1_w=600.eps Graphic file (type eps)
 
 <figures/infomeasure/N4/maxcorr_N=1_w=600.eps>
-Underfull \hbox (badness 2426) in paragraph at lines 452--452
+Underfull \hbox (badness 2426) in paragraph at lines 451--451
 \OT1/cmr/m/n/8 for left (straight) and right (dashed)
  []
 
 File: figures/infomeasure/N4/power_xcorr_N=1_w=600.eps Graphic file (type eps)
 <figures/infomeasure/N4/power_xcorr_N=1_w=600.eps>
-Underfull \hbox (badness 10000) in paragraph at lines 455--455
+Underfull \hbox (badness 10000) in paragraph at lines 454--454
 []\OT1/cmr/m/n/8 (d) En-ergy $\OML/cmm/m/it/8 E\OT1/cmr/m/n/8 (\OML/cmm/m/it/8 
 xcorr[]\OT1/cmr/m/n/8 (\OML/cmm/m/it/8 k\OT1/cmr/m/n/8 ))$ for left
  []
 
 File: figures/infomeasure/N4/maxcorr_N=2_w=600.eps Graphic file (type eps)
 <figures/infomeasure/N4/maxcorr_N=2_w=600.eps>
-Underfull \hbox (badness 2119) in paragraph at lines 467--467
+Underfull \hbox (badness 2119) in paragraph at lines 466--466
 \OT1/cmr/m/n/8 for left (straight) and right (dashed)
  []
 
@@ -630,31 +698,25 @@ File: figures/infomeasure/N4/power_xcorr_N=2_w=600.eps Graphic file (type eps)
 File: figures/infomeasure/N4/maxcorr_N=3_w=600.eps Graphic file (type eps)
 
 <figures/infomeasure/N4/maxcorr_N=3_w=600.eps>
-Underfull \hbox (badness 2119) in paragraph at lines 472--472
+Underfull \hbox (badness 2119) in paragraph at lines 471--471
 \OT1/cmr/m/n/8 for left (straight) and right (dashed)
  []
 
 File: figures/infomeasure/N4/power_xcorr_N=3_w=600.eps Graphic file (type eps)
 <figures/infomeasure/N4/power_xcorr_N=3_w=600.eps>
-Underfull \hbox (badness 10000) in paragraph at lines 475--475
+Underfull \hbox (badness 10000) in paragraph at lines 474--474
 []\OT1/cmr/m/n/8 (d) En-ergy $\OML/cmm/m/it/8 E\OT1/cmr/m/n/8 (\OML/cmm/m/it/8 
 xcorr[]\OT1/cmr/m/n/8 (\OML/cmm/m/it/8 k\OT1/cmr/m/n/8 ))$ for left
  []
 
-
-Overfull \hbox (62.26154pt too wide) has occurred while \output is active
+[90]
+Overfull \hbox (64.48265pt too wide) has occurred while \output is active
 \OT1/cmr/m/sl/10 3.2.  AN INPUT BASED INFORMATION MEASURE FOR ADAPTIVE CONTROLL
-ERS \OT1/cmr/m/n/10 89
- []
-
-[89] [90]
-Overfull \hbox (62.26154pt too wide) has occurred while \output is active
-\OT1/cmr/m/sl/10 3.2.  AN INPUT BASED INFORMATION MEASURE FOR ADAPTIVE CONTROLL
-ERS \OT1/cmr/m/n/10 91
+ERS  \OT1/cmr/m/n/10 91
  []
 
 [91] [92]
-Overfull \hbox (5.5465pt too wide) in paragraph at lines 494--500
+Overfull \hbox (5.5465pt too wide) in paragraph at lines 493--499
 \OT1/cmr/m/n/10 0$. But there are ex-cep-tions like cases in Fig.3.18(d)[],3.19
 (d)[] where $\OML/cmm/m/it/10 E\OT1/cmr/m/n/10 (\OML/cmm/m/it/10 xcorr[]\OT1/cm
 r/m/n/10 (\OML/cmm/m/it/10 k\OT1/cmr/m/n/10 )) []
@@ -662,17 +724,17 @@ r/m/n/10 (\OML/cmm/m/it/10 k\OT1/cmr/m/n/10 )) []
 
 File: figures/infomeasure/agentvariation.eps Graphic file (type eps)
 <figures/infomeasure/agentvariation.eps>
-Overfull \hbox (62.26154pt too wide) has occurred while \output is active
+Overfull \hbox (64.48265pt too wide) has occurred while \output is active
 \OT1/cmr/m/sl/10 3.2.  AN INPUT BASED INFORMATION MEASURE FOR ADAPTIVE CONTROLL
-ERS \OT1/cmr/m/n/10 93
+ERS  \OT1/cmr/m/n/10 93
  []
 
 [93]
 File: figures/infomeasure/simple/infoapplication.eps Graphic file (type eps)
  <figures/infomeasure/simple/infoapplication.eps> [94]
-Overfull \hbox (62.26154pt too wide) has occurred while \output is active
+Overfull \hbox (64.48265pt too wide) has occurred while \output is active
 \OT1/cmr/m/sl/10 3.2.  AN INPUT BASED INFORMATION MEASURE FOR ADAPTIVE CONTROLL
-ERS \OT1/cmr/m/n/10 95
+ERS  \OT1/cmr/m/n/10 95
  []
 
 [95]
@@ -680,10 +742,13 @@ File: figures/infomeasure/simple/socialmeasure.eps Graphic file (type eps)
  <figures/infomeasure/simple/socialmeasure.eps>
 File: figures/infomeasure/LearningDifferentiation.eps Graphic file (type eps)
 
-<figures/infomeasure/LearningDifferentiation.eps> [96]
-Overfull \hbox (62.26154pt too wide) has occurred while \output is active
+<figures/infomeasure/LearningDifferentiation.eps>
+Underfull \vbox (badness 1584) has occurred while \output is active []
+
+ [96]
+Overfull \hbox (64.48265pt too wide) has occurred while \output is active
 \OT1/cmr/m/sl/10 3.2.  AN INPUT BASED INFORMATION MEASURE FOR ADAPTIVE CONTROLL
-ERS \OT1/cmr/m/n/10 97
+ERS  \OT1/cmr/m/n/10 97
  []
 
 [97] [98]) (./work_InfoFlowClosedLoop.tex
@@ -691,9 +756,9 @@ Missing character: There is no â in font cmr10!
 Missing character: There is no € in font cmr10!
 Missing character: There is no ™ in font cmr10!
 
-Overfull \hbox (62.26154pt too wide) has occurred while \output is active
+Overfull \hbox (64.48265pt too wide) has occurred while \output is active
 \OT1/cmr/m/sl/10 3.2.  AN INPUT BASED INFORMATION MEASURE FOR ADAPTIVE CONTROLL
-ERS \OT1/cmr/m/n/10 99
+ERS  \OT1/cmr/m/n/10 99
  []
 
 [99] [100] [101]
@@ -715,7 +780,7 @@ LaTeX Warning: Float too large for page by 119.24394pt on input line 439.
 File: figures/lawvariety/percentage.eps Graphic file (type eps)
 <figures/lawvariety/percentage.eps> [108] [109] [110]) (./work_QLearning.tex
 Overfull \hbox (1.49115pt too wide) in paragraph at lines 1--1
-[]\OT1/cmr/bx/n/14.4 Introduction: in-for-ma-tion flow in Q-learning 
+[]\OT1/cmr/bx/n/14.4 Introduction: in-for-ma-tion flow in Q-learning
  []
 
 [111] [112] [113] [114]
@@ -787,28 +852,22 @@ File: figures/ppmeasure/8.eps Graphic file (type eps)
  <figures/ppmeasure/8.eps>
 File: figures/ppmeasure/9.eps Graphic file (type eps)
 
-<figures/ppmeasure/9.eps> [138] [139]
-Overfull \hbox (0.66722pt too wide) in paragraph at lines 1035--1040
-[]\OT1/cmr/m/n/10 This out-come is com-pared with the weight de-vel-op-ment as 
-shown in Fig.3.5.7[],
- []
-
-[140]
-Overfull \hbox (16.85472pt too wide) in paragraph at lines 1041--1044
+<figures/ppmeasure/9.eps> [138] [139] [140]
+Overfull \hbox (16.85472pt too wide) in paragraph at lines 1037--1040
 \OT1/cmr/m/n/10 agents num-bered 7 and 3 have an equal per-for-mance as agents 
 9,2 $\OML/cmm/m/it/10 PP[]\OT1/cmr/m/n/10 (\OML/cmm/m/it/10 Af\OT1/cmr/m/n/10 )
  \OMS/cmsy/m/n/10 '
  []
 
 
-Overfull \hbox (4.81995pt too wide) in paragraph at lines 1044--1048
+Overfull \hbox (4.81995pt too wide) in paragraph at lines 1040--1044
 \OT1/cmr/m/n/10 agents num-bered 6 and 5 have a dif-fer-ent per-for-mance $\OML
 /cmm/m/it/10 PP[]\OT1/cmr/m/n/10 (\OML/cmm/m/it/10 Af\OT1/cmr/m/n/10 ) \OML/cmm
 /m/it/10 > PP[]\OT1/cmr/m/n/10 (\OML/cmm/m/it/10 Af\OT1/cmr/m/n/10 )$
  []
 
 
-Overfull \hbox (9.20883pt too wide) in paragraph at lines 1048--1051
+Overfull \hbox (9.20883pt too wide) in paragraph at lines 1044--1047
 \OT1/cmr/m/n/10 agents num-bered 5 and 9 have an equal per-for-mance $\OML/cmm/
 m/it/10 PP[]\OT1/cmr/m/n/10 (\OML/cmm/m/it/10 Af\OT1/cmr/m/n/10 ) \OMS/cmsy/m/n
 /10 ' \OML/cmm/m/it/10 PP[]\OT1/cmr/m/n/10 (\OML/cmm/m/it/10 Fo\OT1/cmr/m/n/10 
@@ -817,19 +876,19 @@ m/it/10 PP[]\OT1/cmr/m/n/10 (\OML/cmm/m/it/10 Af\OT1/cmr/m/n/10 ) \OMS/cmsy/m/n
 
 File: figures/ppmeasure/social/row1.eps Graphic file (type eps)
 <figures/ppmeasure/social/row1.eps>
-Overfull \hbox (6.66666pt too wide) in paragraph at lines 1074--1074
+Overfull \hbox (6.66666pt too wide) in paragraph at lines 1069--1069
  [] 
  []
 
 File: figures/ppmeasure/social/row2.eps Graphic file (type eps)
 <figures/ppmeasure/social/row2.eps>
-Overfull \hbox (6.66666pt too wide) in paragraph at lines 1078--1078
+Overfull \hbox (6.66666pt too wide) in paragraph at lines 1073--1073
  [][] 
  []
 
 File: figures/ppmeasure/social/row3.eps Graphic file (type eps)
 <figures/ppmeasure/social/row3.eps>
-Overfull \hbox (6.66666pt too wide) in paragraph at lines 1082--1083
+Overfull \hbox (6.66666pt too wide) in paragraph at lines 1077--1078
  [][] 
  []
 
@@ -1250,10 +1309,10 @@ Missing character: There is no ¶ in font cmr9!
 Here is how much of TeX's memory you used:
  5391 strings out of 495062
  80894 string characters out of 1182645
- 163606 words of memory out of 3000000
+ 163605 words of memory out of 3000000
  8273 multiletter control sequences out of 15000+50000
  16260 words of font info for 62 fonts, out of 3000000 for 9000
  28 hyphenation exceptions out of 8191
  34i,17n,58p,1090b,1570s stack positions out of 5000i,500n,10000p,200000b,50000s
 
-Output written on MainBody.dvi (236 pages, 817616 bytes).
+Output written on MainBody.dvi (236 pages, 817596 bytes).

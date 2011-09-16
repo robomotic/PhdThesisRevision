@@ -1,72 +1,72 @@
 \select@language {english}
-\contentsline {chapter}{\numberline {1}Introduction}{21}
+\contentsline {chapter}{\numberline {1}Introduction }{21}
 \contentsline {section}{\numberline {1.1}A theory of social systems}{21}
 \contentsline {section}{\numberline {1.2}Modelling approach ABM}{22}
 \contentsline {section}{\numberline {1.3}Objectives and Motivation of the thesis}{22}
 \contentsline {section}{\numberline {1.4}Outline of thesis}{23}
-\contentsline {chapter}{\numberline {2}Background literature}{27}
-\contentsline {section}{\numberline {2.1}Introduction to the theory of Societies}{27}
+\contentsline {chapter}{\numberline {2}Background literature }{27}
+\contentsline {section}{\numberline {2.1}Introduction to the theory of Societies }{27}
 \contentsline {section}{\numberline {2.2}A brief history of sociology}{27}
 \contentsline {subsection}{\numberline {2.2.1}Autopoiesis: from biology to social systems}{28}
-\contentsline {subsection}{\numberline {2.2.2}Neural systems}{31}
-\contentsline {subsection}{\numberline {2.2.3}Breitenberg vehicles}{35}
+\contentsline {subsection}{\numberline {2.2.2}Neural systems }{31}
+\contentsline {subsection}{\numberline {2.2.3}Breitenberg vehicles }{35}
 \contentsline {subsection}{\numberline {2.2.4}Communication}{36}
-\contentsline {section}{\numberline {2.3}Social order generation by double contingency}{40}
+\contentsline {section}{\numberline {2.3}Social order generation by double contingency }{40}
 \contentsline {subsection}{\numberline {2.3.1}Methods}{40}
 \contentsline {subsection}{\numberline {2.3.2}Results}{42}
 \contentsline {subsection}{\numberline {2.3.3}Discussion}{43}
-\contentsline {section}{\numberline {2.4}Agent Based Modelling}{43}
+\contentsline {section}{\numberline {2.4}Agent Based Modelling }{43}
 \contentsline {subsection}{\numberline {2.4.1}SWARM and ABM}{43}
 \contentsline {subsection}{\numberline {2.4.2}Single agent VS multi agent learning}{45}
-\contentsline {section}{\numberline {2.5}Information theory for closed loop controllers}{46}
+\contentsline {section}{\numberline {2.5}Information theory for closed loop controllers }{46}
 \contentsline {subsection}{\numberline {2.5.1}Introduction: closed loop controllers}{46}
-\contentsline {subsection}{\numberline {2.5.2}Regulation and entropy}{50}
+\contentsline {subsection}{\numberline {2.5.2}Regulation and entropy }{50}
 \contentsline {subsection}{\numberline {2.5.3}Open loop regulation}{52}
 \contentsline {subsection}{\numberline {2.5.4}Closed loop regulation}{53}
-\contentsline {subsection}{\numberline {2.5.5}The law of requisite variety}{53}
-\contentsline {subsection}{\numberline {2.5.6}First law of requisite variety}{54}
+\contentsline {subsection}{\numberline {2.5.5}The law of requisite variety}{54}
+\contentsline {subsection}{\numberline {2.5.6}First law of requisite variety}{55}
 \contentsline {paragraph}{Corollary 1:}{55}
 \contentsline {subsection}{\numberline {2.5.7}Second law of requisite variety}{55}
 \contentsline {subsection}{\numberline {2.5.8}A perfect regulation example}{55}
-\contentsline {chapter}{\numberline {3}Research work}{57}
-\contentsline {section}{\numberline {3.1}Introduction: Social Modelling of Artificial Agents}{57}
-\contentsline {subsection}{\numberline {3.1.1}Methods: A Model of the World}{58}
-\contentsline {subsection}{\numberline {3.1.2}Methods: ICO learning module}{58}
+\contentsline {chapter}{\numberline {3}Research work }{57}
+\contentsline {section}{\numberline {3.1}Introduction: Social Modelling of Artificial Agents }{57}
+\contentsline {subsection}{\numberline {3.1.1}Methods: A Model of the World }{58}
+\contentsline {subsection}{\numberline {3.1.2}Methods: ICO learning module }{58}
 \contentsline {subsection}{\numberline {3.1.3}Methods: agent controller}{61}
 \contentsline {subsection}{\numberline {3.1.4}Methods: avoidance behaviour}{61}
 \contentsline {subsection}{\numberline {3.1.5}Methods: Agents and satedness communication}{62}
 \contentsline {paragraph}{Aggressive agents}{64}
 \contentsline {subsection}{\numberline {3.1.6}Methods: Food attraction}{64}
 \contentsline {paragraph}{Constant food production}{64}
-\contentsline {paragraph}{Limited food production}{64}
+\contentsline {paragraph}{Limited food production}{65}
 \contentsline {subsection}{\numberline {3.1.7}Controller summary}{66}
-\contentsline {subsection}{\numberline {3.1.8}Broadcasting signal mechanism}{66}
+\contentsline {subsection}{\numberline {3.1.8}Broadcasting signal mechanism }{67}
 \contentsline {subsubsection}{Honest food proximal signalling}{67}
-\contentsline {subsubsection}{Dishonest food proximal signalling}{67}
+\contentsline {subsubsection}{Dishonest food proximal signalling}{68}
 \contentsline {subsection}{\numberline {3.1.9}Results: analysis of formation in different cases}{68}
 \contentsline {subsubsection}{Sub-system formation and adaptive communication}{68}
-\contentsline {subsubsection}{Foraging performance and signalling strategies}{71}
+\contentsline {subsubsection}{Foraging performance and signalling strategies}{72}
 \contentsline {subsubsection}{Adaptive vs non communicative foraging performance}{73}
-\contentsline {subsubsection}{Honest behaviour and unlimited resources}{74}
+\contentsline {subsubsection}{Honest behaviour and unlimited resources}{73}
 \contentsline {subsubsection}{Honest behaviour and limited resources}{75}
 \contentsline {subsubsection}{Stability analysis for changes in population}{77}
-\contentsline {subsection}{\numberline {3.1.10}Discussion: sub system formation in the social model}{78}
-\contentsline {section}{\numberline {3.2}An input based information measure for adaptive controllers}{79}
+\contentsline {subsection}{\numberline {3.1.10}Discussion: sub system formation in the social model}{77}
+\contentsline {section}{\numberline {3.2}An input based information measure for adaptive controllers }{80}
 \contentsline {subsection}{\numberline {3.2.1}Introduction to the maxcorr input measure}{80}
-\contentsline {subsection}{\numberline {3.2.2}Methods: controller assumptions}{80}
+\contentsline {subsection}{\numberline {3.2.2}Methods: controller assumptions}{81}
 \contentsline {subsection}{\numberline {3.2.3}Methods: complex model configuration}{81}
 \contentsline {subsection}{\numberline {3.2.4}Methods: cross correlation and ICO learning}{83}
 \contentsline {subsection}{\numberline {3.2.5}Methods: a simplified model}{84}
 \contentsline {subsection}{\numberline {3.2.6}Methods: anticipatory information}{85}
 \contentsline {subsection}{\numberline {3.2.7}Results: complex model results}{87}
-\contentsline {paragraph}{Experiment with 2 agents and 2 obstacles}{89}
-\contentsline {paragraph}{Experiment with 4 agents and 2 obstacles}{89}
+\contentsline {paragraph}{Experiment with 2 agents and 2 obstacles}{88}
+\contentsline {paragraph}{Experiment with 4 agents and 2 obstacles}{90}
 \contentsline {paragraph}{Adding one agent}{93}
 \contentsline {subsection}{\numberline {3.2.8}Results: simple case results}{93}
 \contentsline {subsection}{\numberline {3.2.9}Results: simplified social model results}{94}
 \contentsline {subsection}{\numberline {3.2.10}Results: differentiation and information measure}{96}
 \contentsline {subsection}{\numberline {3.2.11}Discussion}{99}
-\contentsline {section}{\numberline {3.3}Information flow for adaptive controllers}{100}
+\contentsline {section}{\numberline {3.3}Information flow for adaptive controllers }{100}
 \contentsline {subsection}{\numberline {3.3.1}Introduction: Ashby's theory}{100}
 \contentsline {subsection}{\numberline {3.3.2}Methods: Ashby's law of requisite variety}{101}
 \contentsline {paragraph}{Definition and properties}{102}
@@ -75,7 +75,7 @@
 \contentsline {subsection}{\numberline {3.3.5}Methods: information flow applied to MISO controller}{105}
 \contentsline {subsection}{\numberline {3.3.6}Results}{107}
 \contentsline {subsection}{\numberline {3.3.7}Discussion}{108}
-\contentsline {section}{\numberline {3.4}Introduction: information flow in Q-learning}{111}
+\contentsline {section}{\numberline {3.4}Introduction: information flow in Q-learning }{111}
 \contentsline {subsection}{\numberline {3.4.1}Methods: reinforcement learning }{111}
 \contentsline {subsection}{\numberline {3.4.2}Methods: Q-Learning algorithm}{113}
 \contentsline {subsection}{\numberline {3.4.3}Methods: Q-Learning connectionist}{114}
@@ -101,7 +101,7 @@
 \contentsline {paragraph}{Predictive Performance during learning}{137}
 \contentsline {subsection}{\numberline {3.5.7}Results: application of PP to social systems}{139}
 \contentsline {subsection}{\numberline {3.5.8}Discussion}{141}
-\contentsline {chapter}{\numberline {4}Conclusion}{147}
+\contentsline {chapter}{\numberline {4}Conclusion }{147}
 \contentsline {section}{\numberline {4.1}Summary of results}{147}
 \contentsline {subsection}{\numberline {4.1.1}Discussion}{148}
 \contentsline {subsection}{\numberline {4.1.2}Modelling choices}{149}

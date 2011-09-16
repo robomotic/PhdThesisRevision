@@ -40,18 +40,18 @@
 \contentsline {subfigure}{\numberline {(d)}{\ignorespaces {Honest food signal, ratio $N=20,M=16$}}}{70}
 \contentsline {subfigure}{\numberline {(e)}{\ignorespaces {Dishonest food signal, ratio $N=20,M=4$, 18 cheaters}}}{70}
 \contentsline {subfigure}{\numberline {(f)}{\ignorespaces {Dishonest food signal, ratio $N=20,M=16$, 18 cheaters}}}{70}
-\contentsline {figure}{\numberline {3.9}{\ignorespaces Foraging performance comparison}}{73}
+\contentsline {figure}{\numberline {3.9}{\ignorespaces Foraging performance comparison}}{74}
 \contentsline {figure}{\numberline {3.10}{\ignorespaces Self organisation with honest behaviour and unlimited resources}}{75}
 \contentsline {subfigure}{\numberline {(a)}{\ignorespaces {Case considering scarce resources: in non adaptive-communication only seekers are present (top line is constant to 20 agents), in adaptive communication sub-system formation is achieved and parasites become more than seekers after 80 seconds}}}{75}
 \contentsline {subfigure}{\numberline {(b)}{\ignorespaces {Case considering scarce resources: in non adaptive-communication only seekers are present (top line is constant to 20 agents), in adaptive communication sub-system formation is achieved and parasites are in equilibrium with seekers after 200 seconds}}}{75}
 \contentsline {figure}{\numberline {3.11}{\ignorespaces Self organisation with honest behaviour and limited resources}}{76}
 \contentsline {subfigure}{\numberline {(a)}{\ignorespaces {Case considering scarce resources: in non adaptive-communication only seekers are present (top line is constant to 20 agents), in adaptive communication sub-system formation is achieved and parasites become more than seekers after 200 seconds}}}{76}
 \contentsline {subfigure}{\numberline {(b)}{\ignorespaces {Case considering scarce resources: in non adaptive-communication only seekers are present (top line is constant to 20 agents), in adaptive communication sub-system formation is achieved and parasites are in equilibrium with seekers after 200 seconds}}}{76}
-\contentsline {figure}{\numberline {3.12}{\ignorespaces Self organisation sensitivity to agent parameters}}{77}
+\contentsline {figure}{\numberline {3.12}{\ignorespaces Self organisation sensitivity to agent parameters}}{78}
 \contentsline {figure}{\numberline {3.13}{\ignorespaces Avoidance ICO behaviour}}{82}
 \contentsline {figure}{\numberline {3.14}{\ignorespaces Simplified control model}}{86}
 \contentsline {figure}{\numberline {3.15}{\ignorespaces Temporal signal development during learning}}{86}
-\contentsline {figure}{\numberline {3.16}{\ignorespaces Max correlation for non learning agents}}{88}
+\contentsline {figure}{\numberline {3.16}{\ignorespaces Max correlation for non learning agents}}{89}
 \contentsline {figure}{\numberline {3.17}{\ignorespaces Max correlation for two learning agents}}{90}
 \contentsline {subfigure}{\numberline {(a)}{\ignorespaces {Cross correlation maximum $M(c_{d}(k))$ for left (straight) and right (dashed) synapses. Measures from agent 0.}}}{90}
 \contentsline {subfigure}{\numberline {(b)}{\ignorespaces {Energy $E(xcorr_{d}(k))$ for left (straight) and right (dashed) synapses. Measures from agent 0.}}}{90}

@@ -635,8 +635,7 @@ the measures which include mutual information with the measure of the reflex ent
 
 \begin{table}[htbp]
 \addtolength{\tabcolsep}{-2pt}
-\caption[Table with entropy values for simple robot]{Table measuring the predictive performance for different distances $y$ of the predictor as seen in Fig.\ref{PPmeasure:Figure4}(C)}
-\label{table:PPmeausure:TableSimplePP}
+\caption[Table with entropy values for simple robot]{Table measuring the predictive performance for different distances $y$ of the predictor as seen in Fig.\ref{PPmeasure:Figure4}(C). \label{table:PPmeausure:TableSimplePP}}
 \begin{small}
 \begin{center}
   \begin{tabular}{|l|c|c|c|c|c|c|c|c|}
@@ -733,8 +732,7 @@ learning must provide a better track deviation.
 
 \begin{table}[htbp]
 \caption[Track deviation values for simple robot]{Table measuring the track deviation $\Psi$ for the simple robot 
-as seen in Fig.\ref{PPmeasure:Figure4}(B),(C) on the maze track}
-\label{table:PPmeausure:TableSimpleTrack}
+as seen in Fig.\ref{PPmeasure:Figure4}(B),(C) on the maze track. \label{table:PPmeausure:TableSimpleTrack}}
 \begin{center}
   \begin{tabular}{| l | c | c |}
     \hline
@@ -801,8 +799,7 @@ because high weights does not mean better performance.
 \caption[Reflex input values for the 3 tracks]{Table of the reflex input entropy used for the calculation of the Predictive Performance
 in Figs.\ref{PPmeasure:shallow},\ref{PPmeasure:middle},\ref{PPmeasure:step}.
 $t_L$ is the time until the weights have stabilised. The distance between the reflex pixels
-and the predictor was always set to $y=6$.}
-\label{table:PPmeausure:TableReflexFullTracks}
+and the predictor was always set to $y=6$.\label{table:PPmeausure:TableReflexFullTracks}}
 \begin{center}
   \begin{tabular}{| l | c | c | c | c | }
     \hline
@@ -871,11 +868,11 @@ reﬂected in the high Predictive Performance values and low track deviations.
 		\includegraphics[width=0.9\textwidth]{figures/ppmeasure/6}
 	\end{center}
 	\caption[Performance for the intermediate track]{
-	{\bf A)} Retinal field developed during learning in the shallow track configuration as in Figure\ref{PPmeasure:Maps}(A).
+	{\bf A)} Retinal field developed during learning in the shallow track configuration as in Figure \ref{PPmeasure:Maps}(A).
 		      The learning experiences required to have stable learning were 19.
 	{\bf B)} Retinal flow before learning $\mu=0$ achieves a maximum of 0.35 bits. 
-	{\bf C)} Trajectories produced by the robot during learning. The controller stabilizes its average retinal weight at about $TOTAL_{RF}=1.6$ after 1250 time steps. The average deviation of the track is $\psi \simeq 3.85$  
-	{\bf D)} Predictive Performance for every pixel shows that the robot is using a wider area compared to the shallow case and with higher maximum of 0.9 \label{PPmeasure:middle}}
+	{\bf C)} Trajectories produced by the robot during learning. The controller stabilizes its average retinal weight at about $TOTAL_{RF}=1.6$ after 1250 time steps. The average deviation of the track is $\psi \simeq 3.85$.  
+	{\bf D)} Predictive Performance for every pixel shows that the robot is using a wider area compared to the shallow case and with higher maximum of 0.9. \label{PPmeasure:middle}}
 \end{figure}
 
 For the \textbf{step track} in Figure \ref{PPmeasure:step}, stable learning
@@ -887,7 +884,7 @@ from the retinal field. The retinal flow before learning does not have any parti
 with the only reflex. The predictive performance has a maximum of 0.45 and indicates that the robot is using few pixels in the lower 
 left corner.
 Here, I have greatest difference between weight
-distribution (Figure \ref{PPmeasure:step}C) and Predictive Performance (Figure \ref{PPmeasure:step}D).
+distribution (Figure \ref{PPmeasure:step}(C)) and Predictive Performance (Figure \ref{PPmeasure:step}(D)).
 While the weights are higher further away from the symmetry axis, the Predictive Performance is
 only high close to the robot’s reﬂex sensors indicating that the pixels further out
 are not able to improve the robot’s behaviour.
@@ -902,7 +899,7 @@ pixel contributes to the closed loop performance as shown by the simulations.
 		\includegraphics[width=0.9\textwidth]{figures/ppmeasure/7}
 	\end{center}
 	\caption[Performance for the step track]{
-	{\bf A)} Retinal field developed during learning in the step track configuration as in Figure\ref{PPmeasure:Maps}(A).
+	{\bf A)} Retinal field developed during learning in the step track configuration as in Figure \ref{PPmeasure:Maps}(A).
 		      The learning experiences required to have stable learning were 18.
 	{\bf B)} Retinal flow before learning $\mu=0$ stays at about 0.1 bits. 
 	{\bf C)} Trajectories produced by the robot during learning. The controller stabilizes its average retinal weight at about $TOTAL_{RF}=1.44$ after 2600 time steps. The average deviation of the track is $\psi \simeq 6.5$  
@@ -973,8 +970,7 @@ success of the robot and which do not.
     maze stage 2 & 6 	& 0.130971 	& 0.0  \\ \hline
   \end{tabular*}
 \caption[Mutual information values for maze track]{Table containing the mutual
-information values for the reflex in the maze track before and after learning}
-\label{PPmeasure:MazeFinalReflexValue}
+information values for the reflex in the maze track before and after learning.\label{PPmeasure:MazeFinalReflexValue}}
 \end{table}
 
 \begin{figure}[!hbt]
@@ -982,7 +978,7 @@ information values for the reflex in the maze track before and after learning}
 		\includegraphics[width=0.9\textwidth]{figures/ppmeasure/8}
 	\end{center}
 	\caption[Reflex only robot on the maze track]{
-	{\bf A)} Trajectory of the robot in the maze track when only the reflex is used ($\mu=0$) 
+	{\bf A)} Trajectory of the robot in the maze track when only the reflex is used ($\mu=0$). 
 	{\bf B)} Mutual information $MI(Z,D_{1,i,j})_{t=0}$ for the retina computed during a track run
         \label{PPmeasure:MazeFinalReflex}}
 \end{figure}
@@ -992,14 +988,14 @@ information values for the reflex in the maze track before and after learning}
 		\includegraphics[width=0.9\textwidth]{figures/ppmeasure/9}
 	\end{center}
 	\caption[Full learning robot on the maze track]{
-	{\bf A)} Trajectory of the robot in the maze track during a full learning session
+	{\bf A)} Trajectory of the robot in the maze track during a full learning session.
 	{\bf B)} The average retinal field plotted against time. The learning is stable in Stage 1 and Stage 2.
 There are 2 phases during the run marked with $[P1,P2]$ and $[P3,P4]$ where the robot does not learn
 anything new.
-	{\bf C)} Retinal field is constant during Stage 1
-	{\bf D)} Predictive performance in Stage 1 
-	{\bf E)} Retinal field is constant during Stage 2
-	{\bf F)} Predictive performance in Stage 2 
+	{\bf C)} Retinal field is constant during Stage 1.
+	{\bf D)} Predictive performance in Stage 1. 
+	{\bf E)} Retinal field is constant during Stage 2.
+	{\bf F)} Predictive performance in Stage 2. 
 	\label{PPmeasure:MazeFinalLearning}
 	}
 \end{figure}
@@ -1065,7 +1061,6 @@ the predictive measure can be trust and so agents $5,1$ are the best performing
 agents in Fig. \ref{fig:PPmeasure:social:2}. 
 
 \begin{figure}[ht!]
-    \label{fig:PPmeasure:social}
     \begin{center}
 %
         \subfigure[When there are 10 agents and 5 food sources, 5 seekers and 5 parasites are generated]{%
@@ -1089,7 +1084,7 @@ agents in Fig. \ref{fig:PPmeasure:social:2}.
       Left column contains the PP measures with white bars for the food attraction behaviour $PP(Fo)$,
       black bars for the other's attraction behaviour $PP(Af)$.
       Right column contains the weight developed after the system is stabilised for the
-      same behaviours $W(Fo),W(Af)$.
+      same behaviours $W(Fo),W(Af)$.    \label{fig:PPmeasure:social}
     }
 \end{figure}
 

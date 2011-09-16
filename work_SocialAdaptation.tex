@@ -1,6 +1,6 @@
 
-\section{Introduction: Social Modelling of Artificial Agents}
-\label{Chapter4:Social adaptation}
+\section{Introduction: Social Modelling of Artificial Agents \label{Chapter4:Social adaptation}}
+
 The aim of this section is to develop an Agent Based Model which satisfies the
 autopoietic property of Social Systems as introduced in the previous
 section \ref{Chapter1:SocialSystemTheory}.
@@ -30,8 +30,8 @@ The section is structured in this way: description of the agents, world and sign
 the learning rule used, agents' behaviours, sub-system formation
 and effects of different communication strategies followed by a conclusion.
 
-\subsection{Methods: A Model of the World}
-\label{WorldModelSim}
+\subsection{Methods: A Model of the World \label{WorldModelSim}}
+
 The simulation model is composed of a 2 dimensional world bounded by walls.
 It contains two different objects: agents and food sources.
 The agents, referenced by their position as $a_{j}(t)$,where $a_{j}$
@@ -86,8 +86,8 @@ In the next section I am going to describe the learning algorithm enabling the a
 replace the reflexes with the predictive actions.
 Once the learning algorithm is described, I will describe the different reflexes and possible
 anticipatory reactions.
-\subsection{Methods: ICO learning module}
-\label{Section:ICOlearning}
+\subsection{Methods: ICO learning module \label{Section:ICOlearning}}
+
 The input correlation learning rule of \citet{Porr2006ICO} is a Hebbian learning rule,
 it is unsupervised and performs a confounded correlation between a predefined reflex signal
 ($x_{0}$) and a reflex predicting signal ($x_{1}$). Hence, this learning
@@ -328,12 +328,15 @@ agents turns left until $x_{0}(t)=0$ that means either $x_{0}(t)=x_{1}(t)$
 A hungry agent, is producing $G_{i,sated}(t)=0$ therefore other agents will be
  repelled since it is emitting only the $G_{avoid}$ signal.
 
-\paragraph{Aggressive agents}\label{eq:aggressive}
-If one wants to make an agent more aggressive  $H_{sated}(t)$ can be multiplied for the
+\paragraph{Aggressive agents}
+If one wants to make an agent more aggressive $H_{sated}(t)$ can be multiplied for the
 distal sensors $avoid(t)$ left, right (in Fig.\label{fig:avoid} the $H_{hunger}$
-block can be introduced after each of the grey triangles). It implies that when
-an agent is not sated, it will ignore the obstacle signal $G_{avoid}$
-produced by the other agent.
+block can be introduced after each of the grey triangles). 
+\begin{equation}
+H_{sated}(t)\cdot avoid(t)  \label{eq:aggressive}
+\end{equation}
+It implies that when an agent is not sated, it will ignore the obstacle
+signal $G_{avoid}$ produced by the other agent.
 
 \begin{figure}[htb]
 \includegraphics[scale=0.4]{figures/socialadapt/attractionAgent.eps}
@@ -357,7 +360,7 @@ input difference \label{fig:attractionAgent}}
 Every food source $f_{j}(t)$ with $j=1,...,M$ produces the signal
 (see Fig.\ref{fig:sensors} (d),(e) and Eq.\ref{eq:circle}):
 \begin{equation}
-G_{j,food}=G(x-f_{j,x},y-f_{j,y}).
+G_{j,food}=G(x-f_{j,x},y-f_{j,y})
 \label{eq:food}
 \end{equation}
 which is sensed by agents $a_{i}$ by the inputs labelled as
@@ -369,7 +372,7 @@ is always emitted.
 Every food source contains a limited amount of food modelled by the variable $q$ that
  is decremented every time an agent touches the food place at $t_{b}$:
 \begin{equation}
-q_{j}(t_{b}+1)=q_{j}(t_{b})-\theta q.
+q_{j}(t_{b}+1)=q_{j}(t_{b})-\theta q
 \label{eq:qfood}
 \end{equation}
 where ($\theta q$ is fixed).
@@ -449,8 +452,8 @@ summation of all the synaptic inputs \label{fig:controllerSummary}}
 \end{figure}
 
 
-\subsection{Broadcasting signal mechanism}
-\label{SocialSystem:Broadcast}
+\subsection{Broadcasting signal mechanism \label{SocialSystem:Broadcast}}
+
 The main feature of a social system is the production and use of signals.
 Thus each agent can emit the same field in equation \ref{eq:food} in the presence of a food source.
 A more detailed discussion about signalling strategies is in the Conclusion section \ref{TheoryOfMind}.
@@ -600,8 +603,7 @@ accordingly with the food sources $M$ such that $n_{s}=4,8,10$ respectively for 
 Table summarising self-organisation:
 every element in the table is the couple $(n_{s}(T_{sim}),n_{p}(T_{sim}))$
 which indicates the number of seekers and parasites when the simulation
-at the end of the simulation}
-\label{tab:population}
+at the end of the simulation.\label{tab:population}}
 \begin{center}
 \small{
 \begin{tabular}{@{}c|ccc@{}}
@@ -649,8 +651,7 @@ in the system is no more reliable and will punish everybody indiscriminately.
 
 \begin{table}[htbp]
 \caption[Social System foraging performance]{
-Table summarising the foraging performance: every value represents $F_{tot}$}
-\label{tab:totalPerformance}
+Table summarising the foraging performance: every value represents $F_{tot}$. \label{tab:totalPerformance}}
 \begin{center}
 \small{
 \begin{tabular}{@{}c|ccc@{}}
@@ -683,9 +684,7 @@ Table \ref{tab:foodDistribution} contains the computed values for each condition
 \caption[Social System food distribution]{Table summarising food distribution:
 every element represent the couple ($\mu,\sigma$) where $\mu$ is the average of
 the food bites+agents bites over the agent population, and $\sigma$ is
-the standard deviation. They are calculated at the end of the simulation.
-}
-\label{tab:foodDistribution}
+the standard deviation. They are calculated at the end of the simulation.\label{tab:foodDistribution}}
 \begin{center}
 \small{
 \begin{tabular}{@{}c|ccc@{}}
@@ -786,7 +785,7 @@ $F_{seek}$ is the number of total times that agents touched food sources (Eq. \r
 Table summarising foraging performance over 100 simulations.
 With scarce resources, performance is superior using adaptive communication,
 with abundant resources performances are equal since food distribution
-through parasites is not essential.}
+through parasites is not essential.\label{tab:performance}}
 {
 \begin{tabular}{@{}cccc@{}}
 \hline
@@ -796,7 +795,6 @@ Adaptive communication & $F_{tot}=396\pm2$ & $F_{tot}=319\pm2$\\
 \hline
 Non-adaptive communication & $F_{tot}=355\pm2$ & $F_{tot}=319\pm2$\\
 \hline
-\label{tab:performance}
 \end{tabular}}
 \end{table}
 
@@ -842,7 +840,7 @@ communication sub-system formation is achieved and parasites are in equilibrium
 with seekers after 200 seconds]{
 \includegraphics[width=2.4in]{figures/socialadapt/limited/20to18.eps}
 \label{fig_second_case}}}
-\caption[Self organisation with honest behaviour and limited resources]{\label{fig:limitedcomparison}}
+\caption[Self organisation with honest behaviour and limited resources]{Self organisation with honest behaviour and limited resources\label{fig:limitedcomparison}}
 \label{fig_sim}
 \end{figure*}
 An explanation for the prevalence of the parasitic population with scarce
@@ -870,8 +868,7 @@ the food collection.
 \caption[Foraging performance with limited resources]{
 Table summarising foraging performance over 100 simulations.
 Adaptive communication has the best performance for both scarce
-and abundant resources.}
-\label{tab:limitedperformance}
+and abundant resources.\label{tab:limitedperformance}}
 \begin{center}
 \begin{tabular}{@{}cccc@{}}
 \hline

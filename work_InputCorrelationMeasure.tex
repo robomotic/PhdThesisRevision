@@ -1,5 +1,4 @@
-\section{An input based information measure for adaptive controllers}
-\label{Chapter5:Max Corr Input}
+\section{An input based information measure for adaptive controllers \label{Chapter5:Max Corr Input}}
 
 This Section describes the development of an information measure
 to assess the learning performance of the, previously described, learning agents
@@ -262,7 +261,7 @@ The motor reaction will reduce the intensity of the painful reflex $x_0$ as well
  and the signal structure \citep{Porr2006ICO}. The $u_0$ and $u_1$ are respectively
  the difference between the filtered values of the left and right antennas of
 the agent. During learning the $u_0$ peak will be shifted in time and reduced
- in amplitude.} \label{maxcorr:methods:ico1}
+ in amplitude. \label{maxcorr:methods:ico1}} 
 \end{figure}
 
 \subsection{Methods: anticipatory information}
@@ -284,8 +283,8 @@ be reduced but also delayed in time.
 \caption[Temporal signal development during learning]{A) Illustration of the signals $u_1,u_0$
 of a non learning agent. The peaks are periodic but off phase and with same amplitude.
 B) Same time diagram for a learning agent. C) Cross correlation of $u_1$ and $u_0$ for the non learning case.
-D) Cross correlation of $u_1$ and $u_0$ for the learning case.}
-\label{methods:xcorr}
+D) Cross correlation of $u_1$ and $u_0$ for the learning case. \label{methods:xcorr}}
+
 \end{small}
 \end{figure}
 
@@ -530,8 +529,7 @@ by a peak in the cross correlation and thus needs to adjust its weights.
     \includegraphics[scale=0.65]{figures/infomeasure/agentvariation.eps}
     \caption[Max correlation variation analysis]{A new agent is introduced
 	    for t=6, the other agents needs to adjust their weights to the new
-	    ``unpredictable'' friend.
-\label{info:agentadd}}
+	    ``unpredictable'' friend.\label{info:agentadd}}
   \end{center}
 \end{figure}
 Unfortunately I did not have any more time to carry extensive analysis, but 
@@ -572,8 +570,7 @@ signal $u_1$ to avoid the contact thus $AI > 0$.
 \textbf{B)}  Anticipatory information computed for 2 learning agents.
 When learning is stable it reaches a baseline level, $AI(t)\simeq 6$ bits.
 If agents are not learning the anticipatory information is low $AI(t)\simeq 0.5$
-bits, because $cc(0)\simeq 0.7071$}
-\label{avoidance:resume}
+bits, because $cc(0)\simeq 0.7071$. \label{avoidance:resume}}
 \end{figure}
 
 \subsection{Results: simplified social model results}
@@ -623,8 +620,8 @@ In term of information it means that seekers are using $AI_{food}-AI_{energy}=2$
 the food. E) There are a total of $N=10$ agents of whom 6 turn into parasites, and 4 turn into seekers after 20 time steps. The system stabilisation is a function of time: at the very
 beginning agents are using both signals and their behaviour is unpredictable because they are switching between the 2 competitive behaviours.
 After 20 time windows the agents have a more predictable behaviour resulting by the selection of the information. Minor oscillations are again
-due to the noise resulting from the interaction between learning agents.}
-\label{social:learning1}
+due to the noise resulting from the interaction between learning agents.\label{social:learning1}}
+
 \end{figure}
 
 
