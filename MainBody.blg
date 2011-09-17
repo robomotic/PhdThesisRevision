@@ -46,7 +46,7 @@ Warning--empty year in feed-forward
 Warning--empty journal in feed-forward
 You've used 153 entries,
             1940 wiz_defined-function locations,
-            1430 strings with 29058 characters,
+            1430 strings with 29064 characters,
 and the built_in function-call counts, 58536 in all, are:
 = -- 5764
 > -- 2045

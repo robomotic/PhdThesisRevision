@@ -1,18 +1,11 @@
-This is pdfTeX, Version 3.1415926-1.40.10 (TeX Live 2009/Debian) (format=latex 2010.11.26)  17 SEP 2011 14:03
+This is pdfTeX, Version 3.1415926-1.40.10 (TeX Live 2009/Debian) (format=latex 2011.4.7)  18 SEP 2011 00:17
 entering extended mode
- restricted \write18 enabled.
  %&-line parsing enabled.
 **MainBody.tex
 (./MainBody.tex
 LaTeX2e <2009/09/24>
 Babel <v3.8l> and hyphenation patterns for english, usenglishmax, dumylang, noh
-yphenation, farsi, arabic, croatian, bulgarian, ukrainian, russian, czech, slov
-ak, danish, dutch, finnish, french, basque, ngerman, german, german-x-2009-06-1
-9, ngerman-x-2009-06-19, ibycus, monogreek, greek, ancientgreek, hungarian, san
-skrit, italian, latin, latvian, lithuanian, mongolian2a, mongolian, bokmal, nyn
-orsk, romanian, irish, coptic, serbian, turkish, welsh, esperanto, uppersorbian
-, estonian, indonesian, interlingua, icelandic, kurmanji, slovenian, polish, po
-rtuguese, spanish, galician, catalan, swedish, ukenglish, pinyin, loaded.
+yphenation, loaded.
 (/usr/share/texmf-texlive/tex/latex/base/book.cls
 Document Class: book 2007/10/19 v1.4h Standard LaTeX document class
 (/usr/share/texmf-texlive/tex/latex/base/bk10.clo
@@ -122,7 +115,7 @@ LaTeX Font Info:    Redeclaring font encoding OMS on input line 568.
 LaTeX Info: Redefining \[ on input line 2666.
 LaTeX Info: Redefining \] on input line 2667.
 )
-(/var/lib/texmf/tex/generic/babel/babel.sty
+(/usr/share/texmf-texlive/tex/generic/babel/babel.sty
 Package: babel 2008/07/06 v3.8l The Babel package
 
 (/usr/share/texmf-texlive/tex/generic/babel/english.ldf
@@ -133,6 +126,8 @@ File: babel.def 2008/07/06 v3.8l Babel common definitions
 \babel@savecnt=\count101
 \U@D=\dimen115
 )
+\l@british = a dialect from \language\l@english 
+\l@UKenglish = a dialect from \language\l@english 
 \l@canadian = a dialect from \language\l@american 
 \l@australian = a dialect from \language\l@british 
 \l@newzealand = a dialect from \language\l@british 
@@ -367,23 +362,20 @@ Missing character: There is no Ô in font cmr10!
 Missing character: There is no ¨ in font cmr10!
 Missing character: There is no Ç in font cmr10!
 
-Underfull \vbox (badness 1308) has occurred while \output is active []
-
- [33]
+[33]
 File: figures/neural/closedloop-4.eps Graphic file (type eps)
-
-<figures/neural/closedloop-4.eps>
+ <figures/neural/closedloop-4.eps>
 Missing character: There is no ¬ in font cmr10!
 Missing character: There is no † in font cmr10!
- [34] [35]
+ [34]
 File: figures/vehicles/Braitenberg-1.eps Graphic file (type eps)
 
 <figures/vehicles/Braitenberg-1.eps>
 File: figures/vehicles/Braitenberg-2.eps Graphic file (type eps)
  <figures/vehicles/Braitenberg-2.eps>
+[35] [36]
 File: figures/autopoiesis/elements.eps Graphic file (type eps)
-
-<figures/autopoiesis/elements.eps> [36] [37] [38]
+ <figures/autopoiesis/elements.eps> [37]
 File: figures/autopoiesis/dialogexample.eps Graphic file (type eps)
 
 <figures/autopoiesis/dialogexample.eps>
@@ -393,8 +385,12 @@ Missing character: There is no ú in font cmr10!
 Missing character: There is no ‚ in font cmr10!
 Missing character: There is no Ä in font cmr10!
 Missing character: There is no ù in font cmr10!
- [39]
-Overfull \hbox (6.584pt too wide) in paragraph at lines 496--502
+
+Underfull \vbox (badness 6396) has occurred while \output is active []
+
+ [38]
+[39]
+Overfull \hbox (6.584pt too wide) in paragraph at lines 486--492
 []\OT1/cmr/m/n/10 Luhmann solves the prob-lem of dou-ble con-tin-gency by us-in
 g a self-organisation
  []
@@ -406,12 +402,11 @@ Overfull \hbox (6.49632pt too wide) in paragraph at lines 2--2
 []\OT1/cmr/bx/n/14.4 Information the-ory for closed loop con-trollers
  []
 
-[45]
 File: figures/maxcorr/InfoAgentTheory-2.eps Graphic file (type eps)
- <figures/maxcorr/InfoAgentTheory-2.eps> [46]
+<figures/maxcorr/InfoAgentTheory-2.eps> [45]
 File: figures/maxcorr/InfoAgentTheory-4.eps Graphic file (type eps)
 
-<figures/maxcorr/InfoAgentTheory-4.eps>
+<figures/maxcorr/InfoAgentTheory-4.eps> [46]
 File: figures/maxcorr/InfoAgentTheory-3.eps Graphic file (type eps)
 
 <figures/maxcorr/InfoAgentTheory-3.eps> [47]
@@ -419,33 +414,22 @@ File: figures/ashby/figure-2.eps Graphic file (type eps)
  <figures/ashby/figure-2.eps>
 File: figures/ashby/figure-4.eps Graphic file (type eps)
 
-<figures/ashby/figure-4.eps> [48] [49]
+<figures/ashby/figure-4.eps> [48]
 File: figures/conclusion/polani2008.eps Graphic file (type eps)
- <figures/conclusion/polani2008.eps>
-File: figures/conclusion/LungarellaVisualTask.eps Graphic file (type eps)
-
-<figures/conclusion/LungarellaVisualTask.eps>
-File: figures/conclusion/ay2008.eps Graphic file (type eps)
- <figures/conclusion/ay2008.eps>
-[50] [51]
+ <figures/conclusion/polani2008.eps> [49]
 File: figures/ashby/figure-1.eps Graphic file (type eps)
- <figures/ashby/figure-1.eps> [52]
+
+<figures/ashby/figure-1.eps> [50]
 File: figures/ashby/figure-3.eps Graphic file (type eps)
- <figures/ashby/figure-3.eps>
-Underfull \vbox (badness 10000) has occurred while \output is active []
+ <figures/ashby/figure-3.eps> [51] [52])
+[53] [54
 
- [53]
-Underfull \vbox (badness 7631) has occurred while \output is active []
-
- [54]
-[55]) [56]
+]
 Chapter 3.
 (./work_SocialAdaptation.tex
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
- [57
-
-]
+ [55]
 File: figures/socialadapt/RobotScenario.eps Graphic file (type eps)
 
 <figures/socialadapt/RobotScenario.eps>
@@ -453,61 +437,35 @@ File: figures/socialadapt/ico.eps Graphic file (type eps)
  <figures/socialadapt/ico.eps>
 Underfull \vbox (badness 4995) has occurred while \output is active []
 
- [58]
-Overfull \hbox (1.43027pt too wide) has occurred while \output is active
-\OT1/cmr/m/sl/10 3.1.  INTRODUCTION: SOCIAL MODELLING OF ARTIFICIAL AGENTS  \OT
-1/cmr/m/n/10 59
- []
-
-[59] [60]
+ [56]
+[57] [58]
 File: figures/socialadapt/avoidance.eps Graphic file (type eps)
- <figures/socialadapt/avoidance.eps>
-Overfull \hbox (1.43027pt too wide) has occurred while \output is active
-\OT1/cmr/m/sl/10 3.1.  INTRODUCTION: SOCIAL MODELLING OF ARTIFICIAL AGENTS  \OT
-1/cmr/m/n/10 61
- []
-
-[61]
+ <figures/socialadapt/avoidance.eps> [59]
 File: figures/socialadapt/hungersatshift.eps Graphic file (type eps)
- <figures/socialadapt/hungersatshift.eps> [62]
-Overfull \hbox (3.00412pt too wide) in paragraph at lines 291--295
+
+<figures/socialadapt/hungersatshift.eps> [60]
+Overfull \hbox (3.00412pt too wide) in paragraph at lines 288--292
 \OT1/cmr/m/n/10 Agent $\OML/cmm/m/it/10 a[]\OT1/cmr/m/n/10 (\OML/cmm/m/it/10 t\
 OT1/cmr/m/n/10 )$ senses $\OML/cmm/m/it/10 G[]$ \OT1/cmr/m/n/10 (see Fig.3.1[] 
 (f)) with 2 re-flex-ive in-puts $\OML/cmm/m/it/10 sated[]\OT1/cmr/m/n/10 (\OML/
 cmm/m/it/10 t\OT1/cmr/m/n/10 )$
  []
 
-
-Overfull \hbox (1.43027pt too wide) has occurred while \output is active
-\OT1/cmr/m/sl/10 3.1.  INTRODUCTION: SOCIAL MODELLING OF ARTIFICIAL AGENTS  \OT
-1/cmr/m/n/10 63
- []
-
-[63]
+[61]
 File: figures/socialadapt/attractionAgent.eps Graphic file (type eps)
- <figures/socialadapt/attractionAgent.eps> [64]
+ <figures/socialadapt/attractionAgent.eps> [62]
 File: figures/socialadapt/attractionFood.eps Graphic file (type eps)
 
 <figures/socialadapt/attractionFood.eps>
 Underfull \vbox (badness 2359) has occurred while \output is active []
 
-
-Overfull \hbox (1.43027pt too wide) has occurred while \output is active
-\OT1/cmr/m/sl/10 3.1.  INTRODUCTION: SOCIAL MODELLING OF ARTIFICIAL AGENTS  \OT
-1/cmr/m/n/10 65
- []
-
-[65] [66]
+ [63]
+[64]
 File: figures/socialadapt/ControllerSummary.eps Graphic file (type eps)
- <figures/socialadapt/ControllerSummary.eps>
-Overfull \hbox (1.43027pt too wide) has occurred while \output is active
-\OT1/cmr/m/sl/10 3.1.  INTRODUCTION: SOCIAL MODELLING OF ARTIFICIAL AGENTS  \OT
-1/cmr/m/n/10 67
- []
-
-[67] [68]
+ <figures/socialadapt/ControllerSummary.eps> [65] [66]
 File: figures/socialadapt/nosignal/comm20TO4.eps Graphic file (type eps)
- <figures/socialadapt/nosignal/comm20TO4.eps>
+
+<figures/socialadapt/nosignal/comm20TO4.eps>
 File: figures/socialadapt/nosignal/comm20TO18.eps Graphic file (type eps)
 
 <figures/socialadapt/nosignal/comm20TO18.eps>
@@ -522,56 +480,28 @@ File: figures/socialadapt/deceptive/comm20TO4.eps Graphic file (type eps)
 <figures/socialadapt/deceptive/comm20TO4.eps>
 File: figures/socialadapt/deceptive/comm20TO18.eps Graphic file (type eps)
 
-<figures/socialadapt/deceptive/comm20TO18.eps>
-Overfull \hbox (1.43027pt too wide) has occurred while \output is active
-\OT1/cmr/m/sl/10 3.1.  INTRODUCTION: SOCIAL MODELLING OF ARTIFICIAL AGENTS  \OT
-1/cmr/m/n/10 69
- []
-
-[69] [70]
-Overfull \hbox (1.43027pt too wide) has occurred while \output is active
-\OT1/cmr/m/sl/10 3.1.  INTRODUCTION: SOCIAL MODELLING OF ARTIFICIAL AGENTS  \OT
-1/cmr/m/n/10 71
- []
-
-[71] [72]
+<figures/socialadapt/deceptive/comm20TO18.eps> [67] [68] [69] [70]
 File: figures/socialadapt/foraging1.eps Graphic file (type eps)
- <figures/socialadapt/foraging1.eps>
-Overfull \hbox (1.43027pt too wide) has occurred while \output is active
-\OT1/cmr/m/sl/10 3.1.  INTRODUCTION: SOCIAL MODELLING OF ARTIFICIAL AGENTS  \OT
-1/cmr/m/n/10 73
- []
 
-[73] [74]
+<figures/socialadapt/foraging1.eps> [71] [72]
 File: figures/socialadapt/20to4.eps Graphic file (type eps)
  <figures/socialadapt/20to4.eps>
 File: figures/socialadapt/20to18.eps Graphic file (type eps)
- <figures/socialadapt/20to18.eps>
-Overfull \hbox (1.43027pt too wide) has occurred while \output is active
-\OT1/cmr/m/sl/10 3.1.  INTRODUCTION: SOCIAL MODELLING OF ARTIFICIAL AGENTS  \OT
-1/cmr/m/n/10 75
- []
 
-[75]
+<figures/socialadapt/20to18.eps> [73]
 File: figures/socialadapt/limited/20to4.eps Graphic file (type eps)
  <figures/socialadapt/limited/20to4.eps>
 File: figures/socialadapt/limited/20to18.eps Graphic file (type eps)
 
-<figures/socialadapt/limited/20to18.eps> [76]
+<figures/socialadapt/limited/20to18.eps> [74]
 File: figures/socialadapt/limited/agent4more.eps Graphic file (type eps)
 
 <figures/socialadapt/limited/agent4more.eps>
-Overfull \hbox (8.24036pt too wide) in paragraph at lines 915--915
+Overfull \hbox (8.24036pt too wide) in paragraph at lines 914--914
 []\OT1/cmr/bx/n/12 Discussion: sub sys-tem for-ma-tion in the so-cial model 
  []
 
-
-Overfull \hbox (1.43027pt too wide) has occurred while \output is active
-\OT1/cmr/m/sl/10 3.1.  INTRODUCTION: SOCIAL MODELLING OF ARTIFICIAL AGENTS  \OT
-1/cmr/m/n/10 77
- []
-
-[77] [78]) (./work_InputCorrelationMeasure.tex
+[75] [76]) (./work_InputCorrelationMeasure.tex
 Overfull \hbox (11.61296pt too wide) in paragraph at lines 1--1
 []\OT1/cmr/bx/n/14.4 An in-put based in-for-ma-tion mea-sure for adap-
  []
@@ -579,49 +509,22 @@ Overfull \hbox (11.61296pt too wide) in paragraph at lines 1--1
 
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
-
-Overfull \hbox (1.43027pt too wide) has occurred while \output is active
-\OT1/cmr/m/sl/10 3.1.  INTRODUCTION: SOCIAL MODELLING OF ARTIFICIAL AGENTS  \OT
-1/cmr/m/n/10 79
- []
-
-[79]
+ [77]
 Underfull \vbox (badness 3769) has occurred while \output is active []
 
- [80]
-Overfull \hbox (64.48265pt too wide) has occurred while \output is active
-\OT1/cmr/m/sl/10 3.2.  AN INPUT BASED INFORMATION MEASURE FOR ADAPTIVE CONTROLL
-ERS  \OT1/cmr/m/n/10 81
- []
-
-[81]
+ [78]
+[79]
 File: figures/infomeasure/avoidance.eps Graphic file (type eps)
- <figures/infomeasure/avoidance.eps> [82]
-Overfull \hbox (64.48265pt too wide) has occurred while \output is active
-\OT1/cmr/m/sl/10 3.2.  AN INPUT BASED INFORMATION MEASURE FOR ADAPTIVE CONTROLL
-ERS  \OT1/cmr/m/n/10 83
- []
-
-[83] [84]
+ <figures/infomeasure/avoidance.eps> [80] [81] [82]
 File: figures/infomeasure/simple/simplemodel.eps Graphic file (type eps)
- <figures/infomeasure/simple/simplemodel.eps>
+
+<figures/infomeasure/simple/simplemodel.eps>
 File: figures/infomeasure/simple/temporalsignal.eps Graphic file (type eps)
 
-<figures/infomeasure/simple/temporalsignal.eps>
-Overfull \hbox (64.48265pt too wide) has occurred while \output is active
-\OT1/cmr/m/sl/10 3.2.  AN INPUT BASED INFORMATION MEASURE FOR ADAPTIVE CONTROLL
-ERS  \OT1/cmr/m/n/10 85
- []
-
-[85] [86]
-Overfull \hbox (64.48265pt too wide) has occurred while \output is active
-\OT1/cmr/m/sl/10 3.2.  AN INPUT BASED INFORMATION MEASURE FOR ADAPTIVE CONTROLL
-ERS  \OT1/cmr/m/n/10 87
- []
-
-[87]
+<figures/infomeasure/simple/temporalsignal.eps> [83] [84] [85]
 File: figures/infomeasure/maxcorr_nolearn.eps Graphic file (type eps)
- <figures/infomeasure/maxcorr_nolearn.eps>
+
+<figures/infomeasure/maxcorr_nolearn.eps>
 Overfull \hbox (5.07741pt too wide) in paragraph at lines 391--393
 []\OT1/cmr/m/n/10 Fig.3.17[](b) con-tains the $\OML/cmm/m/it/10 E\OT1/cmr/m/n/1
 0 (\OML/cmm/m/it/10 xcorr[]\OT1/cmr/m/n/10 (\OML/cmm/m/it/10 k\OT1/cmr/m/n/10 )
@@ -637,18 +540,13 @@ Overfull \hbox (5.07741pt too wide) in paragraph at lines 393--395
 OML/cmm/m/it/10 k\OT1/cmr/m/n/10 ))$ in the up-per panel
  []
 
-[88]
+[86]
 Underfull \vbox (badness 2229) has occurred while \output is active []
 
-
-Overfull \hbox (64.48265pt too wide) has occurred while \output is active
-\OT1/cmr/m/sl/10 3.2.  AN INPUT BASED INFORMATION MEASURE FOR ADAPTIVE CONTROLL
-ERS  \OT1/cmr/m/n/10 89
- []
-
-[89]
+ [87]
 File: figures/infomeasure/N2/maxcorr_N=0_w=600.eps Graphic file (type eps)
- <figures/infomeasure/N2/maxcorr_N=0_w=600.eps>
+
+<figures/infomeasure/N2/maxcorr_N=0_w=600.eps>
 Underfull \hbox (badness 2119) in paragraph at lines 423--423
 \OT1/cmr/m/n/8 for left (straight) and right (dashed)
  []
@@ -714,13 +612,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 474--474
 xcorr[]\OT1/cmr/m/n/8 (\OML/cmm/m/it/8 k\OT1/cmr/m/n/8 ))$ for left
  []
 
-[90]
-Overfull \hbox (64.48265pt too wide) has occurred while \output is active
-\OT1/cmr/m/sl/10 3.2.  AN INPUT BASED INFORMATION MEASURE FOR ADAPTIVE CONTROLL
-ERS  \OT1/cmr/m/n/10 91
- []
-
-[91] [92]
+[88] [89] [90]
 Overfull \hbox (5.5465pt too wide) in paragraph at lines 493--499
 \OT1/cmr/m/n/10 0$. But there are ex-cep-tions like cases in Fig.3.18(d)[],3.19
 (d)[] where $\OML/cmm/m/it/10 E\OT1/cmr/m/n/10 (\OML/cmm/m/it/10 xcorr[]\OT1/cm
@@ -728,50 +620,30 @@ r/m/n/10 (\OML/cmm/m/it/10 k\OT1/cmr/m/n/10 )) []
  []
 
 File: figures/infomeasure/agentvariation.eps Graphic file (type eps)
-<figures/infomeasure/agentvariation.eps>
-Overfull \hbox (64.48265pt too wide) has occurred while \output is active
-\OT1/cmr/m/sl/10 3.2.  AN INPUT BASED INFORMATION MEASURE FOR ADAPTIVE CONTROLL
-ERS  \OT1/cmr/m/n/10 93
- []
-
-[93]
+<figures/infomeasure/agentvariation.eps> [91]
 File: figures/infomeasure/simple/infoapplication.eps Graphic file (type eps)
- <figures/infomeasure/simple/infoapplication.eps> [94]
-Overfull \hbox (64.48265pt too wide) has occurred while \output is active
-\OT1/cmr/m/sl/10 3.2.  AN INPUT BASED INFORMATION MEASURE FOR ADAPTIVE CONTROLL
-ERS  \OT1/cmr/m/n/10 95
- []
 
-[95]
+<figures/infomeasure/simple/infoapplication.eps> [92] [93]
 File: figures/infomeasure/simple/socialmeasure.eps Graphic file (type eps)
- <figures/infomeasure/simple/socialmeasure.eps>
+
+<figures/infomeasure/simple/socialmeasure.eps>
 File: figures/infomeasure/LearningDifferentiation.eps Graphic file (type eps)
 
 <figures/infomeasure/LearningDifferentiation.eps>
 Underfull \vbox (badness 1584) has occurred while \output is active []
 
- [96]
-Overfull \hbox (64.48265pt too wide) has occurred while \output is active
-\OT1/cmr/m/sl/10 3.2.  AN INPUT BASED INFORMATION MEASURE FOR ADAPTIVE CONTROLL
-ERS  \OT1/cmr/m/n/10 97
- []
-
-[97] [98]) (./work_InfoFlowClosedLoop.tex
+ [94]
+[95] [96]) (./work_InfoFlowClosedLoop.tex
 Missing character: There is no ‚ in font cmr10!
 Missing character: There is no Ä in font cmr10!
 Missing character: There is no ô in font cmr10!
-
-Overfull \hbox (64.48265pt too wide) has occurred while \output is active
-\OT1/cmr/m/sl/10 3.2.  AN INPUT BASED INFORMATION MEASURE FOR ADAPTIVE CONTROLL
-ERS  \OT1/cmr/m/n/10 99
- []
-
-[99] [100] [101]
+ [97] [98] [99]
 File: figures/lawvariety/lawvariety1_fonts.eps Graphic file (type eps)
- <figures/lawvariety/lawvariety1_fonts.eps> [102] [103]
-[104] [105]
+
+<figures/lawvariety/lawvariety1_fonts.eps> [100] [101] [102] [103]
 File: figures/lawvariety/controller_fonts.eps Graphic file (type eps)
- <figures/lawvariety/controller_fonts.eps> [106] [107]
+
+<figures/lawvariety/controller_fonts.eps> [104] [105]
 Overfull \hbox (9.97304pt too wide) in paragraph at lines 398--401
 \OT1/cmr/m/n/10 output loop dom-i-nates the reflex-output loop for both be-havi
 ours as in Fig.3.26[](B),
@@ -783,45 +655,45 @@ File: figures/lawvariety/allpanel.eps Graphic file (type eps)
 LaTeX Warning: Float too large for page by 119.24394pt on input line 439.
 
 File: figures/lawvariety/percentage.eps Graphic file (type eps)
-<figures/lawvariety/percentage.eps> [108] [109] [110]) (./work_QLearning.tex
+<figures/lawvariety/percentage.eps> [106] [107] [108]) (./work_QLearning.tex
 Overfull \hbox (1.49115pt too wide) in paragraph at lines 1--1
 []\OT1/cmr/bx/n/14.4 Introduction: in-for-ma-tion flow in Q-learning
  []
 
-[111] [112] [113] [114]
+[109] [110] [111] [112]
 File: figures/qlearning/Q-Learning-Robot.eps Graphic file (type eps)
  <figures/qlearning/Q-Learning-Robot.eps>
 File: figures/qlearning/robotreflexsim1.eps Graphic file (type eps)
 
-<figures/qlearning/robotreflexsim1.eps> [115] [116] [117] [118])
-(./work_PredictivePerformance.tex [119]
+<figures/qlearning/robotreflexsim1.eps> [113] [114] [115] [116])
+(./work_PredictivePerformance.tex [117]
 File: figures/ppmeasure/1.eps Graphic file (type eps)
- <figures/ppmeasure/1.eps> [120]
+ <figures/ppmeasure/1.eps> [118]
 File: figures/ppmeasure/2.eps Graphic file (type eps)
 
-<figures/ppmeasure/2.eps> [121] [122] [123]
+<figures/ppmeasure/2.eps> [119] [120] [121]
 Overfull \hbox (18.7309pt too wide) in paragraph at lines 280--283
 []\OT1/cmr/m/n/10 the sym-bols of the ran-dom vari-able are in-di-cated by the 
 set $\OML/cmm/m/it/10 X \OT1/cmr/m/n/10 = \OMS/cmsy/m/n/10 f\OML/cmm/m/it/10 x[
 ]; x[]; :::; x[]\OMS/cmsy/m/n/10 g$
  []
 
-[124] [125] [126] [127] [128]
+[122] [123] [124] [125] [126]
 File: figures/ppmeasure/3.eps Graphic file (type eps)
- <figures/ppmeasure/3.eps> [129]
+ <figures/ppmeasure/3.eps> [127]
 Underfull \hbox (badness 10000) in paragraph at lines 581--594
 
  []
 
 File: figures/ppmeasure/4.eps Graphic file (type eps)
-<figures/ppmeasure/4.eps> [130] [131] [132] [133] [134]
+<figures/ppmeasure/4.eps> [128] [129] [130] [131] [132]
 File: figures/ppmeasure/5.eps Graphic file (type eps)
 
 <figures/ppmeasure/5.eps>
 Missing character: There is no Ô in font cmr10!
 Missing character: There is no ¨ in font cmr10!
 Missing character: There is no Ç in font cmr10!
- [135]
+ [133]
 File: figures/ppmeasure/6.eps Graphic file (type eps)
  <figures/ppmeasure/6.eps>
 Missing character: There is no ‚ in font cmr10!
@@ -833,7 +705,7 @@ Missing character: There is no Ç in font cmr10!
 Missing character: There is no ‚ in font cmr10!
 Missing character: There is no Ä in font cmr10!
 Missing character: There is no ô in font cmr10!
- [136]
+ [134]
 File: figures/ppmeasure/7.eps Graphic file (type eps)
 
 <figures/ppmeasure/7.eps>
@@ -852,12 +724,12 @@ Missing character: There is no Ç in font cmr10!
 Missing character: There is no Ô in font cmr10!
 Missing character: There is no ¨ in font cmr10!
 Missing character: There is no Ç in font cmr10!
- [137]
+ [135]
 File: figures/ppmeasure/8.eps Graphic file (type eps)
  <figures/ppmeasure/8.eps>
 File: figures/ppmeasure/9.eps Graphic file (type eps)
 
-<figures/ppmeasure/9.eps> [138] [139] [140]
+<figures/ppmeasure/9.eps> [136] [137] [138]
 Overfull \hbox (16.85472pt too wide) in paragraph at lines 1038--1041
 \OT1/cmr/m/n/10 agents num-bered 7 and 3 have an equal per-for-mance as agents 
 9,2 $\OML/cmm/m/it/10 PP[]\OT1/cmr/m/n/10 (\OML/cmm/m/it/10 Af\OT1/cmr/m/n/10 )
@@ -903,23 +775,23 @@ Missing character: There is no ú in font cmr10!
 Missing character: There is no ‚ in font cmr10!
 Missing character: There is no Ä in font cmr10!
 Missing character: There is no ù in font cmr10!
-[141] [142] [143]
+[139] [140] [141]
 Missing character: There is no √ in font cmr10!
 Missing character: There is no § in font cmr10!
 Missing character: There is no √ in font cmr10!
 Missing character: There is no ∂ in font cmr10!
- [144]) [145] [146
+ [142]) [143] [144
 
 ]
 Chapter 4.
 (./Conclusion.tex
 Underfull \vbox (badness 1189) has occurred while \output is active []
 
- [147]
-[148] [149]
+ [145]
+[146] [147]
 File: figures/conclusion/Ritualization-3.eps Graphic file (type eps)
  <figures/conclusion/Ritualization-3.eps>
-(./conclusion_linguistic.tex [150] [151]
+(./conclusion_linguistic.tex [148] [149]
 Missing character: There is no ‚ in font cmr10!
 Missing character: There is no Ä in font cmr10!
 Missing character: There is no ú in font cmr10!
@@ -932,61 +804,61 @@ Missing character: There is no ú in font cmr10!
 Missing character: There is no ‚ in font cmr10!
 Missing character: There is no Ä in font cmr10!
 Missing character: There is no ù in font cmr10!
- [152]
+ [150]
 File: figures/autopoiesis/languageModel.eps Graphic file (type eps)
 
-<figures/autopoiesis/languageModel.eps> [153]
+<figures/autopoiesis/languageModel.eps> [151]
 File: figures/Telepathy.eps Graphic file (type eps)
- <figures/Telepathy.eps>
-Underfull \vbox (badness 5161) has occurred while \output is active []
+ <figures/Telepathy.eps> [152]
+Underfull \vbox (badness 10000) has occurred while \output is active []
 
- [154]
-[155] [156]) [157]
+ [153]
+[154]) [155]
 Missing character: There is no √ in font cmr10!
 Missing character: There is no à in font cmr10!
- [158] [159]
+ [156] [157]
 Missing character: There is no ‚ in font cmr10!
 Missing character: There is no Ä in font cmr10!
 Missing character: There is no ú in font cmr10!
 Missing character: There is no ‚ in font cmr10!
 Missing character: There is no Ä in font cmr10!
 Missing character: There is no ù in font cmr10!
- [160] [161] [162]
-Overfull \hbox (0.68752pt too wide) in alignment at lines 478--481
+ [158] [159] [160]
+Overfull \hbox (0.68752pt too wide) in alignment at lines 487--490
  [][][] []
  []
 
-[163] [164] [165] [166]
-Underfull \hbox (badness 10000) in paragraph at lines 637--647
+[161] [162] [163] [164]
+Underfull \hbox (badness 10000) in paragraph at lines 646--656
 
  []
 
 
 Underfull \vbox (badness 1038) has occurred while \output is active []
 
- [167]
-Underfull \hbox (badness 10000) in paragraph at lines 698--702
+ [165]
+Underfull \hbox (badness 10000) in paragraph at lines 707--711
 
  []
 
-[168]
-Underfull \hbox (badness 10000) in paragraph at lines 779--788
+[166]
+Underfull \hbox (badness 10000) in paragraph at lines 788--797
 
  []
 
-[169]) [170] [171] [172
+[167]) [168] [169] [170
 
 ]
 Chapter 5.
 (./appendix_learning.tex
 File: figures/socialadapt/ico.eps Graphic file (type eps)
- <figures/socialadapt/ico.eps> [173]
+ <figures/socialadapt/ico.eps> [171]
 File: figures/infomeasure/Qinf.eps Graphic file (type eps)
 
 <figures/infomeasure/Qinf.eps>
 File: figures/infomeasure/Qzero.eps Graphic file (type eps)
  <figures/infomeasure/Qzero.eps>)
-(./appendix_simulation.tex [174]
+(./appendix_simulation.tex [172]
 Overfull \hbox (10.52701pt too wide) in paragraph at lines 34--38
 []\OT1/cmr/m/n/10 2 cir-cu-lar RGB cam-eras $\OML/cmm/m/it/10 ccam[]$ \OT1/cmr/
 m/n/10 with a vis-i-bil-ity range of $\OML/cmm/m/it/10 range[] \OT1/cmr/m/n/10 
@@ -999,7 +871,7 @@ Overfull \hbox (29.09357pt too wide) in paragraph at lines 38--42
 n/10 with a vis-i-bil-ity range of $\OML/cmm/m/it/10 range[] \OT1/cmr/m/n/10 =
  []
 
-[175]
+[173]
 Missing character: There is no √ in font cmr8!
 Missing character: There is no ® in font cmr8!
 Missing character: There is no √ in font cmr8!
@@ -1013,7 +885,7 @@ m/it/10 < \OT1/cmr/m/n/10 0\OML/cmm/m/it/10 :\OT1/cmr/m/n/10 0\OML/cmm/m/it/10
 cmr/m/n/10 (\OML/cmm/m/it/10 t\OT1/cmr/m/n/10 ) \OML/cmm/m/it/10 >$
  []
 
-[176] [177] [178]
+[174] [175] [176]
 LaTeX Font Info:    Font shape `OMS/cmr/m/n' in size <9> not available
 (Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 165.
 
@@ -1063,7 +935,7 @@ Overfull \hbox (49.0513pt too wide) in paragraph at lines 206--208
 [][][][][][][][][][][][][][][][][][][][][][][] 
  []
 
-[179]
+[177]
 Overfull \hbox (60.15134pt too wide) in paragraph at lines 209--211
 [][][][][][][][][][][][][][][][][][][][][][][] 
  []
@@ -1091,12 +963,12 @@ File: lstlang1.sty 2004/09/05 1.3 listings language file
 )
 (/usr/share/texmf-texlive/tex/latex/listings/lstmisc.sty
 File: lstmisc.sty 2007/02/22 1.4 (Carsten Heinz)
-) [180]
+) [178]
 File: figures/OpenMP/vonNeumann.eps Graphic file (type eps)
 
 <figures/OpenMP/vonNeumann.eps>
 File: figures/OpenMP/serialProblem.eps Graphic file (type eps)
- <figures/OpenMP/serialProblem.eps> [181]
+ <figures/OpenMP/serialProblem.eps> [179]
 File: figures/OpenMP/parallelProblem.eps Graphic file (type eps)
 
 <figures/OpenMP/parallelProblem.eps>
@@ -1119,13 +991,13 @@ File: figures/OpenMP/MIMD_diagram.eps Graphic file (type eps)
  <figures/OpenMP/MIMD_diagram.eps>
 File: figures/OpenMP/MIMD_program.eps Graphic file (type eps)
 
-<figures/OpenMP/MIMD_program.eps> [182] [183] [184] [185]
+<figures/OpenMP/MIMD_program.eps> [180] [181] [182] [183]
 File: figures/OpenMP/thread_model.eps Graphic file (type eps)
 
 <figures/OpenMP/thread_model.eps>
 File: figures/OpenMP/language_extensions.eps Graphic file (type eps)
  <figures/OpenMP/language_extensions.eps>
-[186] [187]
+[184] [185]
 Underfull \hbox (badness 10000) in paragraph at lines 213--214
 []\OT1/cmr/m/n/10 Compiler di-rec-tive
  []
@@ -1135,39 +1007,39 @@ Underfull \hbox (badness 3098) in paragraph at lines 215--216
 []\OT1/cmr/m/n/10 Easy and sim-ple to
  []
 
-[188]
+[186]
 File: figures/OpenMP/pass_model.eps Graphic file (type eps)
- <figures/OpenMP/pass_model.eps> [189]
+ <figures/OpenMP/pass_model.eps> [187]
 File: figures/OpenMP/FigureSimulator.eps Graphic file (type eps)
 
-<figures/OpenMP/FigureSimulator.eps> [190]
+<figures/OpenMP/FigureSimulator.eps> [188]
 File: figures/OpenMP/work_share1.eps Graphic file (type eps)
  <figures/OpenMP/work_share1.eps>
 Overfull \hbox (21.30121pt too wide) in paragraph at lines 366--367
 [][][][][][][][][][][][][][][][][][][][][][][][][][] 
  []
 
-[191]
+[189]
 File: figures/OpenMP/FigureSimulatorLoop.eps Graphic file (type eps)
- <figures/OpenMP/FigureSimulatorLoop.eps> [192]) (./appendix_info.tex
-[193]
+ <figures/OpenMP/FigureSimulatorLoop.eps> [190]) (./appendix_info.tex
+[191]
 Underfull \hbox (badness 10000) in paragraph at lines 22--27
 
  []
 
-[194] [195]) (./appendix_input_measure.tex [196]) (./appendix_hardware.tex
-[197]
+[192] [193]) (./appendix_input_measure.tex [194]) (./appendix_hardware.tex
+[195]
 File: figures/playground/playgrounddesc.eps Graphic file (type eps)
- <figures/playground/playgrounddesc.eps> [198]
+ <figures/playground/playgrounddesc.eps> [196]
 Missing character: There is no ¬ in font cmr9!
 Missing character: There is no £ in font cmr9!
- [199]
+ [197]
 File: figures/legonxt/nxthardware.eps Graphic file (type eps)
 
 <figures/legonxt/nxthardware.eps>
 Missing character: There is no ¬ in font cmr9!
 Missing character: There is no µ in font cmr9!
- [200]
+ [198]
 File: figures/legonxt/nxtsystem.eps Graphic file (type eps)
  <figures/legonxt/nxtsystem.eps>
 File: figures/legonxt/legobottom.eps Graphic file (type eps)
@@ -1192,21 +1064,21 @@ Missing character: There is no Ä in font cmr9!
 Missing character: There is no ô in font cmr9!
 File: figures/nxtosek/osek1.eps Graphic file (type eps)
 
-<figures/nxtosek/osek1.eps> [201] [202]
+<figures/nxtosek/osek1.eps> [199] [200]
 File: figures/nxtosek/osektask.eps Graphic file (type eps)
- <figures/nxtosek/osektask.eps> [203]
-[204]
+ <figures/nxtosek/osektask.eps> [201]
+[202]
 File: figures/nxtosek/oil1.eps Graphic file (type eps)
- <figures/nxtosek/oil1.eps> [205]
+ <figures/nxtosek/oil1.eps> [203]
 LaTeX Font Info:    Font shape `OMS/cmr/m/it' in size <9> not available
 (Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 222.
 
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
- [206]
+ [204]
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
- [207]
+ [205]
 Overfull \hbox (32.40125pt too wide) in paragraph at lines 333--334
 [][][][][][][][][][][][][][][][][][][][][][][][][][] 
  []
@@ -1214,7 +1086,7 @@ Overfull \hbox (32.40125pt too wide) in paragraph at lines 333--334
 
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
- [208]
+ [206]
 Overfull \hbox (26.85123pt too wide) in paragraph at lines 365--366
 [][][][][][][][][][][][][][][][][][][][][][][][][][] 
  []
@@ -1235,12 +1107,12 @@ Overfull \hbox (1.613pt too wide) in paragraph at lines 396--397
  256 KB FLASH,
  []
 
-[209]
+[207]
 File: figures/legonxt/oscilloscope.eps Graphic file (type eps)
  <figures/legonxt/oscilloscope.eps>
 File: figures/nxtosek/taskmodel.eps Graphic file (type eps)
  <figures/nxtosek/taskmodel.eps>
-[210] [211]
+[208] [209]
 File: figures/nxtosek/TaskLejos.eps Graphic file (type eps)
  <figures/nxtosek/TaskLejos.eps>
 File: figures/nxtosek/bluetoothlog.eps Graphic file (type eps)
@@ -1250,7 +1122,7 @@ Overfull \hbox (1.48593pt too wide) in paragraph at lines 511--523
  struc-tured as master-
  []
 
-[212] [213] [214]
+[210] [211] [212]
 File: figures/pololu/up.eps Graphic file (type eps)
  <figures/pololu/up.eps>
 File: figures/pololu/down.eps Graphic file (type eps)
@@ -1264,38 +1136,38 @@ Overfull \hbox (67.37564pt too wide) in paragraph at lines 566--568
 nt web-site: http://isg.elec.gla.ac.uk/paolo/ 
  []
 
-) (./appendix_language.tex [215]) (./appendix_bayes.tex
+) (./appendix_language.tex [213]) (./appendix_bayes.tex
 File: figures/economy/Ekintegral.eps Graphic file (type eps)
 
-<figures/economy/Ekintegral.eps> [216]
+<figures/economy/Ekintegral.eps> [214]
 File: figures/economy/GaussianPosterior2.eps Graphic file (type eps)
 
 <figures/economy/GaussianPosterior2.eps>
 File: figures/economy/GaussianPredictors.eps Graphic file (type eps)
 
 <figures/economy/GaussianPredictors.eps>) (./appendix_symmetrybreaking.tex
-[217]
+[215]
 Missing character: There is no ‚ in font cmr9!
 Missing character: There is no Ä in font cmr9!
 Missing character: There is no ì in font cmr9!
- [218]) (./appendix_economymodel.tex
+ [216]) (./appendix_economymodel.tex
 Overfull \hbox (8.42813pt too wide) in paragraph at lines 4--11
 \OT1/cmr/m/n/9 the box-office take of movies are based on an op-ti-mal Bayesian
  model(Thomas L.Griffiths,
  []
 
-[219] [220]
+[217] [218]
 File: figures/economy/GaussianEvolution.eps Graphic file (type eps)
  <figures/economy/GaussianEvolution.eps>
 File: figures/economy/ErlangSymmetric.eps Graphic file (type eps)
 
-<figures/economy/ErlangSymmetric.eps>) [221] (./MainBody.bbl [222] [223]
-[224] [225] [226] [227
+<figures/economy/ErlangSymmetric.eps>) [219] (./MainBody.bbl [220] [221]
+[222] [223] [224] [225
 
-] [228]
+] [226]
 Missing character: There is no √ in font cmr9!
 Missing character: There is no § in font cmr9!
- [229]
+ [227]
 Missing character: There is no √ in font cmr9!
 Missing character: There is no ∂ in font cmr9!
 Missing character: There is no √ in font cmr9!
@@ -1304,18 +1176,18 @@ Missing character: There is no √ in font cmr9!
 Missing character: There is no § in font cmr9!
 Missing character: There is no √ in font cmr9!
 Missing character: There is no § in font cmr9!
- [230] [231] [232] [233] [234]
+ [228] [229] [230] [231] [232]
 Missing character: There is no √ in font cmr9!
 Missing character: There is no ∂ in font cmr9!
- [235])
-[236] (./MainBody.aux) ) 
+ [233])
+[234] (./MainBody.aux) ) 
 Here is how much of TeX's memory you used:
- 5391 strings out of 493849
- 80894 string characters out of 1152845
- 164718 words of memory out of 3000000
- 8371 multiletter control sequences out of 15000+50000
+ 5385 strings out of 495062
+ 80742 string characters out of 1182645
+ 163661 words of memory out of 3000000
+ 8269 multiletter control sequences out of 15000+50000
  16260 words of font info for 62 fonts, out of 3000000 for 9000
- 714 hyphenation exceptions out of 8191
+ 28 hyphenation exceptions out of 8191
  34i,17n,58p,1090b,1570s stack positions out of 5000i,500n,10000p,200000b,50000s
 
-Output written on MainBody.dvi (236 pages, 817528 bytes).
+Output written on MainBody.dvi (234 pages, 810324 bytes).

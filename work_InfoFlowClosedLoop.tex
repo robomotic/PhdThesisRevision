@@ -30,7 +30,7 @@ Consequently, the concept of information in these
 systems needs to be revised \citep{RadicalConstruct}.
 
 A method for defining closed loop information has been proposed by \citet{Ashby1956:IntroCybernetics}
-the so called \textit{requisite variety} .
+as the so called \textit{requisite variety} .
 The measure is based on the premise that closed loop systems aim to maintain
 a desired state.
 The goal of a feedback loop is then to minimise the deviation from the desired
@@ -41,8 +41,8 @@ disturbance. For example, if the disturbance has a variety of 10 bits and
 survival requires a desired state of 2 bits, then the reaction to that disturbance
 must provide a variety of 8 bits.
 Ashby then proved that error controlled closed loop systems (like PID controllers 
-discovered by \citet{PID}) cannot achieve perfect regulation.
-More recently, \citet{PhysRevLett.84.1156} in Theorem 10 proved
+discovered by \citealt{PID}) cannot achieve perfect regulation.
+More recently, \citealt{PhysRevLett.84.1156} in Theorem 10 proved
 that the entropy reduction achieved by a closed loop system
 is bounded by the entropy reduction achieved by the open loop control plus
 the mutual information gathered by the estimation of the state.
@@ -342,13 +342,13 @@ reflex-output and predictor-output: $MI^n_{U0},MI^n_{U1}$.
 For a single simulation:
 \begin{enumerate}
  \item for $0\leq k_1\leq 2 \cdot 10^5$ all agents are reactive ($\mu=0$).
-	For each agent $i={1,...,N}$ I have 3 pairs of information flow:
+	For each agent $i={1,...,N}$, I have 3 pairs of information flow:
 	\begin{enumerate}
 	\item avoidance: $MI^n_{Av,U1},MI^n_{Av,U0}$
 	\item food attraction: $MI^n_{Fo,U1},MI^n_{Fo,U0}$
 	\item others attraction: $MI^n_{Af,U1},MI^n_{Af,U0}$
 	\end{enumerate}
- \item for $2 \cdot 10^5<k\leq 4 \cdot 10^5$: every agent is learning $\mu=1.0$
+ \item for $2 \cdot 10^5<k\leq 4 \cdot 10^5$: every agent is learning $\mu=1e-9$
 and the weight for every ICO controller $\omega_{1,Av}$,$\omega_{1,Fo},\omega_{1,Af}$ is increasing.
  \item for $4\cdot 10^5< k_3\leq 6 \cdot 10^5$: every agent stops learning $\mu=0.0$
 and is using the last weight set at $k=4\cdot 10^5$. For each agent I compute again
@@ -474,7 +474,7 @@ parasites mainly use the predictive information of the others who posses food.
 Thus, the conclusion is that predictive learning in a social context
 leads to the formation of subsystems. This can be demonstrated with the help of my approach.
 
-While \citet{organizationInfo,polaniEmpowerment} and \citet{LungarellaInformation,optionsOpen}
+While \citealt{organizationInfo,polaniEmpowerment} and \citealt{LungarellaInformation,optionsOpen}
 used the empowerment measure as a general cost function to optimise the agent's
 behaviour or evolution, I use it as the upper bound of the MI to measure the efficiency of the sensory-motor loop use.
 \citet{AyClosedLoop} uses an adaptive controller which maximises

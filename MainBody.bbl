@@ -139,6 +139,13 @@ Der, R., G{\"u}ttler, F., and Ay, N. (2008).
   on the Simulation and Synthesis of Living Systems}, pages 166--172. MIT
   Press, Cambridge, MA.
 
+\bibitem[\protect\astroncite{{Di Prodi} et~al.}{2008}]{DiProdiMultiAgent}
+{Di Prodi}, P., Porr, B., and W{\"o}rg{\"o}tter, F. (2008).
+\newblock Adaptive communication promotes sub-system formation in a multi agent
+  system with limited resources.
+\newblock {\em LAB-RS '08: Proceedings of the 2008 ECSIS Symposium on Learning
+  and Adaptive Behaviors for Robotic Systems}, pages 89--96.
+
 \bibitem[\protect\astroncite{Dittrich et~al.}{2003}]{SocialOrderScalability}
 Dittrich, P., Kron, T., and Banzhaf, W. (2003).
 \newblock On the scalability of social order - modeling the problem of double
@@ -445,13 +452,6 @@ Olshausen, B.~A. and Field, D.~J. (1996).
 \newblock Emergence of simple-cell receptive field properties by learning a
   sparse code for natural images.
 \newblock {\em Nature}, 381(6583):607--609.
-
-\bibitem[\protect\astroncite{Paolo et~al.}{2008}]{DiProdiMultiAgent}
-Paolo, D.~P., Porr, B., and W{\"o}rg{\"o}tter, F. (2008).
-\newblock Adaptive communication promotes sub-system formation in a multi agent
-  system with limited resources.
-\newblock {\em LAB-RS '08: Proceedings of the 2008 ECSIS Symposium on Learning
-  and Adaptive Behaviors for Robotic Systems}, pages 89--96.
 
 \bibitem[\protect\astroncite{Parsons}{1937}]{Parsons1937:StructureSocialAim}
 Parsons, T. (1937).

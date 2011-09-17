@@ -16,7 +16,7 @@ the full knowledge of the process and is based on the principle of action and re
 Adaptive controllers change their parameters according to the observed parameters of
 the process to control: most biological organisms use the control loop approach.
 The daily process of maintaining our body temperature is an example of such a system \citep{HumanBody}.
-Until today cybernetic has provided a lot of adaptive controllers for the closed loop:
+Until today cybernetics has provided a lot of adaptive controllers for the closed loop:
 PID\nomenclature{PID}{Proportional Integration Derivative control} controllers
 (see Figure \ref{Figure:maxcorr:PID}) and the Kalmann filter to mention the most important.
 \begin{figure}[ht]
@@ -37,7 +37,7 @@ controllers raises a big concern: how can I assess the performance of the agents
 The question is not as trivial as it seems: the agent adapts to the environment,
 thus in general a more complex environment produce a more complex
 behaviour \citep{NolfiInteraction}. 
-But agents essentially performs input control to keep their desired state.
+But agents essentially perform input control to keep their desired state.
 The only solution to that problem is to develop input based measures and not 
 output based measures as I will demonstrate in Section \ref{Chapter5:Max Corr Input}.
 Input contains the output of the agent through the environment,
@@ -48,7 +48,7 @@ cognitivism and behaviourism for a more direct realism.
 He argued that organisms perform only input control, one of his most radical
  approach was the concept of ``affordances'' whereby the objects of our environment
  tell implicitly how they want to be operated.
-Although there are some cases where organism perform open loop forward control,
+Although there are some cases where organisms perform open loop forward control,
  the general principles described by Gibson are valid.
 the general model is described in Figure \ref{Figure:maxcorr:Gibson}.
 
@@ -122,7 +122,7 @@ The controller can be extended for the predictive case introduced in section \re
 by adding an additional variable $Y$ which is the predictor of $X$ as in Fig. \ref{fig:tishby2}:
 $Y$ conveys information about $X$ and is used by the controller to infer the 
 temporal relation between the predictor $Y$ and the reflex $X$.
-This Bayesian model is investigated more in deep in section \ref{Conclusion:PredictiveBayes}.
+This Bayesian model is investigated more in depth in section \ref{Conclusion:PredictiveBayes}.
 \begin{figure}[!htbp]
 \begin{center}
  \includegraphics[width=0.8 \textwidth]{ashby/figure-4}
@@ -168,42 +168,18 @@ when the organism is removed from the control law.
 
 A more general approach was introduced by \citet{LungarellaInformation} which
 used several information based metrics to follow the learning curve of the robot
-in a visual task like in Fig. \ref{fig:conclusion:lungarella}.
-
-\begin{figure}[htbp]
-\begin{center}
-\includegraphics[scale=0.3]{figures/conclusion/LungarellaVisualTask.eps}
-\end{center}
-\vspace*{4pt}
-\caption[Foveation task]{
-In a foveation task the robot reduces the entropy
-around the centre of focus.
-A coordinated closed loop system:
-decrease entropy
-increase the information structure (statistical regularity)
-decrease the complexity of the system.
-\label{fig:conclusion:lungarella}}
-\end{figure}
+in a visual foveation task: the robot reduces the entropy around the centre of focus.
+\citet{LungarellaInformation} describes a closed loop system as a system which
+decreases the entropy, increases the information structure (statistical regularity),
+decreases the complexity.
 
 A similar approach was used by \citet{AyClosedLoop} to modify the proportional
 coefficient in the controller's function to allow an optimal exploration strategy
-of an environment with obstacles like in Fig. \ref{fig:conclusion:ay}.
+of an environment with obstacles: the mutual information between paste and future
+is used to tune the gain $c$ so that the maximum of the predictive information defines the best exploratory
+behaviour.
 
-\begin{figure}[htbp]
-\begin{center}
-\includegraphics[scale=0.3]{figures/conclusion/ay2008.eps}
-\end{center}
-\vspace*{4pt}
-\caption[Ay information measure]
-{Ay measure: predictive information and exploration
-Excess entropy: mutual information between paste and future M(P,F)
-A controller uses MI to tune a gain c because:
-the maximum of the predictive information defines the best exploratory
-behaviour i.e. all the places in the world are visited equally.
-\label{fig:conclusion:ay}}
-\end{figure}
-
-The main contribution earlier then Tishby to the cybernetic theory of controllers
+The main contribution earlier than Tishby to the cybernetic theory of controllers
 was produced by Ashby in 1956 and it will be used heavily in this thesis.
 Therefore the next section contains an overview of his framework.
 
@@ -217,14 +193,14 @@ Thus variety and entropy can be used alternatively.
 I use the same notation by Ashby so that it will be more clear how those concepts
 can be applied successfully to predictive learning:
 \begin{itemize}
- \item D is the domain of disturbances from the environment like a danger for an organism
+ \item D is the domain of disturbances from the environment like a threat for an organism.
  \item E is the domain of the essential variable, can be partitioned in
 $E= \eta \cup \overline{\eta}$, where $\eta$ is a partition of desired states
  or goals of the organism and its complementary partition $\overline{\eta}$
  represents the non-desired states.
  \item R is the domain of available regulations that the organism can perform
- \item T is the domain of the possible states of the environment
- \item F is the combination of R and T
+ \item T is the domain of the possible states of the environment.
+ \item F is the combination of R and T.
 \end{itemize}
 The disturbance D tends to drive E outside the set of desired states $\eta$.
 For open loop control systems the relationship between the mentioned variables 
@@ -248,42 +224,24 @@ The problem of regulation is defined as follows:
 given E,$\eta$, T, and D, to form the mechanism R so that R and T, coupled, 
 act to keep E within $\eta$.
 
-\subsection{Open loop regulation}
-The update rule for the open loop control of Figure \ref{fig:infotheory:ashby-model}(A) follows:
+\subsection{Direct regulation}
+Ashby described direct regulation as a control strategy similar to what engineers
+call open loop control.
+The update rule for the direct regulation of Figure \ref{fig:infotheory:ashby-model}(A) follows:
 \begin{itemize}
  \item D generates a disturbance $d(t)$
  \item $d(t)$ is the input to R which outputs $r(t)$
  \item the 2 values $d(t),r(t)$ are inputs to $T$ that produces $e(t)$
  \item the value $e(t)$ is a state in $E$ which can be a desired or non desired state
 \end{itemize}
-In the animal world many regulations are direct: the organism reacts to the disturbance $D$ before it affects $E$.
-Many behaviours in the animal world are based on very fast reflexes: prey rely on them to avoid predators.
-An unsuccessful regulation means that ignoring the presence of a predator in the area will kill the prey.
-Savage pigeons rely on a collective reflex to escape from eagles.
-When the eagle comes to prey on them it makes a typical sound (the disturbance),
-the pigeon which hears the attack sound generates an escape signal for the colony
- that immediately fly away.
-A gazelle in the Savana wants to prevent being attacked by a lion from a blind angle.
-When a gazelle is foraging and spots a lion in the area, the gazelle's strategy is
- to direct its visual field toward the lion which can become a potential threat.
-The lion only become a disturbance when it starts to stalk in that direction.
-The gazelle then runs away from the predator in the opposite direction using a 
-zig-zag path to detect the angle of attack of the lion. Both animals have
-developed a perfect open loop regulation system: when the disturbance is present
-(a close predator) they run very fast thus maximizing the channel capacity between
- the disturbance and the regulator. The regulation is perfect ideally but imperfect
- in practice: for the gazelle the vegetation or the wind direction can prevent
-the disturbance of being detected or the regulation not being perfect because
- of the organism inefficiency (strained, wounded or old) or of the environment
- loop (ground imperfections may cause a fall).
-Perfect regulation can be achieved if the variety of the disturbance is equal
-to the variety of the regulation: the regulator has the function to block the
-transmission of variety from the disturbance to the essential variables.
-If the disturbance asserts full control on the essential variables the regulator
- is not effective at all. But if the regulator is able to reduce the variety of
-the essential variables, it means it was able to compensate for the disturbance.
+In the animal world, regulations in simple animals are direct: the organism reacts to the disturbance $D$ before it affects $E$.
+A good example is in the life cycle of frogs: tadpoles reacts to a touch stimulus (for example
+when a person poke them with a finger) with a swimming reaction opposite to the
+direction of the stimulus.
+After some time the tadpole will stop swimming: there is no way for the animal
+to check if the disturbance was still there.
 
-In other cases however the R's action cannot be completed before the output of T
+Most often in the animal world, the R's action cannot be completed before the output of T
 is known: the regulator does not know the disturbance directly but only through
 the environment or after the organism has experienced the disturbance.
 
@@ -291,6 +249,9 @@ the environment or after the organism has experienced the disturbance.
 \subsection{Closed loop regulation}
 The closed loop regulation is defined when R receives its input from E and not from T
 as in Figure \ref{fig:infotheory:ashby-model}(C).
+The regulator does not receive directly the disturbance but only after it passed
+the environment or the organism.
+
 \begin{figure}
 \begin{center}
 \includegraphics[width=0.8\textwidth]{ashby/figure-3}
@@ -299,6 +260,7 @@ Ashby law of requisite variety applied to the ICO learning controller
 \label{fig:infotheory:ashby2}}
 \end{center}
 \end{figure}
+
 The special case of a predictive controller was not considered by Ashby and therefore
 it will be necessary to formulate the necessary conditions for learning.
 A possible extension of the Ashby's variety for the ICO controller is in Fig. \ref{fig:infotheory:ashby2}
@@ -316,7 +278,7 @@ Please note that with the same notation D,E,R,T,F in the diagrams we refer to
  the determinate or indeterminate (Markovian) closed transformation whose
 allowed states are present in the corresponding domains.
 \textbf{Definition of regulation:} an organism is a perfect regulator if
-is able to keep the essential variables in a desired state $\eta$ in spite
+is able to keep the essential variables in a desired set $\eta$ in spite
 of the disturbances.
 \textbf{Regulation blocks the flow of entropy: } if F is a regulator, the insertion
 of F between D and E decreases the variety that is transmitted from D to E.
@@ -328,7 +290,9 @@ a variety $H(E)$ but when F is introduced, the variety will be reduced to $H(\et
 Thus a perfect regulator will prevent the organism from knowing in what state the
 disturbance was: the information channel that goes from the disturbance to the
 essential variables is blocked totally by the regulator.
-\textbf{The law of requisite variety in terms of Shannon's entropy:}\\
+
+The law of requisite variety in terms of Shannon's entropy:
+\begin{quotation}
 The law of requisite variety says that R's capacity as a regulator cannot
 exceed R's capacity as a channel of communication.
 It can be formulated in Shannon's terms assuming that: $D$ is the noise that is
@@ -336,11 +300,11 @@ It can be formulated in Shannon's terms assuming that: $D$ is the noise that is
 the environment, $R$ the regulator is a correction channel whose input is $D$ and
 whose output is $T$ whose role is to reduce the variety in the $E$ channel.
 In an ideal case $H(E)=0$ such that $H(D)=H(R)$, the regulator must have
-the same variety as the disturbance.
-
+the same variety as the disturbance. 
+\end{quotation}
 
 \subsection{First law of requisite variety}
-Let D,R and E are three random variables.
+Let $D,R$ and $E$ are three random variables.
 Hypothesis: when $R$ is given, the entropy of E cannot be less then that of D: $H(E|R)\geq H(D|R)$.
 Then the minimum entropy of E is $H(D)+H(R|D)-H(R)$:
 \begin{equation}
@@ -361,8 +325,9 @@ H(D)+H(R|D) \leq H(R)+H(R|E)\\
 H(D)+H(R|D) \leq H(R,E)\\
 H(R,E) \leq H(R)+H(E)\\
 H(D) +H(R|D)\leq H(R)+H(E)\\
-H(E) \geq H(D) +H(R|D)-H(R)\\
+H(E) \geq H(D) +H(R|D)-H(R)
 \end{eqnarray}
+The corollary was demonstrated in \citet{Ashby1956:IntroCybernetics}.
 
 \subsection{Second law of requisite variety}
 Let D,R and E be three random variables.
@@ -374,31 +339,4 @@ H(E)\geq H(D)+H(R|D)-H(R)+K
 \end{equation}
 The constant K is here used to model the ``handicap'' of the organism.
 
-\subsection{A perfect regulation example}
-A perfect regulator in respect of the first law of requite variety can be shown
-by a simplified example.
-Consider a robot moving in a chess board with 4 possible movements
-$R=\{N, W, S, E \}$ (North,West,South,East), 10 possible disturbances $D={d_1,...,d_6}$
-from the environment and 3 states $E=\{ e_0,e_1,e_2\}$ of whom only one is desired $e_1 \in \eta$.
-The environment is modelled as a mapping function $T=D x R$ which calculates the
- outcome of the action: for example if the disturbance is $d_1$ and the agent
-decides to go $N$, the outcome is $e_1$ a desired state but if the disturbance is $d_2$,
-the organism and the agent is still going to $N$, the outcome will be $e_2$ which is not
-a desired state.
-By considering all the possible combinations of actions and disturbances, the Eq. \ref{variety:eq:minh}
-basically gives the constraints for the regulation:
-\begin{itemize}
- \item $R$ is encoded with 2 bits
- \item $E$ is encoded with 1.5850 bits
- \item $D$ is encoded with 2.5850 bits
- \item $H(R|D)=0$ bits
-\end{itemize}
-Therefore Eq. \ref{variety:eq:minh} becomes:
-\begin{eqnarray}
-1.5850 > 2.5850+0-2 = 0.5850
-\end{eqnarray}
-so control is possible here, but if the possible disturbances were more than 12:
-\begin{eqnarray}
-1.5850 = 3.5850 +0-2 = 1.5850
-\end{eqnarray}
-the organism would have required to increase its possible actions and so on.
+

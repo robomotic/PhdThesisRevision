@@ -225,7 +225,7 @@ and was also formulated by \citep{Ashby1956:IntroCybernetics} in its law of requ
 The closed loop system now contains a disturbance from the environment.
 An example is the classical natural reaction to a burning sensation:
  the hand retracts when the pain receptor is activated by the contact
-with the flame.
+with the flame. With perfmission from 
 \label{Fig:Neural:ReactiveDisturbance}}}
 \end{figure}
 
@@ -233,7 +233,7 @@ The disturbance this time cannot be eliminated by dividing the transfer function
 A simple reactive system then can only react after a change it the desired state, 
 a simple example is the motor reaction of our hand to a painful event like touching a 
 flame. 
-Another important point made by the radical constructivism theory is  that only actions which 
+Another important point made by the radical constructivism theory is that only actions which 
 feed back to the organism's sensors can be observed by the organism. 
 In the mentioned example then even a more complex motor reaction will only generate 
 two possible state at the sensory input, one of pain and one of non pain.
@@ -311,21 +311,6 @@ disturbance from the environment.
 \label{Fig:Neural:MutualDisturbance}}}
 \end{figure} 
 
-Due to the complexity of such multiple interaction is not feasible to verify the 
-property of stability and that is the reason why simulations were used in this 
-thesis as the main tool.
-In the social foraging task implemented in this thesis, learning stability was 
-always achieved but it cannot be granted for every possible social task and 
-must be verified case by case.
-The ICO controller \citep{Porr2006ICO} was chosen to be the main block of each agent
- in my social model because they require simple computation, can be combined in parallel or series and
-can be implemented in the analog domain or digital domain and have very good mathematical properties.
-Another potential approach that was investigated prematurely was the use of 
-model checking to predict the behaviour and properties of such a multi agent system and 
-is discussed in the discussion section.
-The next section contains a brief introduction to Braitenberg vehicles which 
-are going to be used as the behavioural component of my artificial agents.
-
 \subsection{Breitenberg vehicles \label{Intro:Braitenberg}}
 
 A good controller is useless if it cannot be embodied in a physical robot.
@@ -384,7 +369,12 @@ The behaviour of such vehicles can be enriched by including more sensors and so
  mixing positive and negative connections or by using non monotonic relationships
  between sensors and motors.
 The agents that I used in the software simulations and robot implementations, 
-are based on the Braitenberg framework but enriched with the power of ICO learning 
+are based on the Braitenberg framework but with a minor difference in the implementation:
+instead of having a direct connection between inputs and motors, an error signal
+is generated between the left and right synapse which then generates the differential
+motor command for the left and right wheel.
+
+enriched with the power of ICO learning 
 \subsection{Communication}
 For Luhmann, the most important feature of a social system is that communication
 is the basic form of the autopoietic reproduction of social systems.
@@ -426,7 +416,7 @@ The psychic system embodied in Ego has the intention or desired state of being a
  because he/she is tired.
 The first step for Ego is to select the appropriate utterance which in this case 
 is the English sentence ''go away``.
-At this point Alter receives the utterance and needs to understand it by extracting the 
+At this point Alter receives the utterance and needs to understand it by generating the 
 information from it.
 Alter then can decide to leave or to continue the conversation. Assuming that in the first
 case, he leaves Ego alone and emits an utterance like ''Oky``, Ego will understand that 
@@ -530,13 +520,6 @@ So the model proposed by Dittrich begins with a simple dyad of 2 actors:
  \item the conversation continues from Ego and so on
 \end{itemize}
 The activity of an actor is to decide which message has to be sent given a received message.
-This kind of action is a reduced model of Luhmann's communication because there 
-is no distinction between information, transmission and understanding.
-Ego chooses the message and sends it (information $+$ transmission) and
-replies to the message without understanding it.
-Also, agents do not show a motivated behaviour towards others, according
-to goals and a shared symbolic system, as proposed in the Parson's model.
-
 Each agent is motivated by 2 functions:
 \begin{itemize}
  \item Expectation-Expectation \textbf{EE}: an agent wants to meet the
