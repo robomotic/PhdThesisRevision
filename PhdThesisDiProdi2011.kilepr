@@ -120,7 +120,7 @@ archive=true
 column=7
 encoding=UTF-8
 highlight=LaTeX
-line=216
+line=182
 mode=LaTeX
 open=true
 order=0
@@ -267,7 +267,7 @@ order=-1
 
 [view-settings,view=0,item:MainBody.tex]
 CursorColumn=7
-CursorLine=216
+CursorLine=182
 
 [view-settings,view=0,item:appendix_info.tex]
 CursorColumn=0
