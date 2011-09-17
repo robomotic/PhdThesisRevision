@@ -1,11 +1,18 @@
-This is pdfTeX, Version 3.1415926-1.40.10 (TeX Live 2009/Debian) (format=latex 2011.4.7)  16 SEP 2011 19:24
+This is pdfTeX, Version 3.1415926-1.40.10 (TeX Live 2009/Debian) (format=latex 2010.11.26)  17 SEP 2011 14:03
 entering extended mode
+ restricted \write18 enabled.
  %&-line parsing enabled.
 **MainBody.tex
 (./MainBody.tex
 LaTeX2e <2009/09/24>
 Babel <v3.8l> and hyphenation patterns for english, usenglishmax, dumylang, noh
-yphenation, loaded.
+yphenation, farsi, arabic, croatian, bulgarian, ukrainian, russian, czech, slov
+ak, danish, dutch, finnish, french, basque, ngerman, german, german-x-2009-06-1
+9, ngerman-x-2009-06-19, ibycus, monogreek, greek, ancientgreek, hungarian, san
+skrit, italian, latin, latvian, lithuanian, mongolian2a, mongolian, bokmal, nyn
+orsk, romanian, irish, coptic, serbian, turkish, welsh, esperanto, uppersorbian
+, estonian, indonesian, interlingua, icelandic, kurmanji, slovenian, polish, po
+rtuguese, spanish, galician, catalan, swedish, ukenglish, pinyin, loaded.
 (/usr/share/texmf-texlive/tex/latex/base/book.cls
 Document Class: book 2007/10/19 v1.4h Standard LaTeX document class
 (/usr/share/texmf-texlive/tex/latex/base/bk10.clo
@@ -115,7 +122,7 @@ LaTeX Font Info:    Redeclaring font encoding OMS on input line 568.
 LaTeX Info: Redefining \[ on input line 2666.
 LaTeX Info: Redefining \] on input line 2667.
 )
-(/usr/share/texmf-texlive/tex/generic/babel/babel.sty
+(/var/lib/texmf/tex/generic/babel/babel.sty
 Package: babel 2008/07/06 v3.8l The Babel package
 
 (/usr/share/texmf-texlive/tex/generic/babel/english.ldf
@@ -126,8 +133,6 @@ File: babel.def 2008/07/06 v3.8l Babel common definitions
 \babel@savecnt=\count101
 \U@D=\dimen115
 )
-\l@british = a dialect from \language\l@english 
-\l@UKenglish = a dialect from \language\l@english 
 \l@canadian = a dialect from \language\l@american 
 \l@australian = a dialect from \language\l@british 
 \l@newzealand = a dialect from \language\l@british 
@@ -982,14 +987,14 @@ File: figures/infomeasure/Qinf.eps Graphic file (type eps)
 File: figures/infomeasure/Qzero.eps Graphic file (type eps)
  <figures/infomeasure/Qzero.eps>)
 (./appendix_simulation.tex [174]
-Overfull \hbox (10.52701pt too wide) in paragraph at lines 35--39
+Overfull \hbox (10.52701pt too wide) in paragraph at lines 34--38
 []\OT1/cmr/m/n/10 2 cir-cu-lar RGB cam-eras $\OML/cmm/m/it/10 ccam[]$ \OT1/cmr/
 m/n/10 with a vis-i-bil-ity range of $\OML/cmm/m/it/10 range[] \OT1/cmr/m/n/10 
 =
  []
 
 
-Overfull \hbox (29.09357pt too wide) in paragraph at lines 39--43
+Overfull \hbox (29.09357pt too wide) in paragraph at lines 38--42
 []\OT1/cmr/m/n/10 2 cir-cu-lar RGB camers $\OML/cmm/m/it/10 ccam[]$ \OT1/cmr/m/
 n/10 with a vis-i-bil-ity range of $\OML/cmm/m/it/10 range[] \OT1/cmr/m/n/10 =
  []
@@ -1000,7 +1005,7 @@ Missing character: There is no ¨ in font cmr8!
 Missing character: There is no Ã in font cmr8!
 Missing character: There is no ¨ in font cmr8!
 
-Overfull \hbox (25.78766pt too wide) in paragraph at lines 60--61
+Overfull \hbox (25.78766pt too wide) in paragraph at lines 59--60
 []\OT1/cmr/m/n/10 the food place's colour for the lim-ited case is:$\OML/cmm/m/
 it/10 color\OT1/cmr/m/n/10 (\OML/cmm/m/it/10 food[]\OT1/cmr/m/n/10 ) =\OML/cmm/
 m/it/10 < \OT1/cmr/m/n/10 0\OML/cmm/m/it/10 :\OT1/cmr/m/n/10 0\OML/cmm/m/it/10 
@@ -1010,66 +1015,66 @@ cmr/m/n/10 (\OML/cmm/m/it/10 t\OT1/cmr/m/n/10 ) \OML/cmm/m/it/10 >$
 
 [176] [177] [178]
 LaTeX Font Info:    Font shape `OMS/cmr/m/n' in size <9> not available
-(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 167.
+(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 165.
 
-Overfull \hbox (49.0513pt too wide) in paragraph at lines 171--172
+Overfull \hbox (49.0513pt too wide) in paragraph at lines 169--170
 [][][][][][][][][][][][][][][][][][][][][][][][][][] 
  []
 
-LaTeX Font Info:    Try loading font information for OML+cmr on input line 172.
+LaTeX Font Info:    Try loading font information for OML+cmr on input line 170.
 
 (/usr/share/texmf-texlive/tex/latex/base/omlcmr.fd
 File: omlcmr.fd 1999/05/25 v2.5h Standard LaTeX font definitions
 )
 LaTeX Font Info:    Font shape `OML/cmr/m/n' in size <9> not available
-(Font)              Font shape `OML/cmm/m/it' tried instead on input line 172.
+(Font)              Font shape `OML/cmm/m/it' tried instead on input line 170.
 
-Overfull \hbox (15.75119pt too wide) in paragraph at lines 178--179
+Overfull \hbox (15.75119pt too wide) in paragraph at lines 176--177
 [][][][][][][][][][][][][][][][][][][][][] 
  []
 
 
-Overfull \hbox (10.20117pt too wide) in paragraph at lines 179--180
+Overfull \hbox (10.20117pt too wide) in paragraph at lines 177--178
 [][][][][][][][][][][][][] 
  []
 
 
-Overfull \hbox (10.20117pt too wide) in paragraph at lines 188--189
+Overfull \hbox (10.20117pt too wide) in paragraph at lines 186--187
 [][][][][][][][][][][][][][][][][][][][][][][][][][][] 
  []
 
 
-Overfull \hbox (49.0513pt too wide) in paragraph at lines 189--190
+Overfull \hbox (49.0513pt too wide) in paragraph at lines 187--188
 [][][][][][][][][][][][][][][][][][][][][] 
  []
 
 
-Overfull \hbox (32.40125pt too wide) in paragraph at lines 192--193
+Overfull \hbox (32.40125pt too wide) in paragraph at lines 190--191
 [][][][][][][][][][][][][][][][][][][][][][][][] 
  []
 
 
-Overfull \hbox (10.20117pt too wide) in paragraph at lines 193--194
+Overfull \hbox (10.20117pt too wide) in paragraph at lines 191--192
 [][][][][][][][][][][][][][][][][][][][][][][][] 
  []
 
 
-Overfull \hbox (49.0513pt too wide) in paragraph at lines 208--210
+Overfull \hbox (49.0513pt too wide) in paragraph at lines 206--208
 [][][][][][][][][][][][][][][][][][][][][][][] 
  []
 
 [179]
-Overfull \hbox (60.15134pt too wide) in paragraph at lines 211--213
+Overfull \hbox (60.15134pt too wide) in paragraph at lines 209--211
 [][][][][][][][][][][][][][][][][][][][][][][] 
  []
 
 
-Overfull \hbox (15.75119pt too wide) in paragraph at lines 214--215
+Overfull \hbox (15.75119pt too wide) in paragraph at lines 212--213
 [][][][][][][][][][][][][][][][][][] 
  []
 
 
-Overfull \hbox (10.20117pt too wide) in paragraph at lines 221--222
+Overfull \hbox (10.20117pt too wide) in paragraph at lines 219--220
 [][][][][][][][][][][][][][][][][] 
  []
 
@@ -1188,15 +1193,13 @@ Missing character: There is no ™ in font cmr9!
 File: figures/nxtosek/osek1.eps Graphic file (type eps)
 
 <figures/nxtosek/osek1.eps> [201] [202]
-Missing character: There is no Â in font cmr9!
-Missing character: There is no · in font cmr9!
 File: figures/nxtosek/osektask.eps Graphic file (type eps)
  <figures/nxtosek/osektask.eps> [203]
 [204]
 File: figures/nxtosek/oil1.eps Graphic file (type eps)
  <figures/nxtosek/oil1.eps> [205]
 LaTeX Font Info:    Font shape `OMS/cmr/m/it' in size <9> not available
-(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 223.
+(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 222.
 
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
@@ -1204,7 +1207,7 @@ Underfull \vbox (badness 10000) has occurred while \output is active []
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
  [207]
-Overfull \hbox (32.40125pt too wide) in paragraph at lines 334--335
+Overfull \hbox (32.40125pt too wide) in paragraph at lines 333--334
 [][][][][][][][][][][][][][][][][][][][][][][][][][] 
  []
 
@@ -1212,22 +1215,22 @@ Overfull \hbox (32.40125pt too wide) in paragraph at lines 334--335
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
  [208]
-Overfull \hbox (26.85123pt too wide) in paragraph at lines 366--367
+Overfull \hbox (26.85123pt too wide) in paragraph at lines 365--366
 [][][][][][][][][][][][][][][][][][][][][][][][][][] 
  []
 
 
-Overfull \hbox (21.30121pt too wide) in paragraph at lines 383--384
+Overfull \hbox (21.30121pt too wide) in paragraph at lines 382--383
 [][][][][][][][][][][][][][][][][][][][][][][][][][] 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 395--396
+Underfull \hbox (badness 10000) in paragraph at lines 394--395
 
  []
 
 
-Overfull \hbox (1.613pt too wide) in paragraph at lines 399--400
+Overfull \hbox (1.613pt too wide) in paragraph at lines 396--397
 []\OT1/cmr/m/n/9 Main pro-ces-sor: At-mel 32-bit ARM pro-ces-sor, AT91SAM7S256,
  256 KB FLASH,
  []
@@ -1242,7 +1245,7 @@ File: figures/nxtosek/TaskLejos.eps Graphic file (type eps)
  <figures/nxtosek/TaskLejos.eps>
 File: figures/nxtosek/bluetoothlog.eps Graphic file (type eps)
  <figures/nxtosek/bluetoothlog.eps>
-Overfull \hbox (1.48593pt too wide) in paragraph at lines 514--526
+Overfull \hbox (1.48593pt too wide) in paragraph at lines 511--523
 []\OT1/cmr/m/n/9 Communication is achieved by us-ing the Blue-tooth-Core and is
  struc-tured as master-
  []
@@ -1256,7 +1259,7 @@ Missing character: There is no â in font cmr9!
 Missing character: There is no € in font cmr9!
 Missing character: There is no ™ in font cmr9!
 
-Overfull \hbox (67.37564pt too wide) in paragraph at lines 569--571
+Overfull \hbox (67.37564pt too wide) in paragraph at lines 566--568
 \OT1/cmr/m/n/9 All the code, videos and de-mos are avail-able on the de-part-me
 nt web-site: http://isg.elec.gla.ac.uk/paolo/ 
  []
@@ -1307,12 +1310,12 @@ Missing character: There is no ¶ in font cmr9!
  [235])
 [236] (./MainBody.aux) ) 
 Here is how much of TeX's memory you used:
- 5391 strings out of 495062
- 80894 string characters out of 1182645
- 163605 words of memory out of 3000000
- 8273 multiletter control sequences out of 15000+50000
+ 5391 strings out of 493849
+ 80894 string characters out of 1152845
+ 164718 words of memory out of 3000000
+ 8371 multiletter control sequences out of 15000+50000
  16260 words of font info for 62 fonts, out of 3000000 for 9000
- 28 hyphenation exceptions out of 8191
+ 714 hyphenation exceptions out of 8191
  34i,17n,58p,1090b,1570s stack positions out of 5000i,500n,10000p,200000b,50000s
 
-Output written on MainBody.dvi (236 pages, 817564 bytes).
+Output written on MainBody.dvi (236 pages, 817528 bytes).

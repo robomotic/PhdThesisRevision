@@ -165,18 +165,6 @@ Foerster, H. (1960).
 \newblock In Yovits, M. and Cameron, S., editors, {\em Self-Organizing
   Systems}, pages 31--50. Pergamon Press, London.
 
-\bibitem[\protect\astroncite{Foerster}{1985}]{VonFoerster85}
-Foerster, H. (1985).
-\newblock {\em Sicht und Einsicht: Versuche zu einer operativen
-  Erkenntnistheorie}.
-\newblock Vieweg, Braunschweig.
-
-\bibitem[\protect\astroncite{Foerster}{2003}]{VanFoerster2003:Cybernetics}
-Foerster, H.~V. (2003).
-\newblock {\em Understanding understanding: essays on cybernetics and
-  cognition}.
-\newblock Springer-Verlag.
-
 \bibitem[\protect\astroncite{Franks et~al.}{}]{Franks2003:StrategiesAnts}
 Franks, N.~R., Mallon, E.~B., Bray, H.~E., Hamilton, M.~J., and Mischler, T.~C.
 \newblock Strategies for choosing between alternatives with different
@@ -786,6 +774,18 @@ Volterra, V. (1931).
 \newblock Variations and fluctuations of the number of individuals in animal
   species living together in animal ecology.
 \newblock {\em Animal Ecology}.
+
+\bibitem[\protect\astroncite{Von~Foerster}{1985}]{VonFoerster85}
+Von~Foerster, H. (1985).
+\newblock {\em Sicht und Einsicht: Versuche zu einer operativen
+  Erkenntnistheorie}.
+\newblock Vieweg, Braunschweig.
+
+\bibitem[\protect\astroncite{Von~Foerster}{2003}]{VanFoerster2003:Cybernetics}
+Von~Foerster, H. (2003).
+\newblock {\em Understanding understanding: essays on cybernetics and
+  cognition}.
+\newblock Springer-Verlag.
 
 \bibitem[\protect\astroncite{von Glasersfeld}{1995}]{Glasersfeld1995}
 von Glasersfeld, E. (1995).
