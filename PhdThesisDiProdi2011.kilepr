@@ -117,10 +117,10 @@ ReadWrite=true
 
 [item:MainBody.tex]
 archive=true
-column=22
+column=0
 encoding=UTF-8
 highlight=LaTeX
-line=197
+line=192
 mode=LaTeX
 open=true
 order=0
@@ -266,8 +266,8 @@ open=false
 order=-1
 
 [view-settings,view=0,item:MainBody.tex]
-CursorColumn=22
-CursorLine=197
+CursorColumn=0
+CursorLine=192
 
 [view-settings,view=0,item:appendix_info.tex]
 CursorColumn=0

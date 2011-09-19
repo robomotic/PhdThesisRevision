@@ -201,7 +201,7 @@ E(xcorr_{right}(k))=& \sum\limits_{m} xcorr_{right}(m,k)^2 \\
 P(xcorr_{left}(k))=& \frac{\sum\limits_{m} xcorr_{left}(m,k)^2}{N} \\
 P(xcorr_{right}(k))=& \frac{\sum\limits_{m} xcorr_{right}(m,k)^2}{N} \\
 Avg(W_{predict,left},k)=&\frac{\sum\limits_{m} W_{predict,left}(m+k N_{s})}{N_{s}} \\
-Avg(W_{predict,right},k)=& \frac{\sum\limits_{m} W_{predict,right}(m+k N_{s})}{N_{s}} \\ 
+Avg(W_{predict,right},k)=& \frac{\sum\limits_{m} W_{predict,right}(m+k N_{s})}{N_{s}}
 \end{eqnarray}
 The reason why I have computed this values for the left and right synapse is that
 these weights develop independently from each other as in Eq. \ref{eq:maxcorr:wleft},\ref{eq:maxcorr:wright}.
@@ -382,23 +382,23 @@ $W_{predict,L}>W_{predict,R}$ and thus the agent tends to turn on the left each
 time an obstacle is encountered.
 
 \paragraph{Experiment with 2 agents and 2 obstacles}
-Fig.\ref{fig:N2M2} shows the measures for $N=2$ learning agents and $M=2$ obstacles.
+Figures \ref{fig:N2M2a},\ref{fig:N2M2b} show the measures for $N=2$ learning agents and $M=2$ obstacles.
 \begin{itemize}
- \item Fig.\ref{fig:N2M2}(a) contains the $M(xcorr_{left}(k))$, $M(xcorr_{right}(k))$ in the upper panel
+ \item Fig.\ref{fig:N2M2a}(a) contains the $M(xcorr_{left}(k))$, $M(xcorr_{right}(k))$ in the upper panel
 and the $Avg(W_{predict,left},k)$, $W_{predict,right},k)$ in the lower panel for the first agent.
- \item Fig.\ref{fig:N2M2}(c) contains the $M(xcorr_{left}(k))$, $M(xcorr_{right}(k))$ in the upper panel
+ \item Fig.\ref{fig:N2M2a}(b) contains the $M(xcorr_{left}(k))$, $M(xcorr_{right}(k))$ in the upper panel
 and the $Avg(W_{predict,left},k)$, $W_{predict,right},k)$ in the lower panel for the second agent.
-\item Fig.\ref{fig:N2M2}(b) contains the $E(xcorr_{left}(k),E(xcorr_{right}(k))$ in the upper panel
+\item Fig.\ref{fig:N2M2b}(a) contains the $E(xcorr_{left}(k),E(xcorr_{right}(k))$ in the upper panel
 and the $Avg(W_{predict,left},k)$, $W_{predict,right},k)$ in the lower panel for the first agent.
-\item Fig.\ref{fig:N2M2}(d) contains the $E(xcorr_{left}(k),E(xcorr_{right}(k))$ in the upper panel
+\item Fig.\ref{fig:N2M2b}(b) contains the $E(xcorr_{left}(k),E(xcorr_{right}(k))$ in the upper panel
 and the $Avg(W_{predict,left},k)$, $W_{predict,right},k)$ in the lower panel for the second agent.
 \end{itemize}
 
 Each agent this time is learning $\mu>0$ to avoid each other and so the weights are
-decreasing $W_{predict,right},k)$ like in Fig.\ref{fig:N2M2}(a) bottom, although not equally
+decreasing $W_{predict,right},k)$ like in Fig.\ref{fig:N2M2a}(a) bottom, although not equally
 because the left input is stronger and does not allow the same amount of learning
 on the right input.
-The weight change reflects the  corresponding correlation measure Fig.\ref{fig:N2M2}(a) up,
+The weight change reflects the  corresponding correlation measure Fig.\ref{fig:N2M2a}(a) up,
 because the cross correlation for the left $M(xcorr_{left}(k))=0$ and right $M(xcorr_{right}(k))=0$
 goes to zero when the weights are stabilised, indicating that the reflex is not triggered
 any more when $k>7$.
@@ -420,42 +420,55 @@ decreasing the number of agents reduces the level of energy.
 \begin{figure}[htbp]
   \begin{center}
       \subfigure[Cross correlation maximum $M(c_{d}(k))$ for left (straight) and right (dashed) synapses. Measures from agent 0.]{
-	\includegraphics[scale=0.3]{figures/infomeasure/N2/maxcorr_N=0_w=600.eps}}
-	\hspace{1pt}
+ 	\includegraphics[width=0.7 \textwidth]{figures/infomeasure/N2/maxcorr_N=0_w=600.eps}}
       \subfigure[Energy $E(xcorr_{d}(k))$ for left (straight) and right (dashed) synapses. Measures from agent 0.\label{fig:energy1N2M2}]{
-	\includegraphics[scale=0.3]{figures/infomeasure/N2/power_xcorr_N=0_w=600.eps}}
-      \subfigure[Cross correlation maximum $M(c_{d}(k))$ for left (straight) and right (dashed) synapses. Measures from agent 1.]{
-	\includegraphics[scale=0.3]{figures/infomeasure/N2/maxcorr_N=1_w=600.eps}}
-	\hspace{1pt}
-      \subfigure[Energy $E(xcorr_{d}(k))$ for left (straight) and right (dashed) synapses. Measures from the agent 1.\label{fig:energy2N2M2}]{
-	\includegraphics[scale=0.3]{figures/infomeasure/N2/power_xcorr_N=1_w=600.eps}}
+	\includegraphics[width=0.7 \textwidth]{figures/infomeasure/N2/power_xcorr_N=0_w=600.eps}}
     \caption[Max correlation for two learning agents]{Information measure analysis for $N=2$ agents
 	      and $M=2$ obstacles computed in $k=1,...,11$ time windows.
-	      Learning is switched on for all agents when ($k>1$). \label{fig:N2M2}}
+	      Learning is switched on for all agents when ($k>1$). \label{fig:N2M2a}}
+  \end{center}
+\end{figure}
+
+\begin{figure}[htbp]
+  \begin{center}
+      \subfigure[Cross correlation maximum $M(c_{d}(k))$ for left (straight) and right (dashed) synapses. Measures from agent 1.]{
+	\includegraphics[width=0.7 \textwidth]{figures/infomeasure/N2/maxcorr_N=1_w=600.eps}}
+      \subfigure[Energy $E(xcorr_{d}(k))$ for left (straight) and right (dashed) synapses. Measures from the agent 1.\label{fig:energy2N2M2}]{
+	\includegraphics[width=0.7 \textwidth]{figures/infomeasure/N2/power_xcorr_N=1_w=600.eps}}
+    \caption[Max correlation for two learning agents]{Information measure analysis for $N=2$ agents
+	      and $M=2$ obstacles computed in $k=1,...,11$ time windows.
+	      Learning is switched on for all agents when ($k>1$).\label{fig:N2M2b}}
   \end{center}
 \end{figure}
 
 \paragraph{Experiment with 4 agents and 2 obstacles}
 The same considerations apply to the case of 4 agents with 2 obstacles.
-Figs.\ref{fig:N4M2a} shows the measures for the first group of 2 agents and Fig.\ref{fig:N4M2b}
+Figs.\ref{fig:N4M2a1},\ref{fig:N4M2a2} shows the measures for the first group of 2 agents and Figs.\ref{fig:N4M2b1},\ref{fig:N4M2b2}
 shows the measures for the second group of 2 agents.
 
 \begin{figure}[htbp]
   \begin{center}
       \subfigure[Cross correlation maximum $M(c_{d}(k))$ when $N=4$ agents and $M=2$ obstacles for left (straight) and right (dashed) synapses. Measures from agent 0.]{
-	\includegraphics[scale=0.3]{figures/infomeasure/N4/maxcorr_N=0_w=600.eps}}
-	\hspace{1pt}
+	\includegraphics[width=0.7 \textwidth]{figures/infomeasure/N4/maxcorr_N=0_w=600.eps}}
       \subfigure[Energy $E(xcorr_{d}(k))$ when $N=4$ agents and $M=2$ obstacles for left (straight) and right (dashed) synapses. Measures from the agent 0.]{
-	\includegraphics[scale=0.3]{figures/infomeasure/N4/power_xcorr_N=0_w=600.eps}}
-\subfigure[Cross correlation maximum $M(c_{d}(k))$ for left (straight) and right (dashed) synapses. Measures from agent 1.]{
-	\includegraphics[scale=0.3]{figures/infomeasure/N4/maxcorr_N=1_w=600.eps}}
-	\hspace{1pt}
-      \subfigure[Energy $E(xcorr_{d}(k))$ for left (straight) and right (dashed) synapses. Measures from the agent 1. Learning starts after the first window.\label{fig:energylong}]{
-	\includegraphics[scale=0.3]{figures/infomeasure/N4/power_xcorr_N=1_w=600.eps}}
+	\includegraphics[width=0.7 \textwidth]{figures/infomeasure/N4/power_xcorr_N=0_w=600.eps}}
     \caption[Max correlation for 4 learning agents A]{
       Information measure analysis for $N=4$ agents and $M=2$ obstacles computed
       in $k=1,...,11$ time windows. Learning is switched on for all agents
-      when ($k>1$).\label{fig:N4M2a}}
+      when ($k>1$).\label{fig:N4M2a1}}
+  \end{center}
+\end{figure}
+
+\begin{figure}[htbp]
+  \begin{center}
+\subfigure[Cross correlation maximum $M(c_{d}(k))$ for left (straight) and right (dashed) synapses. Measures from agent 1.]{
+	\includegraphics[width=0.7 \textwidth]{figures/infomeasure/N4/maxcorr_N=1_w=600.eps}}
+      \subfigure[Energy $E(xcorr_{d}(k))$ for left (straight) and right (dashed) synapses. Measures from the agent 1. Learning starts after the first window.\label{fig:energylong}]{
+	\includegraphics[width=0.7 \textwidth]{figures/infomeasure/N4/power_xcorr_N=1_w=600.eps}}
+    \caption[Max correlation for 4 learning agents A]{
+      Information measure analysis for $N=4$ agents and $M=2$ obstacles computed
+      in $k=1,...,11$ time windows. Learning is switched on for all agents
+      when ($k>1$).\label{fig:N4M2a2}}
   \end{center}
 \end{figure}
 
@@ -463,25 +476,34 @@ shows the measures for the second group of 2 agents.
 \begin{figure}[htbp]
   \begin{center}
 \subfigure[Cross correlation maximum $M(c_{d}(k))$ for left (straight) and right (dashed) synapses. Measures from agent 2.\label{fig:eqlearning}]{
-	\includegraphics[scale=0.3]{figures/infomeasure/N4/maxcorr_N=2_w=600.eps}}
+	\includegraphics[width=0.7 \textwidth]{figures/infomeasure/N4/maxcorr_N=2_w=600.eps}}
 	\hspace{1pt}
       \subfigure[Energy $E(xcorr_{d}(k))$ left (straight) and right (dashed) synapses. Measures from the agent 2.\label{fig:energypeak} ]{
-	\includegraphics[scale=0.3]{figures/infomeasure/N4/power_xcorr_N=2_w=600.eps}}
-\subfigure[Cross correlation maximum $M(c_{d}(k))$ for left (straight) and right (dashed) synapses. Measures from agent 3.]{
-	\includegraphics[scale=0.3]{figures/infomeasure/N4/maxcorr_N=3_w=600.eps}}
-	\hspace{1pt}
-      \subfigure[Energy $E(xcorr_{d}(k))$ for left (straight) and right (dashed) synapses. Measures from the agent 3.\label{fig:energylong2}]{
-	\includegraphics[scale=0.3]{figures/infomeasure/N4/power_xcorr_N=3_w=600.eps}}
+	\includegraphics[width=0.7 \textwidth]{figures/infomeasure/N4/power_xcorr_N=2_w=600.eps}}
     \caption[Max correlation for 4 learning agents B]{
 	Information measure analysis for $N=4$ agents and $M=2$ obstacles computed
 	in $k=1,...,11$ time windows. Learning is switched on for all agents
-	when ($k>1$). \label{fig:N4M2b}}
+	when ($k>1$). \label{fig:N4M2b1}}
+  \end{center}
+\end{figure}
+
+\begin{figure}[htbp]
+  \begin{center}
+\subfigure[Cross correlation maximum $M(c_{d}(k))$ for left (straight) and right (dashed) synapses. Measures from agent 3.]{
+	\includegraphics[width=0.7 \textwidth]{figures/infomeasure/N4/maxcorr_N=3_w=600.eps}}
+	\hspace{1pt}
+      \subfigure[Energy $E(xcorr_{d}(k))$ for left (straight) and right (dashed) synapses. Measures from the agent 3.\label{fig:energylong2}]{
+	\includegraphics[width=0.7 \textwidth]{figures/infomeasure/N4/power_xcorr_N=3_w=600.eps}}
+    \caption[Max correlation for 4 learning agents B]{
+	Information measure analysis for $N=4$ agents and $M=2$ obstacles computed
+	in $k=1,...,11$ time windows. Learning is switched on for all agents
+	when ($k>1$). \label{fig:N4M2b2}}
   \end{center}
 \end{figure}
 
 As with the previous case the maximum cross correlations of each agent go
 to zero when the learning is stable.
-For example agent 2 in Fig.\ref{fig:N4M2a}(a,b) stabilises his learning weights
+For example agent 2 in Fig.\ref{fig:N4M2a1}(a,b) stabilises his learning weights
 after $k>6$ time windows.
 Comparing the maximum of the cross correlation for left and right synapses for all cases,
 on average it occurs that $M(xcorr_{left}(k))>M(xcorr_{right}(k))$,$\forall k$:
@@ -663,45 +685,42 @@ The model's results validate his theory because agents are selecting to use one
 information rather than the other one to simplify the model of the environment's loop.
 
 \subsection{Discussion}
-Devising a measure of information for learning agents in a closed loop is a challenging task.
-Previous approaches in the literature are all based on the concept of Shannon's
-entropy applied to adaptive controllers.
-There are 3 main problems in using Shannon's entropy:
-\begin{itemize}
- \item it ignores semantics when dealing with transmitted data: when a sequence of
-symbol is transmitted, every symbol carries the same importance, only their probability
- of occurrence plays a role in Shannon's model.
-\item is not suitable for closed loop: joint and disjoint probabilities change continuously
- in the closed loop and therefore they must be estimated continuously.
-\item probability encoding discards temporal information: positive and negative phase
- delay induces the same variation in the mutual information measure (see Appendix A).
-\end{itemize}
-\citet{PhysRevLett.84.1156} consider the perception action-loop
- in terms of a communication channel-like model.
+Devising a measure which affects learning in agents in a closed loop is a challenging task.
+Therefore it is necessary to make the right assumptions: in my case the agent
+is performing input control (as described in Section \ref{Introduction:NeuralSystem})
+and so is necessary to measure how the predictor changes in respect of the reflex.
+The same \textbf{maxcorr} or \textbf{AI measure} cannot be applied to agents
+which performs output control such as in the traditional artificial neural networks
+trained on the desired output and not input.
+Shannon's entropy was also applied to closed loop controllers as in
+\citet{PhysRevLett.84.1156} which considers the perception action-loop
+in terms of a communication channel-like model.
 Also \citet{organizationInfo} recently has been using the
 same approach: the perception-action loop enables an agent to use its actuators
 as a channel to transmit information into the environment.
 The information can later be acquired from the environment by the same agent or other agents.
- In our measure there is no such transfer channel: temporal information
+In our measure there is no such transfer channel: temporal information
 relevant to the agent is computed only at the inputs which contains the feedback
- of the outputs. It is simple and easy to compute and it does not require the modelling of the agent's
- controller as an information channel.
+of the outputs. It is simple and easy to compute and it does not require the modelling of the agent's
+controller as an information channel.
 Recently, \citet{shannonSemantic} has been working on evolving sensors and has
  introduced an operational notion of Shannon-type quantification of relevant information:
 \begin{itemize}
  \item it quantifies relevance with respect to a given agent or decision system.
  \item it yields a measure for the usefulness of sensors or about an agent's state
-of knowledge with respect to a POMDP (partial observable markov decision process)
+of knowledge with respect to a POMDP (Partial Observable Markov Decision Process)
 \end{itemize}
 The problem of this approach is that it requires a discrete formulation of
 an agent, and its application to a general controller is not possible.
 The limit of the \textbf{maxcorr} measure is that it is dependent on the particular implementation
 of our controller and cannot be applied to other adaptive algorithms unless
 they are based on a similar temporal input structure.
-The limit of the \textbf{AI measure} is that although it quantifies the learning
-behaviour in terms of bits, it does not provide an axiomatic framework and
-thus can be mathematically weak.
-Therefore in Section \ref{Chapter6:Information Flow}, the author developed a more
+The second issue of the \textbf{maxcorr} is that - although normalised - it does not
+give an indication of the capabilities of the agent.
+The \textbf{AI measure} was then introduced to quantify the learning
+behaviour in terms of bits but it does not provide an axiomatic framework and
+thus is mathematically weak.
+Therefore in Section \ref{Chapter6:Information Flow}, I developed a more
 advanced measure based on the concept of information flow which is inspired by the
 work of \citet{LungarellaInformation}.
 

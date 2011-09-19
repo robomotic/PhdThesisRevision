@@ -71,7 +71,7 @@ A candidate measure for the temporal dependence is then:
 MI(\tau)=MI(X_{t},Y_{t-\tau})=H(X_{t})+H(Y_{t-\tau}-H(X_{t},Y_{t-\tau})) \geqslant 0
 \end{equation}
 where $\tau$ denotes the delay. It is common practice to compute the mutual
-information for different taus $\tau_{i}$ and then find the $\frac{argmax}{\tau_i} MI(\tau_i)$.
+information for different taus $\tau_{i}$ and then find the $\max\limits_{\tau_i} MI(\tau_i)$.
 Whereas the mutual information is symmetrical $MI(X,Y)=MI(Y,X)$ the temporal
 information is not $MI(X_{t},Y_{t-\tau}) \neq MI(Y_{t},X_{t-\tau})$.
 

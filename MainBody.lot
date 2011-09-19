@@ -7,18 +7,18 @@
 \contentsline {table}{\numberline {3.3}{\ignorespaces Social System food distribution}}{71}
 \contentsline {table}{\numberline {3.4}{\ignorespaces Foraging performance with unlimited resources}}{73}
 \contentsline {table}{\numberline {3.5}{\ignorespaces Foraging performance with limited resources}}{75}
-\contentsline {table}{\numberline {3.6}{\ignorespaces Information flow for avoidance robot}}{116}
-\contentsline {table}{\numberline {3.7}{\ignorespaces Information flow for avoidance robot}}{116}
-\contentsline {table}{\numberline {3.8}{\ignorespaces Information values for the \textbf {PP} computation}}{126}
-\contentsline {table}{\numberline {3.9}{\ignorespaces Table with entropy values for simple robot}}{129}
-\contentsline {table}{\numberline {3.10}{\ignorespaces Track deviation values for simple robot}}{131}
-\contentsline {table}{\numberline {3.11}{\ignorespaces Reflex input values for the 3 tracks}}{132}
-\contentsline {table}{\numberline {3.12}{\ignorespaces Mutual information values for maze track}}{137}
+\contentsline {table}{\numberline {3.6}{\ignorespaces Information flow for avoidance robot}}{119}
+\contentsline {table}{\numberline {3.7}{\ignorespaces Information flow for avoidance robot}}{119}
+\contentsline {table}{\numberline {3.8}{\ignorespaces Information values for the \textbf {PP} computation}}{128}
+\contentsline {table}{\numberline {3.9}{\ignorespaces Table with entropy values for simple robot}}{132}
+\contentsline {table}{\numberline {3.10}{\ignorespaces Track deviation values for simple robot}}{134}
+\contentsline {table}{\numberline {3.11}{\ignorespaces Reflex input values for the 3 tracks}}{135}
+\contentsline {table}{\numberline {3.12}{\ignorespaces Mutual information values for maze track}}{140}
 \addvspace {10\p@ }
-\contentsline {table}{\numberline {4.1}{\ignorespaces Entropy values before learning. }}{167}
-\contentsline {table}{\numberline {4.2}{\ignorespaces Entropy values before learning. }}{167}
-\contentsline {table}{\numberline {4.3}{\ignorespaces Entropy values before learning.}}{168}
-\contentsline {table}{\numberline {4.4}{\ignorespaces Equivocation table. }}{168}
+\contentsline {table}{\numberline {4.1}{\ignorespaces Entropy values before learning. }}{169}
+\contentsline {table}{\numberline {4.2}{\ignorespaces Entropy values before learning. }}{169}
+\contentsline {table}{\numberline {4.3}{\ignorespaces Entropy values before learning.}}{170}
+\contentsline {table}{\numberline {4.4}{\ignorespaces Equivocation table. }}{170}
 \addvspace {10\p@ }
-\contentsline {table}{\numberline {5.1}{\ignorespaces Posix vs OpenMP standard}}{186}
-\contentsline {table}{\numberline {5.2}{\ignorespaces Parallel Simulator performance}}{190}
+\contentsline {table}{\numberline {5.1}{\ignorespaces Posix vs OpenMP standard}}{187}
+\contentsline {table}{\numberline {5.2}{\ignorespaces Parallel Simulator performance}}{191}

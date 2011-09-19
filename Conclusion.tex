@@ -44,15 +44,6 @@ during mutual interactions.
 The social model that was developed in this thesis, although it does not include
  a complete communication protocol described by Luhmann and used by Dittrich,
 it is capable of generating sub-systems.
-
-[TODO]
-This kind of action is a reduced model of Luhmann's communication because there 
-is no distinction between information, transmission and understanding.
-Ego chooses the message and sends it (information $+$ transmission) and
-replies to the message without understanding it.
-Also, agents do not show a motivated behaviour towards others, according
-to goals and a shared symbolic system, as proposed in the Parson's model.
-
 It also has mainly 2 advantages:
 \begin{itemize}
  \item it is a real time simulator where the agents interact and learn continuously
@@ -67,8 +58,8 @@ The communication used in the model is mono directional and one to many:
 this has an operative advantage in terms of fast response times if the
 system has to adapt to environmental changes.
 
-As a comparative analysis, previous works in information measures was performed by Polani,
- Lungarella and Ay that used information theoretic cost functions to optimise the agent's behaviour:
+As a comparative analysis, previous works in information measures was performed by the following authors,
+that used information theoretic cost functions to optimise the agent's behaviour:
 \begin{itemize}
 \item \citet{organizationInfo} evolves controllers to maximise the information transfer
 of the sensory-motor loop (empowerment) and discovers that to use memory efficiently they perform 
@@ -111,7 +102,7 @@ selection of each agent during the social division as also described in Section 
 Another interesting experimental work in the field of performance measure was produced 
 by \citet{Kulvicius2009:analysisdifferential} where the measure was the argument of the maximum 
 cross correlation between the antenna's events $\bar{\tau}$ in a fixed time window.
-Kulvicius shows that for more complex environments $\vec{\tau}$ has a larger
+\citet{Kulvicius2009:analysisdifferential} shows that for more complex environments $\vec{\tau}$ has a larger
 deviation compared to the case of more simple environments.
 
 The predictive performance can also be applied to reinforcement learning \citep{TD}
@@ -184,7 +175,9 @@ going to describe in the next section.
 An important improvement for the model will be to use the symbolic language
 module as described in section \ref{Conclusion:Language} with the double contingency
 feature described in section \ref{Introduction:SocialOrderModel}.
-With this approach one can have the power of a grounded language model and the
+With this kind of approach agents will show a motivated behaviour towards others, 
+develop their own language and not just share a symbolic system (as proposed in the Parson's model).
+Thus one can have the power of a grounded language model and the
 potential for social interaction to build an accurate model of Luhmann's society.
 The $ICO/ISO$ learning controller could still be used to implement the action layer,
 but other approaches will be required to implement the symbolic communication layer.
@@ -193,7 +186,6 @@ models and are described in the following sections.
 
 
 \subsection{Model based checking for property verification \label{Conclusion:ModelCheck}}
-
 
 The research on agent-based learning systems
 currently relies on simulation results to infer the correctness of system properties.
@@ -258,7 +250,7 @@ Capek's R.U.R. \citep{Karel1920:RUR}, were actually Artificial Humans
 A better and earlier term is Android from the greek andro- "human" + eides "form,
 shape" meaning an "automaton resembling a human being". The term was first
 mentioned by St. Albertus Magnus in 1270 and was popularized by the French writer
- Villiers in his 1886 novel L'Ève future.
+ Villiers in his 1886 novel L'\`{E}ve future.
 There were and there still are efforts in producing androids which can be accepted
  by humans, avoiding the famous ``Uncanny Valley'' introduced by
 Masahiro Mori as ``Bukimi no Tani Gensho''.
@@ -393,10 +385,12 @@ Imagine a cat observing a little mouse running in front of it, the cat will esti
  on it or if the mouse is too fast and so waiting for a closer trajectory wastes less energy. 
  This is a well known probabilistic dilemma: when the organism needs to be reactive and when the organism 
  needs to learn?
- The Shannon information measure is a convex function, when expressed as $\sum_p p\cdot log_2(p)$ but 
- not if only expressed as $\sum_p log_2(p)$ which is infinite at $p=0$.
+
+ The Shannon information measure is a concave function of the distribution when
+expressed as $\sum_p p\cdot log_2(p)$: $H(p)=0$ when $p=0$ or $p=1$.
+ However the property is not valid if one only uses the logarithm as $\sum_p log_2(p)$ which is infinite at $p=0$.
  So the best choice which maximizes the information is 
- at $p=0.5$ which gives a fifty fifty selection chance!
+ always somewhere in the middle.
  This poses another question: if an organism wants to have
  a maximally predictive state of the environment, why do anything since a
  stationary state produces less possible entropy! If this assumption was correct
@@ -418,7 +412,7 @@ with a simple proportional rule, the the variety will be transferred
 from input to output unchanged. A superficial observer will say that this organism has 
 a rather complicated behaviour! Moreover
  if we feedback the motor action into the input according to a function $f$,
-coupling will generate an even more complex behaviour.  As already shown
+coupling will generate an even more complex behaviour. As already shown
 by \citet{Kulvicius2009:analysisdifferential}, output entropy
 was computed as the ration between the reflex output and the 
 predictor output, allowing the author to separate the 2 contributions during learning.
@@ -429,8 +423,6 @@ memory which integrates sensory information and to some extent compress the
 sensory information by discovering the causal relation between the predictor and the reflex.
 In this way then the total output entropy will not vary significantly and thus
 cannot be used as a parameter of learning as well as complexity.
-
-
 
 \subsection{Prediction and learning}
 \label{Appendix:PredictionAndLearning}
@@ -465,7 +457,7 @@ I_{pred}(T,T')=H(T)+H(T')-H(T+T')\label{Ipredgeneral}
 \end{equation}
  but in the limit of large observation times:
 \begin{equation}
-I_{pred}(T)=\lim_{T'\to\infty} I_{pred}(T,T')=H_{1}(T).
+I_{pred}(T)=\lim_{T'\to\infty} I_{pred}(T,T')=H_{1}(T)
 \end{equation}
 $H(T)$ is the entropy computed on the signal $x(t)$ for $-T<t<0$ denoted in short
  hand by $x_{past}$, $H(T')$ is the entropy of the signal $x(t)$ that will be observed
@@ -480,13 +472,13 @@ entropy compared to the prior distribution $P(x_{past})$ means that there was
  a reduction in entropy and that the particular future event is more likely to happen.
 The average of this predictive information is defined as:
 \begin{eqnarray}
-I_{pred}(T,T')=\sum_{past,future} P(future,past)\cdot \frac{P_{future,past}}{P(future) P(past)}\\
-P(future,past)=P(future|past)\cdot P(past)
+I_{pred}(T,T')=\sum_{past,future} P(future,past)\cdot \frac{P_{future,past}}{P(future) P(past)}&\\
+P(future,past)=P(future|past)\cdot P(past)&
 \end{eqnarray}
 and can be rewritten as:
 \begin{eqnarray}
- I_{pred}(T,T')=<log_2 [\frac{P(future|past)}{P(future)}]>\\
-=-<log_2 P(future)> -<log_2 P(past)> -<[-log_2 P(future,past)]>\label{Ipredextense}
+ I_{pred}(T,T')=<log_2 [\frac{P(future|past)}{P(future)}]>& \\
+=-<log_2 P(future)> -<log_2 P(past)> -<[-log_2 P(future,past)]>& \label{Ipredextense}
 \end{eqnarray}
 where $<...>$ denotes the average over the joint distribution of the past and the future.
 Because the elements of the equation are all entropies we can rename the variables as:
@@ -508,24 +500,24 @@ I_{pred}(T,T')=H_0\cdot T + H_1(T) +H_0\cdot T' + H_1(T') -H_0\cdot (T+T')-H_1(T
 \end{equation}
 and so $I_{pred}(T,T')=H_1(T)+H_1(T')$. Giving that:
 \begin{eqnarray}
- H(T)=H_0 T + H_1(T)\\
-\lim_{T\to\infty} H(T)/T=H_0\\
-H_1(T)\geqslant 0\\
-\lim_{T\to\infty} H_1(T)/T=0\\
+H(T)=H_0 T + H_1(T)& \\
+\lim_{T\to\infty} H(T)/T=H_0&\\
+H_1(T)\geqslant 0&\\
+\lim_{T\to\infty} H_1(T)/T=0&
 \end{eqnarray}
 and extending the future forwards toward infinity $T' \rightarrow \infty$ or the
  past towards minus infinity $T' \leftarrow -\infty$ the predictive information becomes:
 \begin{eqnarray}
-I_{pred}(T)=H_1(T), T' \rightarrow \infty\\
-I_{pred}(T)=H_1(T), T \leftarrow -\infty\\
+I_{pred}(T)&=H_1(T), T' \rightarrow \infty\\
+I_{pred}(T)&=H_1(T), T \leftarrow -\infty
 \end{eqnarray}
 This equality states that there is symmetry between prediction and postdiction
  $I_{pred}(T,T')=I_{pred}(T',T)$ but also that the predictive information at
 time $t=T$ gives us the same amount of information about the history of our
 observation as well as the same amount for the future ones that will start from
  the present time.
-\subsection{How much information is required for prediction?}
-\label{Appendix:InfoForPrediction}
+\subsection{How much information is required for prediction? \label{Appendix:InfoForPrediction}}
+
 As we observe a time series for a long time $T$, we accumulate data which is measured
  by the entropy $H(T)$, and for $T$ that goes to infinity $H(T)\simeq H_0 T$.
 Because the predictive information cannot grow linearly with time, only a small
@@ -543,9 +535,9 @@ in the predictive information that indicates a novelty or better a surprise.
 \subsection{Predictive information and model complexity}
 In the regime of infinite observation time $T\rightarrow \infty$, $I_{pred}(T)$ can:
 \begin{itemize}
- \item remain finite as $H_1=h_1$
- \item grow logarithmically $H_1=h_1 + k \cdot log(T)$
- \item grow as a fraction power law $H_1=h_1 + h_2 \cdot T^{\alpha}$
+ \item remain finite as $H_1=h_1$.
+ \item grow logarithmically $H_1=h_1 + k \cdot log(T)$.
+ \item grow as a fraction power law $H_1=h_1 + h_2 \cdot T^{\alpha}$.
 \end{itemize}
 The first possibility \textbf{$\lim_{T\to\infty}=h_1$}, means that no matter how
  long we observe, we gain only a finite amount of information
@@ -588,7 +580,6 @@ thus the learning curve is the difference between the actual code length and the
 The learning curve is the derivative of the predictive information and quantifies the
 information learned so fare, if zero means that the optimal description code of the time series
 is reached.
-
 
 \subsection{Entropy reduction measure in learning agents \label{Conclusion:PredictiveBayes}}
 

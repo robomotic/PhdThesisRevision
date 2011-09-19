@@ -32,11 +32,11 @@ oriented with $\alpha(l,r)=\pm160\degree$, an aperture of $IR_{field}=60\degree$
  a range of $range_{IR,reflex}=2.5 U$ and $ray=3$.
 
 \item 2 circular RGB cameras $ccam_{i,proximal}$ with a visibility range of
- $range_{distal}=10.0 U$: placed in front of the robot, one left one right, $h=2.0 U$
+$10.0 U$: placed in front of the robot, one left one right, $h=2.0 U$
 from the ground, oriented with $\alpha=\pm30\degree$, an aperture of
 $field_{proximal}=60\degree$  and a resolution of $ccam_{res}=16$ pixels.
 \item 2 circular RGB camers $ccam_{i,reflex}$ with a visibility range of
-$range_{ccam,proximal}=8.0 U$: placed in front of the robot, one left one right,
+$8.0 U$: placed in front of the robot, one left one right,
 oriented with with $\alpha=\pm30\degree$, aperture of $field_{proximal}=60\degree$
 and a resolution of $ccam_{res}=16$ pixels.
 \end{itemize}
@@ -53,10 +53,10 @@ A color is represent by 3 components: red,blue and green as a triplet $<r,g,b>$
 where $r,g,b \subset [0.0,1.0]$. For example red is represented by $<1.0,0.0,0.0>$.
 The rule for the colors are:
 \begin{itemize}
- \item the agent's color is:$color(agent)=<1.0,0.0,H_{sated}(t)>$ as described in eq.\ref{eq:satstate}.
+ \item the agent's color is:$color(agent)$ $=$ $<1.0,0.0,H_{sated}(t)>$ as described in eq.\ref{eq:satstate}.
 Thus an agent has a fixed red component and a blue component that expresses its internal state of satedness.
-\item the food place's colour for the unlimited case is:$color(food_{infinite})=<0.0,1.0,0.0>$
-\item the food place's colour for the limited case is:$color(food_{finite})=<0.0,1.0,q(t)>$ as in eq.\ref{eq:qfood}.
+\item the food place's colour for the unlimited case is:$color(food_{infinite})$ $=$ $<0.0,1.0,0.0>$
+\item the food place's colour for the limited case is:$color(food_{finite})$ $=<0.0,1.0,q(t)>$ as in eq.\ref{eq:qfood}.
 \item an object with green component is a food source.
 \end{itemize}
 
