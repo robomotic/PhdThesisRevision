@@ -599,27 +599,28 @@ accordingly with the food sources $M$ such that $n_{s}=4,8,10$ respectively for 
 
 \begin{table}[htbp]
 \caption[Tabular results for self organisation property]{
-Table summarising self-organisation:
-every element in the table is the couple $(n_{s}(T_{sim}),n_{p}(T_{sim}))$
-which indicates the number of seekers and parasites when the simulation
-at the end of the simulation.\label{tab:population}}
+Table summarising self-organisation for 100 simulation runs:
+every element in the table contains the average number of seekers $n_{s}$ after stabilisation,
+the average settling time and the variation of differentiation after the settling time.
+\label{tab:population}}
 \begin{center}
 \small{
 \begin{tabular}{@{}c|ccc@{}}
 \hline
 Ratio $N/M$ & 20:4 & 20:10 & 20:18\\
 \hline
-Silence & $(5,15)$ & $(3,17)$ & $(5,15)$\\
+Silence & 5 250 $\pm 2$ & 3 280 $\pm 2$ & 5 156 $\pm 2$\\
 \hline
-Honest & $(4,16)$ & $(8,12)$ & $(10,10)$\\
+Honest & 4 390 $\pm 2$ & 8 246 $\pm 2 $ & 10 190 $\pm 2 $\\
 \hline
-Dishonest agents:2  & $(7,13)$ & $(4,16)$ & $(8,12)$\\
-Dishonest agents:10 & $(5,15)$ & $(6,14)$ & $(1,19)$\\
-Dishonest agents:16 & $(10,10)$ & $(3,17)$ & $(8,12)$\\
+Dishonest agents:2  & 7 391 $\pm 2$ & 4 249 $\pm 2$ & 8 198 $\pm 2$\\
+Dishonest agents:10 & 5 394 $\pm 2$ & 6 253 $\pm 2$ & 1 202 $\pm 2$\\
+Dishonest agents:16 & 10 410 $\pm 2$ & 3 289 $\pm 2$ & 8 210 $\pm 2$\\
 \end{tabular}
 }
 \end{center}
 \end{table}
+
 
 A possible explanation for the prevalence of the parasitic population with scarce resources is due to the space constraints of the food sources: only a few agents (in our case 9) can forage at the same time, therefore the agents learn to transport food for the others. When resources are abundant this constraint is removed therefore the parasitic strategy is no longer needed.
 
@@ -631,10 +632,10 @@ one could measure the number of the total bites can be measured:
 \end{equation}
 where $F_{seek}$ is the number of total times agents touched food sources (Eq. \ref{eq:touchfood})
 and $F_{parasite}$ is the number of total times that agents touched other sated agents (Eq. \ref{eq:touchagent}).
-Having chosen that index, table \ref{tab:totalPerformance} shows the $F_{tot}$ 
-for the different conditions and underlines the value when dishonest is superior to 
+Having chosen that index, table \ref{tab:totalPerformance} shows the average $F_{tot}$ 
+of 100 simulations for the different conditions and underlines the value when dishonest is superior to 
 the honest strategy.
-On the basis of total bites, I can state that:
+On the basis of total bites, I can state that in average:
 \begin{itemize}
 \item honest signal is better then silence when food resources are $M=4,10,18$
 \item comparing the honest and the dishonest strategy:
@@ -650,20 +651,22 @@ in the system is no more reliable and will punish everybody indiscriminately.
 
 \begin{table}[htbp]
 \caption[Social System foraging performance]{
-Table summarising the foraging performance: every value represents $F_{tot}$. \label{tab:totalPerformance}}
+Table summarising the foraging performance for 100 simulations: 
+every value represents the average $F_{tot}$ with the error range
+calculated as max-min. \label{tab:totalPerformance}}
 \begin{center}
 \small{
 \begin{tabular}{@{}c|ccc@{}}
 \hline
 Ratio $N/M$ & 20:4 & 20:10 & 20:18\\
 \hline
-Silence & 373 & 347 & 371\\
+Silence & 370 $\pm 8$& 342 $\pm 9 $& 371 $\pm 8$\\
 \hline
-Honest & 385 & 358 & 376\\
+Honest & 488 $\pm 4 $& 461 $\pm 5$& 476 $\pm 4$\\
 \hline
-Dishonest agents:2 & \underline{391} & 348 & 343\\
-Dishonest agents:10 & \underline{406} & \underline{385} & 339 \\
-Dishonest agents:16 & 317 & \underline{369} & 351\\
+Dishonest agents:2 & \underline{502} $\pm4 $& 366 $\pm 4$& 340 $\pm 4$\\
+Dishonest agents:10 & \underline{509} $\pm 4$ & \underline{495} $\pm 4$ & 342  $\pm 4$\\
+Dishonest agents:16 & 365 $\pm 4$& \underline{480} $\pm 4$& 362 $\pm 4$\\
 \end{tabular}
 }
 \end{center}
@@ -680,39 +683,39 @@ collected a large amount of food and thus is not desirable for a sustainable soc
 Table \ref{tab:foodDistribution} contains the computed values for each condition.
 
 \begin{table}[htbp]
-\caption[Social System food distribution]{Table summarising food distribution:
+\caption[Social System food distribution]{Table summarising food distribution for 100 simulations:
 every element represent the couple ($\mu,\sigma$) where $\mu$ is the average of
 the food bites+agents bites over the agent population, and $\sigma$ is
-the standard deviation. They are calculated at the end of the simulation.\label{tab:foodDistribution}}
+the standard deviation. 
+They are calculated at the end of each simulation.
+The error range is included for the average of the food bites,
+as well as the standard deviation.
+\label{tab:foodDistribution}}
 \begin{center}
 \small{
 \begin{tabular}{@{}c|ccc@{}}
 \hline
 Ratio $N/M$ & 20:4 & 20:10 & 20:18\\
 \hline
-Silence & $(18.65,2.16)$ & $(17.35,2.83)$ & $(18.55,4.11)$\\
+Silence & $(18.65 \pm 0.63,2.16 \pm 0.77)$ & $(17.35 \pm 0.61,2.83 \pm 0.77)$ & $(18.20 \pm 0.64,3.11 \pm 0.77)$\\
 \hline
-Honest & $(19.25,3.00)$ & $(17.90,2.51)$ & $(18,3.27)$\\
+Honest & $(20.00 \pm 0.43,3.00 \pm 0.65)$ & $(19.50 \pm 0.42,3.40 \pm 0.65 )$ & $(20.10 \pm 0.4,3.30 \pm 0.65)$\\
 \hline
-Dishonest (2 cheaters) & $(19.55,1.85)$  & $(17.40,2.09)$   & $(17.15,3.79)$\\
-Dishonest (10 cheaters) & $(20.30,2.13)$  & $(19.25,2.63)$  & $(16.95,3.41)$\\
-Dishonest (18 cheaters) & $(15.85,5.34)$ & $(18.45,2.58)$  & $(17.55,2.67)$\\
+Dishonest (2 cheaters) & $(19.40 \pm 0.41,1.85 \pm 0.66)$  & $(17.50 \pm 0.41,2.09 \pm 0.63 )$   & $(17.35\pm 0.41,3.79 \pm 0.64 )$\\
+Dishonest (10 cheaters) & $(19.90 \pm 0.43,2.13 \pm 0.66)$  & $(19.40\pm 0.44,2.63 \pm 0.64)$  & $(17.10\pm 0.41,3.41 \pm 0.63)$\\
+Dishonest (18 cheaters) & $(15.40\pm 0.40,5.34 \pm 0.66)$ & $(18.65  \pm 0.41,2.58 \pm 0.63)$  & $(17.96\pm 0.42,2.67 \pm 0.64)$\\
 \end{tabular}
 }
 \end{center}
 \end{table}
 
 \begin{itemize}
-\item for scarce resources $M=4$ and 2 cheaters: the best distribution comes 
-with honesty:  $\mu_{honest}=19.25$ and $\sigma_{honest}=3.0$.
-\item for scarce resources $M=4$ and 18 cheaters: dishonest has a smaller 
-average  $\mu_{dishonest}=15.85$ but a better variance $\sigma_{honest}=5.34$ 
-compared to the silence and honest strategy which has respectively a $\sigma_{silence}=2.16$ 
-and $\sigma_{honest}=3.00$.
+\item for scarce resources $M=4$ the best distribution comes 
+with honesty because $\mu_{honest}=20.00$ and $\sigma_{honest}=3.0$.
 \item for abundant resources the honest and silence strategies are nearly equal, 
-but with silence the variance is bigger $\sigma_{silence}=4.11)\sigma_{honest}=3.27$.
-\item for abundant resources and any percentage of cheaters the honest strategy 
-has the larger mean $\mu_{honest}=18.3$ and a comparable variance.
+but with silence the variance is bigger $\sigma_{silence}=4.11$ vs $\sigma_{honest}=3.27$.
+\item for abundant resources the honest strategy 
+has the larger mean $\mu_{honest}=20.10$ and a comparable variance with the other cases.
 \end{itemize}
 
 
@@ -887,7 +890,9 @@ parameter space, this property is generally known as robustness to variation.
 If the number of agents are changed during simulation the system reacts promptly
 and stabilize to a new state. In Fig.\ref{fig:agentAdd} seekers are stabilised
 in the range $4\pm1$, when 6 more agents are added at time 400,
-seekers stabilize again in the range $7\pm1$
+seekers stabilize again in the range $7\pm1$.
+Table \ref{tab:stability} contains a summary of the system reaction to different
+sets of disturbances for 100 simulations.
 
 \begin{figure}[htb]
 \begin{centering}
@@ -899,6 +904,28 @@ after 400 seconds.\label{fig:agentAdd}}
 }
 \end{centering}
 \end{figure}
+
+\begin{table}
+%% increase table row spacing, adjust to taste
+\renewcommand{\arraystretch}{1.3}
+\caption[System stability for variation of agent population]{
+Table summarising system stability to different disturbances
+for 100 simulation runs.
+Each cell contains the settling time and the number of seekers after
+the addition of $n$ agents at time step 400.\label{tab:stability}}
+\begin{center}
+\begin{tabular}{@{}cccc@{}}
+\hline
+\hline
+Ratio $N/M$ & 20:4 & 20:10 & 20:18\\
+\hline
+After adding 4 agents & 50 3 $\pm2$ & 50 6 $\pm2$& 50 7 $\pm2$\\
+\hline
+After removing 4 agents & 65 7 $\pm2$& 65 9 $\pm2$& 65 10 $\pm2$\\
+After adding 10 agents & 76 2 $\pm2$& 76 3 $\pm2$& 76 5 $\pm2$\\
+\end{tabular}
+\end{center}
+\end{table}
 
 This property indicates that the system is robust to a variation in the number
 of agents: the system will adjust automatically to the new equilibrium with a certain
@@ -937,14 +964,14 @@ interpretation of how equilibrium may arise. Reinforcement models for MAS suffer
 \end{enumerate}
 This problem is crucial in MAS: when an agent is learning the value of its actions
 in the presence of other agents, it is learning in a non stationary environment.
-In \citep{Qlearning-MAS} a novel exploration strategy, for
+In \citet{Qlearning-MAS} a novel exploration strategy, for
 the Q-algorithm applied in a predator-prey game to obtain convergence, is introduced.
 Unfortunately the cost of communication in their model is very expensive,
 so they discuss only the case without communication.
 Our learning rule ICO, is unsupervised and is computationally efficient (since it does not rely on states)
 and inspired on the evidence that organism tends to maintain a weak homoeostasis
 with the environment as demonstrated by \citet{McFarland93}.
-In \citep{tan97multiagent} Q-learning is applied in a predator-prey game,
+In \citet{tan97multiagent} Q-learning is applied in a predator-prey game,
 where agents cooperate in different ways. It is interesting to analyse the
 communication method called sharing sensation. The model is composed of 1 hunter,
 1 prey and a scouting agent. At each step, the scout sends its action and sensation
@@ -973,7 +1000,7 @@ develop individual and social/communication skills. A particular evolved behavio
 resembles our system differentiation: ``a differentiation of the modalities with
 which communication is regulated (... e.g. specialised asymmetrical interaction
 forms in which one robot acts as a speaker and one robot acts as an hearer)''.
-In \citep{EmergenceCommMas} the evolutionary adaptivity of RNNs to
+In \citet{EmergenceCommMas} the evolutionary adaptivity of RNNs to
 varying environmental conditions, such as the number of interacting robots is studied.
 In my model the system specializes in a group that gets the food and distributes it (seekers) and
 the other one (parasites) collects it.

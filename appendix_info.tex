@@ -16,7 +16,7 @@ a random variable $X$ with probability mass function $p(x)$ is given by:
  L(C)=\sum_{x\in X}p(x)l(x)
 \end{equation}
 where $l$ is the length of the codeword associated with x.
-Then an optical code $L^*$ is bounded by:
+Then an optimal code $L^*$ is bounded by:
 \begin{equation}
  H_A(X)\leq L^* < H_A(X)+1
 \end{equation}
@@ -43,7 +43,7 @@ variables and is sensitive to \textbf{any} relationship between 2 variables,
 not only linear dependencies.
 The mutual information of two discrete variables, X and Y, can be expressed as:
 \begin{equation}
-MI(X,Y)=-\sum_{i=0}^{N_{X}} \sum_{j=0}{N_{Y}} p(x_{i},y_{i}) log_2 \frac {p(x_{i}p(x_{j}))}{p(x_{i},y_{j})}
+MI(X,Y)=-\sum_{i=0}^{N_{X}} \sum_{j=0}^{N_{Y}} p(x_{i},y_{i}) log_2 \frac {p(x_{i}p(x_{j}))}{p(x_{i},y_{j})}
 \end{equation}
 The mutual information can also be expressed as:
 \begin{equation}
@@ -62,13 +62,13 @@ MI_{true}\approx MI_{observed} - \frac{P_{X}P_{Y}-P_{X}-P_{Y}+1}{2 N} \pm \sigma
 where $P_{X}$ and $P_{Y}$ are the number of states in which X and Y are discretised,
 N is the size of the time series (supposed equally long), and $\sigma_{I}$ is the
 ``logarithm in base two'' corrected standard deviation of the estimate
-(see \citep{Roulston1999:Estimation} Eq.42).
+as explained in \citep{Roulston1999:Estimation} Eq.42.
 A good heuristic is to choose $N>3 P_{X} P_{Y}$.
 Mutual information is an index of statistical dependence and does not indicate causal
 relationships or directional information transfer.
 A candidate measure for the temporal dependence is then:
 \begin{equation}
-MI(\tau)=MI(X_{t},Y_{t-\tau})=H(X_{t})+H(Y_{t-\tau}-H(X_{t},Y_{t-\tau})) \geqslant 0
+MI(\tau)=MI(X_{t},Y_{t-\tau})=H(X_{t})+H(Y_{t-\tau})-H(X_{t},Y_{t-\tau})) \geqslant 0
 \end{equation}
 where $\tau$ denotes the delay. It is common practice to compute the mutual
 information for different taus $\tau_{i}$ and then find the $\max\limits_{\tau_i} MI(\tau_i)$.

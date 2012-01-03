@@ -1,7 +1,7 @@
 \section{Introduction: information flow in Q-learning \label{Chapter7:Q learning application}}
 
 This Section applies the information flow to an artificial agent
-which uses reinforcement learning for an an obstacle avoidance task.
+which uses reinforcement learning for an obstacle avoidance task.
 The purpose of the experiment is to prove that the same principles introduced
 in the previous chapters apply to such a different on-line learning principle.
 I will introduce first reinforcement learning, then describe the
@@ -51,14 +51,14 @@ terms of future rewards.
 Thus, the value function $V^{\pi}(s)$, is the expected return when starting in
 $s$ and following $\pi$ thereafter:
 \begin{equation}
- V^\pi(s)=E{R_t|s_t=s}
+ V^\pi(s)=E{(R_t|s_t=s)}
 \end{equation}
 $V^{\pi}(s)$ is the state-value function for policy $\pi$.
 There is also the complementary function $Q^\pi$ called the action-value function
 for policy $\pi$: $Q^\pi$ is the the expected
  return starting from s, taking the action a, and thereafter following policy $\pi$:
 \begin{equation}
- Q^\pi=E_\pi{R_t|s_t=s,a_t=a}
+ Q^\pi=E_{\pi}({R_t|s_t=s,a_t=a})
 \end{equation}
 Reinforcement learning methods specify how the agent changes its policy
 as a result of its experience.
@@ -211,7 +211,7 @@ through three different stages:
 \begin{itemize}
  \item in $T_0=[0,1\cdot 10^6]$ the robot is purely reactive and does not learn by
 imposing $\lambda=0.0$
- \item in $t=(1\cdot  10^6, 2 \cdot  10^6]$ the robot fully learning by
+ \item in $t=(1\cdot  10^6, 2 \cdot  10^6]$ the robot is fully learning by
 imposing $\lambda=0.8$
  \item in $T_\infty=(2 \cdot  10^6, 4 \cdot  10^6]$ the robot has learned from the previous
 section and now uses his weights $w$ to avoid the obstacles.
@@ -309,7 +309,6 @@ $\underbrace{Order}_ n$& $\underbrace{MI(X,Z)}_{T_0}$& $\underbrace{MI(Y,Z)}_{T_
 \end{tabular}
 \caption[Information flow for avoidance robot]{Table containing the information flow when
 the robot is avoiding the obstacles without random selection of the actions. \label{tab:Qlearning:infoflowtable-worandom}}
-
 \end{table}
 
 \begin{table}[htbp]
@@ -328,8 +327,61 @@ $\underbrace{Order}_ n$& $\underbrace{MI(X,Z)}_{T_0}$& $\underbrace{MI(Y,Z)}_{T_
 \end{tabular}
 \caption[Information flow for avoidance robot]{Table containing the information flow when
 the robot is avoiding the obstacles with random selection of the actions at 10\%. \label{tab:Qlearning:infoflowtable-wrandom}}
-
 \end{table}
+
+\begin{table}[htbp]
+\addtolength{\tabcolsep}{-2pt}
+\centering
+\begin{tabular}{| c|| c| c | c| c | c | c |}
+\hline
+$\underbrace{Order}_ n$& $\underbrace{MI(X,Z)}_{T_\infty / T_0}$& $\underbrace{MI(Y,Z)}_{T_\infty / T_0}$ & $R_{\infty}/ T_0$ \\
+\hline
+4 & 9.40 $\pm 0.13$& 0.25 $\pm 0.13$ & 0.62 $\pm 0.2$\\
+\hline
+5 & 10.50 $\pm 0.13$& 0.23 $\pm 0.15$ & 0.62 $\pm 0.2$\\
+\hline
+6 & 9.20 $\pm 0.13$& 0.24 $\pm 0.12$ & 0.62 $\pm 0.2$\\
+\hline
+\end{tabular}
+\caption[Information flow ratios]{Table containing the information flow for 100 simulations
+ without random selection of the actions. 
+Each value in the table contains the average ration and plus,minus the standard deviation of
+the ratio before and after learning.
+\label{tab:Qlearning:infoflowtable-worandom-stat}}
+\end{table}
+
+\begin{table}[htbp]
+\addtolength{\tabcolsep}{-2pt}
+\centering
+\begin{tabular}{| c|| c| c | c| c | c | c |}
+\hline
+$\underbrace{Order}_ n$& $\underbrace{MI(X,Z)}_{T_\infty / T_0}$& $\underbrace{MI(Y,Z)}_{T_\infty / T_0}$ & $R_{\infty}/ T_0$ \\
+\hline
+4 & 2.12 $\pm 0.13$& 0.66 $\pm 0.12$ & 0.61 $\pm 0.2$\\
+\hline
+5 & 38.54 $\pm 0.14$& 0.58 $\pm 0.15$ & 0.61 $\pm 0.2$\\
+\hline
+6 & 1.78 $\pm 0.13$& 0.62  $\pm 0.11$ & 0.61 $\pm 0.2$\\
+\hline
+\end{tabular}
+\caption[Information flow ratios]{Table containing the information flow for 100 simulations
+ with random selection of the actions. 
+Each value in the table contains the average ration and plus,minus the standard deviation of
+the ratio before and after learning.
+\label{tab:Qlearning:infoflowtable-wrandom-stat}}
+\end{table}
+
+The Tables \ref{tab:Qlearning:infoflowtable-worandom-stat} and \ref{tab:Qlearning:infoflowtable-wrandom-stat}
+ contain the statistical summary for 100 simulations computing the following values:
+\begin{itemize}
+ \item average and standard deviation of the measure $MI(X,Z)_{T_0}/ MI(X,Z)_{T_\infty}$
+ \item average and standard deviation of the measure $MI(Y,Z)_{T_0}/ MI(Y,Z)_{T_\infty}$
+ \item average and standard deviation of the measure $R_{T_0} / R_{T_\infty}$
+\end{itemize}
+The two cases with and withouth random selection of actions do not show a big
+difference in the reward, however in the case with random selection the mutual
+information flow is greater for the predictive pathway, suggesting that
+increasing exploration leads to a larger exploitation of the distal signal.
 
 \subsection{Discussion}
 The application of the information flow to this simple case of obstacle avoidance,
@@ -342,7 +394,7 @@ which is programmed to use the reflex stimuli as a sort of wired behaviour.
 The Q-learning does not have any hard wired behaviour but only a random
 initialisation of the weights in the neural network and thus there is no preference
 between the stimuli.
-After learning the algorithm it discovers that is not a good idea to react
+After learning the algorithm discovers that is not a good idea to react
 when the obstacle is too close even though the rewards are identical for
 a close or far collision.
 Although the computation of the information flow shows a clear development of 

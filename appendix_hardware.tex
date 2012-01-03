@@ -492,7 +492,7 @@ where $C_{i}$ is the computation time, and $T_{i}$ is the release period (with d
 \lim_{n \rightarrow \infty} n(\sqrt[n](2)-1)=\ln(2) \approx 0.693147
 \end{equation}
 So a rough estimate is that RMS in the general case can meet all the deadlines if CPU utilization is 69.3\%. The other 30.7\% of the CPU can be dedicated to lower-priority non real-time tasks. It is known that a randomly generated periodic task system will meet all deadlines when the utilization is 85\% or less, however this fact depends on knowing the exact task statistics (periods, deadlines) which cannot be guaranteed for all task sets.
-In my implementation in order to calculate $U$, $C_{1,2,3,4}$ must be computed using the Timer of the controller: execute every singular task individually and time it. This work will be done as described in the Gantt workload diagram in the next week.
+In my implementation in order to calculate $U$, $C_{1,2,3,4}$ must be computed using the Timer of the controller: execute every singular task individually and time it.
 \begin{figure}[htbp]
 \begin{center}
 \includegraphics[scale=0.4]{figures/nxtosek/TaskLejos.eps}

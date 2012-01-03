@@ -288,16 +288,18 @@ double contingency whereby each agent is disturbing the other as shown in Figure
 Each agent is nested in multiple closed loops, because it receives the outputs of 
 all the other agents in the environment via the disturbance summation with the 
 environment itself.
-Double contigency happens when all agents are learning continuously with, for example
-ICO \citep{Porr2006ICO} or ISO \citep{PorrNecoISO2003} learning , from each other.
+Double contigency happens when all agents are learning continuously from each other.
 This learning loop was defined by Luhmann as the problem of double contigency:
 an open ended interaction process where each agent try to predict the other.
+First, contingency arises because agents are complex systems that are ''black-boxes``
+ for each other. An agent will never know exactly what the other will do next.
 A good metaphor is the game of chess where each player try to anticipate its opponent 
 moves in the future: in a way the chess game is a sort of communicative process between
 the two players which eventually comes to an end when the desired state (check mate) 
 is achieved.
-This dynamic process constitutes for Luhmann the necessary base for social system generation.
-It is possible that learning will never stabilise due to such multiple nested
+This dynamic process constitutes for Luhmann the necessary base for social system generation:
+the problem of double contingency is solved by mutual expectations.
+It is possible also that learning will never stabilise due to such multiple nested
  closed loops.
 
 \begin{figure}[htbp]
@@ -467,13 +469,13 @@ based on expectations.
 The starting point for implementing a simulation which uses Luhmann's communication approach, 
 was developed by \citet{SocialOrderScalability} which implemented the situation of
 double contingency as the origin of social order.
-The results produced by this approach were very promising
+The results produced by this approach were very promising.
 
 
 \subsection{Methods}
 He started from a dyadic social interaction and then expanded it to a multi agent interaction.
 Social order appears in the dyadic social interaction and also in the multi agent situation,
-but only in certain conditions that we are going to explain.
+but only in certain conditions that I am going to explain.
 
 The double contingency problem exists when a dyad composed of 2 entities (ego and alter) meet each other:
 each actor has a double role of knower and object of cognition.
@@ -545,7 +547,7 @@ of view: a system view and an individual view.
 
 At the individual level we can re-use the EC function to compute how certain
 an agent is when it selects a message.
-The average certainty $O_AV$ has a high value when certainty is high and thus
+The average certainty $O_{AV}$ has a high value when certainty is high and thus
 indicates high social order.
 
 At the system level we can measure:
@@ -565,7 +567,7 @@ interaction because they are required to develop mutually predictive trust,
 this closure indicates a first order separation degree between a system and its environment.
 
 \subsection{Results}
-For the dyadic case social order as measured either by $N_D$ and $O_AV$ emerges
+For the dyadic case social order as measured either by $N_D$ and $O_{AV}$ emerges
 for any parameter setting in $\alpha,\gamma, N$ with stable activity patterns
 following robust to small disturbances.
 Measuring social integration for the dyadic case is trivial because there are
@@ -576,7 +578,7 @@ If we have a population of few $M$ agents and we choose a random selection strat
 to pair interactions,
 social order is high in terms of $O_P$ because is possible to predict each agent's 
 reaction with a high degree of accuracy.
-However at the individual level $O_AV$ is low because each agent is using the
+However at the individual level $O_{AV}$ is low because each agent is using the
  same memory to predict interactions with different agents.
 As a consequence increasing $M$ decreases the $O_P$ system order.
 
@@ -604,6 +606,7 @@ The mentioned issues were the main drives for the model described in this thesis
 if such a social system needs to be implemented in the real world, the agents 
 or robots needs to have a separate layer, one for the actions in the environment and one
  for the communicative events which are essentially symbolics.
+
 Another desired property is the use of analogic based controllers which can 
 then be implemented in very fast reactive electronic controllers or also 
 digitized and implemented on a micro controller.

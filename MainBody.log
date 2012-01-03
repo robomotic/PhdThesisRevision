@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.1415926-1.40.10 (TeX Live 2009/Debian) (format=latex 2011.4.7)  19 SEP 2011 14:16
+This is pdfTeX, Version 3.1415926-1.40.10 (TeX Live 2009/Debian) (format=latex 2011.4.7)  2 JAN 2012 16:11
 entering extended mode
  %&-line parsing enabled.
 **MainBody.tex
@@ -1142,4 +1142,4 @@ Here is how much of TeX's memory you used:
  28 hyphenation exceptions out of 8191
  34i,17n,58p,1090b,1574s stack positions out of 5000i,500n,10000p,200000b,50000s
 
-Output written on MainBody.dvi (234 pages, 809456 bytes).
+Output written on MainBody.dvi (234 pages, 809444 bytes).
