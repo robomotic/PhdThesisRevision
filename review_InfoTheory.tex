@@ -7,11 +7,11 @@ It will be used extensively for the computation of information measures in the
 following sections.
 
 \subsection{Introduction: closed loop controllers}
-In control theory there are two main approaches: open loop control and closed
-loop control. Open loop control is possible only when the law or transfer of the
+In control theory there are two main approaches: feed-forward and feedback control. 
+Feed-forward control is possible only when the law or transfer of the
  process I want to control is known. Natural systems are very hard to control
 using the open loop approach because they are dynamic non-linear processes and
-their parameters are subjected to noise. Closed loop control does not require
+their parameters are subject to noise. Feedback control does not require
 the full knowledge of the process and is based on the principle of action and reaction.
 Adaptive controllers change their parameters according to the observed parameters of
 the process to control: most biological organisms use the control loop approach.
@@ -19,18 +19,20 @@ The daily process of maintaining our body temperature is an example of such a sy
 Until today cybernetics has provided a lot of adaptive controllers for the closed loop:
 PID\nomenclature{PID}{Proportional Integration Derivative control} controllers
 (see Figure \ref{Figure:maxcorr:PID}) and the Kalmann filter to mention the most important.
+
 \begin{figure}[ht]
   \begin{center}
     \includegraphics[width=0.6 \textwidth]{maxcorr/InfoAgentTheory-2.eps}
-    \caption[Classical PID controller]{
-	     A classical PID controller described only by the proportional gain.
+    \caption[Classical proportional controller]{
+	     A classical proportional controller described only by the gain $K$.
 	      \label{Figure:maxcorr:PID}}
   \end{center}
 \end{figure}
 Artificial intelligence (AI) branched from cybernetics and used what was available
 from the previous approaches, but it realised that designing artificial agents
 for the real world using the previous
-approaches was not possible: agents must be bio-inspired to live in our world.
+approaches was not possible: agents should use biological inspired behaviour to
+operate in the real environment without any harm for other persons or entities.
 Hebbian learning, neural networks, Q-learning, fuzzy logic and many others are
 nowadays used in many artificial agent systems. However using these adaptive
 controllers raises a big concern: how can I assess the performance of the agents?
@@ -43,7 +45,7 @@ output based measures as I will demonstrate in Section \ref{Chapter5:Max Corr In
 Input contains the output of the agent through the environment,
 therefore if the agent is learning, it means it is changing the inputs to achieve
 a desired state (for example avoiding a painful signal).
-This approach was introduced by Gibson \citep{Gibson1955:learning} who rejected
+This approach was introduced by \citet{Gibson1955:learning} who rejected
 cognitivism and behaviourism for a more direct realism. 
 He argued that organisms perform only input control, one of his most radical
  approach was the concept of ``affordances'' whereby the objects of our environment
@@ -56,8 +58,7 @@ the general model is described in Figure \ref{Figure:maxcorr:Gibson}.
   \begin{center}
     \includegraphics[width=0.6 \textwidth]{maxcorr/InfoAgentTheory-4.eps}
     \caption[Gibson cybernetic approach]{
-	     Gibson model of perception: the agent can only act and sense
-	     on a sub-dynamic of the environment.
+	     Model of perception as described by Gibson in 1955: the agent performs input control.
 	     \label{Figure:maxcorr:Gibson}}
   \end{center}
 \end{figure}
@@ -77,10 +78,10 @@ controlled process.
   \end{center}
 \end{figure}
 
-In fact the traditional notion of Shannon entropy was extended to closed loop
+In fact the traditional notion of Shannon entropy was extended by \citet{Touchette2004} to closed loop
 systems by considering the sensory-motor loop as a communication channel which 
 extends in time to propagate information from and to the environment.
-For example \citet{Touchette2004} revisited the idea of a controller as
+For instance \citet{Touchette2004} revisited the idea of a controller as
  an actuation channel that transforms input states to desired output states.
 He also gives necessary and sufficient conditions for a system to be perfectly
  controllable and perfectly observable in terms of information and entropy.
@@ -166,29 +167,29 @@ when the organism is removed from the control law.
 \label{fig:conclusion:polani}}
 \end{figure}
 
-A more general approach was introduced by \citet{LungarellaInformation} which
+A more general approach was introduced by \citet{LungarellaInformation} who
 used several information based metrics to follow the learning curve of the robot
 in a visual foveation task: the robot reduces the entropy around the centre of focus.
-\citet{LungarellaInformation} describes a closed loop system as a system which
+\citet{LungarellaInformation} describe a closed loop system as a system that
 decreases the entropy, increases the information structure (statistical regularity),
 decreases the complexity.
 
 A similar approach was used by \citet{Ay2008:PredInformation} to modify the proportional
 coefficient in the controller's function to allow an optimal exploration strategy
-of an environment with obstacles: the mutual information between paste and future
+of an environment with obstacles: the mutual information between past and future
 is used to tune the gain $c$ so that the maximum of the predictive information defines the best exploratory
 behaviour.
 
-The main contribution earlier than Tishby to the cybernetic theory of controllers
-was produced by Ashby in 1956 and it will be used heavily in this thesis.
-Therefore the next section contains an overview of his framework.
+The next section contains an overview of Ashby's framework which will be used in this thesis.
 
 \subsection{Regulation and entropy \label{Appendix:Ashby}}
-
+The main contribution earlier than Tishby to the cybernetic theory of controllers
+was produced by Ashby in 1956 and it will be used heavily in this thesis.
 \citet{Ashby1956:IntroCybernetics} defined clearly that the
  essential feature of a good regulator is to block the flow of variety from
 disturbances to essential variables. Ashby uses variety precisely as the number
- of different states a variable can be and is equivalent to Shannon's entropy.
+ of different states a variable can be and so it relates to Shannon's entropy:
+if a variable has a variety of 4 states, then it can be described with 2 bits in terms of Shannon's entropy.
 Thus variety and entropy can be used alternatively.
 I use the same notation by Ashby so that it will be more clear how those concepts
 can be applied successfully to predictive learning:
@@ -210,7 +211,7 @@ Fig.\ref{fig:infotheory:ashby-model}(B) describes how the disturbance is absorbe
 \begin{figure}[!htbp]
 \begin{center}
  \includegraphics[width=0.6 \textwidth]{ashby/figure-1}
-\caption[Ashby requisite variety]{Ashby law of requisite variety applied 
+\caption[Ashby requisite variety]{Ashby's law of requisite variety \citep{Ashby1956:IntroCybernetics} applied 
 to the open loop case (A),(B) and the closed loop case (C),(D).
 \label{fig:infotheory:ashby-model}
 }
@@ -274,7 +275,7 @@ In the rest of this section, the original formulation of Requisite Variety is
 introduced.
 
 \subsection{The law of requisite variety}
-Please note that with the same notation D,E,R,T,F in the diagrams we refer to
+Please note that with the same notation D,E,R,T,F in the diagrams, I refer to
  the determinate or indeterminate (Markovian) closed transformation whose
 allowed states are present in the corresponding domains.
 \textbf{Definition of regulation:} an organism is a perfect regulator if
@@ -304,9 +305,11 @@ the same variety as the disturbance.
 \end{quotation}
 
 \subsection{First law of requisite variety}
-Let $D,R$ and $E$ are three random variables.
-Hypothesis: when $R$ is given, the entropy of E cannot be less then that of D: $H(E|R)\geq H(D|R)$.
-Then the minimum entropy of E is $H(D)+H(R|D)-H(R)$:
+Let $D,R$ and $E$ be three random variables.
+\textbf{Hypothesis:} when $R$ is given, the entropy of $E$ cannot be less then that of D: $H(E|R)\geq H(D|R)$.
+Then the role of the organism is to achieve maximum control over its internal variable E,
+thus reducing the uncertainty.
+The minimum possible regulation that can be achieved is $H(D)+H(R|D)-H(R)$:
 \begin{equation}
 H(E)\geq H(D)+H(R|D)-H(R) \label{variety:eq:minh}
 \end{equation}

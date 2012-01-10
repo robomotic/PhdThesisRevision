@@ -1,3 +1,3 @@
 #!/bin/sh
-makeindex MainBody.nlo -s nomencl.ist -o MainBody.nls
+makeindex MainBodyPreViva.nlo -s nomencl.ist -o MainBodyPreViva.nls
  

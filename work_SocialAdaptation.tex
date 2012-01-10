@@ -73,7 +73,7 @@ by the corresponding sensor type (type can be avoid,food or sated).
 The potential field $G_{j,type}$ is described by the equation of a circle which is centered
 on $x_0,y_0$ with a $r$ radius:
 \begin{equation}
-(x-x_0)^2+(y-y_0)^2=r^2 \label{eq:circle}
+G_{j,type}:(x-x_0)^2+(y-y_0)^2=r^2 \label{eq:circle}
 \end{equation}
 Every geometric point $x,y$ including a sensor or object which falls inside 
 the circle $G_{j,type}$ assumes a unitary value.
@@ -93,7 +93,7 @@ it is unsupervised and performs a confounded correlation between a predefined re
 ($x_{0}$) and a reflex predicting signal ($x_{1}$). Hence, this learning
 algorithm identifies and exploits causalities between temporal
 sequential signals.
-The ICO learning block was chosen because it is one of the simplest,fastest and computationally 
+The ICO learning algorithm was chosen because it is one of the simplest,fastest and computationally 
 efficient approach to temporal learning.
 It can also be easily implemented in analogic and digital systems without any
  particular modifications.
@@ -103,6 +103,7 @@ It can also be easily implemented in analogic and digital systems without any
 \includegraphics[scale=0.5]{figures/socialadapt/ico.eps}
 \caption[Agent learns with the ICO learning]{Figure (a) shows the ICO learning basic
 block composed by 2 inputs $x_{0},x_{1}$ filtered by $h_{0},h_{1}$ and the output $v$.
+The reflex is $x_{0}$ with a fixed weight and the predictor is $x_{1}$ with a variable weight.
 Figure (b) shows the weight change of $w_{1}$ during time. At the beginning $w_{1}=0$,
 then for 5000 simulation steps $x_{1}$ anticipates $x_{0}$ and the $w_{1}$ grows until 1.0.
 After 5000 simulation steps reflex is suppressed $x_{0}=0$ and $w_{1}$ stabilises to $1 \cdot 10^{-3}$.
@@ -145,7 +146,7 @@ The weight change is dependent on the derivative of the reflex input
 signal $u_{0}$, the input signal $u_{1}$ and a
 learning rate $\mu$. The
 learning rule has been shown to be useful for avoidance and attraction
-mechanisms and has fast and stable convergence.
+mechanisms and has fast and stable convergence \citep{Porr2006biosys}.
 
 
 \subsection{Methods: agent controller}
@@ -159,13 +160,13 @@ if inputs are absent. Rectangular blocks labelled with L,R are low pass
 filters, with parameters $F,Q$ referred to equations \ref{eq:F},\ref{eq:Q}.
 Synaptic weights of the ICO block in Fig. \ref{fig:ico}(a) are labelled with
 $W$ capital letter and two pedex that indicate the weight type
-(predict is learned and reflex is fixed) and the synapse position (left,right).
+(dynamical for the predictor and fixed for the reflex) and the synapse position (left,right).
 ICO neurons have recurrent synaptic connections, labelled as
 $W_{R2L},W_{L2R},W_{selfR},W_{selfL}$ to implement a hysteresis effect,
 which causes the controller to not instantly follow signals (as in \citealt{Hulse2004,Paseman2002}).
 It means reactions on an incoming signal are time shifted. This is useful to enable agents to escape from acute angles: if
 an agent incurs in an concave acute angle and has not a hysteresis mechanism,
-will get stuck inside, turning left and right alternatively.
+will generate a closed trajectory (loop), turning left and right alternatively.
 
 \subsection{Methods: avoidance behaviour}
 Agents and walls are obstacles. Agents produce obstacle

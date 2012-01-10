@@ -125,7 +125,7 @@ ReadWrite=true
 
 [item:MainBodyPreViva.tex]
 archive=true
-column=19
+column=141
 encoding=UTF-8
 highlight=LaTeX
 line=230
@@ -145,22 +145,22 @@ order=1
 
 [item:bayesmodel.bib]
 archive=true
-column=14
+column=18
 encoding=UTF-8
 highlight=BibTeX
-line=15
+line=1
 mode=BibTeX
-open=true
+open=false
 order=2
 
 [item:closedloop.bib]
 archive=true
-column=15
+column=67
 encoding=UTF-8
 highlight=BibTeX
-line=380
+line=471
 mode=BibTeX
-open=true
+open=false
 order=5
 
 [item:economy.bib]
@@ -175,10 +175,10 @@ order=-1
 
 [item:embodiment.bib]
 archive=true
-column=17
+column=27
 encoding=UTF-8
 highlight=BibTeX
-line=402
+line=408
 mode=BibTeX
 open=false
 order=4
@@ -205,23 +205,23 @@ order=3
 
 [item:infotheory.bib]
 archive=true
-column=47
+column=0
 encoding=UTF-8
 highlight=BibTeX
-line=325
+line=148
 mode=BibTeX
-open=true
+open=false
 order=1
 
 [item:isgroup.bib]
 archive=true
-column=15
+column=8
 encoding=UTF-8
 highlight=BibTeX
-line=225
+line=16
 mode=BibTeX
 open=true
-order=6
+order=1
 
 [item:limbic.bib]
 archive=true
@@ -255,12 +255,12 @@ order=-1
 
 [item:socialmodelling.bib]
 archive=true
-column=35
+column=15
 encoding=UTF-8
 highlight=BibTeX
-line=44
+line=127
 mode=BibTeX
-open=true
+open=false
 order=4
 
 [item:swarm.bib]
@@ -270,11 +270,11 @@ encoding=UTF-8
 highlight=BibTeX
 line=46
 mode=BibTeX
-open=true
+open=false
 order=3
 
 [view-settings,view=0,item:MainBodyPreViva.tex]
-CursorColumn=19
+CursorColumn=141
 CursorLine=230
 
 [view-settings,view=0,item:appendix_info.tex]
@@ -282,28 +282,28 @@ CursorColumn=52
 CursorLine=70
 
 [view-settings,view=0,item:bayesmodel.bib]
-CursorColumn=14
-CursorLine=15
+CursorColumn=18
+CursorLine=1
 
 [view-settings,view=0,item:closedloop.bib]
-CursorColumn=15
-CursorLine=380
+CursorColumn=67
+CursorLine=471
 
 [view-settings,view=0,item:embodiment.bib]
-CursorColumn=17
-CursorLine=402
+CursorColumn=27
+CursorLine=408
 
 [view-settings,view=0,item:hebb.bib]
 CursorColumn=15
 CursorLine=1903
 
 [view-settings,view=0,item:infotheory.bib]
-CursorColumn=47
-CursorLine=325
+CursorColumn=0
+CursorLine=148
 
 [view-settings,view=0,item:isgroup.bib]
-CursorColumn=15
-CursorLine=225
+CursorColumn=8
+CursorLine=16
 
 [view-settings,view=0,item:limbic.bib]
 CursorColumn=0
@@ -318,8 +318,8 @@ CursorColumn=19
 CursorLine=347
 
 [view-settings,view=0,item:socialmodelling.bib]
-CursorColumn=35
-CursorLine=44
+CursorColumn=15
+CursorLine=127
 
 [view-settings,view=0,item:swarm.bib]
 CursorColumn=0
