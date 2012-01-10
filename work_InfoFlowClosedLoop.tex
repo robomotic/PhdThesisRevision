@@ -297,7 +297,7 @@ Food disks contain a certain amount of food that is depleted
 when an agent finds it. The task is cooperative food foraging.
 The simulated agent is shown in Fig.\ref{methods:ico1}(B) and has also been used
 by \citet{Kulvicius2009:analysisdifferential}:
-it is a Braitenberg \citep{Braitenberg} vehicle with 2
+it is a Braitenberg \citep{Braitenberg84} vehicle with 2
 lateral wheels and 2 antennas. By default the agent drives straight forward,
 with speed $v=1$ units per time step. It has 2 sensor-pairs, near contact
 antennas and far contact antennas.
@@ -387,7 +387,7 @@ behaviour for the food disks (see Fig.\ref{fig:summary} (B)), whereas the second
 by a strong attractive behaviour for others agent with food (see Fig.\ref{fig:summary} (E)). 
 
 I estimate the $MI^4$ in stage 1 and stage 3 for every agent by using the corrected
- standard deviation formula \citep{Rouslton}. Before learning (Fig.\ref{fig:summary} (A),(D))
+ standard deviation formula \citep{Roulston1999:Estimation}. Before learning (Fig.\ref{fig:summary} (A),(D))
 the reflex-output loop predominates over the predictor-output loop for both the
 food attraction behaviour and the others attraction behaviour:
 \begin{eqnarray}
@@ -474,10 +474,10 @@ parasites mainly use the predictive information of the others who posses food.
 Thus, the conclusion is that predictive learning in a social context
 leads to the formation of subsystems. This can be demonstrated with the help of my approach.
 
-While \citealt{organizationInfo,polaniEmpowerment} and \citealt{LungarellaInformation,optionsOpen}
+While \citealt{organizationInfo,polaniEmpowerment} and \citealt{LungarellaInformation,Klyubin2008:KeepOptions}
 used the empowerment measure as a general cost function to optimise the agent's
 behaviour or evolution, I use it as the upper bound of the MI to measure the efficiency of the sensory-motor loop use.
-\citet{AyClosedLoop} uses an adaptive controller which maximises
+\citet{Ay2008:PredInformation} uses an adaptive controller which maximises
 the excess entropy (the mutual information
 between past and present) at the input side to achieve a working regime exploratory
 and sensitive to the environment.

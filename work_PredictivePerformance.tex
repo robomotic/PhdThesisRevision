@@ -63,7 +63,7 @@ the concept of information in these systems had to be revised
 
 The new information measure called 
 \textsl{Predictive Performance} is based on a previous work from
-\citet{Porr2005kyb} which showed
+\citet{RadicalConstruct} which showed
 that a predictive adaptive controller must increase the predictive
 information flow and reduce the reflex information flow.
 In essence the controller acts as a reactive system before learning and as an
@@ -209,15 +209,15 @@ Eq.\ref{AngleComputation}.
 
 \subsection{Methods: learning algorithm}
 
-The temporal sequence learning rule was used again for learning \citep{Porr06}. 
+The temporal sequence learning rule was used again for learning \citep{Porr2006ICO}. 
 The general scheme of such learning algorithm is presented in Fig.~\ref{PPmeasure:Figure2}~C. 
 
 Weights change according to an input-input correlation (ICO) rule :
 \begin{equation}
 \dot\rho_{i,j,k} = \mu u_{i,j,k} \dot{u}_0,~~~j>0,
 \end{equation}
-which is a modification of the isotropic sequence order (ISO) learning rule \citep{Porr03a}. 
-The behaviour of this rule and its convergence properties are discussed in \citep{Porr06}. 
+which is a modification of the isotropic sequence order (ISO) learning rule \citep{Porr2003b}. 
+The behaviour of this rule and its convergence properties are discussed in \citep{Porr2006ICO}. 
 The indices $i$ and $j$ denote the different pixels and the index
 $k$ is the filter number of the filter bank. 
 
@@ -233,7 +233,7 @@ The time delay $T$ between the predictive receptive field $x_{1,i,j}$ and
 the reflex $x_0^{L,R}$ depends on the
 speed of the robot and direction angle with respect to the
 curvature. As shown in older studies of
-\cite{Porr03a,Porr06}, the number of filters $K$ is not critical and
+\cite{Porr2003b,Porr2006ICO}, the number of filters $K$ is not critical and
 here $K=10$ was used. The simulated robot has a speed of $1~Unit/s$
 with filter coefficients $f_{k=1\ldots K}=0.1 k$, for the
 filter-bank in the $x_{1,i,j,k}$ pathway. The frequency of the $u_0 = h_0 * x_0$ 
@@ -1086,8 +1086,8 @@ on the weight development.
 
 \subsection{Discussion}
 
-The original Shannon's Information Theory \citep{Shannon1948} has been applied
-to closed loop systems in several studies like \citet{Ashby1956:IntroCybernetics,Tishby1999:InfoBottle,TouchetteLloyd2004:InfoApproachControl}.
+The original Shannon's Information Theory \citep{Shannon76} has been applied
+to closed loop systems in several studies like \citet{Ashby1956:IntroCybernetics,Tishby1999:InfoBottle,TouchetteLloyd2004}.
 The scope of my predictive performance measure is to unify the Ashby's original theory of requisite variety \citet{Ashby1956:IntroCybernetics}
 with the recent frameworks based on mutual information \citep{Tishby1999:InfoBottle} and Bayesian models of perception-action loop \citet{Klyubin2004:Organization,Klyubin2005:Empowerment,Klyubin2007:Representation,Klyubin2008:KeepOptions}.
 The Information Bottleneck \citep{Tishby1999:InfoBottle} is an information theoretic framework that finds concise
@@ -1098,7 +1098,7 @@ Building on this initial theoretical work, additional studies were done on
 closed loop-systems from an agent-perspective considering the information
  processing properties of such system in the context of what would be
  beneficial for the agent itself \citep{Klyubin2007:Representation,Klyubin2008:KeepOptions,Prokopenko2006:EvolveCoordination,
-Lungarella2005:MethodsInfo,LungarellaSporns2006:MappingFlow}.
+LungarellaInformationStructure,LungarellaSporns2006:MappingFlow}.
 An interesting agent-centric measure called ``empowerment'' was introduced by \citet{Klyubin2005:Empowerment,Klyubin2008:KeepOptions}.
 Empowerment is defined as the maximum amount of information that an agent could
 send from its actuators to its sensors via the environment, reducing in the simplest
@@ -1117,7 +1117,7 @@ the first is used to quantify the performance of a general adaptive controller
 whereas the second is used to drive the controller and at the same time to measure optimality.
 
 Some other studies are focusing specifically on adaptive closed loop systems \citep{Porr2006cf,Kulvicius2010:infomeasure,LungarellaSporns2006:MappingFlow}.
-\citet{Lungarella2005:MethodsInfo} has proven that for a saliency based attentional behaviour
+\citet{LungarellaInformationStructure} has proven that for a saliency based attentional behaviour
 -based on a PT camera- 
 the spatial mutual information increases and entropy decreases around the foveation point.
 The information measure was only computed for the visual input of the 
@@ -1133,7 +1133,7 @@ A similar approach was used by \citet{Der2008:PredictiveInfo,Ay2008:PredInformat
  of a mobile robot to its environment. The mobile robot used in their study was a purely 
 reflexive controller described by a parameter $c$ which was chosen to simulate
  different behavioural regimes and how the $PI$ was changing.
-Again this study is similar to \citet{Lungarella2005:MethodsInfo} because
+Again this study is similar to \citet{LungarellaInformationStructure} because
  is based on a reflex controller and considers only the input:
 the transfer entropy is computed between the visual input $S$ and the motor outputs
 $M$ for different robot implementations with and without learning.

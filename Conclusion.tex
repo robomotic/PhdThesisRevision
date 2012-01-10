@@ -65,7 +65,7 @@ that used information theoretic cost functions to optimise the agent's behaviour
 of the sensory-motor loop (empowerment) and discovers that to use memory efficiently they perform 
 compression as in Figure \ref{fig:conclusion:polani}.
 \item \citet{LungarellaInformation} uses mutual information to generate information structures by motor feedback.
-\item \citet{AyClosedLoop} maximises the excess entropy (the mutual information between past and present) 
+\item \citet{Ay2008:PredInformation} maximises the excess entropy (the mutual information between past and present) 
  of the agent's input thereby changing the controller's parameter to achieve a 
  working regime (exploratory and sensitive to the environment) for the robot.
 \end{itemize}
@@ -75,7 +75,7 @@ one used in this thesis:
 the predictive performance discussed in Section \ref{Chapter8:Predictive Performance}
 calculates the learning ability of a general adaptive controller
  based on the information flow.
-This is different from the other study by \citet{organizationInfo,LungarellaInformationStructure,AyClosedLoop} 
+This is different from the other study by \citet{organizationInfo,LungarellaInformationStructure,Ay2008:PredInformation} 
 which use the information flow as a reward signal for the agent to learn.
 Nevertheless there are compatible results that shows how the
 two approaches are complementary.
@@ -438,14 +438,15 @@ predictive information must extract from the sensory stream those features that
  are relevant for behaviour.
 Definition of learning: finding a generalised model that explains or describes
  a set of observations. Why generalised?
-Because we don't want to have an overfitted approximation of the data \citep{Vapnik1998:StatisticalLearningTheory}
+Because we do not want to have an overfitted approximation of the data: \citep{Vapnik1998:StatisticalLearningTheory}
  states that an animal can gain selective advantage not from its performance on the
  training data but only from its performance at generalisation.
 Learning a model is also equivalent to encoding the data produced by it \citep{Rissanen1989:Complexity},
 thus predicting and compressing are dual problems.
 Complexity is an intuitive property ascribed to physical systems like turbulent flows,
 ferromagnets materials etc...
-Complexity is not random. Kolmogorov complexity states that a true random string
+Complexity can be defined in two manners: intrinsic complexity and algorithimic complexity.
+The latter complexity was defined by and states that a true random string
  cannot be compressed and hence requires a long description \citep{Kolmogorov1965:InfoDefinition}, yet
  the physical process that generates this string may have a very simple description.
 Intuitively and from now on we refer to the complexity of the underlying process
@@ -467,7 +468,7 @@ and viceversa $P(x_{past}|x_{future})=P(x_{past})$, then we cannot make any pred
 the random guess is the best choice to predict the future. All predictions are
  probabilistic and so if the past tells us something about the future (and viceversa)
  we can use the conditional distribution of the future events on the past data:
-$P(x_{future}|x_{past})$. Where the density $P(x_future|x_past)$ has smaller
+$P(x_{future}|x_{past})$. Where the density $P(x_{future}|x_{past})$ has smaller
 entropy compared to the prior distribution $P(x_{past})$ means that there was
  a reduction in entropy and that the particular future event is more likely to happen.
 The average of this predictive information is defined as:
@@ -540,11 +541,13 @@ In the regime of infinite observation time $T\rightarrow \infty$, $I_{pred}(T)$ 
  \item grow as a fraction power law $H_1=h_1 + h_2 \cdot T^{\alpha}$.
 \end{itemize}
 The first possibility \textbf{$\lim_{T\to\infty}=h_1$}, means that no matter how
- long we observe, we gain only a finite amount of information
-The second possibility \textbf{$\lim_{T\to\infty}= k\cdot lnT$}, means that future
+ long we observe, we gain only a finite amount of information.
+
+The second possibility \textbf{$\lim_{T\to\infty}= k\cdot log(T)$}, means that future
  observations depend on far distant past ones: the model that generates the time
  series has a number of finite parameters. The coefficient of the divergence $k$
 counts the number of parameters of the model.
+
 The third possibility \textbf{$\lim_{T\to\infty} \propto T^{\alpha}$}, means that
 the underlying model has infinite parameters.
 Estimation of the sub-linear component can be achieved using non-linear regression
@@ -578,7 +581,7 @@ thus the learning curve is the difference between the actual code length and the
 \varLambda \equiv l(N)-l_{ideal}=\frac{\partial I_{pred}(N)}{\partial N}
 \end{equation}
 The learning curve is the derivative of the predictive information and quantifies the
-information learned so fare, if zero means that the optimal description code of the time series
+information learned so far, if zero means that the optimal description code of the time series
 is reached.
 
 \subsection{Entropy reduction measure in learning agents \label{Conclusion:PredictiveBayes}}
