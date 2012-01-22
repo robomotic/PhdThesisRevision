@@ -1,7 +1,7 @@
 \section{Summary of results}
 This thesis has developed a computational model for the implementation
 of artificial societies based on the theoretic foundation of Luhmann.
-The societies are based on software agents which learn simple avoidance
+The societies are based on software agents that learn simple avoidance
 and attraction behaviours by means of a biologically inspired Hebbian rule.
 The intra agent communication is based on a minimalist implementation
 of Luhmann's communication model and is simple enough to generate the self-organising
@@ -23,9 +23,7 @@ The strength of this approach compared to previous work is that it is
 an information based measure that can be applied to real agents
 as well as simulated agents.
 Previous models in literature are based on discretised models or strategic games.
-In the following section \ref{Conclusion:Discussion}, I am going to described the
-modelling choices used in the thesis.
-After the discussion there is a series of 
+In the following section \ref{Conclusion:Discussion}, there is a comparison of previous work done in terms of information measures.
 In section \ref{Conclusion:FutureWork} there is a description of possible extensions 
 of the social system model, a potential application and a better analysis based on
 model checking.
@@ -102,7 +100,7 @@ selection of each agent during the social division as also described in Section 
 Another interesting experimental work in the field of performance measure was produced 
 by \citet{Kulvicius2009:analysisdifferential} where the measure was the argument of the maximum 
 cross correlation between the antenna's events $\bar{\tau}$ in a fixed time window.
-\citet{Kulvicius2009:analysisdifferential} shows that for more complex environments $\vec{\tau}$ has a larger
+\citet{Kulvicius2009:analysisdifferential} show that for more complex environments $\vec{\tau}$ has a larger
 deviation compared to the case of more simple environments.
 
 The predictive performance can also be applied to reinforcement learning \citep{TD}
@@ -120,13 +118,25 @@ how is related to their weights' development.
 It also shows that performance cannot be based on the analysis of the weights
 but can only be reliably assessed via the predictive performance.
 
+An intuitive and potential extension of the predictive performance is to classify the 
+type of learning exploration or exploitation.
+So far I have only verified that the PP measure is normalised between 0 and 1,
+because in the second term I assumed that the information reflex flow before learning
+can be transferred totally to the information predictive flow after learning.
+However theoretically an organism which explores the environment could discover 
+new relationships from the environment thus increasing the information flow after learning.
+In this case one could say that if the $0 \leq PP \leq 1$ the agent is only exploiting the environment, whereas if the $PP \geq 1$ the organism is exploring the environment.
+I was expecting from the Q-learning experiment to achieve something similar, but due to simplicity of the task I did not observe $PP \geq 1$.
+A better designed task could prove this property and can certainly a reason for a future study.
+
+Section \ref{app:appendixWeight} ...
 The following section describes what modelling choices were done during the
 research and how they were justified.
 
 \subsection{Modelling choices}
 In the theory of social communication \citet{Luhmann95} and previous cybernetic
- experts asserted that an artificial agent or organism does not have mutual expectations
- from other entities except than other agents. An example which explains this condition is
+ experts asserted that an artificial agent or organism have mutual expectations
+ towards other agents. An example which explains this condition is
  the difference interaction between a person and an object or a person with another person.
 We have a direct expectation for an object because we know that it only adheres to the
  laws of gravity and we know that throwing it will make a parabolic trajectory in the air.
@@ -240,7 +250,7 @@ and a language module as proposed by Luc Steel.
 It is useful therefore to distinguish between:
 \begin{itemize}
  \item homogeneous societies: composed of identical entities, either artificial agents or humans
- \item inhomogeneous societies: composed of mixed entities like artificial agents and humans
+ \item heterogeneous societies: composed of mixed entities like artificial agents and humans
 \end{itemize}
 There was a period of excitement in research after science fiction writers envisioned
  the integration of artificial intelligence entities in human societies.
@@ -313,7 +323,7 @@ during time.
 
 The alternative is to use a reduced statistical model which captures
 only the relevant property of the symmetry breaking.
-An early study in this field was done by \citep{Hamann2010:modelsimmetry} which described
+An early study in this field was done by \citet{Hamann2010:modelsimmetry} who described
 the symmetry breaking in the honeybee behaviour and an emergent
 density classification task with a simple stochastic differential equation.
 
@@ -341,17 +351,18 @@ This sampling problem can cause what we define in daily life as “hallucination
 a (conscious) perception in the absence of a stimulus.
 In the absence of a stimulus, our predictive ability is reduced to zero and so everything
 can be plausible and ``real''.
-An extension of predictive learning models has been introduced by Schmidhuber \citep{Schuber2010:Novelty}:
+An extension of predictive learning models has been introduced by \citet{Schuber2010:Novelty}:
 \begin{quotation}
-What's interesting? Many interesting things are unexpected, but not all unexpected
+``What's interesting? Many interesting things are unexpected, but not all unexpected
 things are interesting or surprising. According to Schmidhuber's formal theory of
 surprise \& novelty \& interestingness \& attention, curious agents are interested
 in learnable but yet unknown regularities, and get bored by both predictable and
  inherently unpredictable things. His active reinforcement learners translate
 mismatches between expectations and reality into curiosity rewards, or intrinsic
 rewards for curious, creative or exploring agents which like to observe or create
-truly surprising aspects of the world, in order to learn something new.
-\end{quotation} \footnote{$http://www.idsia.ch/~juergen/interest.html$}
+truly surprising aspects of the world, in order to learn something new.''
+\end{quotation}
+
 Schmidhuber rejects the original notion of the Boltzmann/Shannon surprise formulation from the 
 early 1990s by posing two significant examples of uninteresting, unsurprising, boring data.
 A vision-based agent that always stays in the dark will experience an extremely
@@ -386,7 +397,7 @@ Imagine a cat observing a little mouse running in front of it, the cat will esti
  This is a well known probabilistic dilemma: when the organism needs to be reactive and when the organism 
  needs to learn?
 
- The Shannon information measure is a concave function of the distribution when
+ The Shannon probability measure is a concave function of the distribution when
 expressed as $\sum_p p\cdot log_2(p)$: $H(p)=0$ when $p=0$ or $p=1$.
  However the property is not valid if one only uses the logarithm as $\sum_p log_2(p)$ which is infinite at $p=0$.
  So the best choice which maximizes the information is 
@@ -438,7 +449,7 @@ predictive information must extract from the sensory stream those features that
  are relevant for behaviour.
 Definition of learning: finding a generalised model that explains or describes
  a set of observations. Why generalised?
-Because we do not want to have an overfitted approximation of the data: \citep{Vapnik1998:StatisticalLearningTheory}
+Because we do not want to have an overfitted approximation of the data: \citet{Vapnik1998:StatisticalLearningTheory}
  states that an animal can gain selective advantage not from its performance on the
  training data but only from its performance at generalisation.
 Learning a model is also equivalent to encoding the data produced by it \citep{Rissanen1989:Complexity},

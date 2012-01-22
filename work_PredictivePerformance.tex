@@ -9,23 +9,26 @@ This scalar value is called Predictive Performance.
 \subsection{Introduction to closed loop measures}
 In my research study, I formulated a novel closed loop information measure -
 called predictive performance - which quantifies the learning
-performance of a line following robot.  The robot is a classical
-Braitenberg vehicle (like the one described in Section \ref{Intro:Braitenberg}) 
+performance of a line following robot. The robot is a classical
+Braitenberg vehicle\nomenclature{Braitenberg Robot}{An automated mobile robot with differential driving} (like the one described in Section \ref{Intro:Braitenberg}) 
 which has 2 retinal inputs functioning as far
 sensors and 2 small sensors acting as reflexes. The robot learns to
 follow tracks of different complexity by developing a retinal field
-using temporal sequence learning (ICO).  I argue that measuring
+using temporal sequence learning (ICO). I argue that measuring
 only the retinal weights (input) or the angular motion (output)
 provides a wrong estimate about the robot's adaptation to the track
-curvature.  Thus an objective measure of the robot's performance
+curvature. Thus an objective measure of the robot's performance
 -track deviation- is compared against the retinal field map and
-against the predictive performance measure.  Simulations show that a
-robot with poor track performance has high retinal weights but a low
+against the predictive performance measure. Simulations show that a
+robot with poor track performance has low retinal weights and a low
 predictive performance. Whereas a robot with a good track
 performance has high retinal weights and high predictive
-performance.  Therefore the predictive performance is a subjective
+performance. 
+However a robot with a poor track performance could have high retinal weights ( I will explain why later),
+but the predictive performance will be low thus giving an objective measure of the performance.
+Therefore the predictive performance is a subjective
 measure of adaptation which reflects the objective performance of
-the robot.  The measure can be extended to other types of adaptive
+the robot. The measure can be extended to other types of adaptive
 predictive controllers.
 
 Information measures are usually defined for input/output systems
@@ -62,10 +65,10 @@ the concept of information in these systems had to be revised
 
 
 The new information measure called 
-\textsl{Predictive Performance} is based on a previous work from
-\citet{RadicalConstruct} which showed
-that a predictive adaptive controller must increase the predictive
-information flow and reduce the reflex information flow.
+\textsl{Predictive Performance} is motivated by the theoretical foundation of the 
+Radical Constructivism as described by \citet{RadicalConstruct} stating that
+everything that every organism has a model of the environment described
+by his neural activity.
 In essence the controller acts as a reactive system before learning and as an
 open loop forward system after learning. In contrast to the
 previous work my new measure is independent of the learning
@@ -262,7 +265,7 @@ set.
   discrete time series $x(k)$ from which I estimate the density
   $P(X)$ of the corresponding random variable $X$.
 \item a time series is an ordered sequence of symbols
-  $x(t)=\{x_i(0),... \}$ for $t \geq 0$
+  $x(t)=\{x(0),x(1),...,x(t) \}$ for $t \geq 0$
 \item the estimated entropy of a random discrete variable $X$ is
   identified by $H(X)$ and is measured in bits.
 \end{itemize}
@@ -270,12 +273,12 @@ I then identify my controller with the following variables and
 measures:
 \begin{itemize}
  \item $E_{0}$: random variable for reflex input
- \item $E_{1,i,j}$: random variable for predictive input
+ \item $E_{1,i,j}$: random variable for predictive input located at the retinal coordinate $i,j$
  \item $Z$: random variable for motor output
  \item $H( E_{0} ),H(E_{1}),H(Z)$: entropy of the random variables $E_0,E_1,Z$
  \item $I(X,Y)$= mutual information between variable $X$ and variable $Y$
  \item $MI^n(X,Y,\tau)$= mutual information of order $n$ between $X$ and 
-	the delayed version of $Y$ by factor $\tau$ (see section \ref{sec:MutualInfo} for more details)
+	the delayed version of $Y$ by factor $\tau$ (see Appendix \ref{sec:MutualInfo} for more details)
  \item $MI(X,Y)=MI(X,Y,\tau=1)$ 
 \end{itemize}
 
@@ -284,12 +287,12 @@ In the following subsections I am going to describe the different information me
 I show that these measures by themselves are not a good measure for the performance of 
 the agent but combined will provide a measure which reflects the performance of the 
 agent in a normalised way.
-Fisrtly the input information measures are introduced, secondly in the closed loop
- and finally the combination to form the Predictive Performance.
+Initially I introduce the information measures, then I apply it in the closed loop
+ and finally I combine to form the Predictive Performance.
 
 \subsubsection{Input reflex entropy}
 The entropy $H(E_0)$ is the uncertainty of the reflex input or the
-average description necessary to encode the reflex $D_{0}$. Before
+average description necessary to encode the reflex input $D_{0}$. Before
 I am going to look at the actual values I need to recall that
 the reflex input is part of the reflex loop (see Fig.~\ref{PPmeasure:Figure1})
 via the differences of $x_0^L-x_0^R$, 
@@ -556,9 +559,9 @@ objective measure of the robot's performance for each track type.
 
 \subsubsection{A simple non-learning robot}
 Before applying the Predictive Performance to a complex retinal based robot, it is
-better to measure it on a simplified robot with few parameter and an intuitive behaviour.
+better to measure it on a simplified robot with few parameters and an intuitive behaviour.
 The simplified robot is described in Fig.\ref{PPmeasure:Figure4} and to its parameters $k_1,k_2$,
-it is possible to show how the predictive performance work when the robot
+it is possible to show how the predictive performance works when the robot
 switches between the reflex pathway $\epsilon_0$ to the predictive pathway $\epsilon_{1,i,j}$ by
 manually setting the gain of the reflex and predictor. The reflex
 $x_0$ here is a digital $b/w$ line sensor and the predictor $x_{1,i,j}$ is a
@@ -1038,7 +1041,7 @@ Again like the previous retinal field case, the weights are not a reliable measu
 the performance of the agents.
 Especially in a highly dynamical social system, agents can be lucky and just find
 food by chance.
-One could be tempted to correlate the $PP_(Fo),PP_(Af)$ with the number of 
+One could be tempted to correlate the $PP(Fo),PP(Af)$ with the number of 
 successful food bites or food stolen from other agents but this has the same limits
 of looking at the weight.
 A corresponding verification via an objective measure like $\psi$ in Eq. \ref{deviation}
@@ -1066,9 +1069,9 @@ agents in Fig. \ref{fig:PPmeasure:social:2}.
     \end{center}
     \caption[Predictive Measure computed for the social system]{%
      Predictive Measure (PP) computed in the social system for: 
-      \textbf{A)} 10 agents and 5 food sources,
-      \textbf{B)} 10 agents and 2 food sources,
-      \textbf{C)} 10 agents and 8 food sources.
+      \textbf{(A)} 10 agents and 5 food sources,
+      \textbf{(B)} 10 agents and 2 food sources,
+      \textbf{(C)} 10 agents and 8 food sources.
       Left column contains the PP measures with white bars for the food attraction behaviour $PP(Fo)$,
       black bars for the other's attraction behaviour $PP(Af)$.
       Right column contains the weight developed after the system is stabilised for the

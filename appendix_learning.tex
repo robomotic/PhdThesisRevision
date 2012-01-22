@@ -4,7 +4,8 @@
 \subsection{ICO learning}
 The input correlation learning rule by \citet{Porr2006ICO} is a Heterosynaptic
 learning rule, it is unsupervised and performs a correlation between a predefined reflex signal
-($x_{0}$) and a reflex predicting signal ($x_{1}$). Hence, this learning
+($x_{0}$) and a reflex predicting signal ($x_{1}$).
+Hence, this learning
 algorithm identifies and exploits causalities between temporal
 sequential signals.
 
@@ -14,8 +15,7 @@ sequential signals.
 \caption[Agent learns with the ICO learning]{Figure (a) shows the ICO learning basic
 block composed by 2 inputs $x_{0},x_{1}$ filtered by $h_{0},h_{1}$ and the output $v$.
 Figure (b) shows the weight change of $w_{1}$ during time. At the beginning $w_{1}=0$,
-then for 5000 simulation steps $x_{1}$ anticipates $x_{0}$ and the $w_{1}$ grows until 1.0.
-After 5000 simulation steps reflex is suppressed $x_{0}=0$ and $w_{1}$ stabilize to $1 \cdot 10^{-3}$.
+then for 5000 simulation steps $x_{1}$ anticipates $x_{0}$ but after that $w_{1}$ stabilize to $1 \cdot 10^{-3}$.
 \label{fig:appendix.ICO}}
 \end{center}
 \end{figure}

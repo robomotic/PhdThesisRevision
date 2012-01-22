@@ -227,7 +227,7 @@ V_{L}&=& \frac{1}{1+e^{-ICO_{L}}}\\
 V_{R}&=& \frac{1}{1+e^{-ICO_{R}}}
 \end{eqnarray}
 
-The weight update learning rule is calculated for the weigts:
+The weight update learning rule is calculated for the weights:
 
 \begin{eqnarray}
 \frac{\partial W_{predict,L}}{\partial t}&=& \mu \cdot avoid_{dist,l} \frac{\partial avoid_{l}}{\partial t}\\
@@ -460,15 +460,13 @@ strategies and are going to be described in the following sections.
 
 \subsubsection{Honest food proximal signalling}
 In this scenario agents signal the presence of food when they sense it using
-the proximal inputs: $G_{food}$ is emitted by an agent when $food_{l,prox,d_{1}}(t)>0$, $food_{r,prox,d_{1}}>0$
-and $|food_{l,prox,d_{1}}(t)-food_{r,prox,d_{1}}|<\theta F$ ($\theta F$ as Eq.\ref{eq:touchfood}).
+their proximal inputs and thus emitting $G_{sated}$ when discovering a food source (as described in Eq.\ref{eq:touchfood}).
 This "genuine" social behaviour might increase the foraging performance of the colony,
 but might cost the signaller because it can result in higher robot density and increased
 competition and interference nearby the food (i.e. spatial constraints around the food disk:
 only 9 agents can forage at same time). Thus, although beneficial to other colony members,
 signalling of a food location can constitute a costly act \citep{AnimalSignals} because it
-decreases the food intake of signalling robots. With this social rule agents tend to form
-lines around the food zones: they are more organized then the previous case.
+decreases the food intake of signalling robots. By observing the trajectories, one can notice that agents tend to form lines around the food zones, this behaviour could boost the foraging performance as I will show later.
 
 \subsubsection{Dishonest food proximal signalling}
 In this case the agent "cheats" producing non predictable (using a uniform probability
@@ -513,23 +511,30 @@ attracted by food places than other sated agents.
 \item \textbf{An agent is a parasite} $\delta_{w,agent}\leq \delta_{w,food}$, if it is
 more attracted by sated agents than food places.
 \end{itemize}
+The behaviour is only described by the predictive weights because the reflex weights are
+constant and thus do not provide a useful classification.
 This classification will then be compared to a subjective comparative analysis in
-section \ref{Chapter8:PPsocial} where the Predictive Performance will allow the 
-sub system analysis withouth the need of comparing the weights on each agent.
+section \ref{Chapter8:PPsocial} where the Predictive Performance (shortened as PP \nomenclature{PP}{Predictive Performance}) will allow the 
+sub system analysis without the need of comparing the weights on each agent.
 
 Sub-system formation is analysed for 2 important test cases:
 \begin{itemize}
  \item adaptive communication: the agents learn using both proximal and distal signals
- \item no communication: the agents do no produce the $G_{sated}$ food signal necessary
+ \item non adaptive communication: the agents do no learn from the $G_{sated}$ food signal.
+ \item silence: the agents do no produce the $G_{sated}$ food signal necessary
 for the other agents to know whether food is available or not.
 \end{itemize}
-The non communicative condition does not imply that in Eq. \ref{eq:foodagentpredictive} distal
+The silence condition does not imply that in Eq. \ref{eq:foodagentpredictive} distal
 signals are suppressed but rather that agents will learn only when the neighbouring agent
 is enough close to be sensed by the far sensors.
 This implicate that learning will be happening still but only when robots are close 
-to each other rather than via the broadcast field  $G_{sated}$.
+to each other rather than via the broadcast field $G_{sated}$.
+Whereas in the non-adaptive communication the learning on the receiver agent is totally disabled
+and thus the weights for the parasitic behaviour are locked.
 For our simulation, a population of $N=20$ agents is provided with $M=4,10,18$ food sources sequentially.
-Population dynamic is observed for a total duration of  $T_{sim}=80000$ (time step $\triangle T=0.01 s$).
+Population dynamic is observed for a total duration of $T_{sim}=80000$ (time step $\triangle T=0.01 s$) and for a set of 100 simulations with different initial starting condition.
+The simulation time is long enough for the system to stabilise after an initial transitory phase.
+Each simulation is randomized regarding the food disk and agents positions, this will guarantee 100 different trajectories.
 Fig.\ref{fig:generalcomparison} resumes a total of 6 test cases: left column considers scarce resources
  ($M=4$ food sources against $N=20$ agents), right column considers abundant resources ($M=18$ food sources against $N=20$ agents).
 Each one of them reports the number of seekers (thick line) and parasites (dotted line) in function of time.
@@ -537,7 +542,7 @@ The number of seekers $n_{s}(t)$ is complementary to the number of parasites $n_
 \begin{equation}
 n_{s}(t)+n_{p}(t)=N \label{eq:social:ratio} 
 \end{equation}
-When the simulation is over $t=T_{sim}$ the ratio is:
+When the simulation is over $t=T_{sim}$ the ratio is still:
 \begin{equation}
 n_{s}(T_{sim})+n_{p}(T_{sim})=N \label{eq:social:ratiofin} 
 \end{equation}
@@ -562,6 +567,7 @@ n_{s}(T_{sim})+n_{p}(T_{sim})=N \label{eq:social:ratiofin}
       \subfigure[Dishonest food signal, ratio $N=20,M=16$, 18 cheaters]{
 	\includegraphics[width=0.4 \textwidth]{figures/socialadapt/deceptive/comm20TO18.eps}}
     \caption[Sub system formation in different conditions]{
+	  A typical single run of the system which shows different cases.
 	  Population distribution in different cases: x-axis is the simulation time expressed in seconds,
 	  y-axis reports the number of seekers $n_{s}(t)$ and of parasites $n_{p}(t)$ in function of time.
 	  There are 6 diagrams, and for every diagram the adaptive communication
@@ -571,8 +577,8 @@ n_{s}(T_{sim})+n_{p}(T_{sim})=N \label{eq:social:ratiofin}
 
 Considering the different cases in Fig.\ref{fig:generalcomparison}, it can be said that :
 \begin{itemize}
-\item in non-adaptive communication: parasites are absent (also with aggressive configuration see condition \ref{eq:aggressive} ), suggesting that adaptive communication is a necessary condition for the generation of sub-systems. In all cases (a) to (f): $n_{s}(t)=20$ and $n_{p}(t)=0$ at any time.
-\item parasitism is a quasi-stable condition: the numbers of seekers and thus parasites stabilise after a transitory phase. For example in case (a) population distribution reaches an equilibrium: $n_{s}(t)=5\pm 1$ and $n_{p}(t)=15\pm$ with $t>400 s$. After 800 seconds (data not shown) the population distribution oscillates around the equilibrium.
+\item in non-adaptive communication: parasites are absent (also with aggressive configuration see condition \ref{eq:aggressive}), the explanation is trivial because the agents cannot learn to differentiate in the absence of a signal, therefore in all cases (a) to (f): $n_{s}(t)=20$ and $n_{p}(t)=0$ at any time.
+\item in adaptive communication a stable condition is achieved: the numbers of seekers and thus parasites stabilise after a transitory phase. For example in case (a) population distribution reaches an equilibrium: $n_{s}(t)=5\pm 1$ and $n_{p}(t)=15\pm 1$ with $t>400 s$. After 800 seconds (data not shown) the population distribution oscillates around the equilibrium.
 \item the population dynamic is depending on the ratio between agents $N$ and food resources $M$:
 \begin{itemize}
 \item with scarce resources ($M=4$) in cases (a),(c),(e) parasites are prevalent
@@ -581,18 +587,17 @@ Considering the different cases in Fig.\ref{fig:generalcomparison}, it can be sa
 \end{itemize}
 Table \ref{tab:population} resumes the stabilisation property of the population for 3 main cases:
 \begin{enumerate}
-\item silence: agents do not use the food social signal
-\item honest: agents signal the food presence honestly
-\item dishonest: some agents signals the food presence dishonestly, the rest of them do not signal (like the silence case)
+\item silence: agents do not use the food social signal and are still learning.
+\item honest: agents signal the food presence honestly and are still learning.
+\item dishonest: some agents signals the food presence dishonestly, the rest of them do not signal (like the silence case)  and are still learning.
 \end{enumerate}
 
 There are 2 important observations to make:
 \begin{enumerate}
-\item the ratio of seekers over parasites ($n_{s}/n_{p}$) depends non linearly to
-the ratio of agents to food sources in the silence and dishonest cases. For example in
+\item the ratio of seekers over parasites ($n_{s}/n_{p}$) is not proportional (directly or inverseley) to the ratio of agents over food sources in the silence and dishonest cases. For example in
 the silence scenario (agents do not signal the food presence) $n_{s}=5,3,5$
-respectively for $M=4,10,18$. Interpolation techniques suggests that the dependency
-is of exponential type.
+respectively for $M=4,10,18$. The table shows that the system reaches a stable state
+but is independent from the proportion.
 \item the ratio of seekers over parasites ($n_{s}/n_{p}$) depends proportionally to the
 ratio of agents to food sources in the honest case. Number of seekers $n_{s}$ increases
 accordingly with the food sources $M$ such that $n_{s}=4,8,10$ respectively for $M=4,10,18$.
@@ -602,7 +607,7 @@ accordingly with the food sources $M$ such that $n_{s}=4,8,10$ respectively for 
 \caption[Tabular results for self organisation property]{
 Table summarising self-organisation for 100 simulation runs:
 every element in the table contains the average number of seekers $n_{s}$ after stabilisation,
-the average settling time and the variation of differentiation after the settling time.
+the average settling time and the range of the oscillations after the settling time.
 \label{tab:population}}
 \begin{center}
 \small{
@@ -653,8 +658,8 @@ in the system is no more reliable and will punish everybody indiscriminately.
 \begin{table}[htbp]
 \caption[Social System foraging performance]{
 Table summarising the foraging performance for 100 simulations: 
-every value represents the average $F_{tot}$ with the error range
-calculated as max-min. \label{tab:totalPerformance}}
+every value represents the average $F_{tot}$ as well as the value's range 
+for each group of simulations. \label{tab:totalPerformance}}
 \begin{center}
 \small{
 \begin{tabular}{@{}c|ccc@{}}
@@ -663,7 +668,7 @@ Ratio $N/M$ & 20:4 & 20:10 & 20:18\\
 \hline
 Silence & 370 $\pm 8$& 342 $\pm 9 $& 371 $\pm 8$\\
 \hline
-Honest & 488 $\pm 4 $& 461 $\pm 5$& 476 $\pm 4$\\
+Honest & 488 $\pm 5 $& 461 $\pm 6$& 476 $\pm 4$\\
 \hline
 Dishonest agents:2 & \underline{502} $\pm4 $& 366 $\pm 4$& 340 $\pm 4$\\
 Dishonest agents:10 & \underline{509} $\pm 4$ & \underline{495} $\pm 4$ & 342  $\pm 4$\\
@@ -689,7 +694,7 @@ every element represent the couple ($\mu,\sigma$) where $\mu$ is the average of
 the food bites+agents bites over the agent population, and $\sigma$ is
 the standard deviation. 
 They are calculated at the end of each simulation.
-The error range is included for the average of the food bites,
+The max-min range is included for the average of the food bites,
 as well as the standard deviation.
 \label{tab:foodDistribution}}
 \begin{center}
@@ -775,9 +780,9 @@ An explanation for the prevalence of the parasitic population with scarce resour
       \subfigure[Case considering scarce resources: in non adaptive-communication only seekers are present (top line is constant to 20 agents), in adaptive communication sub-system formation is achieved and parasites become more than seekers after 80 seconds]{
 	\includegraphics[width=0.4 \textwidth]{figures/socialadapt/20to4.eps}}
 	\hspace{1pt}
-      \subfigure[Case considering scarce resources: in non adaptive-communication only seekers are present (top line is constant to 20 agents), in adaptive communication sub-system formation is achieved and parasites are in equilibrium with seekers after 200 seconds]{
+      \subfigure[Case considering abundant resources: in non adaptive-communication only seekers are present (top line is constant to 20 agents), in adaptive communication sub-system formation is achieved and parasites are in equilibrium with seekers after 200 seconds]{
 	\includegraphics[width=0.4 \textwidth]{figures/socialadapt/20to18.eps}}
-    \caption[Self organisation with honest behaviour and unlimited resources]{\label{fig:comparison}}
+    \caption[Self organisation with honest behaviour and unlimited resources]{A typical single run of the system which shows different cases.\label{fig:comparison}}
   \end{center}
 \end{figure}
 To analyse the performance of the system in consuming food: the number of the total bites $F_{tot}=F_{seek}+F_{parasite}$ it is considered.
@@ -837,13 +842,13 @@ $n_{p}(T_{sim})=10\pm2$ and $n_{s}(T_{sim})=10\pm2$.
 \includegraphics[width=2.4in]{figures/socialadapt/limited/20to4.eps}
 \label{fig_first_case}}
 \hfil
-\subfigure[Case considering scarce resources: in non adaptive-communication
+\subfigure[Case considering abundant resources: in non adaptive-communication
 only seekers are present (top line is constant to 20 agents), in adaptive
 communication sub-system formation is achieved and parasites are in equilibrium
 with seekers after 200 seconds]{
 \includegraphics[width=2.4in]{figures/socialadapt/limited/20to18.eps}
 \label{fig_second_case}}}
-\caption[Self organisation with honest behaviour and limited resources]{Self organisation with honest behaviour and limited resources\label{fig:limitedcomparison}}
+\caption[Self organisation with honest behaviour and limited resources]{A typical single run of the system which shows different cases: self organisation with honest behaviour and limited resources\label{fig:limitedcomparison}}
 \label{fig_sim}
 \end{figure*}
 An explanation for the prevalence of the parasitic population with scarce
@@ -948,8 +953,13 @@ Agents are based on a simple, yet effective learning mechanism called ICO which
 can be extended to implement competitive behaviours.
 Because internal processing is avoided, agents respond to the changes of their
 environment in a timely fashion.
-The system is able to generate sub-systems as Luhmann proposed by means of communication,
-in absence of communication specialization is not possible.
+The system is able to generate sub-systems as Luhmann proposed by means of communication:
+the agents reduces the complexity of the environment by selecting only one behaviour out of two possiblee ones.
+This selection is mediated by the communication of the food status which allows
+the agent to make a choice or selection.
+By doing so every group of agents is more predictable in respect to each other thus
+generating a self-organizing collective behaviour which can be identified by the two
+subsystems.
 Other embodiments for the learning controller could have been chosen, for instance
 with Q-learning \citep{watkins92a} reactive agents are given a description of the
 current state and have to choose the next action so as to maximise a scalar
@@ -972,6 +982,11 @@ so they discuss only the case without communication.
 Our learning rule ICO, is unsupervised and is computationally efficient (since it does not rely on states)
 and inspired on the evidence that organism tends to maintain a weak homoeostasis
 with the environment as demonstrated by \citet{McFarland93}.
+However some researchers argue that also ICO learning is a simplified form of Q-learning
+by identifying the reward signal as the reflex of the organism: the biological difference
+here is that the reflex reward is something evolutionary wired whereas the reward
+is usually artificially encoded in the environment.
+Therefore we could say that also ICO learning is also supervised but more biologically plausible.
 In \citet{tan97multiagent} Q-learning is applied in a predator-prey game,
 where agents cooperate in different ways. It is interesting to analyse the
 communication method called sharing sensation. The model is composed of 1 hunter,

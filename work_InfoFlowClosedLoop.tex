@@ -60,7 +60,7 @@ A reactive system comprises an error controlled closed
 loop and is non optimal because it only reacts after a
 deviation from its desired state has happened.
 The environment usually contains predictive signals which can help the agent to
-react before the error is presented \citep{Verschure2003}. Thus, bio inspired controllers
+react before the error is presented \citep{Verschure2003}. Thus, biologically inspired controllers
 can be provided with a predictive signal (like vision) and a reflexive signal (like touch).
 Learning then has the task of avoiding the trigger of the reflexive reaction -
 thus creating an open loop forward controller which discards
@@ -141,7 +141,7 @@ which means all the disturbances is transferred intact to the organism.
 \includegraphics[scale=0.3]{lawvariety/lawvariety1_fonts}
 \caption[Law of requisite variety for learning and non learning agents]{(A)
 The organism with a closed loop controller. (B) The same organism with an forward
-controller. (C) The organism before regulation. (D) An adaptive controller is a
+controller.(C) The organism before regulation. (D) An adaptive controller is a
  mix of forward and closed loop control. Every block is a finite state machine
 whose inputs are indicated by incoming arrows and outputs are indicated by
 outgoing arrows. \label{fig:ashby1}}
@@ -186,7 +186,7 @@ and no entropy reduction can be achieved:
 When $H(E)=0$, $R$ blocks the information flow in the channel $D\rightarrow E$
 and thus no information is transmitted to $R$ for the regulation task: the regulator $R$
 is asserting a perfect control on $E$ without knowing the status.
-This property was proved by absurd in \citet{Ashby1956:IntroCybernetics}.
+This property was proved by contradiction in \citet{Ashby1956:IntroCybernetics}.
 In the next section I extend the law of requisite variety for adaptive controllers.
 
 \subsection{Methods: the law of adaptive requisite variety}
@@ -262,7 +262,10 @@ Z^n=[z(k) z(k+1)\dots z(k+n-1)]
 \end{equation}
 which contains $n$ outputs of the agent and $U$ the random variable describing the
 temporal signal $u(k+n)$ which is the input of the agent resulting from
-previous actions as described in \citet{organizationInfo,quantifyInfo}.
+$n$ previous actions at time $k$ as described in \citet{organizationInfo,quantifyInfo}.
+The double arrows indicate the correspondence between the mutual information computed
+and the diagram in Fig.\ref{fig:ashby1}(D).
+
 Fig.\ref{methods:ico1}(A) shows an organism composed of 3 ICO \citep{Porr2006ICO}
 controllers and the corresponding information flow measures for every controller.
 Each ICO controller takes 2 continuous inputs $U0,U1$ and one continuous output $Z_{n}$.
@@ -278,7 +281,7 @@ learning speed (see Fig.\ref{methods:ico1}(C)).
 
 Since the ICO controller works in continuous mode, the input and output signals
 must be discretised in order to compute the information flow and channel capacity (see Simulation Details).
-The two measures $MI^n_{U0},MI^n_{U1}$ are used to compute the channel capacities $C_{E,R}$ and $C_{D,R}$:
+The two measures $MI^n_{U0},MI^n_{U1}$ \nomenclature{MI}{Mutual informaation between two signals} are used to compute the channel capacities $C_{E,R}$ and $C_{D,R}$:
 \begin{eqnarray}
 \zeta^n(Z^n \rightarrow U0)=\max_{p(Z^n) } MI^n_{U0}  \leftrightarrow C_{E,R} \label{eq:c0}\\
 \zeta^n(Z^n \rightarrow U1)=\max_{p(Z^n) } MI^n_{U1}   \leftrightarrow C_{D,R} \label{eq.c1}
@@ -302,7 +305,7 @@ lateral wheels and 2 antennas. By default the agent drives straight forward,
 with speed $v=1$ units per time step. It has 2 sensor-pairs, near contact
 antennas and far contact antennas.
 
-Every agent has a MISO (multiple inputs single output) controller and a variable
+Every agent has a MISO (multiple inputs single output)\nomenclature{MISO}{Multiple Input Multiple Output controller} controller and a variable
 of 1 bit for the food status. The agent has 3 competitive tasks: avoid obstacles
 (empty food disks and other agents without food), find food from the disks,
 find foods from other agents with food.
@@ -424,22 +427,21 @@ and, consequently, the self-organising properties of social systems.
 \includegraphics[width=1.0\textwidth]{lawvariety/allpanel}
 \begin{small}
 \caption[Information flow before and after learning]{
-\textbf{(A)} Information flow before learning for attraction to others $MI^4_{Af,U1}$ (grey bars)$,MI^4_{Af,U0}$ (black bars)
+\textbf{(A)} Information flow before learning for attraction to others $MI^4_{Af,U1}$ (gray bars)$,MI^4_{Af,U0}$ (black bars)
 expressed in bits.
 \textbf{(B)} Information flow after learning for attraction to others in bits.
 \textbf{(C)} Weight difference for every agent: $\Delta W_{Af}=\omega_{1,Af}-0.1$, $\Delta W_{Fo}=\omega_{1,Fo}-0.1$
-\textbf{(D)} Information flow before learning for attraction for food $MI^4_{Fo,U1}$ (grey bars), $MI^4_{Fo,U0}$ (black bars) in bits.
-\textbf{(E)} Information flow after learning for attraction for food in bits. Error bars are centred on the average for 100 simulations.
-The error width is equal to the maximum-minimum interval of the computed measures over 100 simulations.
-The agent's indexes are only reported for 1 simulation, because for the rest of the simulations the order outcome
-was shuffled. In this set of simulations there were $N=10$ agents with $M=5$ food resources.
+\textbf{(D)} Information flow before learning for attraction for food $MI^4_{Fo,U1}$ (gray bars), $MI^4_{Fo,U0}$ (black bars) in bits.
+\textbf{(E)} Information flow after learning for attraction for food in bits.
+In this typical run from a group of 100 independent simulations, the error bars for each agent indicates the range interval of the measure over the 100 simulations.
+In this group of simulations the parameters were $N=10$ and $M=5$ as a result 5 agents become seekers and 5 agents become parasites. The x-axis contains the number identifying the agent.
 \label{fig:summary}}
 \end{small}
 \end{center}
 \end{figure}
 
-In Fig.\ref{fig:Cmax} I measure the efficiency of the reflex-output and predictive-output 
-loop $MI^4_{Av,U1},MI^4_{Av,U0}$ for the avoidance behaviour in relation to the capacity 
+In Fig.\ref{fig:Cmax}, I measure the efficiency of the reflex-output and predictive-output 
+loop $MI^4_{Av,U1},MI^4_{Av,U0}$ for the avoidance behavior in relation to the capacity 
 for the agents $\zeta^4_{all}=2.0$. Fig.\ref{fig:Cmax}(A) shows
 that before learning $MI^4_{Av,U0}$ is using 0.25\% of the full channel capacity and 
 Fig.\ref{fig:Cmax}(B) shows that after learning $MI^4_{Av,U1}$ is using about 0.45\% of the channel capacity.
@@ -461,7 +463,7 @@ The capacity $\zeta^n_{all}$ takes its maximum of 2 bits when $n \geq 2$.
 In summary, I have introduced an extension to Ashby's
 requisite variety theory called the law of adaptive requisite variety,
 computed the information flow to measure the learning performance for agents with
-competitive behaviours and found the relation between the efficiency of the information flow $MI$ and the weight change
+competitive behaviors and found the relation between the efficiency of the information flow $MI$ and the weight change
 of the adaptive controller $\Delta \omega_1$.
 
 I also linked the information approach to the Luhmann theory that sub-systems are formed
@@ -471,13 +473,12 @@ attraction behaviour for food disks (seekers) and 5 have a dominant attraction
 behaviour for others (parasites).
 The seekers mainly use the predictive information of the food disks while the
 parasites mainly use the predictive information of the others who posses food.
-Thus, the conclusion is that predictive learning in a social context
-leads to the formation of subsystems. This can be demonstrated with the help of my approach.
+Thus, my measure of information quantifies the information selection of the agents before and after learning which means I am able to discriminate which agent is a parasite or a seeker without looking at the value of the weights. 
 
 While \citealt{organizationInfo,polaniEmpowerment} and \citealt{LungarellaInformation,Klyubin2008:KeepOptions}
 used the empowerment measure as a general cost function to optimise the agent's
 behaviour or evolution, I use it as the upper bound of the MI to measure the efficiency of the sensory-motor loop use.
-\citet{Ay2008:PredInformation} uses an adaptive controller which maximises
+\citet{Ay2008:PredInformation} use an adaptive controller which maximises
 the excess entropy (the mutual information
 between past and present) at the input side to achieve a working regime exploratory
 and sensitive to the environment.
@@ -489,7 +490,7 @@ output and path entropy of the adaptive agents to study the optimality of the an
 thus completing the tools required to evaluate a single task controller.
 
 The following section \ref{Chapter7:Q learning application} contains some experiment
-regarding the application of the mutual information to a Q-learning agent to
+regarding the application of the mutual information to a Q-learning agent\nomenclature{Q-learning}{Q-learning is a reinforcement learning technique that works by learning an action-value function to predict future rewards} to
 verify that this approach is feasible also with reward based learning.
 After that, the section \ref{Chapter8:Predictive Performance} introduces a mono-dimensional
 measure called Predictive Performance which summarises the learning performance
